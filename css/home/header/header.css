@@ -1,0 +1,41 @@
+/*-----------------------------------------------*/
+/*---------------- HEADER STYLES ----------------*/
+/*-----------------------------------------------*/
+
+#header {
+  box-shadow: 0 10px 20px #00000080;
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: center;
+  position: relative;
+  isolation: isolate;
+  padding: 2rem 4rem;
+  overflow: hidden;
+  display: grid;
+  gap: 4rem;
+}
+
+.header-title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-weight: 200;
+  cursor: default;
+  font-size: 5rem;
+  color: #fff;
+}
+
+.header-background {
+  position: absolute;
+  object-fit: cover;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+/*------------------------------------------*/
+/*--------------- END OF CSS ---------------*/
+/*------------------------------------------*/

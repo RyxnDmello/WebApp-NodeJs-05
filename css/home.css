@@ -1,0 +1,15 @@
+@import url("./home/header/navbar.css");
+@import url("./home/header/header.css");
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+}
