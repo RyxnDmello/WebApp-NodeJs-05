@@ -1,0 +1,24 @@
+<article class="header-carousel-slide">
+  <h2 class="header-carousel-slide-title"></h2>
+
+  <% for(let products = 0; products < 2; products++) { %>
+  <div class="header-product">
+    <img class="header-product-image" src="/shop/playstation/playstation.png" />
+
+    <div class="header-product-details">
+      <div class="header-product-header">
+        <h4 class="header-product-title">PlayStation 5</h4>
+        <p class="header-product-description">PlayStation</p>
+      </div>
+
+      <div class="header-product-links">
+        <% for(let i = 0; i < 4; i++) { %>
+        <a class="header-product-link" href="">
+          <img class="header-product-link-image" src="/buttons/account/create.png" />
+        </a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+  <% } %>
+</article>

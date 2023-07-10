@@ -8,6 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static("./JavaScript"));
 app.use(express.static("./images"));
+app.use(express.static("./fonts"));
 app.use(express.static("./json"));
 app.use(express.static("./css"));
 

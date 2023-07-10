@@ -1,0 +1,22 @@
+/*---------------------------------*/
+/*------------- FONTS -------------*/
+/*---------------------------------*/
+
+@font-face {
+  font-family: "Acquire Light";
+  src: url("/acquire/Acquire-Light.otf");
+}
+
+@font-face {
+  font-family: "Acquire Medium";
+  src: url("/acquire/Acquire-Medium.otf");
+}
+
+@font-face {
+  font-family: "Acquire Bold";
+  src: url("/acquire/Acquire-Bold.otf");
+}
+
+/*--------------------------------------*/
+/*------------ END OF FONTS ------------*/
+/*--------------------------------------*/

@@ -1,0 +1,79 @@
+/*------------------------------------------------*/
+/*---------------- PRODUCT STYLES ----------------*/
+/*------------------------------------------------*/
+
+.header-product {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: start;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.header-product-image {
+  width: 300px;
+}
+
+.header-product-details {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+}
+
+/*---------------------------------------*/
+/*------------ HEADER STYLES ------------*/
+/*---------------------------------------*/
+
+.header-product-header {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+.header-product-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.header-product-description {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 200;
+  color: #c6c6c6;
+}
+
+/*-------------------------------------*/
+/*------------ LINK STYLES ------------*/
+/*-------------------------------------*/
+
+.header-product-links {
+  grid-auto-flow: column;
+  justify-content: left;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.header-product-link {
+  border: 2px solid #fff;
+  justify-content: center;
+  grid-auto-flow: column;
+  border-radius: 40px;
+  align-items: center;
+  padding: 0.65rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.header-product-link-image {
+  width: 20px;
+}
+
+/*------------------------------------------*/
+/*--------------- END OF CSS ---------------*/
+/*------------------------------------------*/
