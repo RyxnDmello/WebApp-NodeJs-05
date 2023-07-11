@@ -14,6 +14,13 @@
   gap: 5rem;
 }
 
+.header-information {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
 .header-background {
   position: absolute;
   object-fit: cover;

@@ -3,10 +3,12 @@
 /*----------------------------------------------*/
 
 .header-carousel {
-  justify-content: center;
+  justify-content: start;
   grid-auto-flow: column;
   align-items: center;
+  overflow: hidden;
   display: grid;
+  width: 1254px;
 }
 
 .header-carousel-slide {
@@ -14,6 +16,7 @@
   justify-content: center;
   align-items: center;
   gap: 4rem 6rem;
+  width: 1254px;
   display: grid;
 }
 
@@ -26,6 +29,14 @@
   cursor: default;
   font-size: 5rem;
   color: #fff;
+}
+
+/*----------------------------------------*/
+/*-------------- CONTROLLER --------------*/
+/*----------------------------------------*/
+
+.header-carousel-button {
+  width: 50px;
 }
 
 /*-----------------------------------------*/
