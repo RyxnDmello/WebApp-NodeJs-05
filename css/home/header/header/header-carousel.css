@@ -7,22 +7,25 @@
   grid-auto-flow: column;
   align-items: center;
   overflow: hidden;
+  padding: 0 2rem;
   display: grid;
-  width: 1254px;
+  width: 1238px;
+  gap: 2rem;
 }
 
 .header-carousel-slide {
   grid-template-columns: repeat(2, auto);
-  transition: translate 450ms;
+  transition: translate 500ms;
   justify-content: center;
   align-items: center;
-  gap: 4rem 6rem;
-  width: 1254px;
+  width: 1174px;
   display: grid;
+  gap: 4rem;
 }
 
 .header-carousel-slide-title {
   font-family: "Acquire Light", sans-serif;
+  text-shadow: 0 0 10px #000000a0;
   letter-spacing: 0.5px;
   grid-column: span 2;
   text-align: center;
@@ -39,8 +42,8 @@
 .header-carousel-button {
   transition: translate 250ms, opacity 250ms;
   cursor: pointer;
-  opacity: 0.4;
-  width: 50px;
+  opacity: 0.25;
+  width: 40px;
 }
 
 .header-carousel-indicators {
@@ -53,9 +56,9 @@
 }
 
 .header-carousel-indicator {
-  transition: opacity 150ms;
+  transition: opacity 500ms;
   cursor: pointer;
-  opacity: 0.4;
+  opacity: 0.25;
   width: 30px;
 }
 

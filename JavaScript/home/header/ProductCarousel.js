@@ -3,6 +3,7 @@ const slides = document.querySelectorAll(".header-carousel-slide");
 const buttons = document.querySelectorAll(".header-carousel-button");
 const indicators = document.querySelectorAll(".header-carousel-indicator");
 
+const carouselWidth = carousel.clientWidth - 32;
 let currentSlide = 0;
 
 export default function ProductCarousel() {
@@ -19,13 +20,13 @@ export default function ProductCarousel() {
       currentSlide = index;
       IndicatorAnimation(index);
       CarouselMoveSlides();
-    })
+    });
   });
 }
 
 function CarouselMoveSlides() {
   slides.forEach((slide) => {
-    slide.style.translate = `${-currentSlide * carousel.clientWidth}px 0`;
+    slide.style.translate = `${-currentSlide * carouselWidth}px 0`;
   });
 }
 
@@ -39,7 +40,7 @@ function CarouselController(button) {
 
 function IndicatorAnimation(selectedIndex) {
   indicators.forEach((indicator, index) => {
-    if(index === selectedIndex) indicator.style.opacity = 1;
-    else indicator.style.opacity = 0.4;
+    if (index === selectedIndex) indicator.style.opacity = 1;
+    else indicator.style.opacity = 0.25;
   });
 }
