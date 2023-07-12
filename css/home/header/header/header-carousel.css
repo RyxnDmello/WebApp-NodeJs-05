@@ -13,6 +13,7 @@
 
 .header-carousel-slide {
   grid-template-columns: repeat(2, auto);
+  transition: translate 450ms;
   justify-content: center;
   align-items: center;
   gap: 4rem 6rem;
@@ -36,7 +37,38 @@
 /*----------------------------------------*/
 
 .header-carousel-button {
+  transition: translate 250ms, opacity 250ms;
+  cursor: pointer;
+  opacity: 0.4;
   width: 50px;
+}
+
+.header-carousel-indicators {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  margin-top: -2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.header-carousel-indicator {
+  transition: opacity 150ms;
+  cursor: pointer;
+  opacity: 0.4;
+  width: 30px;
+}
+
+.header-carousel-indicator:nth-of-type(1) {
+  opacity: 1;
+}
+
+/*----------------------------------------*/
+/*-------------- TRANSITION --------------*/
+/*----------------------------------------*/
+
+.header-carousel-button:hover {
+  opacity: 1;
 }
 
 /*-----------------------------------------*/

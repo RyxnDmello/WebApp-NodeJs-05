@@ -1,20 +1,45 @@
-const button = document.querySelector(".header-information");
 const carousel = document.querySelector(".header-carousel");
 const slides = document.querySelectorAll(".header-carousel-slide");
+const buttons = document.querySelectorAll(".header-carousel-button");
+const indicators = document.querySelectorAll(".header-carousel-indicator");
 
-let slideIndex = 0;
+let currentSlide = 0;
 
 export default function ProductCarousel() {
-  button.addEventListener("click", () => {
-    if (slideIndex === 3) slideIndex = 0;
-    else ++slideIndex;
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      CarouselController(button);
+      IndicatorAnimation(currentSlide);
+      CarouselMoveSlides();
+    });
+  });
 
-    MoveSlides();
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener("click", () => {
+      currentSlide = index;
+      IndicatorAnimation(index);
+      CarouselMoveSlides();
+    })
   });
 }
 
-function MoveSlides(index) {
+function CarouselMoveSlides() {
   slides.forEach((slide) => {
-    slide.style.translate = `${-index * carousel.clientWidth}px 0`;
+    slide.style.translate = `${-currentSlide * carousel.clientWidth}px 0`;
+  });
+}
+
+function CarouselController(button) {
+  if (button.classList.contains("right")) ++currentSlide;
+  else --currentSlide;
+
+  if (currentSlide > 2) currentSlide = 2;
+  if (currentSlide < 0) currentSlide = 0;
+}
+
+function IndicatorAnimation(selectedIndex) {
+  indicators.forEach((indicator, index) => {
+    if(index === selectedIndex) indicator.style.opacity = 1;
+    else indicator.style.opacity = 0.4;
   });
 }

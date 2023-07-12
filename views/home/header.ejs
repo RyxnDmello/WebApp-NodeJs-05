@@ -1,6 +1,6 @@
 <nav><%- include("./navbar.ejs") %></nav>
 
-<article class="header-information">
+<div class="header-information">
   <img
     class="header-carousel-button left"
     src="/buttons/basic/arrow-head-left.png"
@@ -12,6 +12,12 @@
     class="header-carousel-button right"
     src="/buttons/basic/arrow-head-right.png"
   />
-</article>
+</div>
+
+<div class="header-carousel-indicators">
+  <% for(let i = 0; i < 3; i++) { %>
+  <img class="header-carousel-indicator" src="/buttons/basic/bar.png" />
+  <% } %>
+</div>
 
 <img class="header-background" src="/home/header/background.png" />
