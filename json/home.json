@@ -22,6 +22,7 @@
   "header": {
     "slides": [
       [
+        "EVERY GAMERS PARADISE",
         {
           "image": "/home/header/playstation/playstation.png",
           "title": "PlayStation 5",
@@ -45,6 +46,7 @@
         }
       ],
       [
+        "CONTROL OF EVERY PIXEL",
         {
           "image": "/home/header/playstation/controller.png",
           "title": "DualSense",
@@ -58,12 +60,20 @@
           "description": "",
           "products": [],
           "URL": "/"
+        },
+        {
+          "image": "/home/header/switch/controller.png",
+          "title": "Switch Pro",
+          "description": "",
+          "products": [],
+          "URL": "/"
         }
       ],
       [
+        "FEEL THE SOUND WAVES",
         {
           "image": "/home/header/playstation/headphone.png",
-          "title": "Pulse 3D White",
+          "title": "PS5 Pulse 3D",
           "description": "",
           "products": [],
           "URL": "/"
@@ -71,6 +81,13 @@
         {
           "image": "/home/header/xbox/headphone.png",
           "title": "Xbox Original",
+          "description": "",
+          "products": [],
+          "URL": "/"
+        },
+        {
+          "image": "/home/header/switch/headphone.png",
+          "title": "Switch WiredSet",
           "description": "",
           "products": [],
           "URL": "/"

@@ -1,8 +1,8 @@
-<% header.slides.forEach((slide, index) => { %>
-<article class="header-carousel-slide items-<%= slide.length %>">
-  <h2 class="header-carousel-slide-title">SLIDE <%= index + 1 %></h2>
-
-  <% slide.forEach((product) => { %>
+<% header.slides.forEach((slide) => { %>
+<article class="header-carousel-slide">
+  <% slide.forEach((product, index) => { if(index === 0) { %>
+  <h2 class="header-carousel-slide-title"><%= product %></h2>
+  <% } else { %>
   <div class="header-product">
     <img class="header-product-image" src="<%= product.image %>" />
 
@@ -32,6 +32,6 @@
       </a>
     </div>
   </div>
-  <% }) %>
+  <% }}) %>
 </article>
 <% }) %>

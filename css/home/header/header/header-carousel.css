@@ -14,39 +14,25 @@
 }
 
 .header-carousel-slide {
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
   transition: translate 500ms;
-  justify-content: center;
   align-items: start;
-  gap: 4rem 6rem;
   width: 1174px;
   display: grid;
-}
-
-.header-carousel-slide.items-2 {
-  grid-template-columns: repeat(2, auto);
-}
-
-.header-carousel-slide.items-3 {
-  grid-template-columns: repeat(3, auto);
+  gap: 4rem 0;
 }
 
 .header-carousel-slide-title {
   font-family: "Acquire Light", sans-serif;
   text-shadow: 0 0 10px #000000a0;
   letter-spacing: 0.5px;
+  grid-column: span 3;
   text-align: center;
   font-weight: 100;
   cursor: default;
   font-size: 5rem;
   color: #fff;
-}
-
-.header-carousel-slide.items-2 .header-carousel-slide-title {
-  grid-column: span 2;
-}
-
-.header-carousel-slide.items-3 .header-carousel-slide-title {
-  grid-column: span 3;
 }
 
 /*----------------------------------------*/
@@ -64,7 +50,6 @@
   justify-content: center;
   grid-auto-flow: column;
   align-items: center;
-  margin-top: -2rem;
   display: grid;
   gap: 1rem;
 }

@@ -11,13 +11,14 @@
   padding: 2rem 4rem;
   overflow: hidden;
   display: grid;
-  gap: 4.5rem;
+  gap: 2rem;
 }
 
 .header-information {
   justify-content: space-between;
   grid-auto-flow: column;
   align-items: center;
+  margin-top: 4rem;
   display: grid;
 }
 
