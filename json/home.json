@@ -23,15 +23,22 @@
     "slides": [
       [
         {
-          "image": "/shop/playstation/playstation.png",
+          "image": "/home/header/playstation/playstation.png",
           "title": "PlayStation 5",
           "description": "1TB SSD",
           "products": [],
           "URL": "/"
         },
         {
-          "image": "/shop/xbox/xbox.png",
+          "image": "/home/header/xbox/xbox.png",
           "title": "Xbox Series X",
+          "description": "1TB SSD",
+          "products": [],
+          "URL": "/"
+        },
+        {
+          "image": "/home/header/switch/switch.png",
+          "title": "Nintendo Switch",
           "description": "1TB SSD",
           "products": [],
           "URL": "/"
@@ -39,14 +46,14 @@
       ],
       [
         {
-          "image": "/shop/playstation/controllers/controller-white.png",
+          "image": "/home/header/playstation/controller.png",
           "title": "DualSense",
           "description": "",
           "products": [],
           "URL": "/"
         },
         {
-          "image": "/shop/xbox/controllers/controller-black.png",
+          "image": "/home/header/xbox/controller.png",
           "title": "Xbox Original",
           "description": "",
           "products": [],
@@ -55,15 +62,15 @@
       ],
       [
         {
-          "image": "/shop/playstation/headphones/headphones-white.png",
+          "image": "/home/header/playstation/headphone.png",
           "title": "Pulse 3D White",
           "description": "",
           "products": [],
           "URL": "/"
         },
         {
-          "image": "/shop/playstation/headphones/headphones-black.png",
-          "title": "Pulse 3D Black",
+          "image": "/home/header/xbox/headphone.png",
+          "title": "Xbox Original",
           "description": "",
           "products": [],
           "URL": "/"

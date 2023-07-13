@@ -1,5 +1,5 @@
 <% header.slides.forEach((slide, index) => { %>
-<article class="header-carousel-slide">
+<article class="header-carousel-slide items-<%= slide.length %>">
   <h2 class="header-carousel-slide-title">SLIDE <%= index + 1 %></h2>
 
   <% slide.forEach((product) => { %>
