@@ -16,11 +16,11 @@
 .header-carousel-slide {
   grid-template-columns: repeat(2, auto);
   transition: translate 500ms;
-  justify-content: center;
-  align-items: center;
+  justify-content: stretch;
+  align-items: start;
+  gap: 4rem 2rem;
   width: 1174px;
   display: grid;
-  gap: 4rem;
 }
 
 .header-carousel-slide-title {

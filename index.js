@@ -2,6 +2,8 @@ require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
 
+const HomeTemplate = require("./json/home.json");
+
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -15,7 +17,10 @@ app.use(express.static("./css"));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-  res.render("home");
+  res.render("home", {
+    navbar: HomeTemplate.navbar,
+    header: HomeTemplate.header,
+  });
 });
 
 app.listen(process.env.DEVELOPMENT_PORT, () => {

@@ -19,7 +19,9 @@
   </head>
 
   <body>
-    <header id="header"><%- include("./home/header.ejs") %></header>
+    <header id="header">
+      <%- include("./home/header.ejs", { header: header, navbar: navbar }) %>
+    </header>
 
     <script type="module" src="/Home.js"></script>
   </body>

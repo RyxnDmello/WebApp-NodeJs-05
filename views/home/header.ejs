@@ -1,4 +1,4 @@
-<nav><%- include("./navbar.ejs") %></nav>
+<nav><%- include("./navbar.ejs", { navbar: navbar }) %></nav>
 
 <div class="header-information">
   <img
@@ -6,7 +6,9 @@
     src="/buttons/basic/arrow-head-left.png"
   />
 
-  <div class="header-carousel"><%- include("./header/product.ejs") %></div>
+  <div class="header-carousel">
+    <%- include("./header/product.ejs", { header: header }) %>
+  </div>
 
   <img
     class="header-carousel-button right"

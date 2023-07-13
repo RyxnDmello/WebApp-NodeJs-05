@@ -1,15 +1,15 @@
-<% for(let slide = 0; slide < 3; slide++) { %>
+<% header.slides.forEach((slide, index) => { %>
 <article class="header-carousel-slide">
-  <h2 class="header-carousel-slide-title">SLIDE <%= slide + 1 %></h2>
+  <h2 class="header-carousel-slide-title">SLIDE <%= index + 1 %></h2>
 
-  <% for(let products = 0; products < 2; products++) { %>
+  <% slide.forEach((product) => { %>
   <div class="header-product">
-    <img class="header-product-image" src="/shop/playstation/playstation.png" />
+    <img class="header-product-image" src="<%= product.image %>" />
 
     <div class="header-product-details">
       <div class="header-product-header">
-        <h4 class="header-product-title">PlayStation 5</h4>
-        <p class="header-product-description">PlayStation</p>
+        <h4 class="header-product-title"><%= product.title %></h4>
+        <p class="header-product-description"><%= product.description %></p>
       </div>
 
       <div class="header-product-links">
@@ -23,7 +23,7 @@
         <% } %>
       </div>
 
-      <a class="header-product-shop-link" href="/">
+      <a class="header-product-shop-link" href="<%= product.URL %>">
         <img
           class="header-product-shop-link-image"
           src="/buttons/shop/bag.png"
@@ -32,6 +32,6 @@
       </a>
     </div>
   </div>
-  <% } %>
+  <% }) %>
 </article>
-<% } %>
+<% }) %>
