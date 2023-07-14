@@ -1,34 +1,50 @@
-.features-carousel {
-  justify-content: center;
-  grid-auto-flow: column;
-  align-items: center;
-  display: grid;
-}
-
-.feature-slide {
-  grid-template-columns: repeat(2, auto);
-  justify-content: center;
-  align-items: center;
-  display: grid;
-  gap: 1rem 0;
-}
-
-.feature-slide-title {
-  grid-column: span 2;
-}
-
-.feature-console-image {
-  width: 600px;
-}
+/*----------------------------------------------*/
+/*---------------- POINT STYLES ----------------*/
+/*----------------------------------------------*/
 
 .feature-points-container {
   grid-template-columns: repeat(3, auto);
   justify-content: center;
   align-items: center;
+  gap: 2rem 4rem;
   display: grid;
-  gap: 2rem;
+}
+
+.feature-point {
+  grid-template-columns: auto;
+  justify-content: left;
+  align-items: center;
+  display: grid;
+}
+
+.feature-point-header {
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: center;
+  display: grid;
+  gap: 0.5rem;
 }
 
 .feature-point-image {
-  width: 80px;
+  width: 50px;
 }
+
+.feature-point-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 200;
+  cursor: default;
+  color: #fff;
+}
+
+.feature-point-details {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  cursor: default;
+  color: #fff;
+}
+
+/*------------------------------------------*/
+/*--------------- END OF CSS ---------------*/
+/*------------------------------------------*/

@@ -20,6 +20,7 @@ app.get("/", (req, res) => {
   res.render("home", {
     navbar: HomeTemplate.navbar,
     header: HomeTemplate.header,
+    features: HomeTemplate.features,
   });
 });
 

@@ -24,7 +24,9 @@
     </header>
 
     <main>
-      <section id="features"><%- include("./home/features.ejs") %></section>
+      <section id="features">
+        <%- include("./home/features.ejs", { features: features }) %>
+      </section>
     </main>
 
     <script type="module" src="/Home.js"></script>

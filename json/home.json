@@ -94,5 +94,58 @@
         }
       ]
     ]
-  }
+  },
+  "features": [
+    {
+      "title": "SONY PLAYSTATION",
+      "image": "/home/features/consoles/playstation.png",
+      "points": [
+        {
+          "image": "/home/features/points/cpu.png",
+          "title": "CPU",
+          "details": "AMD Ryzen Zen 8 Cores"
+        },
+        {
+          "image": "/home/features/points/gpu.png",
+          "title": "CPU",
+          "details": "AMD Ryzen Zen 8 Cores"
+        },
+        {
+          "image": "/home/features/points/ram.png",
+          "title": "CPU",
+          "details": "AMD Ryzen Zen 8 Cores"
+        },
+        {
+          "image": "/home/features/points/ssd.png",
+          "title": "CPU",
+          "details": "AMD Ryzen Zen 8 Cores"
+        },
+        {
+          "image": "/home/features/points/disk.png",
+          "title": "CPU",
+          "details": "AMD Ryzen Zen 8 Cores"
+        },
+        {
+          "image": "/home/features/points/optical-drive.png",
+          "title": "CPU",
+          "details": "AMD Ryzen Zen 8 Cores"
+        },
+        {
+          "image": "/home/features/points/weight.png",
+          "title": "CPU",
+          "details": "AMD Ryzen Zen 8 Cores"
+        },
+        {
+          "image": "/home/features/points/video.png",
+          "title": "CPU",
+          "details": "AMD Ryzen Zen 8 Cores"
+        },
+        {
+          "image": "/home/features/points/audio.png",
+          "title": "CPU",
+          "details": "AMD Ryzen Zen 8 Cores"
+        }
+      ]
+    }
+  ]
 }

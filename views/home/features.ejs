@@ -1,29 +1,26 @@
 <article class="features-carousel">
+  <% features.forEach((slide) => { %>
   <div class="feature-slide">
-    <h2 class="feature-slide-title">SONY PLAYSTATION</h2>
-
-    <img
-      class="feature-console-image"
-      src="/home/features/consoles/playstation.png"
-    />
+    <h2 class="feature-slide-title"><%= slide.title %></h2>
+    <img class="feature-slide-image" src="<%= slide.image %>" />
 
     <div class="feature-points-container">
-      <% for(let i = 0; i < 6; i++) { %>
+      <% slide.points.forEach((point) => { %>
       <div class="feature-point">
         <div class="feature-point-header">
-          <img
-            class="feature-point-image"
-            src="/home/features/points/graphics.png"
-          />
-          <h4 class="feature-point-title">CPU</h4>
+          <img class="feature-point-image" src="<%= point.image %>" />
+          <h4 class="feature-point-title"><%= point.title %></h4>
         </div>
 
-        <p class="feature-point-details">
-          x86-64-AMD Ryzen Zen 2. 8 Cores/16 Threads Variable frequency, up to
-          3.5GHz.
-        </p>
+        <p class="feature-point-details"><%= point.details %></p>
       </div>
-      <% } %>
+      <% }) %>
     </div>
   </div>
+  <% }) %>
+
+  <img
+    class="features-carousel-background"
+    src="/home/features/background.png"
+  />
 </article>

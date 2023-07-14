@@ -1,0 +1,50 @@
+/*-----------------------------------------------------*/
+/*------------------ CAROUSEL STYLES ------------------*/
+/*-----------------------------------------------------*/
+
+.features-carousel {
+  background-color: #00000050;
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  display: grid;
+  padding: 4rem;
+}
+
+.features-carousel-background {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+}
+
+.feature-slide {
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-items: center;
+  gap: 4rem 2rem;
+  display: grid;
+}
+
+.feature-slide-title {
+  font-family: "Acquire Light", sans-serif;
+  letter-spacing: 2.5px;
+  grid-column: span 2;
+  font-weight: 100;
+  font-size: 5rem;
+  cursor: default;
+  color: #fff;
+}
+
+.feature-slide-image {
+  width: 500px;
+}
+
+/*----------------------------------------------*/
+/*----------------- END OF CSS -----------------*/
+/*----------------------------------------------*/
