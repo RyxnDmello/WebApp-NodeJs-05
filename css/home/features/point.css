@@ -1,0 +1,34 @@
+.features-carousel {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
+.feature-slide {
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 1rem 0;
+}
+
+.feature-slide-title {
+  grid-column: span 2;
+}
+
+.feature-console-image {
+  width: 600px;
+}
+
+.feature-points-container {
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+}
+
+.feature-point-image {
+  width: 80px;
+}

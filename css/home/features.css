@@ -1,0 +1,9 @@
+@import url("./features/point.css");
+
+#features {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  padding: 4rem;
+}

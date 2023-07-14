@@ -1,5 +1,5 @@
-@import url("./header/header-carousel.css");
-@import url("./header/header-product.css");
+@import url("./header/carousel.css");
+@import url("./header/product.css");
 
 #header {
   box-shadow: 0 10px 20px #00000080;
@@ -33,7 +33,3 @@
   left: 0;
   top: 0;
 }
-
-/*------------------------------------*/
-/*------------ END OF CSS ------------*/
-/*------------------------------------*/
