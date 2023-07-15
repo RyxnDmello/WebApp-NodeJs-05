@@ -7,14 +7,22 @@
   justify-content: center;
   align-items: center;
   display: grid;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .feature-indicator {
-  background-color: #fff;
+  transition: background-color 450ms, opacity 450ms;
+  border: 2px solid #fff;
   border-radius: 40px;
-  height: 20px;
-  width: 20px;
+  cursor: pointer;
+  opacity: 0.25;
+  height: 40px;
+  width: 6.5px;
+}
+
+.feature-indicator:nth-of-type(1) {
+  background-color: #fff;
+  opacity: 1;
 }
 
 /*----------------------------------------*/

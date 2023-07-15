@@ -97,7 +97,115 @@
   },
   "features": [
     {
-      "title": "SONY PLAYSTATION",
+      "title": "SONY PLAYSTATION 5",
+      "console": {
+        "image": "/home/features/consoles/playstation.png",
+        "URL": "/"
+      },
+      "points": [
+        {
+          "image": "/home/features/points/cpu.png",
+          "title": "Processor",
+          "details": "AMD Ryzen Zen 8 Cores"
+        },
+        {
+          "image": "/home/features/points/gpu.png",
+          "title": "Graphics",
+          "details": "AMD Radeon RDNA 2"
+        },
+        {
+          "image": "/home/features/points/ram.png",
+          "title": "Memory",
+          "details": "16GB GDDR6/256-bit"
+        },
+        {
+          "image": "/home/features/points/ssd.png",
+          "title": "Storage",
+          "details": "1TB SSD Extendable"
+        },
+        {
+          "image": "/home/features/points/disk.png",
+          "title": "Disk",
+          "details": "4K UHD Blu-Ray 100GB/disk"
+        },
+        {
+          "image": "/home/features/points/optical-drive.png",
+          "title": "Optical Drive",
+          "details": "4K UHD Blu-Ray (66G/100G)"
+        },
+        {
+          "image": "/home/features/points/weight.png",
+          "title": "Weight",
+          "details": "4.5kg (Disk) & 3.9kg (Digital)"
+        },
+        {
+          "image": "/home/features/points/video.png",
+          "title": "Video",
+          "details": "Support of 4K 120Hz TVs"
+        },
+        {
+          "image": "/home/features/points/audio.png",
+          "title": "Audio",
+          "details": "Tempest 3D AudioTech"
+        }
+      ]
+    },
+    {
+      "title": "XBOX SERIES X",
+      "console": {
+        "image": "/home/features/consoles/xbox.png",
+        "URL": "/"
+      },
+      "points": [
+        {
+          "image": "/home/features/points/cpu.png",
+          "title": "Processor",
+          "details": " 8X Cores Custom Zen 2"
+        },
+        {
+          "image": "/home/features/points/gpu.png",
+          "title": "Graphics",
+          "details": "52 CUs Custom RDNA 2"
+        },
+        {
+          "image": "/home/features/points/ram.png",
+          "title": "Memory",
+          "details": "16GB GDDR6 Bit-Wide Bus"
+        },
+        {
+          "image": "/home/features/points/ssd.png",
+          "title": "Storage",
+          "details": "1TB NVME SSD Expandable"
+        },
+        {
+          "image": "/home/features/points/disk.png",
+          "title": "Disk",
+          "details": "4K UHD Blu-Ray 100GB/disk"
+        },
+        {
+          "image": "/home/features/points/optical-drive.png",
+          "title": "Optical Drive",
+          "details": "4K UHD Blu-Ray"
+        },
+        {
+          "image": "/home/features/points/weight.png",
+          "title": "Weight",
+          "details": "4.5kg (Physical)"
+        },
+        {
+          "image": "/home/features/points/video.png",
+          "title": "Video",
+          "details": "4K UHD to 8K HDR"
+        },
+        {
+          "image": "/home/features/points/audio.png",
+          "title": "Audio",
+          "details": "Dolby TrueHD with Atmos"
+        }
+      ]
+    },
+    {
+      "title": "NINTENDO SWITCH PRO",
       "console": {
         "image": "/home/features/consoles/playstation.png",
         "URL": "/"
@@ -126,12 +234,12 @@
         {
           "image": "/home/features/points/disk.png",
           "title": "Disk",
-          "details": "Ultra HD Blu-ray 100GB/disk"
+          "details": "4K UHD Blu-Ray 100GB/disk"
         },
         {
           "image": "/home/features/points/optical-drive.png",
           "title": "Optical Drive",
-          "details": "Ultra HD Blu-ray (66G/100G)"
+          "details": "4K UHD Blu-Ray (66G/100G)"
         },
         {
           "image": "/home/features/points/weight.png",
