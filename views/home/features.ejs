@@ -1,26 +1,25 @@
-<article class="features-carousel">
-  <% features.forEach((slide) => { %>
-  <div class="feature-slide">
-    <h2 class="feature-slide-title"><%= slide.title %></h2>
-    <img class="feature-slide-image" src="<%= slide.image %>" />
+<article class="features-block">
+  <div class="features-carousel">
+    <% features.forEach((slide) => { %>
+    <div class="feature-slide">
+      <h2 class="feature-slide-title"><%= slide.title %></h2>
 
-    <div class="feature-points-container">
-      <% slide.points.forEach((point) => { %>
-      <div class="feature-point">
-        <div class="feature-point-header">
-          <img class="feature-point-image" src="<%= point.image %>" />
-          <h4 class="feature-point-title"><%= point.title %></h4>
-        </div>
-
-        <p class="feature-point-details"><%= point.details %></p>
+      <div class="feature-console-container">
+        <%- include("./features/console.ejs", { console: slide.console }) %>
       </div>
-      <% }) %>
-    </div>
-  </div>
-  <% }) %>
 
-  <img
-    class="features-carousel-background"
-    src="/home/features/background.png"
-  />
+      <div class="feature-points-container">
+        <%- include("./features/point.ejs", { points: slide.points }) %>
+      </div>
+    </div>
+    <% }) %>
+  </div>
+
+  <div class="features-carousel-controller">
+    <div class="feature-indicator"></div>
+    <div class="feature-indicator"></div>
+    <div class="feature-indicator"></div>
+  </div>
+
+  <img class="features-block-background" src="/home/features/background.png" />
 </article>

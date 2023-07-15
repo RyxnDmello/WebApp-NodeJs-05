@@ -1,4 +1,5 @@
 @import url("./features/carousel.css");
+@import url("./features/controller.css");
 @import url("./features/point.css");
 
 #features {
@@ -7,4 +8,25 @@
   align-items: center;
   padding: 5rem 0;
   display: grid;
+}
+
+.features-block {
+  background-color: #00000050;
+  justify-content: center;
+  grid-auto-flow: column;
+  padding-right: 2.5rem;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  display: grid;
+}
+
+.features-block-background {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
 }

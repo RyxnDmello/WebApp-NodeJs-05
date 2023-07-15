@@ -98,52 +98,55 @@
   "features": [
     {
       "title": "SONY PLAYSTATION",
-      "image": "/home/features/consoles/playstation.png",
+      "console": {
+        "image": "/home/features/consoles/playstation.png",
+        "URL": "/"
+      },
       "points": [
         {
           "image": "/home/features/points/cpu.png",
-          "title": "CPU",
+          "title": "Processor",
           "details": "AMD Ryzen Zen 8 Cores"
         },
         {
           "image": "/home/features/points/gpu.png",
-          "title": "CPU",
-          "details": "AMD Ryzen Zen 8 Cores"
+          "title": "Graphics",
+          "details": "AMD Radeon RDNA 2"
         },
         {
           "image": "/home/features/points/ram.png",
-          "title": "CPU",
-          "details": "AMD Ryzen Zen 8 Cores"
+          "title": "Memory",
+          "details": "16GB GDDR6/256-bit"
         },
         {
           "image": "/home/features/points/ssd.png",
-          "title": "CPU",
-          "details": "AMD Ryzen Zen 8 Cores"
+          "title": "Storage",
+          "details": "825GB SSD Extendable"
         },
         {
           "image": "/home/features/points/disk.png",
-          "title": "CPU",
-          "details": "AMD Ryzen Zen 8 Cores"
+          "title": "Disk",
+          "details": "Ultra HD Blu-ray 100GB/disk"
         },
         {
           "image": "/home/features/points/optical-drive.png",
-          "title": "CPU",
-          "details": "AMD Ryzen Zen 8 Cores"
+          "title": "Optical Drive",
+          "details": "Ultra HD Blu-ray (66G/100G)"
         },
         {
           "image": "/home/features/points/weight.png",
-          "title": "CPU",
-          "details": "AMD Ryzen Zen 8 Cores"
+          "title": "Weight",
+          "details": "4.5kg (Disk) | 3.9kg (Digital)"
         },
         {
           "image": "/home/features/points/video.png",
-          "title": "CPU",
-          "details": "AMD Ryzen Zen 8 Cores"
+          "title": "Video",
+          "details": "Support of 4K 120Hz TVs"
         },
         {
           "image": "/home/features/points/audio.png",
-          "title": "CPU",
-          "details": "AMD Ryzen Zen 8 Cores"
+          "title": "Audio",
+          "details": "Tempest 3D AudioTech"
         }
       ]
     }

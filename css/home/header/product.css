@@ -120,7 +120,7 @@
 
 .header-product-shop-link::before {
   background-color: #fff;
-  transition: width 300ms;
+  transition: width 400ms;
   position: absolute;
   margin: 0 auto;
   height: 100%;

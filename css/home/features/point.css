@@ -6,14 +6,17 @@
   grid-template-columns: repeat(3, auto);
   justify-content: center;
   align-items: center;
-  gap: 2rem 4rem;
   display: grid;
+  gap: 1rem;
 }
 
 .feature-point {
+  border: 2px solid #ffffff20;
   grid-template-columns: auto;
   justify-content: left;
   align-items: center;
+  border-radius: 5px;
+  padding: 1rem;
   display: grid;
 }
 
@@ -31,17 +34,56 @@
 
 .feature-point-title {
   font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
   font-size: 1.5rem;
-  font-weight: 200;
+  font-weight: 300;
   cursor: default;
   color: #fff;
 }
 
 .feature-point-details {
   font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #bbbbbb;
   font-size: 1rem;
-  font-weight: 200;
   cursor: default;
+}
+
+/*-----------------------------------------*/
+/*----------- CONSOLE CONTAINER -----------*/
+/*-----------------------------------------*/
+
+.feature-console-container {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.feature-console-image {
+  width: 500px;
+}
+
+.feature-link {
+  border: 2px solid #fff;
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  padding: 0.25rem 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.feature-link-image {
+  width: 20px;
+}
+
+.feature-link-text {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 400;
   color: #fff;
 }
 

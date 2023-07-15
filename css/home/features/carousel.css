@@ -8,10 +8,9 @@
   grid-auto-flow: column;
   align-items: center;
   position: relative;
-  border-radius: 5px;
   overflow: hidden;
+  padding: 2.5rem;
   display: grid;
-  padding: 4rem;
 }
 
 .features-carousel-background {
@@ -23,11 +22,15 @@
   top: 0;
 }
 
+/*----------------------------------------*/
+/*------------- SLIDE STYLES -------------*/
+/*----------------------------------------*/
+
 .feature-slide {
   grid-template-columns: repeat(2, auto);
   justify-content: center;
   align-items: center;
-  gap: 4rem 2rem;
+  gap: 2.5rem 2rem;
   display: grid;
 }
 
@@ -39,10 +42,6 @@
   font-size: 5rem;
   cursor: default;
   color: #fff;
-}
-
-.feature-slide-image {
-  width: 500px;
 }
 
 /*----------------------------------------------*/

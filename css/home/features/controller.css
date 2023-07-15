@@ -1,0 +1,22 @@
+/*---------------------------------------------*/
+/*------------- CONTROLLER STYLES -------------*/
+/*---------------------------------------------*/
+
+.features-carousel-controller {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.feature-indicator {
+  background-color: #fff;
+  border-radius: 40px;
+  height: 20px;
+  width: 20px;
+}
+
+/*----------------------------------------*/
+/*-------------- END OF CSS --------------*/
+/*----------------------------------------*/
