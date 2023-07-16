@@ -66,9 +66,11 @@
 }
 
 .feature-link {
+  transition: background-color 450ms, translate 125ms;
   border: 2px solid #fff;
   justify-content: center;
   grid-auto-flow: column;
+  border-radius: 2.5px;
   align-items: center;
   padding: 0.25rem 0;
   display: grid;
@@ -76,15 +78,37 @@
 }
 
 .feature-link-image {
+  transition: filter 450ms;
   width: 20px;
 }
 
 .feature-link-text {
   font-family: "Poppins", sans-serif;
+  transition: color 450ms;
   letter-spacing: 1px;
   font-size: 1.2rem;
   font-weight: 400;
   color: #fff;
+}
+
+/*---------------------------------------*/
+/*------------- TRANSITIONS -------------*/
+/*---------------------------------------*/
+
+.feature-link:hover {
+  background-color: #fff;
+}
+
+.feature-link:focus {
+  translate: 0 5px;
+}
+
+.feature-link:hover .feature-link-image {
+  filter: invert(1);
+}
+
+.feature-link:hover .feature-link-text {
+  color: #000;
 }
 
 /*--------------------------------------*/

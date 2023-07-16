@@ -24,23 +24,23 @@
       [
         "EVERY GAMERS PARADISE",
         {
-          "image": "/home/header/playstation/playstation.png",
+          "image": "/home/header/consoles/playstation.png",
           "title": "PlayStation 5",
-          "description": "1TB SSD",
+          "description": "DualSense Included",
           "products": [],
           "URL": "/"
         },
         {
-          "image": "/home/header/xbox/xbox.png",
+          "image": "/home/header/consoles/xbox.png",
           "title": "Xbox Series X",
-          "description": "1TB SSD",
+          "description": "Xbox Controller Included",
           "products": [],
           "URL": "/"
         },
         {
-          "image": "/home/header/switch/switch.png",
+          "image": "/home/header/consoles/switch.png",
           "title": "Nintendo Switch",
-          "description": "1TB SSD",
+          "description": "Switch Doc & Joy-Con",
           "products": [],
           "URL": "/"
         }
@@ -48,23 +48,23 @@
       [
         "CONTROL EVERY PIXEL",
         {
-          "image": "/home/header/playstation/controller.png",
+          "image": "/home/header/controllers/playstation.png",
           "title": "DualSense",
-          "description": "",
+          "description": "Type-C Wire Included",
           "products": [],
           "URL": "/"
         },
         {
-          "image": "/home/header/xbox/controller.png",
+          "image": "/home/header/controllers/xbox.png",
           "title": "Xbox Original",
-          "description": "",
+          "description": "Type-C Wire Included",
           "products": [],
           "URL": "/"
         },
         {
-          "image": "/home/header/switch/controller.png",
+          "image": "/home/header/controllers/switch.png",
           "title": "Switch Pro",
-          "description": "",
+          "description": "USB Wire Included",
           "products": [],
           "URL": "/"
         }
@@ -72,23 +72,23 @@
       [
         "FEEL THE SOUND WAVES",
         {
-          "image": "/home/header/playstation/headphone.png",
+          "image": "/home/header/headphones/playstation.png",
           "title": "PS5 Pulse 3D",
-          "description": "",
+          "description": "Mic Extension Included",
           "products": [],
           "URL": "/"
         },
         {
-          "image": "/home/header/xbox/headphone.png",
+          "image": "/home/header/headphones/xbox.png",
           "title": "Xbox Original",
-          "description": "",
+          "description": "Mic Extension Fixed",
           "products": [],
           "URL": "/"
         },
         {
-          "image": "/home/header/switch/headphone.png",
+          "image": "/home/header/headphones/switch.png",
           "title": "Switch WiredSet",
-          "description": "",
+          "description": "Mic Extension Fixed",
           "products": [],
           "URL": "/"
         }
@@ -131,7 +131,7 @@
         {
           "image": "/home/features/points/optical-drive.png",
           "title": "Optical Drive",
-          "details": "4K UHD Blu-Ray (66G/100G)"
+          "details": "4K Blu-Ray (66G/100G)"
         },
         {
           "image": "/home/features/points/weight.png",
@@ -207,54 +207,54 @@
     {
       "title": "NINTENDO SWITCH PRO",
       "console": {
-        "image": "/home/features/consoles/playstation.png",
+        "image": "/home/features/consoles/switch.png",
         "URL": "/"
       },
       "points": [
         {
           "image": "/home/features/points/cpu.png",
           "title": "Processor",
-          "details": "AMD Ryzen Zen 8 Cores"
+          "details": "NVIDIA Custom Tegra"
         },
         {
           "image": "/home/features/points/gpu.png",
           "title": "Graphics",
-          "details": "AMD Radeon RDNA 2"
+          "details": "NVIDIA Custom Tegra"
         },
         {
           "image": "/home/features/points/ram.png",
           "title": "Memory",
-          "details": "16GB GDDR6/256-bit"
+          "details": "16GB GDDR4"
         },
         {
           "image": "/home/features/points/ssd.png",
           "title": "Storage",
-          "details": "825GB SSD Extendable"
+          "details": "32GB Expandable (2TB)"
         },
         {
           "image": "/home/features/points/disk.png",
           "title": "Disk",
-          "details": "4K UHD Blu-Ray 100GB/disk"
+          "details": "Switch Game Cards"
         },
         {
           "image": "/home/features/points/optical-drive.png",
           "title": "Optical Drive",
-          "details": "4K UHD Blu-Ray (66G/100G)"
+          "details": "4K UHD Blu-Ray"
         },
         {
           "image": "/home/features/points/weight.png",
           "title": "Weight",
-          "details": "4.5kg (Disk) | 3.9kg (Digital)"
+          "details": "0.4kg with Joy-Con"
         },
         {
           "image": "/home/features/points/video.png",
           "title": "Video",
-          "details": "Support of 4K 120Hz TVs"
+          "details": "720p (Built-in) & 1080p (TV)"
         },
         {
           "image": "/home/features/points/audio.png",
           "title": "Audio",
-          "details": "Tempest 3D AudioTech"
+          "details": "5.1ch Linear PCM or HDMI"
         }
       ]
     }
