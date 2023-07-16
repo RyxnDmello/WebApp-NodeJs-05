@@ -3,6 +3,7 @@
 @import url("./home/navbar.css");
 @import url("./home/header.css");
 @import url("./home/features.css");
+@import url("./home/games.css");
 
 * {
   scroll-behavior: smooth;

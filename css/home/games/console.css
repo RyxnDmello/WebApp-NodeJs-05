@@ -1,0 +1,23 @@
+/*--------------------------------------------*/
+/*-------------- CONSOLE STYLES --------------*/
+/*--------------------------------------------*/
+
+.games-console-container {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+}
+
+.game-console-title {
+  font-family: "Acquire Light", sans-serif;
+  letter-spacing: 2.5px;
+  font-weight: 100;
+  font-size: 4rem;
+  color: #fff;
+}
+
+/*----------------------------------------*/
+/*-------------- END OF CSS --------------*/
+/*----------------------------------------*/

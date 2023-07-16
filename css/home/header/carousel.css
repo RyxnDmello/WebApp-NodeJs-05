@@ -16,7 +16,7 @@
 .header-carousel-slide {
   grid-template-columns: repeat(3, auto);
   justify-content: space-between;
-  transition: translate 500ms;
+  transition: translate 600ms;
   align-items: start;
   width: 1174px;
   display: grid;
@@ -26,7 +26,7 @@
 .header-carousel-slide-title {
   font-family: "Acquire Light", sans-serif;
   text-shadow: 0 0 10px #000000a0;
-  letter-spacing: 0.5px;
+  letter-spacing: 2.5px;
   grid-column: span 3;
   text-align: center;
   font-weight: 100;

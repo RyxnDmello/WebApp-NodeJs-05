@@ -1,0 +1,23 @@
+@import url("./games/console.css");
+@import url("./games/game.css");
+
+#games {
+  box-shadow: 0 0 20px #00000080;
+  background-color: #00000050;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 4rem 0;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.game-background {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+}
