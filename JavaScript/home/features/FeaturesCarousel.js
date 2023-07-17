@@ -6,10 +6,10 @@ const width = carousel.clientWidth - 40;
 const duration = 550;
 
 export default function FeaturesCarousel() {
-  Controller();
+  CarouselController();
 }
 
-function Controller() {
+function CarouselController() {
   indicators.forEach((indicator, index) => {
     indicator.addEventListener("click", () => {
       CarouselMoveSlides(index);

@@ -21,6 +21,7 @@ app.get("/", (req, res) => {
     navbar: HomeTemplate.navbar,
     header: HomeTemplate.header,
     features: HomeTemplate.features,
+    games: HomeTemplate.games,
   });
 });
 

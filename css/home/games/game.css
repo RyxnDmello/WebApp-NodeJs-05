@@ -4,6 +4,7 @@
 
 .game {
   border: 2px solid #ffffff25;
+  transition: translate 350ms;
   grid-template-columns: auto;
   justify-content: center;
   align-items: center;
@@ -13,6 +14,8 @@
 
 .game-image {
   border-radius: 2.5px;
+  object-fit: cover;
+  height: 300px;
   width: 100%;
 }
 
@@ -52,6 +55,14 @@
   color: #acacac;
   cursor: default;
   font-size: 1rem;
+}
+
+/*-------------------------------------------*/
+/*--------------- TRANSITIONS ---------------*/
+/*-------------------------------------------*/
+
+.game:hover {
+  translate: 0 -15px;
 }
 
 /*------------------------------------------*/

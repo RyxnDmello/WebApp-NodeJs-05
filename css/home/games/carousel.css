@@ -1,6 +1,6 @@
-/*--------------------------------------------*/
-/*-------------- CONSOLE STYLES --------------*/
-/*--------------------------------------------*/
+/*---------------------------------------------*/
+/*-------------- CAROUSEL STYLES --------------*/
+/*---------------------------------------------*/
 
 .games-carousel {
   justify-content: start;
@@ -16,9 +16,9 @@
   grid-template-columns: repeat(5, auto);
   justify-content: center;
   align-items: start;
+  gap: 2.5rem 2rem;
   display: grid;
   width: 1416px;
-  gap: 2rem;
 }
 
 .games-slide-title {

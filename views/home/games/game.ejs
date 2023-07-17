@@ -1,0 +1,17 @@
+<% games.forEach((slide, i) => { %>
+<div class="games-slide">
+  <h4 class="games-slide-title"><%= i + 1 %> <%= slide.title %></h4>
+
+  <% slide.games.forEach((game) => { %>
+  <div class="game">
+    <img class="game-image" src="<%= game.image %>" />
+
+    <div class="game-details">
+      <h4 class="game-title"><%= game.title %></h4>
+      <hr class="game-details-divider" />
+      <p class="game-description"><%= game.description %></p>
+    </div>
+  </div>
+  <% }) %>
+</div>
+<% }) %>

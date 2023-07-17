@@ -1,8 +1,9 @@
-@import url("./games/console.css");
+@import url("./games/carousel.css");
+@import url("./games/controller.css");
 @import url("./games/game.css");
 
 #games {
-  box-shadow: 0 0 20px #00000080;
+  box-shadow: 0 0 20px #000000af;
   background-color: #00000050;
   grid-template-columns: auto;
   justify-content: center;
@@ -10,6 +11,7 @@
   align-items: center;
   position: relative;
   display: grid;
+  gap: 2.5rem;
 }
 
 .game-background {

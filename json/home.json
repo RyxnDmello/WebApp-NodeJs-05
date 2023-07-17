@@ -258,5 +258,97 @@
         }
       ]
     }
+  ],
+  "games": [
+    {
+      "title": "PLAYSTATION 5 EXCLUSIVES",
+      "games": [
+        {
+          "image": "/shop/games/spiderman-miles-morales.png",
+          "title": "Spiderman: Miles Morales",
+          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
+        },
+        {
+          "image": "/shop/games/ghost-of-tsushima.png",
+          "title": "Ghost of Tsushima",
+          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
+        },
+        {
+          "image": "/shop/games/gran-turismo.png",
+          "title": "Gran Turismo",
+          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
+        },
+        {
+          "image": "/shop/games/ratchet-and-clank.png",
+          "title": "Ratchet & Clank",
+          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
+        },
+        {
+          "image": "/shop/games/uncharted.png",
+          "title": "Uncharted: The Collection",
+          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
+        }
+      ]
+    },
+    {
+      "title": "PLAYSTATION 5 EXCLUSIVES",
+      "games": [
+        {
+          "image": "/shop/games/spiderman-miles-morales.png",
+          "title": "Spiderman: Miles Morales",
+          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
+        },
+        {
+          "image": "/shop/games/ghost-of-tsushima.png",
+          "title": "Ghost of Tsushima",
+          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
+        },
+        {
+          "image": "/shop/games/gran-turismo.png",
+          "title": "Gran Turismo",
+          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
+        },
+        {
+          "image": "/shop/games/ratchet-and-clank.png",
+          "title": "Ratchet & Clank",
+          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
+        },
+        {
+          "image": "/shop/games/uncharted.png",
+          "title": "Uncharted: The Collection",
+          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
+        }
+      ]
+    },
+    {
+      "title": "PLAYSTATION 5 EXCLUSIVES",
+      "games": [
+        {
+          "image": "/shop/games/spiderman-miles-morales.png",
+          "title": "Spiderman: Miles Morales",
+          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
+        },
+        {
+          "image": "/shop/games/ghost-of-tsushima.png",
+          "title": "Ghost of Tsushima",
+          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
+        },
+        {
+          "image": "/shop/games/gran-turismo.png",
+          "title": "Gran Turismo",
+          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
+        },
+        {
+          "image": "/shop/games/ratchet-and-clank.png",
+          "title": "Ratchet & Clank",
+          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
+        },
+        {
+          "image": "/shop/games/uncharted.png",
+          "title": "Uncharted: The Collection",
+          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
+        }
+      ]
+    }
   ]
 }

@@ -4,7 +4,8 @@
   "description": "E-Commerce Web Application",
   "main": "index.js",
   "scripts": {
-    "test": "cls & node --version & npm --version & npm list"
+    "test": "cls & node --version & npm --version & npm list",
+    "run": "cls & nodemon index.js"
   },
   "keywords": [
     "E-Commerce",
