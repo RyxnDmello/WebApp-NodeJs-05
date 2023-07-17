@@ -2,19 +2,32 @@
 /*-------------- CONSOLE STYLES --------------*/
 /*--------------------------------------------*/
 
-.games-console-container {
-  grid-template-columns: auto;
-  justify-content: center;
+.games-carousel {
+  justify-content: start;
+  grid-auto-flow: column;
   align-items: center;
+  padding-top: 2rem;
+  overflow: hidden;
+  width: 1416px;
   display: grid;
+}
+
+.games-slide {
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+  align-items: start;
+  display: grid;
+  width: 1416px;
   gap: 2rem;
 }
 
-.game-console-title {
+.games-slide-title {
   font-family: "Acquire Light", sans-serif;
   letter-spacing: 2.5px;
+  grid-column: span 5;
+  font-size: 4.5rem;
   font-weight: 100;
-  font-size: 4rem;
+  cursor: default;
   color: #fff;
 }
 

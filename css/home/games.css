@@ -6,11 +6,10 @@
   background-color: #00000050;
   grid-template-columns: auto;
   justify-content: center;
+  padding: 2rem 2.5rem;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
   display: grid;
-  gap: 1.5rem;
 }
 
 .game-background {
