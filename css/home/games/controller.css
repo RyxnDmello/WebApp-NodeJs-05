@@ -14,6 +14,7 @@
 /*-----------------------------------*/
 
 .games-link {
+  transition: background-color 450ms, translate 125ms;
   border: 2px solid #fff;
   justify-content: center;
   grid-auto-flow: column;
@@ -25,11 +26,13 @@
 }
 
 .games-link-image {
+  transition: filter 450ms;
   width: 22.5px;
 }
 
 .games-link-text {
   font-family: "Poppins", sans-serif;
+  transition: color 450ms;
   letter-spacing: 0.5px;
   font-size: 1.2rem;
   font-weight: 400;
@@ -49,14 +52,35 @@
 }
 
 .games-controller-button {
-  transition: translate 150ms, opacity 350ms;
+  transition: translate 450ms, opacity 450ms;
+  cursor: pointer;
   opacity: 0.25;
-  width: 50px;
+  width: 40px;
 }
 
 .games-controller-button:nth-of-type(1) {
   translate: 0 -10px;
   opacity: 1;
+}
+
+/*-----------------------------------------*/
+/*-------------- TRANSITIONS --------------*/
+/*-----------------------------------------*/
+
+.games-link:hover {
+  background-color: #fff;
+}
+
+.games-link:focus {
+  translate: 0 5px;
+}
+
+.games-link:hover .games-link-image {
+  filter: invert(1);
+}
+
+.games-link:hover .games-link-text {
+  color: #000;
 }
 
 /*--------------------------------------------*/

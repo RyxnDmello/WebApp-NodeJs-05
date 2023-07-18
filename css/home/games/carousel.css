@@ -31,6 +31,42 @@
   color: #fff;
 }
 
+/*--------------------------------------*/
+/*------------- ANIMATIONS -------------*/
+/*--------------------------------------*/
+
+.game-fade-out {
+  animation: GameFadeOut 200ms ease-in forwards;
+}
+
+@keyframes GameFadeOut {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-15px);
+    opacity: 0;
+  }
+}
+
+.game-fade-in {
+  animation: GameFadeIn 200ms ease-in forwards;
+}
+
+@keyframes GameFadeIn {
+  0% {
+    transform: translateY(-15px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /*----------------------------------------*/
 /*-------------- END OF CSS --------------*/
 /*----------------------------------------*/
