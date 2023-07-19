@@ -48,17 +48,21 @@
   grid-auto-flow: column;
   align-items: center;
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .games-controller-button {
-  transition: translate 450ms, opacity 450ms;
+  transition: background-color 450ms, opacity 450ms, translate 450ms;
+  border: 2px solid #fff;
+  border-radius: 40px;
   cursor: pointer;
   opacity: 0.25;
-  width: 40px;
+  height: 25px;
+  width: 25px;
 }
 
 .games-controller-button:nth-of-type(1) {
+  background-color: #fff;
   translate: 0 -10px;
   opacity: 1;
 }

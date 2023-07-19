@@ -261,7 +261,7 @@
   ],
   "games": [
     {
-      "title": "PLAYSTATION 5 EXCLUSIVES",
+      "title": "EVERY TOUCH INSPIRES SKILL",
       "games": [
         {
           "image": "/shop/games/spiderman-miles-morales.png",
@@ -291,21 +291,21 @@
       ]
     },
     {
-      "title": "PLAYSTATION 5 EXCLUSIVES",
+      "title": "YOUR WORLD IN YOUR STYLE",
       "games": [
         {
-          "image": "/shop/games/spiderman-miles-morales.png",
-          "title": "Spiderman: Miles Morales",
+          "image": "/shop/games/cyberpunk.png",
+          "title": "Cyberpunk",
           "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
         },
         {
-          "image": "/shop/games/ghost-of-tsushima.png",
-          "title": "Ghost of Tsushima",
+          "image": "/shop/games/returnal.png",
+          "title": "Returnal",
           "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
         },
         {
-          "image": "/shop/games/gran-turismo.png",
-          "title": "Gran Turismo",
+          "image": "/shop/games/street-fighter.png",
+          "title": "Street Fighter 6",
           "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
         },
         {
@@ -321,7 +321,7 @@
       ]
     },
     {
-      "title": "PLAYSTATION 5 EXCLUSIVES",
+      "title": "EXPERIENCE EVERY PIXEL",
       "games": [
         {
           "image": "/shop/games/spiderman-miles-morales.png",

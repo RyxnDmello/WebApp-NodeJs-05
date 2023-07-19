@@ -2,6 +2,8 @@
   <%- include("./games/game.ejs", { games: games }) %>
 </div>
 
-<div class="games-controller"><%- include("./games/controller.ejs") %></div>
+<div class="games-controller">
+  <%- include("./games/controller.ejs", { total: games.length }) %>
+</div>
 
 <img class="game-background" src="/home/games/background.png" />

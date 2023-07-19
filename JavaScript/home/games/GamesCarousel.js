@@ -30,9 +30,11 @@ function CarouselMoveSlides(index) {
 function ControllerAnimation(index) {
   buttons.forEach((button, currentIndex) => {
     if (currentIndex === index) {
+      button.style.backgroundColor = "#fff";
       button.style.translate = "0 -10px";
       button.style.opacity = 1;
     } else {
+      button.style.backgroundColor = "transparent";
       button.style.translate = "0 0";
       button.style.opacity = 0.25;
     }
