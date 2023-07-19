@@ -1,0 +1,19 @@
+/*---------------------------------------------*/
+/*------------- CONTROLLER STYLES -------------*/
+/*---------------------------------------------*/
+
+.details-controller {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.details-controller-button {
+  width: 50px;
+}
+
+/*--------------------------------------*/
+/*------------- END OF CSS -------------*/
+/*--------------------------------------*/

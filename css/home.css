@@ -4,6 +4,7 @@
 @import url("./home/header.css");
 @import url("./home/features.css");
 @import url("./home/games.css");
+@import url("./home/details.css");
 
 * {
   scroll-behavior: smooth;

@@ -1,0 +1,22 @@
+/*-----------------------------------------------*/
+/*--------------- CAROUSEL STYLES ---------------*/
+/*-----------------------------------------------*/
+
+.details-carousel {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
+.details-slide {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+/*--------------------------------------*/
+/*------------- END OF CSS -------------*/
+/*--------------------------------------*/

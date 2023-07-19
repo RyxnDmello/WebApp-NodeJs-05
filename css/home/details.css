@@ -1,0 +1,12 @@
+@import url("./details/carousel.css");
+@import url("./details/controller.css");
+@import url("./details/block.css");
+
+#details {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  padding: 4rem 0;
+  display: grid;
+  gap: 2rem;
+}
