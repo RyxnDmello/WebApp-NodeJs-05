@@ -264,28 +264,28 @@
       "title": "EVERY TOUCH INSPIRES SKILL",
       "games": [
         {
-          "image": "/shop/games/spiderman-miles-morales.png",
-          "title": "Spiderman: Miles Morales",
+          "image": "/shop/games/spiderman-2.png",
+          "title": "Spiderman 2",
           "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
         },
         {
-          "image": "/shop/games/ghost-of-tsushima.png",
-          "title": "Ghost of Tsushima",
+          "image": "/shop/games/red-dead-redemption.png",
+          "title": "Red Dead Redemption 2",
           "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
         },
         {
-          "image": "/shop/games/gran-turismo.png",
-          "title": "Gran Turismo",
+          "image": "/shop/games/god-of-war-ragnarok.png",
+          "title": "God of War Ragnarok",
           "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
         },
         {
-          "image": "/shop/games/ratchet-and-clank.png",
-          "title": "Ratchet & Clank",
+          "image": "/shop/games/watch-dogs-legion.png",
+          "title": "Watch Dogs: Legion",
           "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
         },
         {
-          "image": "/shop/games/uncharted.png",
-          "title": "Uncharted: The Collection",
+          "image": "/shop/games/days-gone.png",
+          "title": "Days Gone",
           "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
         }
       ]
@@ -294,38 +294,48 @@
       "title": "YOUR WORLD IN YOUR STYLE",
       "games": [
         {
-          "image": "/shop/games/cyberpunk.png",
-          "title": "Cyberpunk",
+          "image": "/shop/games/spiderman-miles-morales.png",
+          "title": "Spiderman: Miles Morales",
           "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
         },
         {
-          "image": "/shop/games/returnal.png",
-          "title": "Returnal",
+          "image": "/shop/games/resident-evil.png",
+          "title": "Resident Evil 4",
           "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
         },
         {
-          "image": "/shop/games/street-fighter.png",
-          "title": "Street Fighter 6",
+          "image": "/shop/games/hogwarts-legacy.png",
+          "title": "Hogwarts Legacy",
           "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
         },
         {
-          "image": "/shop/games/ratchet-and-clank.png",
-          "title": "Ratchet & Clank",
+          "image": "/shop/games/call-of-duty-warzone.png",
+          "title": "Call of Duty: Warzone",
           "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
         },
         {
-          "image": "/shop/games/uncharted.png",
-          "title": "Uncharted: The Collection",
+          "image": "/shop/games/forza-horizon-5.png",
+          "title": "Forza Horizon 5",
           "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
         }
       ]
     },
     {
-      "title": "EXPERIENCE EVERY PIXEL",
+      "title": "EXPERIENCE EVERY PARTICLE",
       "games": [
         {
-          "image": "/shop/games/spiderman-miles-morales.png",
-          "title": "Spiderman: Miles Morales",
+          "image": "/shop/games/spiderman-1.png",
+          "title": "Spiderman",
+          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
+        },
+        {
+          "image": "/shop/games/call-of-duty-modern-warfare.png",
+          "title": "Call of Duty: MW 2",
+          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
+        },
+        {
+          "image": "/shop/games/the-last-of-us.png",
+          "title": "The Last of Us 2",
           "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
         },
         {
@@ -334,18 +344,8 @@
           "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
         },
         {
-          "image": "/shop/games/gran-turismo.png",
-          "title": "Gran Turismo",
-          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
-        },
-        {
-          "image": "/shop/games/ratchet-and-clank.png",
-          "title": "Ratchet & Clank",
-          "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
-        },
-        {
-          "image": "/shop/games/uncharted.png",
-          "title": "Uncharted: The Collection",
+          "image": "/shop/games/cyberpunk.png",
+          "title": "Cyberpunk",
           "description": "An immersive superhero experience set in snowy New York City. Control Miles as he battles enemies and learns to embraces his role as the new Spider-Man."
         }
       ]
