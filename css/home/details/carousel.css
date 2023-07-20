@@ -7,9 +7,9 @@
   justify-content: start;
   grid-auto-flow: column;
   align-items: center;
-  border-radius: 10px;
   position: relative;
   padding: 2rem 4rem;
+  border-radius: 5px;
   overflow: hidden;
   width: 1128px;
   display: grid;

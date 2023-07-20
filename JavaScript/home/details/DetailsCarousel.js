@@ -1,8 +1,8 @@
 const carousel = document.querySelector(".details-carousel");
 const slides = document.querySelectorAll(".details-slide");
 const buttons = document.querySelectorAll(".details-controller-button");
-const upperBlocks = document.querySelectorAll(".details-block.block-1");
-const lowerBlocks = document.querySelectorAll(".details-block.block-2");
+const upperBlocks = document.querySelectorAll(".details-block.block-left");
+const lowerBlocks = document.querySelectorAll(".details-block.block-right");
 
 const width = carousel.clientWidth - 64;
 
@@ -19,7 +19,7 @@ function CarouselController() {
 }
 
 function CarouselMoveSlides(index) {
-  CarouselAnimation(slides[index], 0);
+  CarouselAnimation(0);
 
   setTimeout(() => {
     slides.forEach((slide) => {
@@ -27,10 +27,10 @@ function CarouselMoveSlides(index) {
     });
   }, 500);
 
-  CarouselAnimation(slides[index], 505);
+  CarouselAnimation(505);
 }
 
-function CarouselAnimation(slide, duration) {
+function CarouselAnimation(duration) {
   setTimeout(() => {
     upperBlocks.forEach((upperBlock) => {
       if (upperBlock.classList.contains("details-block-fade-out-left")) {
