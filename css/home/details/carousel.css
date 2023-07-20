@@ -3,10 +3,24 @@
 /*-----------------------------------------------*/
 
 .details-carousel {
+  box-shadow: 0 0 20px #000000a0;
   justify-content: center;
   grid-auto-flow: column;
   align-items: center;
+  border-radius: 10px;
+  position: relative;
+  padding: 2rem 4rem;
+  overflow: hidden;
   display: grid;
+}
+
+.details-carousel-background {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
 }
 
 .details-slide {

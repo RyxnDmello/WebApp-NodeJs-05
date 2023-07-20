@@ -7,10 +7,86 @@
   grid-auto-flow: column;
   align-items: center;
   display: grid;
+  width: 1000px;
+  gap: 2rem;
 }
 
 .details-block-image {
-  width: 350px;
+  width: 400px;
+}
+
+/*----------------------------------------*/
+/*---------- INFORMATION STYLES ----------*/
+/*----------------------------------------*/
+
+.details-block-information {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+}
+
+/*---------------------------------------*/
+/*------------ POINTS STYLES ------------*/
+/*---------------------------------------*/
+
+.details-block-points {
+  grid-auto-flow: column;
+  justify-content: left;
+  align-items: center;
+  display: grid;
+  gap: 4rem;
+}
+
+.details-block-point {
+  transition: translate 350ms, opacity 150ms;
+  position: relative;
+  cursor: pointer;
+  opacity: 0.25;
+  width: 65px;
+}
+
+.details-block-point::after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  margin: 0 auto;
+  height: 10px;
+  width: 10px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.details-block-point:nth-of-type(1) {
+  translate: 0 -10px;
+  opacity: 1;
+}
+
+/*----------------------------------------*/
+/*---------- INFORMATION STYLES ----------*/
+/*----------------------------------------*/
+
+.details-block-info {
+  grid-template-columns: auto;
+  justify-content: left;
+  align-items: center;
+  display: grid;
+}
+
+.details-block-info-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.details-block-info-description {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #b5b5b5;
+  font-size: 1rem;
 }
 
 /*--------------------------------------*/

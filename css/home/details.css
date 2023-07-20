@@ -5,7 +5,7 @@
 #details {
   justify-content: center;
   grid-auto-flow: column;
-  align-items: center;
+  align-items: start;
   padding: 4rem 0;
   display: grid;
   gap: 2rem;
