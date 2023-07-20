@@ -41,22 +41,9 @@
 
 .details-block-point {
   transition: translate 350ms, opacity 150ms;
-  position: relative;
   cursor: pointer;
   opacity: 0.25;
   width: 65px;
-}
-
-.details-block-point::after {
-  content: "";
-  background-color: #fff;
-  position: absolute;
-  margin: 0 auto;
-  height: 10px;
-  width: 10px;
-  bottom: 0;
-  right: 0;
-  left: 0;
 }
 
 .details-block-point:nth-of-type(1) {
@@ -87,6 +74,74 @@
   font-weight: 300;
   color: #b5b5b5;
   font-size: 1rem;
+}
+
+/*--------------------------------------*/
+/*------------- ANIMATIONS -------------*/
+/*--------------------------------------*/
+
+.details-block-fade-out-left {
+  animation: DetailsBlockFadeOutLeft 600ms forwards;
+}
+
+@keyframes DetailsBlockFadeOutLeft {
+  0% {
+    translate: 0 0;
+    opacity: 1;
+  }
+  
+  100% {
+    translate: 35px 0;
+    opacity: 0;
+  }
+}
+
+.details-block-fade-out-right {
+  animation: DetailsBlockFadeOutRight 600ms forwards;
+}
+
+@keyframes DetailsBlockFadeOutRight {
+  0% {
+    translate: 0 0;
+    opacity: 1;
+  }
+  
+  100% {
+    translate: -35px 0;
+    opacity: 0;
+  }
+}
+
+.details-block-fade-in-right {
+  animation: DetailsBlockFadeInRight 500ms forwards;
+}
+
+@keyframes DetailsBlockFadeInRight {
+  0% {
+    translate: 35px 0;
+    opacity: 0;
+  }
+  
+  100% {
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+
+.details-block-fade-in-left {
+  animation: DetailsBlockFadeInLeft 500ms forwards;
+}
+
+@keyframes DetailsBlockFadeInLeft {
+  0% {
+    translate: -35px 0;
+    opacity: 0;
+  }
+  
+  100% {
+    translate: 0 0;
+    opacity: 1;
+  }
 }
 
 /*--------------------------------------*/
