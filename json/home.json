@@ -365,15 +365,15 @@
           ],
           "points": [
             {
-              "title": "Elegant & Beautiful",
-              "description": "Enjoy a beautifully designed console that enhances the modern look of your household. Designed with enriching materials, ensuring durability."
+              "title": "An Elegant & Beautiful Design",
+              "description": "Enjoy a beautifully designed console that enhances the modern look of your interiors. Designed with enriching materials, ensuring durability."
             },
             {
               "title": "Performance & Optimization",
               "description": "Developed with next generation performance optimizers, making sure that your game is smooth and beautiful at every frame, at all times."
             },
             {
-              "title": "Modern UI",
+              "title": "Simple & Modern UI",
               "description": "A modern interface with 4K Ultra HD graphics. With added accessibility features, everyone can enjoy games without any obstacles."
             },
             {
@@ -384,7 +384,7 @@
         }
       },
       {
-        "title": "THE CONSOLES",
+        "title": "THE XBOX SERIES",
         "image": "/home/details/consoles/xbox.png",
         "information": {
           "buttons": [
@@ -395,20 +395,20 @@
           ],
           "points": [
             {
-              "title": "Performance",
-              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+              "title": "A Clean & Modern Design",
+              "description": "The console shows off a simple yet beautiful design. With a powerful cooling system at the top, and a solid cage like armour all over."
             },
             {
-              "title": "Performance",
-              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+              "title": "Steady & Powerful Engine",
+              "description": "The Xbox is equipped with a powerful cooling system and a dynamic graphics optimizer to help render clean and beautiful frames."
             },
             {
-              "title": "Performance",
-              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+              "title": "Modern & Beautiful UI",
+              "description": "The user interface is designed to keep you engaged with smooth animations while maintaining its simple and modern design."
             },
             {
-              "title": "Performance",
-              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+              "title": "Speed & Optimization",
+              "description": "Integrated with the DDR4 memory card and a 1TB SDD, the console is powered to store and multiple games and applications at once."
             }
           ]
         }
@@ -416,7 +416,7 @@
     ],
     [
       {
-        "title": "THE CONSOLES",
+        "title": "THE DUALSENSE",
         "image": "/home/header/controllers/playstation.png",
         "information": {
           "buttons": [
@@ -427,26 +427,26 @@
           ],
           "points": [
             {
-              "title": "Performance",
-              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+              "title": "A Modern & Elegant Design",
+              "description": "The controller has a beautiful modern spaceship design with integrated sensors and feedback systems, to enhance your gaming experience."
             },
             {
-              "title": "Performance",
-              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+              "title": "Experience Reactive Vibrations",
+              "description": "The controller is equipped with sensors all around its body which react to game play triggers. Feel every pixel with every touch, as you explore."
             },
             {
-              "title": "Performance",
-              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+              "title": "Experience Responsive Audio",
+              "description": "Equipped with responsive audio systems, the volume and intensity of the sound effects can dynamically change for different actions."
             },
             {
-              "title": "Performance",
-              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+              "title": "Engaging & Enthralling",
+              "description": "Developed with multiple triggers and buttons, each equipped with sensors and feedback systems keeping game play engaging."
             }
           ]
         }
       },
       {
-        "title": "THE CONSOLES",
+        "title": "THE XBOX ORIGINAL",
         "image": "/home/header/controllers/xbox.png",
         "information": {
           "buttons": [
@@ -457,20 +457,20 @@
           ],
           "points": [
             {
-              "title": "Performance",
-              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+              "title": " A Beautiful & Sleek Design",
+              "description": "With its sleek and elegant design, the Xbox Series X Original controller takes the light. Integrated with multiple sensors and powerful systems."
             },
             {
-              "title": "Performance",
-              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+              "title": "Experience Trigger Responsiveness",
+              "description": "The controller can dynamically vibrate and react at different intensities to various trigger inputs, engaging the audience at every touch."
             },
             {
-              "title": "Performance",
-              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+              "title": "Experience Haptic Sensors",
+              "description": "Feel the vibrations as you stimulate your hands and fingers with every game play feedback. Enhancing the immersive game play experience."
             },
             {
-              "title": "Performance",
-              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+              "title": "Dynamic & Responsive Audio",
+              "description": "The controller is integrated with a responsive audio system that can dynamically adjust itself to game play feedback and trigger gestures."
             }
           ]
         }

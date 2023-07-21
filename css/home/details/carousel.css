@@ -2,21 +2,19 @@
 /*--------------- CAROUSEL STYLES ---------------*/
 /*-----------------------------------------------*/
 
-.details-carousel {
+.details-wrapper {
   box-shadow: 0 0 20px #000000af;
-  justify-content: start;
+  justify-content: space-between;
   grid-auto-flow: column;
   align-items: center;
-  position: relative;
-  padding: 2rem 4rem;
   border-radius: 5px;
+  position: relative;
   overflow: hidden;
-  width: 1128px;
+  padding: 0 4rem;
   display: grid;
-  gap: 4rem;
 }
 
-.details-carousel-background {
+.details-wrapper-background {
   position: absolute;
   object-fit: cover;
   height: 100%;
@@ -25,13 +23,29 @@
   top: 0;
 }
 
+/*--------------------------------------------*/
+/*------------- CAROUSEL & SLIDE -------------*/
+/*--------------------------------------------*/
+
+.details-carousel {
+  justify-content: start;
+  grid-auto-flow: column;
+  align-items: center;
+  position: relative;
+  padding: 1rem 4rem;
+  overflow: hidden;
+  width: 1128px;
+  display: grid;
+  gap: 4rem;
+}
+
 .details-slide {
   grid-template-columns: auto;
   justify-content: center;
   align-items: center;
   display: grid;
   width: 1000px;
-  gap: 2.5rem;
+  gap: 1.25rem;
 }
 
 /*--------------------------------------*/

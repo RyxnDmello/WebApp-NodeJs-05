@@ -3,18 +3,20 @@
 /*--------------------------------------------*/
 
 .details-block {
+  box-shadow: 0 0 20px #000000a0;
+  border: 2px solid #ffffff25;
   justify-content: center;
   grid-auto-flow: column;
+  padding: 1rem 2.5rem;
   align-items: center;
+  border-radius: 5px;
   display: grid;
-  width: 1000px;
   gap: 2rem;
 }
 
 .details-block-image {
   object-fit: cover;
-  max-height: 300px;
-  max-width: 400px;
+  width: 285px;
 }
 
 /*----------------------------------------*/
@@ -31,9 +33,9 @@
 
 .details-block-information-title {
   font-family: "Acquire Light", sans-serif;
-  letter-spacing: 1px;
   font-weight: 100;
   font-size: 4rem;
+  cursor: default;
   color: #fff;
 }
 
