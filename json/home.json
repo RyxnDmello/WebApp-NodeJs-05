@@ -354,7 +354,7 @@
   "details": [
     [
       {
-        "title": "THE CONSOLES",
+        "title": "THE PLAYSTATION",
         "image": "/home/details/consoles/playstation.png",
         "information": {
           "buttons": [
@@ -365,20 +365,20 @@
           ],
           "points": [
             {
-              "title": "Performance",
-              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+              "title": "Elegant & Beautiful",
+              "description": "Enjoy a beautifully designed console that enhances the modern look of your household. Designed with enriching materials, ensuring durability."
             },
             {
-              "title": "Performance",
-              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+              "title": "Performance & Optimization",
+              "description": "Developed with next generation performance optimizers, making sure that your game is smooth and beautiful at every frame, at all times."
             },
             {
-              "title": "Performance",
-              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+              "title": "Modern UI",
+              "description": "A modern interface with 4K Ultra HD graphics. With added accessibility features, everyone can enjoy games without any obstacles."
             },
             {
-              "title": "Performance",
-              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+              "title": "Storage & Memory",
+              "description": "The playstation ships with a 1TB SSD and DDR6 memory chip to make sure your games load and play faster and smoother than ever."
             }
           ]
         }

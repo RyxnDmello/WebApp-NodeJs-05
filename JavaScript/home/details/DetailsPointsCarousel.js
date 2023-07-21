@@ -50,11 +50,11 @@ function SlideAnimation(groupIndex, duration) {
 function ControllerAnimation(groupIndex, buttonIndex) {
   buttonGroups[groupIndex].forEach((button, currentButtonIndex) => {
     if (currentButtonIndex === buttonIndex) {
-      button.style.translate = "0 -10px";
+      button.style.scale = "1.2";
       button.style.opacity = "1";
     } else {
-      button.style.translate = "0 0";
       button.style.opacity = "0.25";
+      button.style.scale = "1";
     }
   });
 }

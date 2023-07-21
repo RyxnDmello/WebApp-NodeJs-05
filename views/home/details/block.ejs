@@ -2,6 +2,8 @@
   <img class="details-block-image" src="<%= slide[0].image %>" />
 
   <div class="details-block-information">
+    <h4 class="details-block-information-title"><%= slide[0].title %></h4>
+
     <div class="details-block-buttons">
       <% slide[0].information.buttons.forEach((button) => { %>
       <img class="details-block-button" src="<%= button %>" />
@@ -21,6 +23,8 @@
 
 <div class="details-block block-right">
   <div class="details-block-information">
+    <h4 class="details-block-information-title"><%= slide[1].title %></h4>
+
     <div class="details-block-buttons">
       <% slide[1].information.buttons.forEach((button) => { %>
       <img class="details-block-button" src="<%= button %>" />
