@@ -1,5 +1,3 @@
-const data = await fetch("/home.json").then((response) => response.json());
-
 const blockButtons = document.querySelectorAll(".details-block-button");
 const blockSlides = document.querySelectorAll(".details-block-point-slide");
 

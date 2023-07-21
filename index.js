@@ -22,6 +22,7 @@ app.get("/", (req, res) => {
     header: HomeTemplate.header,
     features: HomeTemplate.features,
     games: HomeTemplate.games,
+    details: HomeTemplate.details,
   });
 });
 

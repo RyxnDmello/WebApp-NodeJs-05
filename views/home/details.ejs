@@ -5,11 +5,11 @@
 </div>
 
 <article class="details-carousel">
-  <% for(let i = 0; i < 3; i++) { %>
+  <% details.forEach((slide) => { %>
   <div class="details-slide">
-    <%- include("./details/block.ejs", { slide: i }) %>
+    <%- include("./details/block.ejs", { slide: slide }) %>
   </div>
-  <% } %>
+  <% }) %>
 
   <img class="details-carousel-background" src="/home/details/background.png" />
 </article>

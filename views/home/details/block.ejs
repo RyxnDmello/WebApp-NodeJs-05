@@ -1,29 +1,20 @@
 <div class="details-block block-left">
-  <img
-    class="details-block-image"
-    src="/home/features/consoles/playstation.png"
-  />
+  <img class="details-block-image" src="<%= slide[0].image %>" />
 
   <div class="details-block-information">
     <div class="details-block-buttons">
-      <% for(let j = 0; j < 4; j++) { %>
-      <img class="details-block-button" src="/home/details/points/speed.png" />
-      <% } %>
+      <% slide[0].information.buttons.forEach((button) => { %>
+      <img class="details-block-button" src="<%= button %>" />
+      <% }) %>
     </div>
 
     <div class="details-block-point-carousel">
-      <% for(let j = 0; j < 4; j++) { %>
+      <% slide[0].information.points.forEach((point) => { %>
       <div class="details-block-point-slide">
-        <h4 class="details-block-point-title">Point <%= j + 1 %></h4>
-
-        <p class="details-block-point-description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
-          magnam distinctio modi fuga hic expedita nisi quidem deleniti, totam
-          laborum, autem cupiditate consequuntur eligendi aut provident velit
-          voluptates dolorem quos?
-        </p>
+        <h4 class="details-block-point-title"><%= point.title %></h4>
+        <p class="details-block-point-description"><%= point.description %></p>
       </div>
-      <% } %>
+      <% }) %>
     </div>
   </div>
 </div>
@@ -31,29 +22,20 @@
 <div class="details-block block-right">
   <div class="details-block-information">
     <div class="details-block-buttons">
-      <% for(let j = 0; j < 4; j++) { %>
-      <img class="details-block-button" src="/home/details/points/speed.png" />
-      <% } %>
+      <% slide[1].information.buttons.forEach((button) => { %>
+      <img class="details-block-button" src="<%= button %>" />
+      <% }) %>
     </div>
 
     <div class="details-block-point-carousel">
-      <% for(let j = 0; j < 4; j++) { %>
+      <% slide[1].information.points.forEach((point) => { %>
       <div class="details-block-point-slide">
-        <h4 class="details-block-point-title">Point <%= j + 1 %></h4>
-
-        <p class="details-block-point-description">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
-          magnam distinctio modi fuga hic expedita nisi quidem deleniti, totam
-          laborum, autem cupiditate consequuntur eligendi aut provident velit
-          voluptates dolorem quos?
-        </p>
+        <h4 class="details-block-point-title"><%= point.title %></h4>
+        <p class="details-block-point-description"><%= point.description %></p>
       </div>
-      <% } %>
+      <% }) %>
     </div>
   </div>
 
-  <img
-    class="details-block-image"
-    src="/home/features/consoles/playstation.png"
-  />
+  <img class="details-block-image" src="<%= slide[1].image %>" />
 </div>

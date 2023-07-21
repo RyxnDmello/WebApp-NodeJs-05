@@ -350,5 +350,193 @@
         }
       ]
     }
+  ],
+  "details": [
+    [
+      {
+        "title": "THE CONSOLES",
+        "image": "/home/details/consoles/playstation.png",
+        "information": {
+          "buttons": [
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png"
+          ],
+          "points": [
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            }
+          ]
+        }
+      },
+      {
+        "title": "THE CONSOLES",
+        "image": "/home/details/consoles/xbox.png",
+        "information": {
+          "buttons": [
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png"
+          ],
+          "points": [
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            }
+          ]
+        }
+      }
+    ],
+    [
+      {
+        "title": "THE CONSOLES",
+        "image": "/home/header/controllers/playstation.png",
+        "information": {
+          "buttons": [
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png"
+          ],
+          "points": [
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            }
+          ]
+        }
+      },
+      {
+        "title": "THE CONSOLES",
+        "image": "/home/header/controllers/xbox.png",
+        "information": {
+          "buttons": [
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png"
+          ],
+          "points": [
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            }
+          ]
+        }
+      }
+    ],
+    [
+      {
+        "title": "THE CONSOLES",
+        "image": "/home/details/headphones/playstation.png",
+        "information": {
+          "buttons": [
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png"
+          ],
+          "points": [
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            }
+          ]
+        }
+      },
+      {
+        "title": "THE CONSOLES",
+        "image": "/home/details/headphones/xbox.png",
+        "information": {
+          "buttons": [
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png",
+            "/home/details/points/speed.png"
+          ],
+          "points": [
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            },
+            {
+              "title": "Performance",
+              "description": "The Playstation 5 is built with next generation performance optimizers, making sure that your game is beautiful and running at the best graphics possible."
+            }
+          ]
+        }
+      }
+    ]
   ]
 }

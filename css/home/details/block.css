@@ -12,7 +12,9 @@
 }
 
 .details-block-image {
-  width: 400px;
+  object-fit: cover;
+  max-height: 300px;
+  max-width: 400px;
 }
 
 /*----------------------------------------*/
@@ -35,7 +37,7 @@
   grid-auto-flow: column;
   align-items: center;
   display: grid;
-  gap: 4rem;
+  gap: 2.5rem;
 }
 
 .block-left .details-block-buttons {
