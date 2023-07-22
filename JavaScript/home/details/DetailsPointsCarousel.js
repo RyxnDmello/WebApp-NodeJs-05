@@ -1,8 +1,8 @@
 const blockButtons = document.querySelectorAll(".details-block-button");
 const blockSlides = document.querySelectorAll(".details-block-point-slide");
 
-let buttonGroups = [];
-let slideGroups = [];
+const buttonGroups = [];
+const slideGroups = [];
 
 export default function DetailsPointsCarousel() {
   GenerateButtonGroups();
@@ -61,9 +61,16 @@ function ControllerAnimation(groupIndex, buttonIndex) {
 
 function GenerateButtonGroups() {
   let group = [];
+  let exception = 2;
 
   for (let i = 0; i < blockButtons.length; i++) {
-    if (group.length === 4) {
+    if (exception !== 0 && group.length === 5) {
+      buttonGroups.push(group);
+      --exception;
+      group = [];
+    }
+
+    if (exception === 0 && group.length === 4) {
       buttonGroups.push(group);
       group = [];
     }
@@ -76,9 +83,16 @@ function GenerateButtonGroups() {
 
 function GenerateSlidesGroups() {
   let group = [];
+  let exception = 2;
 
   for (let i = 0; i < blockSlides.length; i++) {
-    if (group.length === 4) {
+    if (exception !== 0 && group.length === 5) {
+      slideGroups.push(group);
+      --exception;
+      group = [];
+    }
+
+    if (exception === 0 && group.length === 4) {
       slideGroups.push(group);
       group = [];
     }

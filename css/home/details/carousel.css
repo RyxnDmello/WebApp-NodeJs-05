@@ -5,13 +5,13 @@
 .details-wrapper {
   box-shadow: 0 0 20px #000000af;
   justify-content: space-between;
-  background-color: #00000050;
+  background-color: #00000060;
   grid-auto-flow: column;
   align-items: center;
   border-radius: 5px;
   position: relative;
-  padding: 2rem 4rem;
   overflow: hidden;
+  padding: 0 2rem;
   display: grid;
 }
 
@@ -46,7 +46,7 @@
   align-items: center;
   display: grid;
   width: 1000px;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 /*--------------------------------------*/

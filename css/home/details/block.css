@@ -3,9 +3,13 @@
 /*--------------------------------------------*/
 
 .details-block {
+  box-shadow: 0 0 20px #000000a0;
+  border: 2.5px solid #ffffff15;
   justify-content: center;
   grid-auto-flow: column;
   align-items: center;
+  border-radius: 10px;
+  padding: 1rem;
   display: grid;
   gap: 2rem;
 }
@@ -25,11 +29,12 @@
   justify-content: center;
   align-items: center;
   display: grid;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .details-block-information-title {
   font-family: "Acquire Light", sans-serif;
+  letter-spacing: 2px;
   font-weight: 100;
   font-size: 4rem;
   cursor: default;
@@ -53,7 +58,7 @@
   align-items: center;
   margin-top: 0.65rem;
   display: grid;
-  gap: 1.25rem;
+  gap: 1.5rem;
 }
 
 .block-left .details-block-buttons {
@@ -68,7 +73,7 @@
   transition: scale 400ms, opacity 400ms;
   cursor: pointer;
   opacity: 0.25;
-  width: 40px;
+  width: 35px;
 }
 
 .details-block-button:nth-of-type(1) {
@@ -110,15 +115,15 @@
 .details-block-point-title {
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 200;
   cursor: default;
   color: #fff;
 }
 
 .details-block-point-description {
   font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  color: #b5b5b5;
+  font-weight: 200;
+  color: #a0a0a0;
   cursor: default;
   font-size: 1rem;
 }
@@ -138,7 +143,7 @@
   }
 
   100% {
-    translate: 40px 0;
+    translate: 50px 0;
     opacity: 0;
   }
 }
@@ -154,7 +159,7 @@
   }
 
   100% {
-    translate: -40px 0;
+    translate: -50px 0;
     opacity: 0;
   }
 }
@@ -165,7 +170,7 @@
 
 @keyframes DetailsBlockFadeInRight {
   0% {
-    translate: 40px 0;
+    translate: 50px 0;
     opacity: 0;
   }
 
@@ -181,7 +186,7 @@
 
 @keyframes DetailsBlockFadeInLeft {
   0% {
-    translate: -40px 0;
+    translate: -50px 0;
     opacity: 0;
   }
 

@@ -30,9 +30,9 @@ function CarouselMoveSlides(index) {
     slides.forEach((slide) => {
       slide.style.transform = `translateX(${-index * width}px)`;
     });
-  }, 500);
+  }, 600);
 
-  CarouselAnimation(505);
+  CarouselAnimation(605);
 }
 
 function CarouselAnimation(duration) {
