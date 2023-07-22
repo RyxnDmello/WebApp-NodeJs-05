@@ -358,10 +358,10 @@
         "image": "/home/details/consoles/playstation.png",
         "information": {
           "buttons": [
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png"
+            "/home/details/buttons/design.png",
+            "/home/details/buttons/speed.png",
+            "/home/details/buttons/ui.png",
+            "/home/details/buttons/storage.png"
           ],
           "points": [
             {
@@ -388,10 +388,10 @@
         "image": "/home/details/consoles/xbox.png",
         "information": {
           "buttons": [
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png"
+            "/home/details/buttons/design.png",
+            "/home/details/buttons/speed.png",
+            "/home/details/buttons/ui.png",
+            "/home/details/buttons/storage.png"
           ],
           "points": [
             {
@@ -420,10 +420,10 @@
         "image": "/home/header/controllers/playstation.png",
         "information": {
           "buttons": [
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png"
+            "/home/details/buttons/design.png",
+            "/home/details/buttons/speed.png",
+            "/home/details/buttons/ui.png",
+            "/home/details/buttons/storage.png"
           ],
           "points": [
             {
@@ -450,10 +450,10 @@
         "image": "/home/header/controllers/xbox.png",
         "information": {
           "buttons": [
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png"
+            "/home/details/buttons/design.png",
+            "/home/details/buttons/speed.png",
+            "/home/details/buttons/ui.png",
+            "/home/details/buttons/storage.png"
           ],
           "points": [
             {
@@ -482,10 +482,10 @@
         "image": "/home/details/headphones/playstation.png",
         "information": {
           "buttons": [
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png"
+            "/home/details/buttons/design.png",
+            "/home/details/buttons/speed.png",
+            "/home/details/buttons/ui.png",
+            "/home/details/buttons/storage.png"
           ],
           "points": [
             {
@@ -512,10 +512,10 @@
         "image": "/home/details/headphones/xbox.png",
         "information": {
           "buttons": [
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png",
-            "/home/details/points/speed.png"
+            "/home/details/buttons/design.png",
+            "/home/details/buttons/speed.png",
+            "/home/details/buttons/ui.png",
+            "/home/details/buttons/storage.png"
           ],
           "points": [
             {

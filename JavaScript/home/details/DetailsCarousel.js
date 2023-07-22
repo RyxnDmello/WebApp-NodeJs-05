@@ -5,15 +5,20 @@ const upperBlocks = document.querySelectorAll(".details-block.block-left");
 const lowerBlocks = document.querySelectorAll(".details-block.block-right");
 
 const width = carousel.clientWidth - 64;
+let currentSlide = 0;
 
 export default function DetailsCarousel() {
   CarouselController();
 }
 
 function CarouselController() {
-  buttons.forEach((button, index) => {
+  buttons.forEach((button, clickedButton) => {
     button.addEventListener("click", () => {
-      CarouselMoveSlides(index);
+      if(clickedButton === 1 && currentSlide === slides.length - 1) return;
+      if(clickedButton === 0 && currentSlide === 0) return;
+      if(clickedButton === 0) --currentSlide;
+      if(clickedButton === 1) ++currentSlide;
+      CarouselMoveSlides(currentSlide);
     });
   });
 }

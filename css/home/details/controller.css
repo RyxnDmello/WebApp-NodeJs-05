@@ -3,8 +3,23 @@
 /*---------------------------------------------*/
 
 .details-controller-button {
-  filter: invert(1);
+  transition: translate 300ms, opacity 300ms;
+  filter: drop-shadow(0 0 5px #000);
+  cursor: pointer;
+  opacity: 0.25;
   width: 50px;
+}
+
+.details-controller-button:hover {
+  opacity: 1;
+}
+
+.details-controller-button:nth-of-type(1):hover {
+  translate: -5px 0;
+}
+
+.details-controller-button:nth-of-type(2):hover {
+  translate: 5px 0;
 }
 
 /*--------------------------------------*/

@@ -4,18 +4,18 @@
   <div class="details-block-information">
     <h4 class="details-block-information-title"><%= slide[0].title %></h4>
 
-    <div class="details-block-buttons">
-      <% slide[0].information.buttons.forEach((button) => { %>
-      <img class="details-block-button" src="<%= button %>" />
-      <% }) %>
-    </div>
-
     <div class="details-block-point-carousel">
       <% slide[0].information.points.forEach((point) => { %>
       <div class="details-block-point-slide">
         <h4 class="details-block-point-title"><%= point.title %></h4>
         <p class="details-block-point-description"><%= point.description %></p>
       </div>
+      <% }) %>
+    </div>
+
+    <div class="details-block-buttons">
+      <% slide[0].information.buttons.forEach((button) => { %>
+      <img class="details-block-button" src="<%= button %>" />
       <% }) %>
     </div>
   </div>
@@ -25,18 +25,18 @@
   <div class="details-block-information">
     <h4 class="details-block-information-title"><%= slide[1].title %></h4>
 
-    <div class="details-block-buttons">
-      <% slide[1].information.buttons.forEach((button) => { %>
-      <img class="details-block-button" src="<%= button %>" />
-      <% }) %>
-    </div>
-
     <div class="details-block-point-carousel">
       <% slide[1].information.points.forEach((point) => { %>
       <div class="details-block-point-slide">
         <h4 class="details-block-point-title"><%= point.title %></h4>
         <p class="details-block-point-description"><%= point.description %></p>
       </div>
+      <% }) %>
+    </div>
+
+    <div class="details-block-buttons">
+      <% slide[1].information.buttons.forEach((button) => { %>
+      <img class="details-block-button" src="<%= button %>" />
       <% }) %>
     </div>
   </div>

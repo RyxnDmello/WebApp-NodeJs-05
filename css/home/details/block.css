@@ -3,19 +3,16 @@
 /*--------------------------------------------*/
 
 .details-block {
-  box-shadow: 0 0 20px #000000a0;
-  border: 2px solid #ffffff25;
   justify-content: center;
   grid-auto-flow: column;
-  padding: 1rem 2.5rem;
   align-items: center;
-  border-radius: 5px;
   display: grid;
   gap: 2rem;
 }
 
 .details-block-image {
-  object-fit: cover;
+  object-fit: contain;
+  height: 285px;
   width: 285px;
 }
 
@@ -28,7 +25,7 @@
   justify-content: center;
   align-items: center;
   display: grid;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .details-block-information-title {
@@ -54,6 +51,7 @@
 .details-block-buttons {
   grid-auto-flow: column;
   align-items: center;
+  margin-top: 0.65rem;
   display: grid;
   gap: 1.25rem;
 }
@@ -67,7 +65,7 @@
 }
 
 .details-block-button {
-  transition: scale 350ms, opacity 350ms;
+  transition: scale 400ms, opacity 400ms;
   cursor: pointer;
   opacity: 0.25;
   width: 40px;
@@ -140,7 +138,7 @@
   }
 
   100% {
-    translate: 35px 0;
+    translate: 40px 0;
     opacity: 0;
   }
 }
@@ -156,18 +154,18 @@
   }
 
   100% {
-    translate: -35px 0;
+    translate: -40px 0;
     opacity: 0;
   }
 }
 
 .details-block-fade-in-right {
-  animation: DetailsBlockFadeInRight 500ms forwards;
+  animation: DetailsBlockFadeInRight 600ms forwards;
 }
 
 @keyframes DetailsBlockFadeInRight {
   0% {
-    translate: 35px 0;
+    translate: 40px 0;
     opacity: 0;
   }
 
@@ -178,12 +176,12 @@
 }
 
 .details-block-fade-in-left {
-  animation: DetailsBlockFadeInLeft 500ms forwards;
+  animation: DetailsBlockFadeInLeft 600ms forwards;
 }
 
 @keyframes DetailsBlockFadeInLeft {
   0% {
-    translate: -35px 0;
+    translate: -40px 0;
     opacity: 0;
   }
 
