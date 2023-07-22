@@ -1,21 +1,14 @@
 <div class="details-wrapper">
-  <img
-    class="details-controller-button"
-    src="/buttons/basic/arrow-head-left.png"
-  />
+  <img class="details-controller-button" src="<%= details.controller[0] %>" />
 
   <div class="details-carousel">
-    <% details.forEach((slide) => { %>
+    <% details.slides.forEach((slide, index) => { %>
     <div class="details-slide">
-      <%- include("./details/block.ejs", { slide: slide }) %>
+      <%- include("./details/block.ejs", { slide: slide, index: index }) %>
     </div>
     <% }) %>
   </div>
 
-  <img
-    class="details-controller-button"
-    src="/buttons/basic/arrow-head-right.png"
-  />
-
+  <img class="details-controller-button" src="<%= details.controller[1] %>" />
   <img class="details-wrapper-background" src="/home/details/background.png" />
 </div>

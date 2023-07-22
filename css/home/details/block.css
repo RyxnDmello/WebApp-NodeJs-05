@@ -41,32 +41,17 @@
   color: #fff;
 }
 
-.block-left .details-block-information-title {
-  text-align: left;
-}
-
-.block-right .details-block-information-title {
-  text-align: right;
-}
-
 /*----------------------------------------*/
 /*------------ BUTTONS STYLES ------------*/
 /*----------------------------------------*/
 
 .details-block-buttons {
   grid-auto-flow: column;
+  justify-content: left;
   align-items: center;
   margin-top: 0.65rem;
   display: grid;
   gap: 1.5rem;
-}
-
-.block-left .details-block-buttons {
-  justify-content: left;
-}
-
-.block-right .details-block-buttons {
-  justify-content: right;
 }
 
 .details-block-button {
@@ -96,20 +81,11 @@
 
 .details-block-point-slide {
   grid-template-columns: auto;
+  justify-content: left;
   align-items: center;
   overflow: hidden;
   display: grid;
   width: 568px;
-}
-
-.block-left .details-block-point-slide {
-  justify-content: left;
-  text-align: left;
-}
-
-.block-right .details-block-point-slide {
-  justify-content: right;
-  text-align: right;
 }
 
 .details-block-point-title {
@@ -143,7 +119,7 @@
   }
 
   100% {
-    translate: 50px 0;
+    translate: 60px 0;
     opacity: 0;
   }
 }
@@ -159,7 +135,7 @@
   }
 
   100% {
-    translate: -50px 0;
+    translate: -60px 0;
     opacity: 0;
   }
 }
@@ -170,7 +146,7 @@
 
 @keyframes DetailsBlockFadeInRight {
   0% {
-    translate: 50px 0;
+    translate: 60px 0;
     opacity: 0;
   }
 
@@ -186,7 +162,7 @@
 
 @keyframes DetailsBlockFadeInLeft {
   0% {
-    translate: -50px 0;
+    translate: -60px 0;
     opacity: 0;
   }
 
@@ -202,12 +178,10 @@
 
 @keyframes DetailsBlockPointSlideFadeOut {
   0% {
-    translate: 0 0;
     opacity: 1;
   }
 
   100% {
-    translate: 0 -10px;
     opacity: 0;
   }
 }
@@ -218,12 +192,10 @@
 
 @keyframes DetailsBlockPointSlideFadeIn {
   0% {
-    translate: 0 -10px;
     opacity: 0;
   }
 
   100% {
-    translate: 0 0;
     opacity: 1;
   }
 }

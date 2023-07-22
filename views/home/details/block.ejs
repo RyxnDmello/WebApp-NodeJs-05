@@ -1,11 +1,12 @@
-<div class="details-block block-left">
-  <img class="details-block-image" src="<%= slide[0].image %>" />
+<% for(let i = 0; i < 2; i++) { %>
+<div class="details-block block-<%= i + 1 %>">
+  <img class="details-block-image" src="<%= slide[i].image %>" />
 
   <div class="details-block-information">
-    <h4 class="details-block-information-title"><%= slide[0].title %></h4>
+    <h4 class="details-block-information-title"><%= slide[i].title %></h4>
 
     <div class="details-block-point-carousel">
-      <% slide[0].information.points.forEach((point) => { %>
+      <% slide[i].information.points.forEach((point) => { %>
       <div class="details-block-point-slide">
         <h4 class="details-block-point-title"><%= point.title %></h4>
         <p class="details-block-point-description"><%= point.description %></p>
@@ -14,32 +15,10 @@
     </div>
 
     <div class="details-block-buttons">
-      <% slide[0].information.buttons.forEach((button) => { %>
+      <% slide[i].information.buttons.forEach((button) => { %>
       <img class="details-block-button" src="<%= button %>" />
       <% }) %>
     </div>
   </div>
 </div>
-
-<div class="details-block block-right">
-  <div class="details-block-information">
-    <h4 class="details-block-information-title"><%= slide[1].title %></h4>
-
-    <div class="details-block-point-carousel">
-      <% slide[1].information.points.forEach((point) => { %>
-      <div class="details-block-point-slide">
-        <h4 class="details-block-point-title"><%= point.title %></h4>
-        <p class="details-block-point-description"><%= point.description %></p>
-      </div>
-      <% }) %>
-    </div>
-
-    <div class="details-block-buttons">
-      <% slide[1].information.buttons.forEach((button) => { %>
-      <img class="details-block-button" src="<%= button %>" />
-      <% }) %>
-    </div>
-  </div>
-
-  <img class="details-block-image" src="<%= slide[1].image %>" />
-</div>
+<% } %>
