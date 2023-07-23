@@ -21,10 +21,14 @@ function CarouselController() {
       if (clickedButton === 1 && currentSlide === slides.length - 1) return;
       if (clickedButton === 0 && currentSlide === 0) return;
 
+      const previousSlide = currentSlide;
+
       if (clickedButton === 1) ++currentSlide;
       if (clickedButton === 0) --currentSlide;
 
-      CarouselMoveSlides(currentSlide);
+      const direction = previousSlide > currentSlide ? "LEFT" : "RIGHT";
+
+      CarouselMoveSlides(currentSlide, direction);
       CarouselIndicatorAnimation(currentSlide);
     });
   });
@@ -33,45 +37,96 @@ function CarouselController() {
 function CarouselIndicators() {
   indicators.forEach((indicator, index) => {
     indicator.addEventListener("click", () => {
-      CarouselMoveSlides(index);
-      CarouselIndicatorAnimation(index);
+      if (index === currentSlide) return;
+
+      const direction = currentSlide > index ? "LEFT" : "RIGHT";
+      currentSlide = index;
+
+      CarouselMoveSlides(currentSlide, direction);
+      CarouselIndicatorAnimation(currentSlide);
     });
   });
 }
 
-function CarouselMoveSlides(index) {
-  CarouselAnimation(0);
+function CarouselMoveSlides(index, direction) {
+  CarouselAnimation(0, 200, direction);
 
   setTimeout(() => {
     slides.forEach((slide) => {
       slide.style.transform = `translateX(${-index * width}px)`;
     });
-  }, 600);
+  }, 650);
 
-  CarouselAnimation(605);
+  CarouselAnimation(655, 200, direction);
 }
 
-function CarouselAnimation(duration) {
+function CarouselAnimation(duration, delay, direction) {
+  if (direction === "RIGHT") {
+    setTimeout(() => {
+      upperBlocks.forEach((upperBlock) => {
+        if (upperBlock.classList.contains("details-block-fade-out-left")) {
+          upperBlock.classList.add("details-block-fade-in-left");
+          upperBlock.classList.remove("details-block-fade-out-left");
+          upperBlock.classList.remove("details-block-fade-out-right");
+          upperBlock.classList.remove("details-block-fade-in-right");
+        } else {
+          upperBlock.classList.add("details-block-fade-out-left");
+          upperBlock.classList.remove("details-block-fade-in-left");
+          upperBlock.classList.remove("details-block-fade-in-right");
+          upperBlock.classList.remove("details-block-fade-out-right");
+        }
+      });
+
+      setTimeout(() => {
+        lowerBlocks.forEach((lowerBlock) => {
+          if (lowerBlock.classList.contains("details-block-fade-out-left")) {
+            lowerBlock.classList.add("details-block-fade-in-left");
+            lowerBlock.classList.remove("details-block-fade-out-left");
+            lowerBlock.classList.remove("details-block-fade-out-right");
+            lowerBlock.classList.remove("details-block-fade-in-right");
+          } else {
+            lowerBlock.classList.add("details-block-fade-out-left");
+            lowerBlock.classList.remove("details-block-fade-in-left");
+            lowerBlock.classList.remove("details-block-fade-in-right");
+            lowerBlock.classList.remove("details-block-fade-out-right");
+          }
+        });
+      }, delay);
+    }, duration);
+
+    return;
+  }
+
   setTimeout(() => {
     upperBlocks.forEach((upperBlock) => {
-      if (upperBlock.classList.contains("details-block-fade-out-left")) {
+      if (upperBlock.classList.contains("details-block-fade-out-right")) {
         upperBlock.classList.add("details-block-fade-in-right");
+        upperBlock.classList.remove("details-block-fade-out-right");
         upperBlock.classList.remove("details-block-fade-out-left");
+        upperBlock.classList.remove("details-block-fade-in-left");
       } else {
-        upperBlock.classList.add("details-block-fade-out-left");
+        upperBlock.classList.add("details-block-fade-out-right");
         upperBlock.classList.remove("details-block-fade-in-right");
+        upperBlock.classList.remove("details-block-fade-in-left");
+        upperBlock.classList.remove("details-block-fade-out-left");
       }
     });
 
-    lowerBlocks.forEach((lowerBlock) => {
-      if (lowerBlock.classList.contains("details-block-fade-out-right")) {
-        lowerBlock.classList.add("details-block-fade-in-left");
-        lowerBlock.classList.remove("details-block-fade-out-right");
-      } else {
-        lowerBlock.classList.add("details-block-fade-out-right");
-        lowerBlock.classList.remove("details-block-fade-in-left");
-      }
-    });
+    setTimeout(() => {
+      lowerBlocks.forEach((lowerBlock) => {
+        if (lowerBlock.classList.contains("details-block-fade-out-right")) {
+          lowerBlock.classList.add("details-block-fade-in-right");
+          lowerBlock.classList.remove("details-block-fade-out-right");
+          lowerBlock.classList.remove("details-block-fade-out-left");
+          lowerBlock.classList.remove("details-block-fade-in-left");
+        } else {
+          lowerBlock.classList.add("details-block-fade-out-right");
+          lowerBlock.classList.remove("details-block-fade-in-right");
+          lowerBlock.classList.remove("details-block-fade-in-left");
+          lowerBlock.classList.remove("details-block-fade-out-left");
+        }
+      });
+    }, delay);
   }, duration);
 }
 

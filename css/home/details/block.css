@@ -49,7 +49,7 @@
   grid-auto-flow: column;
   justify-content: left;
   align-items: center;
-  margin-top: 0.65rem;
+  margin-top: 0.5rem;
   display: grid;
   gap: 1.5rem;
 }
@@ -58,7 +58,7 @@
   transition: scale 400ms, opacity 400ms;
   cursor: pointer;
   opacity: 0.25;
-  width: 35px;
+  width: 30px;
 }
 
 .details-block-button:nth-of-type(1) {
@@ -109,7 +109,7 @@
 /*--------------------------------------*/
 
 .details-block-fade-out-left {
-  animation: DetailsBlockFadeOutLeft 600ms forwards;
+  animation: DetailsBlockFadeOutLeft 450ms forwards;
 }
 
 @keyframes DetailsBlockFadeOutLeft {
@@ -119,13 +119,13 @@
   }
 
   100% {
-    translate: 60px 0;
+    translate: -80px 0;
     opacity: 0;
   }
 }
 
 .details-block-fade-out-right {
-  animation: DetailsBlockFadeOutRight 600ms forwards;
+  animation: DetailsBlockFadeOutRight 450ms forwards;
 }
 
 @keyframes DetailsBlockFadeOutRight {
@@ -135,18 +135,18 @@
   }
 
   100% {
-    translate: -60px 0;
+    translate: 80px 0;
     opacity: 0;
   }
 }
 
 .details-block-fade-in-right {
-  animation: DetailsBlockFadeInRight 600ms forwards;
+  animation: DetailsBlockFadeInRight 450ms forwards;
 }
 
 @keyframes DetailsBlockFadeInRight {
   0% {
-    translate: 60px 0;
+    translate: -80px 0;
     opacity: 0;
   }
 
@@ -157,12 +157,12 @@
 }
 
 .details-block-fade-in-left {
-  animation: DetailsBlockFadeInLeft 600ms forwards;
+  animation: DetailsBlockFadeInLeft 450ms forwards;
 }
 
 @keyframes DetailsBlockFadeInLeft {
   0% {
-    translate: -60px 0;
+    translate: 80px 0;
     opacity: 0;
   }
 

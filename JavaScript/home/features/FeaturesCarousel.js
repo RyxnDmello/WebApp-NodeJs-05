@@ -3,7 +3,6 @@ const slides = document.querySelectorAll(".feature-slide");
 const indicators = document.querySelectorAll(".feature-indicator");
 
 const width = carousel.clientWidth - 40;
-const duration = 550;
 
 export default function FeaturesCarousel() {
   CarouselController();
@@ -25,9 +24,9 @@ function CarouselMoveSlides(index) {
     slides.forEach((slide) => {
       slide.style.transform = `translateX(${-index * width}px)`;
     });
-  }, duration);
+  }, 450);
 
-  SlidesAnimation(duration);
+  SlidesAnimation(455);
 }
 
 function SlidesAnimation(duration) {

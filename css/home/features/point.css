@@ -116,7 +116,7 @@
 /*--------------------------------------*/
 
 .feature-fade-out {
-  animation: FeatureFadeOut 550ms forwards;
+  animation: FeatureFadeOut 450ms forwards;
 }
 
 @keyframes FeatureFadeOut {
@@ -132,7 +132,7 @@
 }
 
 .feature-fade-in {
-  animation: FeatureFadeIn 550ms forwards;
+  animation: FeatureFadeIn 450ms forwards;
 }
 
 @keyframes FeatureFadeIn {
