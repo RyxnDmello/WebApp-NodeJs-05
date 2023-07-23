@@ -10,6 +10,39 @@
   width: 40px;
 }
 
+/*------------------------------------------*/
+/*------------ INDICATOR STYLES ------------*/
+/*------------------------------------------*/
+
+.details-controller-indicators {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-column: span 3;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.details-controller-indicator {
+  transition: opacity 600ms, background-color 600ms;
+  filter: drop-shadow(0 0 10px #000);
+  border: 2px solid #fff;
+  cursor: pointer;
+  opacity: 0.25;
+  rotate: 45deg;
+  height: 20px;
+  width: 20px;
+}
+
+.details-controller-indicator:nth-of-type(1) {
+  background-color: #fff;
+  opacity: 1;
+}
+
+/*---------------------------------------*/
+/*------------- TRANSITIONS -------------*/
+/*---------------------------------------*/
+
 .details-controller-button:hover {
   opacity: 1;
 }

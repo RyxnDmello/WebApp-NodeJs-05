@@ -1,4 +1,5 @@
 <div class="details-wrapper">
+  <h2 class="details-wrapper-title">THE NEXT GENERATION</h2>
   <img class="details-controller-button" src="<%= details.controller[0] %>" />
 
   <div class="details-carousel">
@@ -10,5 +11,12 @@
   </div>
 
   <img class="details-controller-button" src="<%= details.controller[1] %>" />
+
+  <div class="details-controller-indicators">
+    <% details.slides.forEach(() => { %>
+    <div class="details-controller-indicator"></div>
+    <% }) %>
+  </div>
+
   <img class="details-wrapper-background" src="/home/details/background.png" />
 </div>

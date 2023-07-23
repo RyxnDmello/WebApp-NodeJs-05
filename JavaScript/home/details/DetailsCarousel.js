@@ -1,6 +1,9 @@
 const carousel = document.querySelector(".details-carousel");
 const slides = document.querySelectorAll(".details-slide");
+
 const buttons = document.querySelectorAll(".details-controller-button");
+const indicators = document.querySelectorAll(".details-controller-indicator");
+
 const upperBlocks = document.querySelectorAll(".details-block.block-1");
 const lowerBlocks = document.querySelectorAll(".details-block.block-2");
 
@@ -9,16 +12,29 @@ let currentSlide = 0;
 
 export default function DetailsCarousel() {
   CarouselController();
+  CarouselIndicators();
 }
 
 function CarouselController() {
   buttons.forEach((button, clickedButton) => {
     button.addEventListener("click", () => {
-      if(clickedButton === 1 && currentSlide === slides.length - 1) return;
-      if(clickedButton === 0 && currentSlide === 0) return;
-      if(clickedButton === 0) --currentSlide;
-      if(clickedButton === 1) ++currentSlide;
+      if (clickedButton === 1 && currentSlide === slides.length - 1) return;
+      if (clickedButton === 0 && currentSlide === 0) return;
+
+      if (clickedButton === 1) ++currentSlide;
+      if (clickedButton === 0) --currentSlide;
+
       CarouselMoveSlides(currentSlide);
+      CarouselIndicatorAnimation(currentSlide);
+    });
+  });
+}
+
+function CarouselIndicators() {
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener("click", () => {
+      CarouselMoveSlides(index);
+      CarouselIndicatorAnimation(index);
     });
   });
 }
@@ -57,4 +73,16 @@ function CarouselAnimation(duration) {
       }
     });
   }, duration);
+}
+
+function CarouselIndicatorAnimation(index) {
+  indicators.forEach((indicator, currentIndex) => {
+    if (index === currentIndex) {
+      indicator.style.backgroundColor = "#fff";
+      indicator.style.opacity = "1";
+    } else {
+      indicator.style.backgroundColor = "transparent";
+      indicator.style.opacity = "0.25";
+    }
+  });
 }
