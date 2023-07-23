@@ -554,5 +554,43 @@
       "/buttons/basic/arrow-head-left.png",
       "/buttons/basic/arrow-head-right.png"
     ]
-  }
+  },
+  "exclusives": [
+    {
+      "image": "/shop/playstation/consoles/skin-1.png",
+      "title": "Random Title"
+    },
+    {
+      "image": "/shop/playstation/consoles/skin-2.png",
+      "title": "Random Title"
+    },
+    {
+      "image": "/shop/playstation/consoles/skin-3.png",
+      "title": "Random Title"
+    },
+    {
+      "image": "/shop/playstation/consoles/skin-4.png",
+      "title": "Random Title"
+    },
+    {
+      "image": "/shop/playstation/consoles/skin-5.png",
+      "title": "Random Title"
+    },
+    {
+      "image": "/shop/xbox/consoles/skin-1.png",
+      "title": "Random Title"
+    },
+    {
+      "image": "/shop/xbox/consoles/skin-2.png",
+      "title": "Random Title"
+    },
+    {
+      "image": "/shop/xbox/consoles/skin-3.png",
+      "title": "Random Title"
+    },
+    {
+      "image": "/shop/xbox/consoles/skin-4.png",
+      "title": "Random Title"
+    }
+  ]
 }

@@ -1,0 +1,68 @@
+/*--------------------------------------------*/
+/*--------------- BLOCK STYLES ---------------*/
+/*--------------------------------------------*/
+
+.exclusive-carousel {
+  justify-content: start;
+  grid-auto-flow: column;
+  align-content: center;
+  padding: 4rem 2rem;
+  overflow: hidden;
+  width: 1256px;
+  display: grid;
+  gap: 2rem;
+}
+
+.exclusive-block-slide {
+  grid-template-columns: repeat(5, auto);
+  justify-content: center;
+  align-items: center;
+  width: 1192px;
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*------------------------------------*/
+/*----------- BLOCK STYLES -----------*/
+/*------------------------------------*/
+
+.exclusive-block {
+  border: 2px solid #ffffff20;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0.5rem;
+  display: grid;
+}
+
+.exclusive-block:nth-of-type(2),
+.exclusive-block:nth-of-type(4),
+.exclusive-block:nth-of-type(7),
+.exclusive-block:nth-of-type(9) {
+  translate: 0 -50px;
+}
+
+.exclusive-block:nth-of-type(1),
+.exclusive-block:nth-of-type(3),
+.exclusive-block:nth-of-type(5) {
+  translate: 0 50px;
+}
+
+.exclusive-block-image {
+  margin: 0 auto;
+  height: 250px;
+}
+
+.exclusive-block-title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 200;
+  cursor: default;
+  color: #fff;
+}
+
+/*----------------------------------------*/
+/*------------- END OF CSS ---------------*/
+/*----------------------------------------*/

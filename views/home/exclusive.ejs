@@ -1,0 +1,15 @@
+<h4 class="exclusive-title">FEEL THE GREATNESS</h4>
+
+<div class="exclusive-carousel">
+  <% for(let i = 0; i < 2; i++) { %>
+  <div class="exclusive-block-slide">
+    <% exclusives.forEach((exclusive, i) => { if(i > 4) return; %>
+    <div class="exclusive-block">
+      <%- include("./exclusive/block.ejs", { exclusive: exclusive }) %>
+    </div>
+    <% }) %>
+  </div>
+  <% } %>
+</div>
+
+<img class="exclusive-background" src="/home/exclusive/background.jpg" />

@@ -1,0 +1,33 @@
+@import url("./exclusive/titles.css");
+@import url("./exclusive/block.css");
+
+#exclusive {
+  box-shadow: 0 0 20px #000000af;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow-y: hidden;
+  padding: 4rem 0;
+  display: grid;
+  gap: 2rem;
+}
+
+.exclusive-title {
+  font-family: "Acquire Light", sans-serif;
+  letter-spacing: 2.5px;
+  text-align: left;
+  font-weight: 100;
+  cursor: default;
+  font-size: 5rem;
+  color: #fff;
+}
+
+.exclusive-background {
+  position: absolute;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+}
