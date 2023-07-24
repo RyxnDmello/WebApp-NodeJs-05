@@ -1,0 +1,27 @@
+/*---------------------------------------------------*/
+/*----------------- CAROUSEL STYLES -----------------*/
+/*---------------------------------------------------*/
+
+.exclusive-carousel {
+  justify-content: start;
+  grid-auto-flow: column;
+  align-content: center;
+  padding: 4rem 2rem;
+  overflow: hidden;
+  width: 1256px;
+  display: grid;
+  gap: 2rem;
+}
+
+.exclusive-slide {
+  grid-template-columns: repeat(5, auto);
+  justify-content: space-between;
+  align-items: center;
+  width: 1192px;
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*--------------------------------------*/
+/*------------- END OF CSS -------------*/
+/*--------------------------------------*/

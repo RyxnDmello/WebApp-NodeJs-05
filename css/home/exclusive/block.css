@@ -2,30 +2,6 @@
 /*--------------- BLOCK STYLES ---------------*/
 /*--------------------------------------------*/
 
-.exclusive-carousel {
-  justify-content: start;
-  grid-auto-flow: column;
-  align-content: center;
-  padding: 4rem 2rem;
-  overflow: hidden;
-  width: 1256px;
-  display: grid;
-  gap: 2rem;
-}
-
-.exclusive-block-slide {
-  grid-template-columns: repeat(5, auto);
-  justify-content: center;
-  align-items: center;
-  width: 1192px;
-  display: grid;
-  gap: 1.5rem;
-}
-
-/*------------------------------------*/
-/*----------- BLOCK STYLES -----------*/
-/*------------------------------------*/
-
 .exclusive-block {
   border: 2px solid #ffffff20;
   grid-template-columns: auto;
@@ -34,6 +10,10 @@
   border-radius: 5px;
   padding: 0.5rem;
   display: grid;
+}
+
+.exclusive-slide:nth-of-type(2) .exclusive-block {
+  padding: 0.5rem 2rem;
 }
 
 .exclusive-block:nth-of-type(2),
@@ -45,7 +25,10 @@
 
 .exclusive-block:nth-of-type(1),
 .exclusive-block:nth-of-type(3),
-.exclusive-block:nth-of-type(5) {
+.exclusive-block:nth-of-type(5),
+.exclusive-block:nth-of-type(6),
+.exclusive-block:nth-of-type(8),
+.exclusive-block:nth-of-type(10) {
   translate: 0 50px;
 }
 
@@ -61,6 +44,74 @@
   font-weight: 200;
   cursor: default;
   color: #fff;
+}
+
+/*------------------------------------*/
+/*------------ ANIMATIONS ------------*/
+/*------------------------------------*/
+
+.exclusive-block-fade-out-up {
+  animation: ExclusiveBlockFadeOutUp 1000ms forwards;
+}
+
+@keyframes ExclusiveBlockFadeOutUp {
+  0% {
+    translate: 0 50px;
+    opacity: 1;
+  }
+
+  100% {
+    translate: 0 -50px;
+    opacity: 0;
+  }
+}
+
+.exclusive-block-fade-out-down {
+  animation: ExclusiveBlockFadeOutDown 1000ms forwards;
+}
+
+@keyframes ExclusiveBlockFadeOutDown {
+  0% {
+    translate: 0 -50px;
+    opacity: 1;
+  }
+
+  100% {
+    translate: 0 50px;
+    opacity: 0;
+  }
+}
+
+.exclusive-block-fade-in-up {
+  animation: ExclusiveBlockFadeInUp 1000ms forwards;
+}
+
+@keyframes ExclusiveBlockFadeInUp {
+  0% {
+    translate: 0 50px;
+    opacity: 0;
+  }
+
+  100% {
+    translate: 0 -50px;
+    opacity: 1;
+  }
+}
+
+.exclusive-block-fade-in-down {
+  animation: ExclusiveBlockFadeInDown 1000ms forwards;
+}
+
+@keyframes ExclusiveBlockFadeInDown {
+  0% {
+    translate: 0 -50px;
+    opacity: 0;
+  }
+
+  100% {
+    translate: 0 50px;
+    opacity: 1;
+  }
 }
 
 /*----------------------------------------*/

@@ -1,15 +1,19 @@
-<h4 class="exclusive-title">FEEL THE GREATNESS</h4>
+<h4 class="exclusive-title">DIVE DEEP INTO YOUR STYLE</h4>
+
+<img class="exclusive-controller-left" src="<%= exclusive.controller[0] %>" />
 
 <div class="exclusive-carousel">
-  <% for(let i = 0; i < 2; i++) { %>
-  <div class="exclusive-block-slide">
-    <% exclusives.forEach((exclusive, i) => { if(i > 4) return; %>
+  <% exclusive.slides.forEach((slide) => { %>
+  <div class="exclusive-slide">
+    <% slide.forEach((block) => { %>
     <div class="exclusive-block">
-      <%- include("./exclusive/block.ejs", { exclusive: exclusive }) %>
+      <%- include("./exclusive/block.ejs", { block: block }) %>
     </div>
     <% }) %>
   </div>
-  <% } %>
+  <% }) %>
 </div>
+
+<img class="exclusive-controller-right" src="<%= exclusive.controller[1] %>" />
 
 <img class="exclusive-background" src="/home/exclusive/background.jpg" />

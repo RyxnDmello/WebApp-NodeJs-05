@@ -1,0 +1,29 @@
+/*-----------------------------------------------*/
+/*-------------- CONTROLLER STYLES --------------*/
+/*-----------------------------------------------*/
+
+.exclusive-controller-left,
+.exclusive-controller-right {
+  transition: opacity 350ms, translate 350ms;
+  cursor: pointer;
+  opacity: 0.25;
+  width: 50px;
+}
+
+/*-------------------------------------*/
+/*------------ TRANSITIONS ------------*/
+/*-------------------------------------*/
+
+.exclusive-controller-left:hover {
+  translate: -5px 0;
+  opacity: 1;
+}
+
+.exclusive-controller-right:hover {
+  translate: 5px 0;
+  opacity: 1;
+}
+
+/*--------------------------------------*/
+/*------------- END OF CSS -------------*/
+/*--------------------------------------*/

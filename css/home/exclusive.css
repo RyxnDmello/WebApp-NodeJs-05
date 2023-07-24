@@ -1,9 +1,10 @@
-@import url("./exclusive/titles.css");
+@import url("./exclusive/carousel.css");
+@import url("./exclusive/controller.css");
 @import url("./exclusive/block.css");
 
 #exclusive {
+  grid-template-columns: repeat(3, auto);
   box-shadow: 0 0 20px #000000af;
-  grid-template-columns: auto;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -15,8 +16,7 @@
 
 .exclusive-title {
   font-family: "Acquire Light", sans-serif;
-  letter-spacing: 2.5px;
-  text-align: left;
+  grid-column: span 3;
   font-weight: 100;
   cursor: default;
   font-size: 5rem;

@@ -555,42 +555,96 @@
       "/buttons/basic/arrow-head-right.png"
     ]
   },
-  "exclusives": [
-    {
-      "image": "/shop/playstation/consoles/skin-1.png",
-      "title": "Random Title"
-    },
-    {
-      "image": "/shop/playstation/consoles/skin-2.png",
-      "title": "Random Title"
-    },
-    {
-      "image": "/shop/playstation/consoles/skin-3.png",
-      "title": "Random Title"
-    },
-    {
-      "image": "/shop/playstation/consoles/skin-4.png",
-      "title": "Random Title"
-    },
-    {
-      "image": "/shop/playstation/consoles/skin-5.png",
-      "title": "Random Title"
-    },
-    {
-      "image": "/shop/xbox/consoles/skin-1.png",
-      "title": "Random Title"
-    },
-    {
-      "image": "/shop/xbox/consoles/skin-2.png",
-      "title": "Random Title"
-    },
-    {
-      "image": "/shop/xbox/consoles/skin-3.png",
-      "title": "Random Title"
-    },
-    {
-      "image": "/shop/xbox/consoles/skin-4.png",
-      "title": "Random Title"
-    }
-  ]
+  "exclusive": {
+    "controller": [
+      "/buttons/basic/arrow-head-left.png",
+      "/buttons/basic/arrow-head-right.png"
+    ],
+    "slides": [
+      [
+        {
+          "image": "/shop/playstation/consoles/skin-1.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/playstation/consoles/skin-2.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/playstation/consoles/skin-3.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/playstation/consoles/skin-4.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/playstation/consoles/skin-5.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/playstation/consoles/skin-6.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/playstation/consoles/skin-7.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/playstation/consoles/skin-8.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/playstation/consoles/skin-9.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/playstation/consoles/skin-10.png",
+          "title": "Random Title"
+        }
+      ],
+      [
+        {
+          "image": "/shop/xbox/consoles/skin-1.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/xbox/consoles/skin-2.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/xbox/consoles/skin-3.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/xbox/consoles/skin-4.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/xbox/consoles/skin-5.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/xbox/consoles/skin-1.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/xbox/consoles/skin-2.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/xbox/consoles/skin-3.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/xbox/consoles/skin-4.png",
+          "title": "Random Title"
+        },
+        {
+          "image": "/shop/xbox/consoles/skin-5.png",
+          "title": "Random Title"
+        }
+      ]
+    ]
+  }
 }
