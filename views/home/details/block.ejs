@@ -6,17 +6,21 @@
     <h4 class="details-block-information-title"><%= slide[i].title %></h4>
 
     <div class="details-block-point-carousel">
-      <% slide[i].information.points.forEach((point) => { %>
+      <% slide[i].points.forEach((point) => { %>
       <div class="details-block-point-slide">
-        <h4 class="details-block-point-title"><%= point.title %></h4>
+        <div class="details-block-point-title-container">
+          <img class="details-block-point-image" src="<%= point.image %>" />
+          <h4 class="details-block-point-title"><%= point.title %></h4>
+        </div>
+
         <p class="details-block-point-description"><%= point.description %></p>
       </div>
       <% }) %>
     </div>
 
     <div class="details-block-buttons">
-      <% slide[i].information.buttons.forEach((button) => { %>
-      <img class="details-block-button" src="<%= button %>" />
+      <% slide[i].points.forEach(() => { %>
+      <div class="details-block-button"></div>
       <% }) %>
     </div>
   </div>

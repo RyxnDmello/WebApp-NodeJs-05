@@ -357,196 +357,173 @@
         {
           "title": "PLAYSTATION 5",
           "image": "/home/details/consoles/playstation.png",
-          "information": {
-            "buttons": [
-              "/home/details/buttons/design.png",
-              "/home/details/buttons/ui.png",
-              "/home/details/buttons/speed.png",
-              "/home/details/buttons/security.png",
-              "/home/details/buttons/storage.png"
-            ],
-            "points": [
-              {
-                "title": "Elegant & Beautiful",
-                "description": "Enjoy a beautifully designed console that enhances the modern look of your interiors. Designed with enriching materials, ensuring durability."
-              },
-              {
-                "title": "Simple & Modern UI",
-                "description": "A modern interface with 4K Ultra HD graphics. With added accessibility features, everyone can enjoy games without any obstacles."
-              },
-              {
-                "title": "Speed & Optimization",
-                "description": "Developed with next generation performance optimizers, making sure that your game is smooth and beautiful at every frame, at all times."
-              },
-              {
-                "title": "Security & Backup",
-                "description": "The console provides a powerful security system with antivirus, Web Protection and Payment Security, protecting you at every step."
-              },
-              {
-                "title": "Storage & Memory",
-                "description": "The playstation ships with a 1TB SSD and a 16GB GDDR6 memory chip to make sure your games load and play faster and smoother than ever."
-              }
-            ]
-          }
+          "points": [
+            {
+              "title": "Elegant & Beautiful",
+              "image": "/home/details/buttons/design.png",
+              "description": "Enjoy a beautifully designed console that enhances the modern look of your interiors. Designed with enriching materials, ensuring durability."
+            },
+            {
+              "title": "Simple & Modern UI",
+              "image": "/home/details/buttons/ui.png",
+              "description": "A modern interface with 4K Ultra HD graphics. With added accessibility features, everyone can enjoy games without any obstacles."
+            },
+            {
+              "title": "Speed & Optimization",
+              "image": "/home/details/buttons/speed.png",
+              "description": "Developed with next generation performance optimizers, making sure that your game is smooth and beautiful at every frame, at all times."
+            },
+            {
+              "title": "Security & Backup",
+              "image": "/home/details/buttons/security.png",
+              "description": "The console provides a powerful security system with antivirus, Web Protection and Payment Security, protecting you at every step."
+            },
+            {
+              "title": "Storage & Memory",
+              "image": "/home/details/buttons/storage.png",
+              "description": "The playstation ships with a 1TB SSD and a 16GB GDDR6 memory chip to make sure your games load and play faster and smoother than ever."
+            }
+          ]
         },
         {
           "title": "XBOX SERIES X",
           "image": "/home/details/consoles/xbox.png",
-          "information": {
-            "buttons": [
-              "/home/details/buttons/design.png",
-              "/home/details/buttons/ui.png",
-              "/home/details/buttons/speed.png",
-              "/home/details/buttons/security.png",
-              "/home/details/buttons/storage.png"
-            ],
-            "points": [
-              {
-                "title": "Clean & Modern",
-                "description": "The console shows off a simple yet beautiful design. With a powerful cooling system at the top, and a solid cage like armour all over."
-              },
-              {
-                "title": "Modern & Beautiful UI",
-                "description": "The user interface is designed to keep you engaged with smooth animations while still maintaining its simple and modern design."
-              },
-              {
-                "title": "Steady & Powerful Engine",
-                "description": "Integrated with the DDR6 memory card and a 1TB SDD, the console is powered to store and run multiple games and applications at once."
-              },
-              {
-                "title": "Security & Backup",
-                "description": "Equipped with a strong security system that prevents all kinds of attacks. With added antivirus, Web Protection and Payment Security Systems."
-              },
-              {
-                "title": "Storage & Memory",
-                "description": "The Xbox Series X ships with a 1TB SSD and a 16GB GDDR6 memory chip. With the RDNA2 graphics card, experience breathtaking game play."
-              }
-            ]
-          }
+          "points": [
+            {
+              "title": "Clean & Modern",
+              "image": "/home/details/buttons/design.png",
+              "description": "The console shows off a simple yet beautiful design. With a powerful cooling system at the top, and a solid cage like armour all over."
+            },
+            {
+              "title": "Modern & Beautiful UI",
+              "image": "/home/details/buttons/ui.png",
+              "description": "The user interface is designed to keep you engaged with smooth animations while still maintaining its simple and modern design."
+            },
+            {
+              "title": "Steady & Powerful Engine",
+              "image": "/home/details/buttons/speed.png",
+              "description": "Integrated with the DDR6 memory card and a 1TB SDD, the console is powered to store and run multiple games and applications at once."
+            },
+            {
+              "title": "Security & Backup",
+              "image": "/home/details/buttons/security.png",
+              "description": "Equipped with a strong security system that prevents all kinds of attacks. With added antivirus, Web Protection and Payment Security Systems."
+            },
+            {
+              "title": "Storage & Memory",
+              "image": "/home/details/buttons/storage.png",
+              "description": "The Xbox Series X ships with a 1TB SSD and a 16GB GDDR6 memory chip. With the RDNA2 graphics card, experience breathtaking game play."
+            }
+          ]
         }
       ],
       [
         {
           "title": "THE DUALSENSE",
           "image": "/home/header/controllers/playstation.png",
-          "information": {
-            "buttons": [
-              "/home/details/buttons/design.png",
-              "/home/details/buttons/vibrations.png",
-              "/home/details/buttons/audio.png",
-              "/home/details/buttons/motion.png"
-            ],
-            "points": [
-              {
-                "title": "Modern & Elegant",
-                "description": "The controller has a beautiful modern design with integrated sensors and feedback systems, to enhance your gaming experience."
-              },
-              {
-                "title": "Reactive Vibrations",
-                "description": "The controller is equipped with sensors all around its body which react to game play triggers. Feel every pixel with every exploring touch."
-              },
-              {
-                "title": "Responsive Audio",
-                "description": "Equipped with responsive audio systems, the volume and intensity of the sound effects can dynamically change for different actions."
-              },
-              {
-                "title": "Motion Detection",
-                "description": "With motion detecting sensors, you can now control various aspects of your game with the help of reactive tilts and swift movements."
-              }
-            ]
-          }
+          "points": [
+            {
+              "title": "Modern & Elegant",
+              "image": "/home/details/buttons/design.png",
+              "description": "The controller has a beautiful modern design with integrated sensors and feedback systems, to enhance your gaming experience."
+            },
+            {
+              "title": "Reactive Vibrations",
+              "image": "/home/details/buttons/vibrations.png",
+              "description": "The controller is equipped with sensors all around its body which react to game play triggers. Feel every pixel with every exploring touch."
+            },
+            {
+              "title": "Responsive Audio",
+              "image": "/home/details/buttons/audio.png",
+              "description": "Equipped with responsive audio systems, the volume and intensity of the sound effects can dynamically change for different actions."
+            },
+            {
+              "title": "Motion Detection",
+              "image": "/home/details/buttons/motion.png",
+              "description": "With motion detecting sensors, you can now control various aspects of your game with the help of reactive tilts and swift movements."
+            }
+          ]
         },
         {
           "title": "XBOX ORIGINAL",
           "image": "/home/header/controllers/xbox.png",
-          "information": {
-            "buttons": [
-              "/home/details/buttons/design.png",
-              "/home/details/buttons/vibrations.png",
-              "/home/details/buttons/audio.png",
-              "/home/details/buttons/motion.png"
-            ],
-            "points": [
-              {
-                "title": "Beautiful & Sleek",
-                "description": "Along with its clean and sleek design, it is integrated with multiple sensors, feedback and audio systems to enhance game play."
-              },
-              {
-                "title": "Reactive Triggers",
-                "description": "The controller can dynamically vibrate and react at different intensities to various trigger inputs, engaging the gamer at every touch."
-              },
-              {
-                "title": "Responsive Audio Cues",
-                "description": "The controller responds to every action by providing audio cues to enhance the motion and provide an instantaneous feedback."
-              },
-              {
-                "title": "Enhanced Motion Sensors",
-                "description": "With certain controller tilts and gestures you can provide special inputs that effect the game at realtime enhancing your realtime experience."
-              }
-            ]
-          }
+
+          "points": [
+            {
+              "title": "Beautiful & Sleek",
+              "image": "/home/details/buttons/design.png",
+              "description": "Along with its clean and sleek design, it is integrated with multiple sensors, feedback and audio systems to enhance game play."
+            },
+            {
+              "title": "Reactive Triggers",
+              "image": "/home/details/buttons/vibrations.png",
+              "description": "The controller can dynamically vibrate and react at different intensities to various trigger inputs, engaging the gamer at every touch."
+            },
+            {
+              "title": "Responsive Audio Cues",
+              "image": "/home/details/buttons/audio.png",
+              "description": "The controller responds to every action by providing audio cues to enhance the motion and provide an instantaneous feedback."
+            },
+            {
+              "title": "Enhanced Motion Sensors",
+              "image": "/home/details/buttons/motion.png",
+              "description": "With certain controller tilts and gestures you can provide special inputs that effect the game at realtime enhancing your realtime experience."
+            }
+          ]
         }
       ],
       [
         {
           "title": "SONY PULSE 3D",
           "image": "/home/details/headphones/playstation.png",
-          "information": {
-            "buttons": [
-              "/home/details/buttons/audio.png",
-              "/home/details/buttons/chat.png",
-              "/home/details/buttons/features.png",
-              "/home/details/buttons/battery.png"
-            ],
-            "points": [
-              {
-                "title": "Focused & Sensory",
-                "description": "The headset offer a spatial surround sound system, with noise cancellation, that helps in capturing even the minute sound effects."
-              },
-              {
-                "title": "Hidden Microphones",
-                "description": "The headset has dual hidden microphones with in-built commands that allows you to access features of the headset verbally and with ease."
-              },
-              {
-                "title": "Features & Accessibility",
-                "description": "The headset has multiple features including the Game and Music Mode. With the accessibility features, everyone can enjoy these headsets."
-              },
-              {
-                "title": "Battery Life",
-                "description": "Enjoy an easy 12 hours of wireless battery life with the rechargeable in-built batteries. Compatible with PS4, Windows, MacOS & Linux."
-              }
-            ]
-          }
+          "points": [
+            {
+              "title": "Focused & Sensory",
+              "image": "/home/details/buttons/audio.png",
+              "description": "The headset offer a spatial surround sound system, with noise cancellation, that helps in capturing even the minute sound effects."
+            },
+            {
+              "title": "Hidden Microphones",
+              "image": "/home/details/buttons/chat.png",
+              "description": "The headset has dual hidden microphones with in-built commands that allows you to access features of the headset verbally and with ease."
+            },
+            {
+              "title": "Features & Accessibility",
+              "image": "/home/details/buttons/features.png",
+              "description": "The headset has multiple features including the Game and Music Mode. With the accessibility features, everyone can enjoy these headsets."
+            },
+            {
+              "title": "Battery Life",
+              "image": "/home/details/buttons/battery.png",
+              "description": "Enjoy an easy 12 hours of wireless battery life with the rechargeable in-built batteries. Compatible with PS4, Windows, MacOS & Linux."
+            }
+          ]
         },
         {
           "title": "XBOX HEADSET",
           "image": "/home/details/headphones/xbox.png",
-          "information": {
-            "buttons": [
-              "/home/details/buttons/audio.png",
-              "/home/details/buttons/chat.png",
-              "/home/details/buttons/features.png",
-              "/home/details/buttons/weight.png"
-            ],
-            "points": [
-              {
-                "title": "Audio & Visualization",
-                "description": "These wired headsets deliver high quality audio waves which can detect every little sound effect with a very high level of accuracy."
-              },
-              {
-                "title": "Crystal Clear Chats",
-                "description": "The headset has focused mic isolation to capture your voice perfectly and reduce background noise. With added layers of static cleansing."
-              },
-              {
-                "title": "Voice Your Style",
-                "description": "There are multiple options and tweaks available to help you pick the perfect configuration for the best gaming or leisure experience."
-              },
-              {
-                "title": "Lightweight Armor",
-                "description": "The headset is made of durable materials while still offering a very lightweight and comfortable feel, with a clean and intuitive design."
-              }
-            ]
-          }
+          "points": [
+            {
+              "title": "Audio & Visualization",
+              "image": "/home/details/buttons/audio.png",
+              "description": "These wired headsets deliver high quality audio waves which can detect every little sound effect with a very high level of accuracy."
+            },
+            {
+              "title": "Crystal Clear Chats",
+              "image": "/home/details/buttons/chat.png",
+              "description": "The headset has focused mic isolation to capture your voice perfectly and reduce background noise. With added layers of static cleansing."
+            },
+            {
+              "title": "Voice Your Style",
+              "image": "/home/details/buttons/features.png",
+              "description": "There are multiple options and tweaks available to help you pick the perfect configuration for the best gaming or leisure experience."
+            },
+            {
+              "title": "Lightweight Armor",
+              "image": "/home/details/buttons/weight.png",
+              "description": "The headset is made of durable materials while still offering a very lightweight and comfortable feel, with a clean and intuitive design."
+            }
+          ]
         }
       ]
     ],
@@ -688,5 +665,49 @@
         }
       ]
     ]
-  }
+  },
+  "brands": [
+    [
+      {
+        "image": "/home/brands/microsoft.png",
+        "URL": "/"
+      },
+      {
+        "image": "/home/brands/sony.png",
+        "URL": "/"
+      },
+      {
+        "image": "/home/brands/nintendo.png",
+        "URL": "/"
+      }
+    ],
+    [
+      {
+        "image": "/home/brands/xbox.png",
+        "URL": "/"
+      },
+      {
+        "image": "/home/brands/playstation.png",
+        "URL": "/"
+      },
+      {
+        "image": "/home/brands/switch.png",
+        "URL": "/"
+      }
+    ],
+    [
+      {
+        "image": "/home/brands/xbox.png",
+        "URL": "/"
+      },
+      {
+        "image": "/home/brands/playstation.png",
+        "URL": "/"
+      },
+      {
+        "image": "/home/brands/nintendo.png",
+        "URL": "/"
+      }
+    ]
+  ]
 }

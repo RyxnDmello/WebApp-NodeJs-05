@@ -56,7 +56,7 @@
 /*------------------------------------*/
 
 .exclusive-block-fade-out-up {
-  animation: ExclusiveBlockFadeOutUp 1000ms forwards;
+  animation: ExclusiveBlockFadeOutUp 800ms forwards;
 }
 
 @keyframes ExclusiveBlockFadeOutUp {
@@ -72,7 +72,7 @@
 }
 
 .exclusive-block-fade-out-down {
-  animation: ExclusiveBlockFadeOutDown 1000ms forwards;
+  animation: ExclusiveBlockFadeOutDown 800ms forwards;
 }
 
 @keyframes ExclusiveBlockFadeOutDown {
@@ -88,7 +88,7 @@
 }
 
 .exclusive-block-fade-in-up {
-  animation: ExclusiveBlockFadeInUp 1000ms forwards;
+  animation: ExclusiveBlockFadeInUp 800ms forwards;
 }
 
 @keyframes ExclusiveBlockFadeInUp {
@@ -104,7 +104,7 @@
 }
 
 .exclusive-block-fade-in-down {
-  animation: ExclusiveBlockFadeInDown 1000ms forwards;
+  animation: ExclusiveBlockFadeInDown 800ms forwards;
 }
 
 @keyframes ExclusiveBlockFadeInDown {

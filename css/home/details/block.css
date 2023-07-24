@@ -51,24 +51,27 @@
   align-items: center;
   margin-top: 0.5rem;
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .details-block-button {
-  transition: scale 400ms, opacity 400ms;
+  transition: background-color 400ms, opacity 400ms;
+  border: 2px solid #fff;
+  border-radius: 40px;
   cursor: pointer;
   opacity: 0.25;
-  width: 30px;
+  height: 20px;
+  width: 20px;
 }
 
 .details-block-button:nth-of-type(1) {
-  scale: 1.2;
+  background-color: #fff;
   opacity: 1;
 }
 
-/*---------------------------------------*/
-/*----------- CAROUSEL STYLES -----------*/
-/*---------------------------------------*/
+/*----------------------------------------*/
+/*------------- POINT STYLES -------------*/
+/*----------------------------------------*/
 
 .details-block-point-carousel {
   grid-auto-flow: column;
@@ -86,10 +89,28 @@
   overflow: hidden;
   display: grid;
   width: 568px;
+  gap: 0.25rem;
+}
+
+/*---------------------------------------*/
+/*----------- TITLE CONTAINER -----------*/
+/*---------------------------------------*/
+
+.details-block-point-title-container {
+  grid-auto-flow: column;
+  justify-content: left;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.details-block-point-image {
+  width: 26.5px;
 }
 
 .details-block-point-title {
   font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
   font-size: 1.5rem;
   font-weight: 200;
   cursor: default;
