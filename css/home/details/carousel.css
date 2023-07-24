@@ -10,9 +10,9 @@
   align-items: center;
   border-radius: 5px;
   position: relative;
+  padding: 3rem 2rem;
   overflow: hidden;
   display: grid;
-  padding: 2rem;
   gap: 2rem 0;
 }
 

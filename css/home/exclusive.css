@@ -16,6 +16,7 @@
 
 .exclusive-title {
   font-family: "Acquire Light", sans-serif;
+  text-shadow: 5px 5px 10px #000000a0;
   grid-column: span 3;
   font-weight: 100;
   cursor: default;

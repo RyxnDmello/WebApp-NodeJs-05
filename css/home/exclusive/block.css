@@ -3,7 +3,8 @@
 /*--------------------------------------------*/
 
 .exclusive-block {
-  border: 2px solid #ffffff20;
+  box-shadow: 0 0 20px #00000050;
+  border: 2px solid #ffffff15;
   grid-template-columns: auto;
   justify-content: center;
   align-items: center;
@@ -13,7 +14,11 @@
 }
 
 .exclusive-slide:nth-of-type(2) .exclusive-block {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1.8rem;
+}
+
+.exclusive-slide:nth-of-type(3) .exclusive-block {
+  padding: 0.5rem 1.25rem;
 }
 
 .exclusive-block:nth-of-type(2),

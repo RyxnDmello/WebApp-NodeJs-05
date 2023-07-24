@@ -564,85 +564,127 @@
       [
         {
           "image": "/shop/playstation/consoles/skin-1.png",
-          "title": "Random Title"
+          "title": "Demon Rose"
         },
         {
           "image": "/shop/playstation/consoles/skin-2.png",
-          "title": "Random Title"
+          "title": "Craze Blue"
         },
         {
           "image": "/shop/playstation/consoles/skin-3.png",
-          "title": "Random Title"
+          "title": "Wiggle Worms"
         },
         {
           "image": "/shop/playstation/consoles/skin-4.png",
-          "title": "Random Title"
+          "title": "Black Stone"
         },
         {
           "image": "/shop/playstation/consoles/skin-5.png",
-          "title": "Random Title"
+          "title": "Snake Forest"
         },
         {
           "image": "/shop/playstation/consoles/skin-6.png",
-          "title": "Random Title"
+          "title": "Serene White"
         },
         {
           "image": "/shop/playstation/consoles/skin-7.png",
-          "title": "Random Title"
+          "title": "Snake World"
         },
         {
           "image": "/shop/playstation/consoles/skin-8.png",
-          "title": "Random Title"
+          "title": "Dirt Cameo"
         },
         {
           "image": "/shop/playstation/consoles/skin-9.png",
-          "title": "Random Title"
+          "title": "Blue Sheddings"
         },
         {
           "image": "/shop/playstation/consoles/skin-10.png",
-          "title": "Random Title"
+          "title": "Red Sheddings"
         }
       ],
       [
         {
           "image": "/shop/xbox/consoles/skin-1.png",
-          "title": "Random Title"
+          "title": "Green Acid"
         },
         {
           "image": "/shop/xbox/consoles/skin-2.png",
-          "title": "Random Title"
+          "title": "Red Acid"
         },
         {
           "image": "/shop/xbox/consoles/skin-3.png",
-          "title": "Random Title"
+          "title": "Gamer Black"
         },
         {
           "image": "/shop/xbox/consoles/skin-4.png",
-          "title": "Random Title"
+          "title": "Solid Blue"
         },
         {
           "image": "/shop/xbox/consoles/skin-5.png",
-          "title": "Random Title"
+          "title": "Wavy Sun"
         },
         {
-          "image": "/shop/xbox/consoles/skin-1.png",
-          "title": "Random Title"
+          "image": "/shop/xbox/consoles/skin-6.png",
+          "title": "Solid Yellow"
         },
         {
-          "image": "/shop/xbox/consoles/skin-2.png",
-          "title": "Random Title"
+          "image": "/shop/xbox/consoles/skin-7.png",
+          "title": "Wood Brown"
         },
         {
-          "image": "/shop/xbox/consoles/skin-3.png",
-          "title": "Random Title"
+          "image": "/shop/xbox/consoles/skin-8.png",
+          "title": "Solid Pink"
         },
         {
-          "image": "/shop/xbox/consoles/skin-4.png",
-          "title": "Random Title"
+          "image": "/shop/xbox/consoles/skin-9.png",
+          "title": "Sexy Waves"
         },
         {
-          "image": "/shop/xbox/consoles/skin-5.png",
-          "title": "Random Title"
+          "image": "/shop/xbox/consoles/skin-10.png",
+          "title": "Dark Cameo"
+        }
+      ],
+      [
+        {
+          "image": "/shop/switch/consoles/skin-1.png",
+          "title": "Comic Strip"
+        },
+        {
+          "image": "/shop/switch/consoles/skin-2.png",
+          "title": "Pixel Crazy"
+        },
+        {
+          "image": "/shop/switch/consoles/skin-3.png",
+          "title": "Nuts & Bolts"
+        },
+        {
+          "image": "/shop/switch/consoles/skin-4.png",
+          "title": "Solid Pink"
+        },
+        {
+          "image": "/shop/switch/consoles/skin-5.png",
+          "title": "Dirt Cameo"
+        },
+        {
+          "image": "/shop/switch/consoles/skin-6.png",
+          "title": "Black Strap"
+        },
+        {
+          "image": "/shop/switch/consoles/skin-7.png",
+          "title": "Blue Pixels"
+        },
+        {
+          "image": "/shop/switch/consoles/skin-8.png",
+          "title": "Windy Dunes"
+        },
+        {
+          "image": "/shop/switch/consoles/skin-9.png",
+          "title": "Sexy Waves"
+        },
+        {
+          "image": "/shop/switch/consoles/skin-10.png",
+          "title": "Green Acid"
         }
       ]
     ]
