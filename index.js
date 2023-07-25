@@ -25,6 +25,7 @@ app.get("/", (req, res) => {
     details: HomeTemplate.details,
     exclusive: HomeTemplate.exclusive,
     brands: HomeTemplate.brands,
+    footer: HomeTemplate.footer,
   });
 });
 

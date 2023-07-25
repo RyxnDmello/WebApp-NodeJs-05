@@ -1,19 +1,21 @@
-<div class="footer-logo-container">
-  <a class="footer-logo" href="#header">
-    <p class="footer-logo-text">CyberVerse</p>
-  </a>
-
-  <p class="footer-logo-description">A Home For Gamers</p>
+<div class="footer-header">
+  <div class="footer-socials-container">
+    <%- include("./footer/socials.ejs", { socials: footer.socials }) %>
+  </div>
 </div>
 
-<% for(let i = 0; i < 3; i++) { %>
-<div class="footer-console-container">
-  <%- include("./footer/console.ejs") %>
-</div>
-<% } %>
+<div class="footer-body">
+  <div class="footer-logo-container"><%- include("./footer/logo.ejs") %></div>
 
-<div class="footer-register-container">
-  <%- include("./footer/register.ejs") %>
+  <% footer.consoles.forEach((console) => { %>
+  <div class="footer-console-container">
+    <%- include("./footer/console.ejs", { console: console }) %>
+  </div>
+  <% }) %>
+
+  <div class="footer-register-container">
+    <%- include("./footer/register.ejs", { socials: footer.socials }) %>
+  </div>
 </div>
 
 <img class="footer-background" src="/home/footer/background.jpg" />

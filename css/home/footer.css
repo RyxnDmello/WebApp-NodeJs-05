@@ -1,17 +1,19 @@
 @import url("./footer/logo.css");
 @import url("./footer/console.css");
 @import url("./footer/register.css");
+@import url("./footer/socials.css");
 
 footer {
-  justify-content: space-between;
   background-color: #00000050;
   box-shadow: 0 0 20px #000;
-  grid-auto-flow: column;
-  align-items: start;
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: center;
   padding: 4rem 6rem;
   position: relative;
   margin-top: 4rem;
   display: grid;
+  gap: 4rem;
 }
 
 .footer-background {
@@ -21,4 +23,22 @@ footer {
   width: 100%;
   z-index: -1;
   top: 0;
+}
+
+/*-----------------------------------------*/
+/*------------ FOOTER SECTIONS ------------*/
+/*-----------------------------------------*/
+
+.footer-header {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: start;
+  display: grid;
+}
+
+.footer-body {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: start;
+  display: grid;
 }

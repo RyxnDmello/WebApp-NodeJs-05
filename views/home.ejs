@@ -41,7 +41,9 @@
       </section>
     </main>
 
-    <footer id="footer"><%- include("./home/footer.ejs") %></footer>
+    <footer id="footer">
+      <%- include("./home/footer.ejs", { footer: footer }) %>
+    </footer>
 
     <script type="module" src="/Home.js"></script>
   </body>

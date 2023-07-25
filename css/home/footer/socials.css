@@ -1,0 +1,33 @@
+/*------------------------------------------*/
+/*------------- SOCIALS STYLES -------------*/
+/*------------------------------------------*/
+
+.footer-socials-container {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.footer-social-link-image {
+  transition: opacity 400ms, translate 200ms;
+  opacity: 0.25;
+  width: 28px;
+}
+
+/*---------------------------------------*/
+/*------------- TRANSITIONS -------------*/
+/*---------------------------------------*/
+
+.footer-social-link:hover .footer-social-link-image {
+  opacity: 1;
+}
+
+.footer-social-link:focus .footer-social-link-image {
+  translate: 0 -10px;
+}
+
+/*------------------------------------------*/
+/*--------------- END OF CSS ---------------*/
+/*------------------------------------------*/
