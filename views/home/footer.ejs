@@ -1,0 +1,19 @@
+<div class="footer-logo-container">
+  <a class="footer-logo" href="#header">
+    <p class="footer-logo-text">CyberVerse</p>
+  </a>
+
+  <p class="footer-logo-description">A Home For Gamers</p>
+</div>
+
+<% for(let i = 0; i < 3; i++) { %>
+<div class="footer-console-container">
+  <%- include("./footer/console.ejs") %>
+</div>
+<% } %>
+
+<div class="footer-register-container">
+  <%- include("./footer/register.ejs") %>
+</div>
+
+<img class="footer-background" src="/home/footer/background.jpg" />

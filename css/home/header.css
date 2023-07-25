@@ -2,8 +2,8 @@
 @import url("./header/product.css");
 
 #header {
-  box-shadow: 0 10px 20px #00000080;
   background-color: #00000050;
+  box-shadow: 0 0 20px #000;
   grid-template-columns: auto;
   justify-content: stretch;
   align-items: center;

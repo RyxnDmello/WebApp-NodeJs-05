@@ -19,7 +19,6 @@
   grid-auto-flow: column;
   align-items: center;
   grid-column: span 3;
-  margin-top: 0.5rem;
   display: grid;
   gap: 1.5rem;
 }

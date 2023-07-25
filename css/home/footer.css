@@ -1,0 +1,24 @@
+@import url("./footer/logo.css");
+@import url("./footer/console.css");
+@import url("./footer/register.css");
+
+footer {
+  justify-content: space-between;
+  background-color: #00000050;
+  box-shadow: 0 0 20px #000;
+  grid-auto-flow: column;
+  align-items: start;
+  padding: 4rem 6rem;
+  position: relative;
+  margin-top: 4rem;
+  display: grid;
+}
+
+.footer-background {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+}

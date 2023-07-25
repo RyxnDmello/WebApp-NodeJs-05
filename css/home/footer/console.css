@@ -1,0 +1,74 @@
+/*------------------------------------------*/
+/*------------- CONSOLE STYLES -------------*/
+/*------------------------------------------*/
+
+.footer-console-container {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.footer-console-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  cursor: default;
+  color: #fff;
+}
+
+/*-------------------------------------*/
+/*------------ LINK STYLES ------------*/
+/*-------------------------------------*/
+
+.footer-console-links {
+  grid-template-columns: auto;
+  justify-content: left;
+  align-items: center;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.footer-console-link {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.footer-console-link-image {
+  transition: translate 150ms, opacity 450ms;
+  opacity: 0;
+  width: 15px;
+}
+
+.footer-console-link-text {
+  font-family: "Poppins", sans-serif;
+  transition: color 450ms;
+  letter-spacing: 0.5px;
+  color: #ffffff50;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+/*---------------------------------------*/
+/*------------- TRANSITIONS -------------*/
+/*---------------------------------------*/
+
+.footer-console-link:hover .footer-console-link-image {
+  opacity: 1;
+}
+
+.footer-console-link:focus .footer-console-link-image {
+  translate: 10px 0;
+}
+
+.footer-console-link:hover .footer-console-link-text {
+  color: #fff;
+}
+
+/*--------------------------------------*/
+/*------------- END OF CSS -------------*/
+/*--------------------------------------*/

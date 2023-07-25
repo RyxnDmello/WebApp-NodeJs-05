@@ -3,13 +3,10 @@
 /*--------------------------------------------*/
 
 .details-block {
-  box-shadow: 0 0 20px #000000a0;
-  border: 2.5px solid #ffffff15;
   justify-content: center;
   grid-auto-flow: column;
   align-items: center;
   border-radius: 10px;
-  padding: 1rem;
   display: grid;
   gap: 2rem;
 }
@@ -42,34 +39,6 @@
 }
 
 /*----------------------------------------*/
-/*------------ BUTTONS STYLES ------------*/
-/*----------------------------------------*/
-
-.details-block-buttons {
-  grid-auto-flow: column;
-  justify-content: left;
-  align-items: center;
-  margin-top: 0.5rem;
-  display: grid;
-  gap: 1rem;
-}
-
-.details-block-button {
-  transition: background-color 400ms, opacity 400ms;
-  border: 2px solid #fff;
-  border-radius: 40px;
-  cursor: pointer;
-  opacity: 0.25;
-  height: 20px;
-  width: 20px;
-}
-
-.details-block-button:nth-of-type(1) {
-  background-color: #fff;
-  opacity: 1;
-}
-
-/*----------------------------------------*/
 /*------------- POINT STYLES -------------*/
 /*----------------------------------------*/
 
@@ -89,23 +58,6 @@
   overflow: hidden;
   display: grid;
   width: 568px;
-  gap: 0.25rem;
-}
-
-/*---------------------------------------*/
-/*----------- TITLE CONTAINER -----------*/
-/*---------------------------------------*/
-
-.details-block-point-title-container {
-  grid-auto-flow: column;
-  justify-content: left;
-  align-items: center;
-  display: grid;
-  gap: 0.65rem;
-}
-
-.details-block-point-image {
-  width: 26.5px;
 }
 
 .details-block-point-title {
@@ -123,6 +75,33 @@
   color: #a0a0a0;
   cursor: default;
   font-size: 1rem;
+}
+
+/*----------------------------------------*/
+/*------------ BUTTONS STYLES ------------*/
+/*----------------------------------------*/
+
+.details-block-buttons {
+  grid-auto-flow: column;
+  justify-content: left;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.details-block-button {
+  transition: background-color 450ms, opacity 450ms;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  cursor: pointer;
+  opacity: 0.25;
+  height: 20px;
+  width: 20px;
+}
+
+.details-block-button:nth-of-type(1) {
+  background-color: #fff;
+  opacity: 1;
 }
 
 /*--------------------------------------*/

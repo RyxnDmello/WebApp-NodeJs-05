@@ -8,11 +8,7 @@
     <div class="details-block-point-carousel">
       <% slide[i].points.forEach((point) => { %>
       <div class="details-block-point-slide">
-        <div class="details-block-point-title-container">
-          <img class="details-block-point-image" src="<%= point.image %>" />
-          <h4 class="details-block-point-title"><%= point.title %></h4>
-        </div>
-
+        <h4 class="details-block-point-title"><%= point.title %></h4>
         <p class="details-block-point-description"><%= point.description %></p>
       </div>
       <% }) %>

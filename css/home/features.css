@@ -11,8 +11,8 @@
 }
 
 .features-block {
-  box-shadow: 0 0 20px #000000af;
   background-color: #00000040;
+  box-shadow: 0 0 20px #000;
   justify-content: center;
   grid-auto-flow: column;
   padding-right: 2.5rem;

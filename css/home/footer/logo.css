@@ -1,0 +1,36 @@
+/*-------------------------------------------*/
+/*--------------- LOGO STYLES ---------------*/
+/*-------------------------------------------*/
+
+.footer-logo-container {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+.footer-logo {
+  display: grid;
+}
+
+.footer-logo-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 200;
+  color: #fff;
+}
+
+.footer-logo-description {
+  background: linear-gradient(45deg, #fc466b 0%, #3f5efb 100%);
+  -webkit-text-fill-color: transparent;
+  font-family: "Poppins", sans-serif;
+  -webkit-background-clip: text;
+  background-clip: text;
+  letter-spacing: 0.5px;
+  font-size: 1.25rem;
+  cursor: default;
+}
+
+/*------------------------------------*/
+/*------------ END OF CSS ------------*/
+/*------------------------------------*/

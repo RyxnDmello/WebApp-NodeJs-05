@@ -4,8 +4,8 @@
 
 #exclusive {
   grid-template-columns: repeat(3, auto);
-  box-shadow: 0 0 20px #000000af;
   background-color: #00000025;
+  box-shadow: 0 0 20px #000;
   justify-content: center;
   align-items: center;
   position: relative;
