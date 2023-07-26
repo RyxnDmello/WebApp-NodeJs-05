@@ -1,7 +1,9 @@
+@import url("./footer/form.css");
+@import url("./footer/socials.css");
 @import url("./footer/logo.css");
 @import url("./footer/console.css");
 @import url("./footer/register.css");
-@import url("./footer/socials.css");
+@import url("./footer/creator.css");
 
 footer {
   background-color: #00000050;
@@ -29,10 +31,11 @@ footer {
 /*------------ FOOTER SECTIONS ------------*/
 /*-----------------------------------------*/
 
-.footer-header {
+.footer-header,
+.footer-footer {
   justify-content: space-between;
   grid-auto-flow: column;
-  align-items: start;
+  align-items: center;
   display: grid;
 }
 
@@ -41,4 +44,8 @@ footer {
   grid-auto-flow: column;
   align-items: start;
   display: grid;
+}
+
+.footer-footer {
+  margin-top: -2rem;
 }

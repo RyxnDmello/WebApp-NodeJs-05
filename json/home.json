@@ -767,6 +767,18 @@
         "URL": "/",
         "image": "/buttons/socials/discord.png"
       }
+    ],
+    "profiles": [
+      {
+        "URL": "https://github.com/RyxnDmello/RyxnDmello",
+        "image": "/buttons/socials/github.png",
+        "text": "GitHub"
+      },
+      {
+        "URL": "https://github.com/RyxnDmello/RyxnDmello",
+        "image": "/buttons/socials/linkedin.png",
+        "text": "LinkedIn"
+      }
     ]
   }
 }

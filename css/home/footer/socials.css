@@ -7,13 +7,13 @@
   grid-auto-flow: column;
   align-items: center;
   display: grid;
-  gap: 1.25rem;
+  gap: 1rem;
 }
 
 .footer-social-link-image {
-  transition: opacity 400ms, translate 200ms;
+  transition: opacity 400ms, translate 150ms;
   opacity: 0.25;
-  width: 28px;
+  width: 25px;
 }
 
 /*---------------------------------------*/

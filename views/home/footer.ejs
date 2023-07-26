@@ -1,4 +1,18 @@
 <div class="footer-header">
+  <form class="footer-form" action="/" method="post">
+    <input
+      placeholder="Discount Wishlist"
+      class="footer-form-input"
+      autocapitalize="off"
+      autocomplete="off"
+      type="email"
+    />
+
+    <button type="submit" class="footer-form-button">
+      <p class="footer-form-button-text">Join Now</p>
+    </button>
+  </form>
+
   <div class="footer-socials-container">
     <%- include("./footer/socials.ejs", { socials: footer.socials }) %>
   </div>
@@ -16,6 +30,10 @@
   <div class="footer-register-container">
     <%- include("./footer/register.ejs", { socials: footer.socials }) %>
   </div>
+</div>
+
+<div class="footer-footer">
+  <%- include("./footer/creator.ejs", { profiles: footer.profiles }) %>
 </div>
 
 <img class="footer-background" src="/home/footer/background.jpg" />

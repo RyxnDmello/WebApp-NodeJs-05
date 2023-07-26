@@ -1,0 +1,10 @@
+<p class="footer-creator"><span>@</span>Ryan Nolasco D Mello</p>
+
+<div class="footer-profiles">
+  <% profiles.forEach((profile) => { %>
+  <a class="footer-profile-link" href="<%= profile.URL %>" target="_blank">
+    <img class="footer-profile-link-image" src="<%= profile.image %>" />
+    <p class="footer-profile-link-text"><%= profile.text %></p>
+  </a>
+  <% }) %>
+</div>

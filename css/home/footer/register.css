@@ -60,6 +60,10 @@
   width: calc(100% + 2rem);
 }
 
+.footer-register-link:focus {
+  translate: 0 6px;
+}
+
 .footer-register-link:hover .footer-register-link-image {
   filter: invert(1);
 }

@@ -1,0 +1,65 @@
+/*-----------------------------------------------*/
+/*----------------- FORM STYLES -----------------*/
+/*-----------------------------------------------*/
+
+.footer-form {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: stretch;
+  display: grid;
+  gap: 0.5rem;
+}
+
+/*--------------------------------------------*/
+/*--------------- INPUT STYLES ---------------*/
+/*--------------------------------------------*/
+
+.footer-form-input {
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 0 20px #00000050;
+  transition: border-color 450ms;
+  background-color: transparent;
+  border: 2px solid #ffffff30;
+  padding: 0.25rem 0.5rem;
+  letter-spacing: 0.5px;
+  outline: transparent;
+  border-radius: 2.5px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #fff;
+  width: 25rem;
+}
+
+.footer-form-input::placeholder {
+  letter-spacing: 0.25px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.footer-form-input:not(:placeholder-shown) {
+  border-color: #fff;
+}
+
+/*---------------------------------------------*/
+/*--------------- BUTTON STYLES ---------------*/
+/*---------------------------------------------*/
+
+.footer-form-button {
+  background: linear-gradient(45deg, #ff2550 0%, #2c4fff 100%);
+  box-shadow: 0 0 20px #00000050;
+  padding: 0.25rem 2rem;
+  border-radius: 2.5px;
+  cursor: pointer;
+  border: none;
+}
+
+.footer-form-button-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+/*----------------------------------------*/
+/*-------------- END OF CSS --------------*/
+/*----------------------------------------*/

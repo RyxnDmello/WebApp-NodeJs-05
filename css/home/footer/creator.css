@@ -1,0 +1,68 @@
+/*------------------------------------------------*/
+/*---------------- CREATOR STYLES ----------------*/
+/*------------------------------------------------*/
+
+.footer-creator {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 300;
+  cursor: default;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.footer-creator span {
+  margin-right: 0.25rem;
+  font-size: 1.25rem;
+  color: #ff006a;
+}
+
+/*---------------------------------------*/
+/*----------- PROFILES STYLES -----------*/
+/*---------------------------------------*/
+
+.footer-profiles {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.footer-profile-link {
+  transition: opacity 400ms, translate 125ms;
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  opacity: 0.4;
+  gap: 0.5rem;
+}
+
+.footer-profile-link-image {
+  width: 22.5px;
+}
+
+.footer-profile-link-text {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+/*-----------------------------------------*/
+/*-------------- TRANSITIONS --------------*/
+/*-----------------------------------------*/
+
+.footer-profile-link:hover {
+  opacity: 1;
+}
+
+.footer-profile-link:focus {
+  translate: 0 -5px;
+}
+
+/*------------------------------------------*/
+/*--------------- END OF CSS ---------------*/
+/*------------------------------------------*/
