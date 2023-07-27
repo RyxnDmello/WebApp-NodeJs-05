@@ -4,7 +4,6 @@
 
 .exclusive-block {
   box-shadow: 0 0 20px #00000050;
-  border: 2px solid #ffffff15;
   grid-template-columns: auto;
   justify-content: center;
   align-items: center;

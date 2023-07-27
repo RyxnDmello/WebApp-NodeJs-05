@@ -1,0 +1,43 @@
+/*-------------------------------------------------*/
+/*---------------- CAROUSEL STYLES ----------------*/
+/*-------------------------------------------------*/
+
+.comments-carousel {
+  box-shadow: 0 0 20px #000000af;
+  background-color: #00000080;
+  justify-content: start;
+  grid-auto-flow: column;
+  align-content: center;
+  position: relative;
+  border-radius: 5px;
+  padding: 2rem 4rem;
+  overflow: hidden;
+  display: grid;
+  width: 1416px;
+  gap: 4rem;
+}
+
+.comments-carousel-background {
+  object-position: 0 0;
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+}
+
+.comments-slide {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  width: 1288px;
+  gap: 4rem;
+}
+
+/*------------------------------------------*/
+/*--------------- END OF CSS ---------------*/
+/*------------------------------------------*/

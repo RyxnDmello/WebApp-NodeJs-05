@@ -1,0 +1,60 @@
+/*--------------------------------------------------*/
+/*---------------- CONTAINER STYLES ----------------*/
+/*--------------------------------------------------*/
+
+.comment-container {
+  box-shadow: 0 0 10px #00000050;
+  border: 2px solid #ffffff25;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  display: grid;
+  padding: 2rem;
+  gap: 0.5rem;
+}
+
+.comment-profile {
+  filter: drop-shadow(0 0 20px #00000050);
+  width: 100px;
+}
+
+/*------------------------------------*/
+/*---------- DETAILS STYLES ----------*/
+/*------------------------------------*/
+
+.comment-details {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+.comment-name {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  cursor: default;
+  color: #fff;
+}
+
+.comment-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #9e9e9e;
+  font-size: 1rem;
+  cursor: default;
+}
+
+.comments-quote {
+  position: absolute;
+  filter: invert(1);
+  opacity: 0.15;
+  width: 200px;
+  right: 1rem;
+  top: 1rem;
+}
+/*--------------------------------------------*/
+/*---------------- END OF CSS ----------------*/
+/*--------------------------------------------*/
