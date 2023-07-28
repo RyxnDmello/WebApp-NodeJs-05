@@ -2,22 +2,21 @@
 /*---------------- CAROUSEL STYLES ----------------*/
 /*-------------------------------------------------*/
 
-.comments-carousel {
+.comments-carousel-container {
   box-shadow: 0 0 20px #000000af;
   background-color: #00000080;
-  justify-content: start;
-  grid-auto-flow: column;
-  align-content: center;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
   position: relative;
   border-radius: 5px;
-  padding: 2rem 4rem;
   overflow: hidden;
+  padding: 2rem 0;
   display: grid;
-  width: 1416px;
-  gap: 4rem;
+  gap: 1rem;
 }
 
-.comments-carousel-background {
+.comments-background {
   object-position: 0 0;
   position: absolute;
   object-fit: cover;
@@ -27,7 +26,22 @@
   top: 0;
 }
 
+/*---------------------------------------*/
+/*----------- CAROUSEL STYLES -----------*/
+/*---------------------------------------*/
+
+.comments-carousel {
+  justify-content: start;
+  grid-auto-flow: column;
+  align-content: center;
+  padding: 2rem 4rem;
+  display: grid;
+  width: 1416px;
+  gap: 4rem;
+}
+
 .comments-slide {
+  transition: transform 2000ms;
   justify-content: center;
   grid-auto-flow: column;
   align-items: center;

@@ -1,28 +1,19 @@
-<div class="comments-carousel">
-  <% for(let slide = 0; slide < 3; slide++) { %>
-  <div class="comments-slide">
-    <% for(let i = 0; i < 3; i++) { %>
-    <div class="comment-container">
-      <img class="comment-profile" src="/home/comments/boy-<%= i + 1 %>.png" />
-
-      <div class="comment-details">
-        <h4 class="comment-name">Ethan Wayne</h4>
-        <p class="comment-text">
-          The unique and captivating layout instantly draws you in. The
-          authenticity of the products and services offered is evident, giving
-          me full confidence in my purchase. A delightful and trustworthy online
-          shopping destination!
-        </p>
-      </div>
-
-      <img class="comments-quote" src="/home/comments/quote.png" />
+<div class="comments-carousel-container">
+  <div class="comments-carousel">
+    <% for(let slide = 0; slide < 3; slide++) { %>
+    <div class="comments-slide">
+      <%- include("./comments/comment.ejs", { slide: slide }) %>
     </div>
     <% } %>
   </div>
-  <% } %>
 
-  <img
-    class="comments-carousel-background"
-    src="/home/comments/background.jpg"
-  />
+  <div class="comments-controller">
+    <img class="comments-controller-indicator" src="" />
+
+    <% for(let slide = 0; slide < 3; slide++) { %>
+    <div class="comments-controller-button"></div>
+    <% } %>
+  </div>
+
+  <img class="comments-background" src="/home/comments/background.jpg" />
 </div>

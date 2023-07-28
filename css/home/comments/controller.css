@@ -1,0 +1,39 @@
+/*---------------------------------------------*/
+/*------------- CONTROLLER STYLES -------------*/
+/*---------------------------------------------*/
+
+.comments-controller {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.comments-controller-button {
+  transition: background-color 450ms, opacity 450ms;
+  border: 2px solid #fff;
+  cursor: pointer;
+  opacity: 0.25;
+  rotate: 45deg;
+  height: 15px;
+  width: 15px;
+}
+
+.comments-controller-button:nth-of-type(1) {
+  background-color: #fff;
+  opacity: 1;
+}
+
+/*------------------------------------*/
+/*--------- INDICATOR STYLES ---------*/
+/*------------------------------------*/
+
+.comments-controller-indicator {
+  margin-right: 1rem;
+  width: 40px;
+}
+
+/*--------------------------------------*/
+/*------------- END OF CSS -------------*/
+/*--------------------------------------*/
