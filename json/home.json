@@ -20,79 +20,128 @@
     ]
   },
   "header": {
+    "controller": [
+      "/buttons/basic/arrow-head-left.png",
+      "/buttons/basic/arrow-head-right.png"
+    ],
     "slides": [
-      [
-        "EVERY GAMERS PARADISE",
-        {
-          "image": "/home/header/consoles/playstation.png",
-          "title": "PlayStation 5",
-          "description": "DualSense Included",
-          "products": [],
-          "URL": "/"
-        },
-        {
-          "image": "/home/header/consoles/xbox.png",
-          "title": "Xbox Series X",
-          "description": "Xbox Controller Included",
-          "products": [],
-          "URL": "/"
-        },
-        {
-          "image": "/home/header/consoles/switch.png",
-          "title": "Nintendo Switch",
-          "description": "Switch Doc & Joy-Con",
-          "products": [],
-          "URL": "/"
-        }
-      ],
-      [
-        "CONTROL EVERY PIXEL",
-        {
-          "image": "/home/header/controllers/playstation.png",
-          "title": "DualSense",
-          "description": "Type-C Wire Included",
-          "products": [],
-          "URL": "/"
-        },
-        {
-          "image": "/home/header/controllers/xbox.png",
-          "title": "Xbox Original",
-          "description": "Type-C Wire Included",
-          "products": [],
-          "URL": "/"
-        },
-        {
-          "image": "/home/header/controllers/switch.png",
-          "title": "Switch Pro",
-          "description": "USB Wire Included",
-          "products": [],
-          "URL": "/"
-        }
-      ],
-      [
-        "FEEL THE SOUND WAVES",
-        {
-          "image": "/home/header/headphones/playstation.png",
-          "title": "PS5 Pulse 3D",
-          "description": "Mic Extension Included",
-          "products": [],
-          "URL": "/"
-        },
-        {
-          "image": "/home/header/headphones/xbox.png",
-          "title": "Xbox Original",
-          "description": "Mic Extension Fixed",
-          "products": [],
-          "URL": "/"
-        },
-        {
-          "image": "/home/header/headphones/switch.png",
-          "title": "Switch WiredSet",
-          "description": "Mic Extension Fixed",
-          "products": [],
-          "URL": "/"
-        }
-      ]
+      {
+        "title": "EVERY GAMERS PARADISE",
+        "products": [
+          {
+            "image": "/home/header/consoles/playstation.png",
+            "title": "PlayStation 5",
+            "description": "Sony X CyberVerse",
+            "items": [
+              "/home/header/items/playstation.png",
+              "/home/header/items/controller.png",
+              "/home/header/items/headset.png",
+              "/home/header/items/wires.png"
+            ],
+            "URL": "/"
+          },
+          {
+            "image": "/home/header/consoles/xbox.png",
+            "title": "Xbox Series X",
+            "description": "Microsoft X CyberVerse",
+            "items": [
+              "/home/header/items/xbox.png",
+              "/home/header/items/controller.png",
+              "/home/header/items/headset.png",
+              "/home/header/items/wires.png"
+            ],
+            "URL": "/"
+          },
+          {
+            "image": "/home/header/consoles/switch.png",
+            "title": "Nintendo Switch",
+            "description": "Nintendo X CyberVerse",
+            "items": [
+              "/home/header/items/switch.png",
+              "/home/header/items/controller.png",
+              "/home/header/items/headset.png",
+              "/home/header/items/wires.png"
+            ],
+            "URL": "/"
+          }
+        ]
+      },
+      {
+        "title": "CONTROL EVERY PIXEL",
+        "products": [
+          {
+            "image": "/home/header/controllers/playstation.png",
+            "title": "The DualSense",
+            "description": "Sony X CyberVerse",
+            "items": [
+              "/home/header/items/controller.png",
+              "/home/header/items/battery.png",
+              "/home/header/items/wires.png"
+            ],
+            "URL": "/"
+          },
+          {
+            "image": "/home/header/controllers/xbox.png",
+            "title": "Xbox Original",
+            "description": "Microsoft X CyberVerse",
+            "items": [
+              "/home/header/items/controller.png",
+              "/home/header/items/battery.png",
+              "/home/header/items/wires.png"
+            ],
+            "URL": "/"
+          },
+          {
+            "image": "/home/header/controllers/switch.png",
+            "title": "Switch Pro",
+            "description": "Nintendo X CyberVerse",
+            "items": [
+              "/home/header/items/controller.png",
+              "/home/header/items/battery.png",
+              "/home/header/items/wires.png"
+            ],
+            "URL": "/"
+          }
+        ]
+      },
+      {
+        "title": "FEEL THE SOUND WAVES",
+        "products": [
+          {
+            "image": "/home/header/headphones/playstation.png",
+            "title": "Sony Pulse 3D",
+            "description": "Sony X CyberVerse",
+            "items": [
+              "/home/header/items/headset.png",
+              "/home/header/items/battery.png",
+              "/home/header/items/wires.png"
+            ],
+            "URL": "/"
+          },
+          {
+            "image": "/home/header/headphones/xbox.png",
+            "title": "Xbox Headset",
+            "description": "Microsoft X CyberVerse",
+            "items": [
+              "/home/header/items/headset.png",
+              "/home/header/items/battery.png",
+              "/home/header/items/wires.png"
+            ],
+            "URL": "/"
+          },
+          {
+            "image": "/home/header/headphones/switch.png",
+            "title": "Switch WiredSet",
+            "description": "Nintendo X CyberVerse",
+            "items": [
+              "/home/header/items/headset.png",
+              "/home/header/items/battery.png",
+              "/home/header/items/wires.png"
+            ],
+            "URL": "/"
+          }
+        ]
+      }
     ]
   },
   "features": [

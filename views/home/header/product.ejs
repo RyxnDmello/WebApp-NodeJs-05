@@ -1,37 +1,25 @@
-<% header.slides.forEach((slide) => { %>
-<article class="header-carousel-slide">
-  <% slide.forEach((product, index) => { if(index === 0) { %>
-  <h2 class="header-carousel-slide-title"><%= product %></h2>
-  <% } else { %>
-  <div class="header-product">
-    <img class="header-product-image" src="<%= product.image %>" />
+<% products.forEach((product) => { %>
+<div class="header-product">
+  <img class="header-product-image" src="<%= product.image %>" />
 
-    <div class="header-product-details">
-      <div class="header-product-header">
-        <h4 class="header-product-title"><%= product.title %></h4>
-        <p class="header-product-description"><%= product.description %></p>
-      </div>
-
-      <div class="header-product-links">
-        <% for(let i = 0; i < 4; i++) { %>
-        <a class="header-product-link" href="">
-          <img
-            class="header-product-link-image"
-            src="/buttons/account/create.png"
-          />
-        </a>
-        <% } %>
-      </div>
-
-      <a class="header-product-shop-link" href="<%= product.URL %>">
-        <img
-          class="header-product-shop-link-image"
-          src="/buttons/shop/bag.png"
-        />
-        <p class="header-product-shop-link-text">Explore Collection</p>
-      </a>
+  <div class="header-product-details">
+    <div class="header-product-header">
+      <h4 class="header-product-title"><%= product.title %></h4>
+      <p class="header-product-description"><%= product.description %></p>
     </div>
+
+    <div class="header-product-items">
+      <% product.items.forEach((item) => { %>
+      <div class="header-product-item">
+        <img class="header-product-item-image" src="<%= item %>" />
+      </div>
+      <% }) %>
+    </div>
+
+    <a class="header-product-link" href="<%= product.URL %>">
+      <img class="header-product-link-image" src="/buttons/shop/bag.png" />
+      <p class="header-product-link-text">Explore Collection</p>
+    </a>
   </div>
-  <% }}) %>
-</article>
+</div>
 <% }) %>

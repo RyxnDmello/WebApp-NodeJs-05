@@ -13,7 +13,17 @@
   overflow: hidden;
   padding: 2rem 0;
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
+}
+
+.comments-carousel-container-title {
+  font-family: "Acquire Light", sans-serif;
+  letter-spacing: 2.5px;
+  font-weight: 100;
+  font-size: 5rem;
+  padding: 0 4rem;
+  cursor: default;
+  color: #fff;
 }
 
 .comments-background {
@@ -34,7 +44,7 @@
   justify-content: start;
   grid-auto-flow: column;
   align-content: center;
-  padding: 2rem 4rem;
+  padding: 0 4rem;
   display: grid;
   width: 1416px;
   gap: 4rem;

@@ -1,19 +1,18 @@
 <nav><%- include("./navbar.ejs", { navbar: navbar }) %></nav>
 
 <div class="header-information">
-  <img
-    class="header-carousel-button left"
-    src="/buttons/basic/arrow-head-left.png"
-  />
+  <img class="header-carousel-button left" src="<%= header.controller[0] %>" />
 
   <div class="header-carousel">
-    <%- include("./header/product.ejs", { header: header }) %>
+    <% header.slides.forEach((slide) => { %>
+    <div class="header-carousel-slide">
+      <h2 class="header-carousel-slide-title"><%= slide.title %></h2>
+      <%- include("./header/product.ejs", { products: slide.products }) %>
+    </div>
+    <% }) %>
   </div>
 
-  <img
-    class="header-carousel-button right"
-    src="/buttons/basic/arrow-head-right.png"
-  />
+  <img class="header-carousel-button right" src="<%= header.controller[1] %>" />
 </div>
 
 <div class="header-carousel-indicators">
