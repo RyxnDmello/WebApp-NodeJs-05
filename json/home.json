@@ -17,6 +17,28 @@
         "image": "/buttons/socials/discord.png",
         "URL": ""
       }
+    ],
+    "locations": [
+      {
+        "URL": "#features",
+        "text": "Features"
+      },
+      {
+        "URL": "#games",
+        "text": "Games"
+      },
+      {
+        "URL": "#details",
+        "text": "Details"
+      },
+      {
+        "URL": "#exclusive",
+        "text": "Exclusives"
+      },
+      {
+        "URL": "#comments",
+        "text": "Comments"
+      }
     ]
   },
   "header": {

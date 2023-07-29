@@ -16,7 +16,6 @@
 .header-carousel-slide {
   grid-template-columns: repeat(3, auto);
   justify-content: space-between;
-  transition: translate 600ms;
   align-items: start;
   width: 1174px;
   display: grid;

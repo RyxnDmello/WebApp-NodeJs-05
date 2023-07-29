@@ -11,6 +11,14 @@
     <% }) %>
   </div>
 
+  <div class="nav-location-links-container">
+    <% navbar.locations.forEach((location) => { %>
+    <a class="nav-location-link" href="<%= location.URL %>">
+      <p class="nav-location-link-text"><%= location.text %></p>
+    </a>
+    <% }) %>
+  </div>
+
   <a class="nav-register-link" href="/account">
     <img class="nav-register-link-image" src="/buttons/account/create.png" />
     <p class="nav-register-link-text">Register</p>

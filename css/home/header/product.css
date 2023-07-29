@@ -147,7 +147,7 @@
 /*--------------------------------------*/
 
 .header-product-fade-out {
-  animation: HeaderProductFadeOut 200ms forwards;
+  animation: HeaderProductFadeOut 275ms forwards;
 }
 
 @keyframes HeaderProductFadeOut {
@@ -163,7 +163,7 @@
 }
 
 .header-product-fade-in {
-  animation: HeaderProductFadeIn 200ms forwards;
+  animation: HeaderProductFadeIn 275ms forwards;
 }
 
 @keyframes HeaderProductFadeIn {
