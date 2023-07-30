@@ -3,18 +3,18 @@
 </a>
 
 <div class="nav-links-container">
-  <div class="nav-social-links-container">
-    <% navbar.socials.forEach((social) => { %>
-    <a class="nav-social-link" href="<%= social.URL %>">
-      <img class="nav-social-link-image" src="<%= social.image %>" />
-    </a>
-    <% }) %>
-  </div>
-
   <div class="nav-location-links-container">
     <% navbar.locations.forEach((location) => { %>
     <a class="nav-location-link" href="<%= location.URL %>">
       <p class="nav-location-link-text"><%= location.text %></p>
+    </a>
+    <% }) %>
+  </div>
+
+  <div class="nav-social-links-container">
+    <% navbar.socials.forEach((social) => { %>
+    <a class="nav-social-link" href="<%= social.URL %>">
+      <img class="nav-social-link-image" src="<%= social.image %>" />
     </a>
     <% }) %>
   </div>

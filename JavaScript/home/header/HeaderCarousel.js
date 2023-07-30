@@ -10,6 +10,9 @@ let currentSlide = 0;
 export default function HeaderCarousel() {
   buttons.forEach((button, index) => {
     button.addEventListener("click", () => {
+      if (index === 1 && currentSlide === slides.length - 1) return;
+      if (index === 0 && currentSlide === 0) return;
+
       CarouselController(button);
       IndicatorAnimation(currentSlide);
       CarouselMoveSlides();
@@ -18,7 +21,9 @@ export default function HeaderCarousel() {
 
   indicators.forEach((indicator, index) => {
     indicator.addEventListener("click", () => {
+      if (currentSlide === index) return;
       currentSlide = index;
+
       IndicatorAnimation(index);
       CarouselMoveSlides();
     });

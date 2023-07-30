@@ -44,7 +44,6 @@ nav {
   justify-content: center;
   grid-auto-flow: column;
   align-items: center;
-  margin-right: 1rem;
   display: grid;
   gap: 1rem;
 }
@@ -104,6 +103,7 @@ nav {
 /*----------------------------------*/
 
 .nav-register-link {
+  transition: translate 125ms;
   border: 2px solid #fff;
   padding: 0.25rem 2.5rem;
   justify-content: center;
@@ -136,6 +136,7 @@ nav {
 
 .nav-register-link-text {
   font-family: "Poppins", sans-serif;
+  transition: color 400ms;
   letter-spacing: 0.5px;
   font-size: 1.15rem;
   font-weight: 400;
@@ -169,6 +170,10 @@ nav {
 
 .nav-register-link:hover .nav-register-link-text {
   color: #000;
+}
+
+.nav-register-link:focus {
+  translate: 0 6px;
 }
 
 /*--------------------------------------*/

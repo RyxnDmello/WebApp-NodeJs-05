@@ -1,0 +1,50 @@
+/*-------------------------------------------*/
+/*--------------- FORM STYLES ---------------*/
+/*-------------------------------------------*/
+
+.register-form {
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: center;
+  padding: 0 4rem;
+  display: grid;
+  width: 500px;
+  gap: 1.5rem;
+}
+
+/*------------------------------------------*/
+/*-------------- INPUT STYLES --------------*/
+/*------------------------------------------*/
+
+.register-form-inputs {
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.register-form-input-container {
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: center;
+  display: grid;
+}
+
+.register-form-input {
+  font-family: "Poppins", sans-serif;
+  border: 2px solid #000;
+  padding: 0.25rem 0.5rem;
+  letter-spacing: 0.5px;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+.register-form-input::placeholder {
+  color: #000;
+}
+
+/*------------------------------------------*/
+/*--------------- END OF CSS ---------------*/
+/*------------------------------------------*/

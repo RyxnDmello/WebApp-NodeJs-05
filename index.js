@@ -29,6 +29,10 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/account/register", (req, res) => {
+  res.render("register");
+});
+
 app.listen(process.env.DEVELOPMENT_PORT, () => {
   console.log(`ACTIVE | PORT: ${process.env.DEVELOPMENT_PORT}`);
 });
