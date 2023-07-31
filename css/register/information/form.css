@@ -6,9 +6,17 @@
   grid-template-columns: auto;
   justify-content: stretch;
   align-items: center;
+  padding: 0 2.5rem;
   display: grid;
   width: 500px;
-  gap: 2rem;
+  gap: 1.5rem;
+}
+
+.register-form-divider {
+  border-bottom: 2px solid #00000025;
+  border-right: none;
+  border-left: none;
+  border-top: none;
 }
 
 /*-----------------------------------------*/
@@ -18,6 +26,7 @@
 .register-form-header {
   grid-template-columns: auto;
   justify-content: center;
+  margin-bottom: -0.65rem;
   align-items: center;
   display: grid;
 }
@@ -32,11 +41,9 @@
 
 .register-form-description {
   font-family: "Abel", sans-serif;
-  letter-spacing: 0.25px;
   margin-top: -0.65rem;
-  font-size: 1.125rem;
   text-align: center;
-  font-weight: 900;
+  font-size: 2.5rem;
   cursor: default;
   color: #000;
 }
@@ -58,12 +65,11 @@
   grid-template-columns: auto;
   justify-content: stretch;
   align-items: center;
-  padding: 0 2.5rem;
   display: grid;
 }
 
 .register-form-input {
-  padding: 0.5rem 0.5rem 0.5rem 2.65rem;
+  padding: 0.5rem 2.5rem 0.5rem 0.5rem;
   font-family: "Poppins", sans-serif;
   border: 2px solid #000;
   letter-spacing: 0.65px;
@@ -80,54 +86,88 @@
 
 .register-form-input-image {
   position: absolute;
-  left: 3.4rem;
+  right: 0.85rem;
   width: 20px;
 }
 
-/*-------------------------------------------*/
-/*-------------- BUTTON STYLES --------------*/
-/*-------------------------------------------*/
+/*-----------------------------------------*/
+/*-------------- FORM BUTTON --------------*/
+/*-----------------------------------------*/
 
 .register-form-buttons {
   grid-template-columns: auto;
   justify-content: stretch;
   align-items: center;
-  padding: 0 2.5rem;
   display: grid;
-  gap: 0.65rem;
+  gap: 1rem;
 }
 
 .register-form-button {
+  transition: translate 125ms;
+  border: 2px solid #000;
+  background-color: #000;
   border-radius: 40px;
-  border: transparent;
+  position: relative;
+  isolation: isolate;
   padding: 0.4rem 0;
+  overflow: hidden;
   cursor: pointer;
 }
 
-.register-form-button.create {
-  border: 2px solid #000;
-  background-color: #000;
-}
-
-.register-form-button.switch {
-  border: 2px solid #000;
+.register-form-button::before {
+  background-color: #fff;
+  transition: width 400ms;
+  transform: skew(40deg);
+  position: absolute;
+  left: -0.5rem;
+  height: 100%;
+  content: "";
+  z-index: -1;
+  width: 0%;
+  top: 0;
 }
 
 .register-form-button-text {
   font-family: "Poppins", sans-serif;
-  letter-spacing: 0.65px;
+  transition: color 350ms;
   border-radius: 2.5px;
+  letter-spacing: 1px;
+  font-weight: 500;
   font-size: 1rem;
   color: #fff;
 }
 
-.register-form-button.create .register-form-button-text {
-  font-weight: 400;
-  color: #fff;
+/*-----------------------------------------*/
+/*------------- SWITCH BUTTON -------------*/
+/*-----------------------------------------*/
+
+.register-switch-button {
+  transition: translate 125ms;
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
+  margin: 0 auto;
+  border: none;
 }
 
-.register-form-button.switch .register-form-button-text {
-  font-weight: 500;
+.register-switch-button::before {
+  background-color: #000;
+  transition: width 350ms;
+  border-radius: 40px;
+  position: absolute;
+  bottom: -0.5rem;
+  margin: 0 auto;
+  height: 1.5px;
+  content: "";
+  width: 0%;
+  right: 0;
+  left: 0;
+}
+
+.register-switch-button-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
   color: #000;
 }
 
@@ -137,6 +177,22 @@
 
 .register-form-input:hover::placeholder {
   opacity: 0;
+}
+
+.register-form-button:hover::before {
+  width: calc(100% + 1rem);
+}
+
+.register-form-button:hover .register-form-button-text {
+  color: #000;
+}
+
+.register-form-button:focus {
+  translate: 0 5px;
+}
+
+.register-switch-button:hover::before {
+  width: 65%;
 }
 
 /*------------------------------------------*/
