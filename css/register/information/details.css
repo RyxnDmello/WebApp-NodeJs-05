@@ -3,6 +3,7 @@
 /*------------------------------------------------*/
 
 .register-details {
+  box-shadow: 0 0 10px #000;
   grid-template-columns: auto;
   background-color: #000;
   justify-content: center;
