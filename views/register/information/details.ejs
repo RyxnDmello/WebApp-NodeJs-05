@@ -1,13 +1,15 @@
 <div class="details-links">
-  <a href="" class="details-link">
-    <p class="details-link-text">Login</p>
+  <% details.socials.forEach((social) => { %>
+  <a href="<%= social.URL %>" class="details-link">
+    <img class="details-link-image" src="<%= social.image %>" />
   </a>
+  <% }) %>
 </div>
 
 <div class="details-information">
   <div class="details-information-text">
-    Explore Every Galaxy In The CyberVerse,<br />
-    Where The Heart Lies, A Gamers Paradise
+    Explore a universe of gaming consoles,<br />
+    controllers, headsets, and amazing skins.
 
     <img class="details-information-quote" src="/register/open-quote.png" />
     <img class="details-information-quote" src="/register/close-quote.png" />
@@ -35,3 +37,5 @@
 </div>
 
 <img class="register-details-background" src="/register/background-1.jpg" />
+<img class="register-details-background" src="/register/background-2.jpg" />
+<img class="register-details-background" src="/register/background-3.jpg" />

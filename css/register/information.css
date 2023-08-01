@@ -2,19 +2,9 @@
 @import url("./information/details.css");
 
 #information {
-  grid-template-columns: auto;
-  justify-content: center;
-  align-items: center;
-  height: 100dvh;
-  display: grid;
-}
-
-.information-container {
-  box-shadow: 0 0 25px #00000060;
-  justify-content: center;
+  justify-content: stretch;
   grid-auto-flow: column;
-  align-items: center;
-  border-radius: 20px;
-  overflow: hidden;
+  align-items: stretch;
+  height: 100dvh;
   display: grid;
 }

@@ -1,0 +1,22 @@
+{
+  "details": {
+    "socials": [
+      {
+        "image": "/buttons/socials/instagram.png",
+        "URL": ""
+      },
+      {
+        "image": "/buttons/socials/twitter.png",
+        "URL": ""
+      },
+      {
+        "image": "/buttons/socials/facebook.png",
+        "URL": ""
+      },
+      {
+        "image": "/buttons/socials/discord.png",
+        "URL": ""
+      }
+    ]
+  }
+}

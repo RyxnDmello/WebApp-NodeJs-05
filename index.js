@@ -3,6 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 
 const HomeTemplate = require("./json/home.json");
+const RegisterTemplate = require("./json/register.json");
 
 const app = express();
 
@@ -30,7 +31,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/account/:type", (req, res) => {
-  res.render("register");
+  res.render("register", { register: RegisterTemplate });
 });
 
 app.post("/account/:type", (req, res) => {
