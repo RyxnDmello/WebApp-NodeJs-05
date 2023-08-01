@@ -1,53 +1,74 @@
-<div class="register-form-header">
-  <h2 class="register-form-title">Hi Gamer!</h2>
-  <p class="register-form-description">Create Your Account</p>
-</div>
+<% for(let i = 0; i < 2; i++) { type = i === 0 ? "login" : "register"; %>
+<form class="register-form" action="/account/<%= type %>" method="post">
+  <div class="register-form-header">
+    <h2 class="register-form-title">CyberVerse</h2>
 
-<hr class="register-form-divider" />
-
-<div class="register-form-inputs">
-  <div class="register-form-input-container">
-    <input
-      class="register-form-input"
-      placeholder="Email"
-      autocomplete="off"
-      type="email"
-    />
-
-    <img class="register-form-input-image" src="/register/email.png" />
+    <% if(type === "register") { %>
+    <p class="register-form-description">Create Your Account</p>
+    <% } else { %>
+    <p class="register-form-description">Login To Your Account</p>
+    <% } %>
   </div>
 
-  <div class="register-form-input-container">
-    <input
-      class="register-form-input"
-      placeholder="Username"
-      autocomplete="off"
-      type="text"
-    />
+  <hr class="register-form-divider" />
 
-    <img class="register-form-input-image" src="/register/username.png" />
+  <div class="register-form-inputs">
+    <div class="register-form-input-container">
+      <input
+        class="register-form-input"
+        placeholder="Email"
+        autocomplete="off"
+        name="email"
+        type="email"
+        required
+      />
+
+      <img class="register-form-input-image" src="/register/email.png" />
+    </div>
+
+    <% if(type === "register") { %>
+    <div class="register-form-input-container">
+      <input
+        class="register-form-input"
+        placeholder="Username"
+        autocomplete="off"
+        name="username"
+        type="text"
+        required
+      />
+
+      <img class="register-form-input-image" src="/register/username.png" />
+    </div>
+    <% } %>
+
+    <div class="register-form-input-container">
+      <input
+        class="register-form-input"
+        placeholder="Password"
+        autocomplete="off"
+        name="password"
+        type="password"
+        required
+      />
+
+      <img class="register-form-input-image" src="/register/password.png" />
+    </div>
   </div>
 
-  <div class="register-form-input-container">
-    <input
-      class="register-form-input"
-      placeholder="Password"
-      autocomplete="off"
-      type="password"
-    />
+  <hr class="register-form-divider" />
 
-    <img class="register-form-input-image" src="/register/password.png" />
+  <div class="register-form-buttons">
+    <button class="register-form-button" type="submit">
+      <p class="register-form-button-text">
+        <%= type === "login" ? "Login Account" : "Create Account" %>
+      </p>
+    </button>
+
+    <button class="register-switch-button" type="button">
+      <p class="register-switch-button-text">
+        <%= type === "register" ? "Login Instead?" : "Register Instead?" %>
+      </p>
+    </button>
   </div>
-</div>
-
-<hr class="register-form-divider" />
-
-<div class="register-form-buttons">
-  <button class="register-form-button" type="submit">
-    <p class="register-form-button-text">Create Account</p>
-  </button>
-
-  <button class="register-switch-button" type="button">
-    <p class="register-switch-button-text">Register Instead?</p>
-  </button>
-</div>
+</form>
+<% } %>

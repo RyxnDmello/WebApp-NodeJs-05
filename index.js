@@ -29,8 +29,24 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/account/register", (req, res) => {
+app.get("/account/:type", (req, res) => {
   res.render("register");
+});
+
+app.post("/account/:type", (req, res) => {
+  if (req.params.type === "login") {
+    console.log(req.body.email);
+    console.log(req.body.password);
+
+    res.redirect("/account/register");
+    return;
+  }
+
+  console.log(req.body.email);
+  console.log(req.body.username);
+  console.log(req.body.password);
+
+  res.redirect("/account/register");
 });
 
 app.listen(process.env.DEVELOPMENT_PORT, () => {

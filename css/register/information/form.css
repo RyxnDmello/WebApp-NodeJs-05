@@ -2,6 +2,16 @@
 /*--------------- FORM STYLES ---------------*/
 /*-------------------------------------------*/
 
+.register-form-carousel {
+  justify-content: start;
+  grid-auto-flow: column;
+  align-items: center;
+  overflow: hidden;
+  padding: 2rem 0;
+  display: grid;
+  width: 500px;
+}
+
 .register-form {
   grid-template-columns: auto;
   justify-content: stretch;
@@ -25,8 +35,8 @@
 
 .register-form-header {
   grid-template-columns: auto;
-  justify-content: center;
   margin-bottom: -0.65rem;
+  justify-content: center;
   align-items: center;
   display: grid;
 }
@@ -34,14 +44,13 @@
 .register-form-title {
   font-family: "Abel", sans-serif;
   text-align: center;
-  font-size: 6.5rem;
+  font-size: 6rem;
   cursor: default;
   color: #000;
 }
 
 .register-form-description {
   font-family: "Abel", sans-serif;
-  margin-top: -0.65rem;
   text-align: center;
   font-size: 2.5rem;
   cursor: default;
@@ -193,6 +202,42 @@
 
 .register-switch-button:hover::before {
   width: 65%;
+}
+
+/*----------------------------------------*/
+/*-------------- ANIMATIONS --------------*/
+/*----------------------------------------*/
+
+.register-form-fade-out {
+  animation: RegisterFormFadeOut 250ms forwards;
+}
+
+@keyframes RegisterFormFadeOut {
+  0% {
+    translate: 0 0;
+    opacity: 1;
+  }
+
+  100% {
+    translate: 0 -20px;
+    opacity: 0;
+  }
+}
+
+.register-form-fade-in {
+  animation: RegisterFormFadeIn 250ms forwards;
+}
+
+@keyframes RegisterFormFadeIn {
+  0% {
+    translate: 0 -20px;
+    opacity: 0;
+  }
+
+  100% {
+    translate: 0 0;
+    opacity: 1;
+  }
 }
 
 /*------------------------------------------*/
