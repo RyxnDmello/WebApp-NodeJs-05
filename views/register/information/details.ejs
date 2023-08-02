@@ -1,9 +1,15 @@
 <div class="details-links">
-  <% details.socials.forEach((social) => { %>
-  <a href="<%= social.URL %>" class="details-link">
-    <img class="details-link-image" src="<%= social.image %>" />
+  <div class="details-socials-links">
+    <% details.socials.forEach((social) => { %>
+    <a href="<%= social.URL %>" class="details-social-link">
+      <img class="details-social-link-image" src="<%= social.image %>" />
+    </a>
+    <% }) %>
+  </div>
+
+  <a class="details-member-link" href="/">
+    <p class="details-member-link-text">Become A Member</p>
   </a>
-  <% }) %>
 </div>
 
 <div class="details-information">

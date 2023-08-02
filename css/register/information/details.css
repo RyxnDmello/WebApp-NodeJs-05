@@ -40,25 +40,52 @@
 /*---------------------------------------*/
 
 .details-links {
-  justify-content: right;
+  justify-content: space-between;
   grid-auto-flow: column;
   align-items: start;
   padding: 2rem;
   display: grid;
+}
+
+.details-socials-links {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
   gap: 1rem;
 }
 
-.details-link {
+.details-social-link {
   grid-template-columns: auto;
   justify-content: center;
   align-items: center;
   display: grid;
 }
 
-.details-link-image {
+.details-social-link-image {
   transition: opacity 350ms, translate 125ms;
   opacity: 0.25;
   width: 25px;
+}
+
+.details-member-link {
+  transition: background-color 350ms, translate 150ms;
+  grid-template-columns: auto;
+  border: 2px solid #fff;
+  justify-content: center;
+  padding: 0.25rem 2.5rem;
+  border-radius: 40px;
+  align-items: center;
+  display: grid;
+}
+
+.details-member-link-text {
+  font-family: "Poppins", sans-serif;
+  transition: color 350ms;
+  letter-spacing: 0.5px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #fff;
 }
 
 /*----------------------------------------*/
@@ -86,7 +113,6 @@
 
 .details-information-quote {
   position: absolute;
-  opacity: 0.25;
   width: 30px;
 }
 
@@ -116,7 +142,7 @@
   grid-auto-flow: column;
   align-items: center;
   display: grid;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .details-controller-button {
@@ -139,7 +165,7 @@
 }
 
 .details-controller-indicator {
-  transition: opacity 450ms, translate 450ms;
+  transition: opacity 450ms;
   background-color: #fff;
   border-radius: 40px;
   cursor: pointer;
@@ -156,12 +182,24 @@
 /*-------------- TRANSITIONS --------------*/
 /*-----------------------------------------*/
 
-.details-link:hover .details-link-image {
+.details-social-link:hover .details-social-link-image {
   opacity: 1;
 }
 
-.details-link:focus .details-link-image {
+.details-social-link:focus .details-social-link-image {
   translate: 0 -10px;
+}
+
+.details-member-link:hover {
+  background-color: #fff;
+}
+
+.details-member-link:hover .details-member-link-text {
+  color: #000;
+}
+
+.details-member-link:focus {
+  translate: 0 5px;
 }
 
 .details-controller-button:nth-of-type(1):hover {

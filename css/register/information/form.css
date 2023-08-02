@@ -6,7 +6,22 @@
   grid-template-columns: auto;
   justify-content: center;
   align-items: center;
+  position: relative;
   display: grid;
+}
+
+.register-home-link {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  display: grid;
+  left: 1.25rem;
+  top: 1.25rem;
+}
+
+.register-home-link-image {
+  width: 40px;
 }
 
 /*-------------------------------------------*/
@@ -152,7 +167,7 @@
   transition: color 450ms;
   border-radius: 2.5px;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1rem;
   color: #fff;
 }
@@ -204,7 +219,6 @@
 }
 
 .register-form-button:hover .register-form-button-text {
-  font-weight: 500;
   color: #000;
 }
 
