@@ -1,0 +1,20 @@
+<div class="shop-list">
+  <% for(let item = 0; item < 8; item++) { %>
+  <form class="shop-item" action="/shop/item/add" method="post">
+    <div class="shop-item-header">
+      <img class="shop-item-image" src="/shop/playstation/consoles/white.png" />
+      <h2 class="shop-item-color">RED SNAKE</h2>
+    </div>
+
+    <div class="shop-item-details">
+      <p class="shop-item-type">Originals</p>
+      <p class="shop-item-price">$200</p>
+    </div>
+
+    <button class="shop-item-button" type="submit">
+      <img class="shop-item-button-image" src="/buttons/shop/cart-add.png" />
+      <p class="shop-item-button-text">Add To Cart</p>
+    </button>
+  </form>
+  <% } %>
+</div>

@@ -1,0 +1,173 @@
+/* -------------------------------------------------*/
+/*------------------ LIST STYLES ------------------*/
+/*-------------------------------------------------*/
+
+#list {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  padding: 5rem 0;
+  display: grid;
+}
+
+.shop-list {
+  grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+}
+
+/*-------------------------------------------------*/
+/*------------------ ITEM STYLES ------------------*/
+/*-------------------------------------------------*/
+
+.shop-item {
+  padding: 0 1.5rem 1rem 1.5rem;
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: center;
+  position: relative;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.shop-item::before {
+  background-image: linear-gradient(45deg, #070707 10%, #1b1b5f 90%);
+  box-shadow: 0 0 10px #000000af;
+  border-radius: 10px;
+  position: absolute;
+  height: 70%;
+  content: "";
+  z-index: -1;
+  width: 100%;
+  bottom: 0;
+}
+
+/*---------------------------------------*/
+/*------------ HEADER STYLES ------------*/
+/*---------------------------------------*/
+
+.shop-item-header {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.shop-item-image {
+  filter: drop-shadow(0 0 10px #00000050);
+  width: 250px;
+}
+
+.shop-item-color {
+  font-family: "Abel", sans-serif;
+  letter-spacing: 1.5px;
+  color: #ffffff50;
+  font-size: 2.5rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+/*----------------------------------------*/
+/*------------ DETAILS STYLES ------------*/
+/*----------------------------------------*/
+
+.shop-item-details {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
+.shop-item-type {
+  font-family: "Abel", sans-serif;
+  letter-spacing: 0.65px;
+  font-size: 1.5rem;
+  cursor: default;
+  color: #fff;
+}
+
+.shop-item-price {
+  font-family: "Abel", sans-serif;
+  letter-spacing: 0.65px;
+  font-size: 1.5rem;
+  cursor: default;
+  color: #fff;
+}
+
+/*---------------------------------------*/
+/*------------ BUTTON STYLES ------------*/
+/*---------------------------------------*/
+
+.shop-item-button {
+  background-color: transparent;
+  transition: translate 125ms;
+  border: 2px solid #fff;
+  justify-content: center;
+  grid-auto-flow: column;
+  border-radius: 2.5px;
+  align-items: center;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  cursor: pointer;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.shop-item-button::before {
+  transition: width 450ms, border-width 450ms;
+  background-color: #fff;
+  border: 0 solid #fff;
+  transform: Skew(40deg);
+  position: absolute;
+  height: 100%;
+  content: "";
+  z-index: -1;
+  left: -1rem;
+  width: 0%;
+}
+
+.shop-item-button-image {
+  transition: filter 450ms;
+  width: 18px;
+}
+
+.shop-item-button-text {
+  font-family: "Poppins", sans-serif;
+  transition: color 450ms;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+/*---------------------------------------*/
+/*------------- TRANSITIONS -------------*/
+/*---------------------------------------*/
+
+.shop-item-button:hover::before {
+  width: calc(100% + 2rem);
+}
+
+.shop-item-button:hover .shop-item-button-image {
+  filter: invert(1);
+}
+
+.shop-item-button:hover .shop-item-button-text {
+  border-width: 2px;
+  color: #000;
+}
+
+.shop-item-button:focus {
+  translate: 0 5px;
+}
+
+/*----------------------------------------------*/
+/*----------------- END OF CSS -----------------*/
+/*---------------------------------------------- */

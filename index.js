@@ -34,6 +34,10 @@ app.get("/account/:type", (req, res) => {
   res.render("register", { register: RegisterTemplate });
 });
 
+app.get("/shop/:brand/:type", (req, res) => {
+  res.render("shop");
+});
+
 app.post("/account/:type", (req, res) => {
   if (req.params.type === "login") {
     console.log(req.body.email);
