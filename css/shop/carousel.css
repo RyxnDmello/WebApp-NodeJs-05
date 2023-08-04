@@ -1,0 +1,156 @@
+/*-------------------------------------------------*/
+/*---------------- CAROUSEL STYLES ----------------*/
+/*-------------------------------------------------*/
+
+.shop-carousel {
+  box-shadow: 0 0 20px #000000a0;
+  background-color: #00000025;
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 0;
+  display: grid;
+}
+
+.shop-carousel-background {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+}
+
+/*----------------------------------------*/
+/*------------- SLIDE STYLES -------------*/
+/*----------------------------------------*/
+
+.shop-slide {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  isolation: isolate;
+  display: grid;
+  gap: 1rem;
+}
+
+.shop-slide-image {
+  height: 350px;
+}
+
+/*-------------------------------------*/
+/*------------ INFO STYLES ------------*/
+/*-------------------------------------*/
+
+.shop-slide-information {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+.shop-slide-title {
+  font-family: "Abel", sans-serif;
+  letter-spacing: 2.5px;
+  color: #ffffff80;
+  font-weight: 600;
+  font-size: 6rem;
+  cursor: default;
+}
+
+/*----------------------------------------*/
+/*------------ DETAILS STYLES ------------*/
+/*----------------------------------------*/
+
+.shop-slide-details {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
+.shop-slide-sponsor {
+  font-family: "Abel", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  cursor: default;
+  color: #fff;
+}
+
+.shop-slide-price {
+  font-family: "Abel", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  cursor: default;
+  color: #fff;
+}
+
+/*---------------------------------------*/
+/*------------ BUTTON STYLES ------------*/
+/*---------------------------------------*/
+
+.shop-slide-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  justify-content: center;
+  grid-auto-flow: column;
+  padding: 0.25rem 4rem;
+  border-radius: 40px;
+  align-items: center;
+  width: fit-content;
+  margin-top: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.shop-slide-button::before {
+  background-color: #fff;
+  border: 0px solid #fff;
+  transition: width 400ms;
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+  content: "";
+  width: 0%;
+  left: 0;
+}
+
+.shop-slide-button-image {
+  transition: filter 400ms;
+  width: 20px;
+}
+
+.shop-slide-button-text {
+  font-family: "Poppins", sans-serif;
+  transition: color 400ms;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+/*---------------------------------------*/
+/*------------- TRANSITIONS -------------*/
+/*---------------------------------------*/
+
+.shop-slide-button:hover::before {
+  border-width: 2px;
+  width: 100%;
+}
+
+.shop-slide-button:hover .shop-slide-button-image {
+  filter: invert(1);
+}
+
+.shop-slide-button:hover .shop-slide-button-text {
+  color: #000;
+}
+
+/*--------------------------------------------*/
+/*---------------- END OF CSS ----------------*/
+/*--------------------------------------------*/
