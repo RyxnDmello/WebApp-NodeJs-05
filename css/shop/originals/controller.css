@@ -1,0 +1,17 @@
+/*-------------------------------------------------*/
+/*--------------- CONTROLLER STYLES ---------------*/
+/*-------------------------------------------------*/
+
+.originals-carousel-button {
+  transition: opacity 500ms;
+  opacity: 0.5;
+  width: 35px;
+}
+
+.originals-carousel-indicators {
+  grid-template-columns: auto;
+  justify-content: center;
+  grid-column: span 3;
+  align-items: center;
+  display: grid;
+}

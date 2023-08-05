@@ -1,0 +1,23 @@
+@import url("./originals/carousel.css");
+@import url("./originals/controller.css");
+
+#originals {
+  grid-template-columns: repeat(3, auto);
+  box-shadow: 0 0 20px #000000a0;
+  background-color: #00000025;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 0;
+  display: grid;
+}
+
+.originals-background {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+}
