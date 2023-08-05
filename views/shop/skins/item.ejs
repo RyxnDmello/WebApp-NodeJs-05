@@ -1,13 +1,13 @@
-<% for(let item = 0; item < 8; item++) { %>
+<% products.forEach((product) => { %>
 <form class="skins-item" action="/shop/item/add" method="post">
   <div class="skins-item-header">
-    <img class="skins-item-image" src="/shop/playstation/consoles/white.png" />
-    <h2 class="skins-item-color">RED SNAKE</h2>
+    <img class="skins-item-image" src="<%= product.image %>" />
+    <h2 class="skins-item-color"><%= product.color %></h2>
   </div>
 
   <div class="skins-item-details">
-    <p class="skins-item-type">Originals</p>
-    <p class="skins-item-price">$200</p>
+    <p class="skins-item-type">Vinyls & Decals</p>
+    <p class="skins-item-price"><%= product.price %></p>
   </div>
 
   <button class="skins-item-button" type="submit">
@@ -15,4 +15,4 @@
     <p class="skins-item-button-text">Add To Cart</p>
   </button>
 </form>
-<% } %>
+<% }) %>

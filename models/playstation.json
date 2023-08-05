@@ -1,0 +1,120 @@
+{
+  "consoles": {
+    "originals": [
+      {
+        "image": "/shop/playstation/consoles/white.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "White",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/playstation/consoles/black.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "Black",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/playstation/consoles/red.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "Red",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/playstation/consoles/purple.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "Purple",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/playstation/consoles/purple.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "Blue",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/playstation/consoles/purple.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "Pink",
+        "price": "$600"
+      }
+    ],
+    "skins": [
+      {
+        "image": "/shop/playstation/consoles/skin-1.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "Skin 1",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/playstation/consoles/skin-2.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "Skin 2",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/playstation/consoles/skin-3.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "Skin 3",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/playstation/consoles/skin-4.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "Skin 4",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/playstation/consoles/skin-5.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "Skin 5",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/playstation/consoles/skin-6.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "Skin 6",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/playstation/consoles/skin-7.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "Skin 7",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/playstation/consoles/skin-8.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "Skin 8",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/playstation/consoles/skin-9.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "Skin 9",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/playstation/consoles/skin-10.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "Skin 10",
+        "price": "$600"
+      }
+    ]
+  }
+}

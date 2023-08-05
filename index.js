@@ -5,6 +5,8 @@ const bodyParser = require("body-parser");
 const HomeTemplate = require("./json/home.json");
 const RegisterTemplate = require("./json/register.json");
 
+const PlaystationModel = require("./models/playstation.json");
+
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -35,7 +37,20 @@ app.get("/account/:type", (req, res) => {
 });
 
 app.get("/shop/:brand/:type", (req, res) => {
-  res.render("shop");
+  if (req.params.brand === "playstation") {
+    res.render("shop", { products: PlaystationModel[req.params.type] });
+    return;
+  }
+
+  if (req.params.brand === "xbox") {
+    console.log("Xbox Shop");
+    return;
+  }
+
+  if (req.params.brand === "switch") {
+    console.log("Switch Shop");
+    return;
+  }
 });
 
 app.post("/account/:type", (req, res) => {

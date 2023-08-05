@@ -6,22 +6,21 @@
   justify-content: start;
   grid-auto-flow: column;
   align-items: center;
-  padding: 2rem 6rem;
+  padding: 2rem 4rem;
   overflow: hidden;
-  gap: 2rem 6rem;
-  width: 1294px;
+  width: 1230px;
   display: grid;
+  gap: 4rem;
 }
 
 .originals-slide {
-  transition: transform 1250ms;
   justify-content: center;
   grid-auto-flow: column;
   align-items: center;
   isolation: isolate;
   display: grid;
   width: 1102px;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .originals-slide-image {
@@ -44,7 +43,7 @@
   letter-spacing: 2.5px;
   color: #ffffff80;
   font-weight: 600;
-  font-size: 6rem;
+  font-size: 5rem;
   cursor: default;
 }
 
@@ -143,6 +142,42 @@
 
 .originals-slide-button:focus {
   translate: 0 5px;
+}
+
+/*--------------------------------------*/
+/*------------- ANIMATIONS -------------*/
+/*--------------------------------------*/
+
+.originals-slide-fade-out {
+  animation: OriginalsSlideFadeOut 250ms forwards;
+}
+
+@keyframes OriginalsSlideFadeOut {
+  0% {
+    translate: 0 0;
+    opacity: 1;
+  }
+
+  100% {
+    translate: 0 -20px;
+    opacity: 0;
+  }
+}
+
+.originals-slide-fade-in {
+  animation: OriginalsSlideFadeIn 250ms forwards;
+}
+
+@keyframes OriginalsSlideFadeIn {
+  0% {
+    translate: 0 -20px;
+    opacity: 0;
+  }
+
+  100% {
+    translate: 0 0;
+    opacity: 1;
+  }
 }
 
 /*--------------------------------------------*/

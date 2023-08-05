@@ -3,13 +3,17 @@
   src="/buttons/basic/arrow-head-left.png"
 />
 
-<div class="originals-carousel"><%- include("./originals/carousel.ejs") %></div>
+<div class="originals-carousel">
+  <%- include("./originals/carousel.ejs", { products: products }) %>
+</div>
 
 <img
   class="originals-carousel-button"
   src="/buttons/basic/arrow-head-right.png"
 />
 
-<div class="originals-carousel-indicators"></div>
+<div class="originals-carousel-indicators">
+  <%- include("./originals/controller.ejs", { length: products.length }) %>
+</div>
 
 <img class="originals-background" src="/shop/background.jpg" />

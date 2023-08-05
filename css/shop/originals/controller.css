@@ -3,15 +3,60 @@
 /*-------------------------------------------------*/
 
 .originals-carousel-button {
-  transition: opacity 500ms;
+  transition: opacity 500ms, translate 125ms;
+  cursor: pointer;
   opacity: 0.5;
   width: 35px;
 }
 
+/*------------------------------------------------*/
+/*--------------- INDICATOR STYLES ---------------*/
+/*------------------------------------------------*/
+
 .originals-carousel-indicators {
-  grid-template-columns: auto;
   justify-content: center;
+  grid-auto-flow: column;
   grid-column: span 3;
   align-items: center;
   display: grid;
+  gap: 0.5rem;
 }
+
+.originals-carousel-indicator {
+  transition: background-color 600ms, opacity 600ms;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  cursor: pointer;
+  opacity: 0.25;
+  height: 6.5px;
+  width: 50px;
+}
+
+.originals-carousel-indicator:nth-of-type(1) {
+  background-color: #fff;
+  opacity: 1;
+}
+
+/*-------------------------------------*/
+/*------------ TRANSITIONS ------------*/
+/*-------------------------------------*/
+
+.originals-carousel-button:hover {
+  opacity: 1;
+}
+
+.originals-carousel-button:nth-of-type(1):hover {
+  translate: -5px 0;
+}
+
+.originals-carousel-button:nth-of-type(2):hover {
+  translate: 5px 0;
+}
+
+.originals-carousel-indicator:hover {
+  opacity: 1;
+}
+
+/*----------------------------------------*/
+/*-------------- END OF CSS --------------*/
+/*----------------------------------------*/

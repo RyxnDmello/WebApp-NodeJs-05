@@ -1,16 +1,15 @@
-<% for(let i = 0; i < 3; i++) { %>
+<% products.forEach((product) => { %>
 <form class="originals-slide" action="/shop/item/add" method="post">
-  <img
-    class="originals-slide-image"
-    src="/shop/playstation/consoles/white.png"
-  />
+  <img class="originals-slide-image" src="<%= product.image %>" />
 
   <div class="originals-slide-information">
-    <h4 class="originals-slide-title">THE ORIGINAL WHITE</h4>
+    <h4 class="originals-slide-title">
+      THE ORIGINAL <%= product.color.toUpperCase() %>
+    </h4>
 
     <div class="originals-slide-details">
       <p class="originals-slide-sponsor">Sony X CyberVerse</p>
-      <p class="originals-slide-price">$500</p>
+      <p class="originals-slide-price"><%= product.price %></p>
     </div>
 
     <button class="originals-slide-button" type="submit">
@@ -23,4 +22,4 @@
     </button>
   </div>
 </form>
-<% } %>
+<% }) %>
