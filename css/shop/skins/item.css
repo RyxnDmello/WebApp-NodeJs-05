@@ -3,7 +3,7 @@
 /*-------------------------------------------------*/
 
 .skins-list {
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   justify-content: center;
   align-items: center;
   display: grid;
@@ -46,7 +46,7 @@
   align-items: center;
   overflow: hidden;
   display: grid;
-  gap: 0.25rem;
+  gap: 0.5rem;
 }
 
 .skins-item-image {
@@ -94,22 +94,30 @@
 /*------------ BUTTON STYLES ------------*/
 /*---------------------------------------*/
 
+.skins-item-buttons {
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: center;
+  margin-top: 0.8rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
 .skins-item-button {
   background-color: transparent;
   transition: translate 125ms;
   border: 2px solid #fff;
+  padding: 0.25rem 2.5rem;
   justify-content: center;
   grid-auto-flow: column;
   border-radius: 40px;
   align-items: center;
-  margin-top: 0.5rem;
-  padding: 0.25rem 0;
   position: relative;
   isolation: isolate;
   overflow: hidden;
   cursor: pointer;
   display: grid;
-  gap: 0.65rem;
+  gap: 0.5rem;
 }
 
 .skins-item-button::before {
@@ -137,6 +145,30 @@
   font-size: 1.1rem;
   font-weight: 400;
   color: #fff;
+}
+
+/*---------------------------------------*/
+/*------------- LINK STYLES -------------*/
+/*---------------------------------------*/
+
+.skins-item-other-buttons {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
+.skins-item-explore-link {
+  background-color: transparent;
+  grid-template-columns: auto;
+  justify-content: right;
+  align-items: center;
+  width: fit-content;
+  display: grid;
+}
+
+.skins-item-explore-link-image {
+  width: 40px;
 }
 
 /*---------------------------------------*/

@@ -6,13 +6,29 @@
   </div>
 
   <div class="skins-item-details">
-    <p class="skins-item-type">Vinyls & Decals</p>
+    <p class="skins-item-type">CyberSkins</p>
     <p class="skins-item-price"><%= product.price %></p>
   </div>
 
-  <button class="skins-item-button" type="submit">
-    <img class="skins-item-button-image" src="/buttons/shop/cart-add.png" />
-    <p class="skins-item-button-text">Add To Cart</p>
-  </button>
+  <div class="skins-item-buttons">
+    <button class="skins-item-button" type="submit" value="CART">
+      <img class="skins-item-button-image" src="/buttons/shop/cart-add.png" />
+      <p class="skins-item-button-text">Add To Cart</p>
+    </button>
+
+    <div class="skins-item-other-buttons">
+      <button class="skins-item-button" type="submit" value="WISH">
+        <img class="skins-item-button-image" src="/buttons/shop/wish.png" />
+        <p class="skins-item-button-text">Wishlist</p>
+      </button>
+
+      <a class="skins-item-explore-link" href="/">
+        <img
+          class="skins-item-explore-link-image"
+          src="/buttons/shop/explore.png"
+        />
+      </a>
+    </div>
+  </div>
 </form>
 <% }) %>

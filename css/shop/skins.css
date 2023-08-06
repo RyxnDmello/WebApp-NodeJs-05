@@ -4,7 +4,20 @@
   grid-template-columns: auto;
   justify-content: stretch;
   align-items: center;
-  padding: 5rem 0;
+  padding: 4rem 0;
   display: grid;
   gap: 3rem;
+}
+
+.skins-title {
+  background: linear-gradient(45deg, #ff0033 0%, #002aff 100%);
+  -webkit-text-fill-color: transparent;
+  font-family: "Abel", sans-serif;
+  -webkit-background-clip: text;
+  background-clip: text;
+  letter-spacing: 2.5px;
+  text-align: center;
+  font-weight: 600;
+  cursor: default;
+  font-size: 6rem;
 }

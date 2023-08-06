@@ -1,3 +1,4 @@
+const section = document.getElementById("originals");
 const carousel = document.querySelector(".originals-carousel");
 const slides = document.querySelectorAll(".originals-slide");
 
@@ -5,11 +6,13 @@ const buttons = document.querySelectorAll(".originals-carousel-button");
 const indicators = document.querySelectorAll(".originals-carousel-indicator");
 
 const width = carousel.clientWidth - 64;
+let isSlideshowActive = true;
 let currentSlide = 0;
 
 export default function OriginalsCarousel() {
   ButtonsController();
   IndicatorsController();
+  CarouselSlideshow();
 }
 
 function ButtonsController() {
@@ -37,6 +40,21 @@ function IndicatorsController() {
       IndicatorsAnimation();
     });
   });
+}
+
+function CarouselSlideshow() {
+  section.addEventListener("mouseover", () => (isSlideshowActive = false));
+  section.addEventListener("mouseout", () => (isSlideshowActive = true));
+
+  setInterval(() => {
+    if (!isSlideshowActive) return;
+
+    if (currentSlide === slides.length - 1) currentSlide = 0;
+    else ++currentSlide;
+
+    CarouselMoveSlides();
+    IndicatorsAnimation();
+  }, 5000);
 }
 
 function CarouselMoveSlides() {

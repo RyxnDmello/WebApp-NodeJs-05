@@ -114,6 +114,20 @@
         "type": "Original",
         "color": "Skin 10",
         "price": "$600"
+      },
+      {
+        "image": "/shop/playstation/consoles/skin-11.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "Skin 11",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/playstation/consoles/skin-12.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "Skin 12",
+        "price": "$600"
       }
     ]
   }

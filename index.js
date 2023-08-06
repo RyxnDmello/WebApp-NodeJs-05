@@ -4,8 +4,7 @@ const bodyParser = require("body-parser");
 
 const HomeTemplate = require("./json/home.json");
 const RegisterTemplate = require("./json/register.json");
-
-const PlaystationModel = require("./models/playstation.json");
+const PlaystationTemplate = require("./json/playstation.json");
 
 const app = express();
 
@@ -38,7 +37,7 @@ app.get("/account/:type", (req, res) => {
 
 app.get("/shop/:brand/:type", (req, res) => {
   if (req.params.brand === "playstation") {
-    res.render("shop", { products: PlaystationModel[req.params.type] });
+    res.render("shop", { products: PlaystationTemplate[req.params.type] });
     return;
   }
 
