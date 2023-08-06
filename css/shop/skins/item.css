@@ -55,6 +55,7 @@
 }
 
 .skins-item-color {
+  text-shadow: 0 5px 10px #00000050;
   font-family: "Abel", sans-serif;
   letter-spacing: 1.5px;
   color: #ffffff50;
@@ -75,6 +76,7 @@
 }
 
 .skins-item-type {
+  text-shadow: 0 5px 10px #00000050;
   font-family: "Abel", sans-serif;
   letter-spacing: 0.65px;
   font-size: 1.5rem;
@@ -83,6 +85,7 @@
 }
 
 .skins-item-price {
+  text-shadow: 0 5px 10px #00000050;
   font-family: "Abel", sans-serif;
   letter-spacing: 0.65px;
   font-size: 1.5rem;
@@ -104,6 +107,7 @@
 }
 
 .skins-item-button {
+  box-shadow: 0 5px 10px #00000050;
   background-color: transparent;
   transition: translate 125ms;
   border: 2px solid #fff;
@@ -159,6 +163,7 @@
 }
 
 .skins-item-explore-link {
+  box-shadow: 0 5px 10px #00000050;
   background-color: transparent;
   grid-template-columns: auto;
   justify-content: right;

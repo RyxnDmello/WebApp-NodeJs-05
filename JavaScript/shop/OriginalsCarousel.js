@@ -73,7 +73,7 @@ function CarouselAnimation(duration, delay) {
   setTimeout(() => {
     slides.forEach((slide) => {
       const objects = slide.querySelectorAll(
-        ".originals-slide-image, .originals-slide-title, .originals-slide-details, .originals-slide-button"
+        ".originals-slide-image, .originals-slide-title, .originals-slide-details, .originals-slide-buttons"
       );
 
       let delayDuration = 0;

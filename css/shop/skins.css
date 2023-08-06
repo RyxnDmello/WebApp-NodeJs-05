@@ -12,6 +12,7 @@
 .skins-title {
   background: linear-gradient(45deg, #ff0033 0%, #002aff 100%);
   -webkit-text-fill-color: transparent;
+  text-shadow: 0 5px 10px #00000050;
   font-family: "Abel", sans-serif;
   -webkit-background-clip: text;
   background-clip: text;

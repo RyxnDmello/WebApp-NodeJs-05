@@ -12,14 +12,44 @@
       <p class="originals-slide-price"><%= product.price %></p>
     </div>
 
-    <button class="originals-slide-button" type="submit">
-      <img
-        class="originals-slide-button-image"
-        src="/buttons/shop/cart-add.png"
-      />
+    <div class="originals-slide-buttons">
+      <div class="originals-slide-form-buttons">
+        <button
+          class="originals-slide-button"
+          type="submit"
+          name="add"
+          value="CART"
+        >
+          <img
+            class="originals-slide-button-image"
+            src="/buttons/shop/cart-add.png"
+          />
 
-      <p class="originals-slide-button-text">Add To Cart</p>
-    </button>
+          <p class="originals-slide-button-text">Add To Cart</p>
+        </button>
+
+        <button
+          class="originals-slide-button"
+          type="submit"
+          name="add"
+          value="WISH"
+        >
+          <img
+            class="originals-slide-button-image"
+            src="/buttons/shop/wish.png"
+          />
+
+          <p class="originals-slide-button-text">Wishlist</p>
+        </button>
+      </div>
+
+      <a class="originals-slide-link" href="/">
+        <img
+          class="originals-slide-link-image"
+          src="/buttons/shop/explore.png"
+        />
+      </a>
+    </div>
   </div>
 </form>
 <% }) %>

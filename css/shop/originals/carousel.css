@@ -24,6 +24,7 @@
 }
 
 .originals-slide-image {
+  filter: drop-shadow(0 0 20px #00000050);
   height: 350px;
 }
 
@@ -39,6 +40,7 @@
 }
 
 .originals-slide-title {
+  text-shadow: 0 5px 10px #00000050;
   font-family: "Abel", sans-serif;
   letter-spacing: 2.5px;
   color: #ffffff80;
@@ -59,6 +61,7 @@
 }
 
 .originals-slide-sponsor {
+  text-shadow: 0 5px 10px #00000050;
   font-family: "Abel", sans-serif;
   font-size: 2.5rem;
   font-weight: 300;
@@ -67,6 +70,7 @@
 }
 
 .originals-slide-price {
+  text-shadow: 0 5px 10px #00000050;
   font-family: "Abel", sans-serif;
   font-size: 2.5rem;
   font-weight: 300;
@@ -78,17 +82,37 @@
 /*------------ BUTTON STYLES ------------*/
 /*---------------------------------------*/
 
+.originals-slide-buttons {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  margin-top: 1.5rem;
+  align-items: end;
+  display: grid;
+}
+
+/*--------------------------------------*/
+/*------------ FORM BUTTONS ------------*/
+/*--------------------------------------*/
+
+.originals-slide-form-buttons {
+  grid-auto-flow: column;
+  justify-content: left;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
 .originals-slide-button {
+  box-shadow: 0 5px 10px #00000050;
   background-color: transparent;
   transition: translate 125ms;
   border: 2px solid #fff;
   justify-content: center;
   grid-auto-flow: column;
-  padding: 0.25rem 4rem;
+  padding: 0.25rem 3rem;
   border-radius: 40px;
   align-items: center;
   width: fit-content;
-  margin-top: 1.5rem;
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -124,12 +148,28 @@
 }
 
 /*---------------------------------------*/
+/*------------- LINK STYLES -------------*/
+/*---------------------------------------*/
+
+.originals-slide-link {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+.originals-slide-link-image {
+  filter: drop-shadow(0 5px 10px #00000050);
+  width: 40px;
+}
+
+/*---------------------------------------*/
 /*------------- TRANSITIONS -------------*/
 /*---------------------------------------*/
 
 .originals-slide-button:hover::before {
-  border-width: 2px;
   width: calc(100% + 2rem);
+  border-width: 2px;
 }
 
 .originals-slide-button:hover .originals-slide-button-image {
