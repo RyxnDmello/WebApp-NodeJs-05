@@ -1,0 +1,130 @@
+/*--------------------------------------------------*/
+/*------------------ SLIDE STYLES ------------------*/
+/*--------------------------------------------------*/
+
+.combos-slide {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+}
+
+/*-----------------------------------*/
+/*---------- IMAGES STYLES ----------*/
+/*-----------------------------------*/
+
+.combos-slide-images {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
+.combos-slide-image {
+  width: 325px;
+}
+
+/*----------------------------------------*/
+/*---------- INFORMATION STYLES ----------*/
+/*----------------------------------------*/
+
+.combos-slide-information {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+/*----------------------------------------*/
+/*------------- NAMES STYLES -------------*/
+/*----------------------------------------*/
+
+.combos-slide-names {
+  grid-template-columns: auto;
+  justify-content: left;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.combos-slide-name {
+  font-family: "Abel", sans-serif;
+  letter-spacing: 2.5px;
+  color: #ffffff80;
+  font-size: 6.5rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+.combos-slide-name:nth-of-type(2) {
+  margin-top: -3rem;
+}
+
+/*----------------------------------------*/
+/*------------ DETAILS STYLES ------------*/
+/*----------------------------------------*/
+
+.combos-slide-details {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  margin-top: -0.65rem;
+  align-items: center;
+  display: grid;
+}
+
+.combos-slide-sponsor {
+  font-family: "Abel", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: #fff;
+}
+
+.combos-slide-price {
+  font-family: "Abel", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 100;
+  color: #fff;
+}
+
+/*----------------------------------------*/
+/*------------ BUTTONS STYLES ------------*/
+/*----------------------------------------*/
+
+.combos-slide-buttons {
+  grid-auto-flow: column;
+  justify-content: left;
+  align-items: center;
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.combos-slide-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  justify-content: center;
+  grid-auto-flow: column;
+  padding: 0.25rem 4rem;
+  border-radius: 40px;
+  align-items: center;
+  cursor: pointer;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.combos-slide-button-text {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.combos-slide-button-image {
+  width: 20px;
+}
+
+/*--------------------------------------------*/
+/*---------------- END OF CSS ----------------*/
+/*--------------------------------------------*/

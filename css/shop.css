@@ -2,6 +2,7 @@
 
 @import url("./shop/originals.css");
 @import url("./shop/skins.css");
+@import url("./shop/combos.css");
 
 * {
   scroll-behavior: smooth;
