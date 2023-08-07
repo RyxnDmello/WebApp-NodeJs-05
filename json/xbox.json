@@ -1,0 +1,99 @@
+{
+  "consoles": {
+    "originals": [
+      {
+        "image": "/shop/xbox/consoles/black.png",
+        "name": "Xbox Series X",
+        "type": "Original",
+        "color": "Black",
+        "price": "$600"
+      }
+    ],
+    "skins": [
+      {
+        "image": "/shop/xbox/consoles/skin-1.png",
+        "name": "Xbox Series X",
+        "type": "Original",
+        "color": "Skin 1",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/xbox/consoles/skin-2.png",
+        "name": "Xbox Series X",
+        "type": "Original",
+        "color": "Skin 2",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/xbox/consoles/skin-3.png",
+        "name": "Xbox Series X",
+        "type": "Original",
+        "color": "Skin 3",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/xbox/consoles/skin-4.png",
+        "name": "Xbox Series X",
+        "type": "Original",
+        "color": "Skin 4",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/xbox/consoles/skin-5.png",
+        "name": "Xbox Series X",
+        "type": "Original",
+        "color": "Skin 5",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/xbox/consoles/skin-6.png",
+        "name": "Xbox Series X",
+        "type": "Original",
+        "color": "Skin 6",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/xbox/consoles/skin-7.png",
+        "name": "Xbox Series X",
+        "type": "Original",
+        "color": "Skin 7",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/xbox/consoles/skin-8.png",
+        "name": "Xbox Series X",
+        "type": "Original",
+        "color": "Skin 8",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/xbox/consoles/skin-9.png",
+        "name": "Xbox Series X",
+        "type": "Original",
+        "color": "Skin 9",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/xbox/consoles/skin-10.png",
+        "name": "Xbox Series X",
+        "type": "Original",
+        "color": "Skin 10",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/xbox/consoles/skin-11.png",
+        "name": "Xbox Series X",
+        "type": "Original",
+        "color": "Skin 11",
+        "price": "$600"
+      },
+      {
+        "image": "/shop/xbox/consoles/skin-12.png",
+        "name": "Xbox Series X",
+        "type": "Original",
+        "color": "Skin 12",
+        "price": "$600"
+      }
+    ]
+  }
+}

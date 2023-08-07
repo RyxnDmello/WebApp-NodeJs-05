@@ -13,6 +13,7 @@ export default function OriginalsCarousel() {
   ButtonsController();
   IndicatorsController();
   CarouselSlideshow();
+  HideControllers();
 }
 
 function ButtonsController() {
@@ -43,6 +44,8 @@ function IndicatorsController() {
 }
 
 function CarouselSlideshow() {
+  if (slides.length < 2) return;
+
   section.addEventListener("mouseover", () => (isSlideshowActive = false));
   section.addEventListener("mouseout", () => (isSlideshowActive = true));
 
@@ -105,4 +108,10 @@ function IndicatorsAnimation() {
       indicator.style.opacity = "0.25";
     }
   });
+}
+
+function HideControllers() {
+  if (slides.length > 1) return;
+  buttons.forEach((button) => (button.style.display = "none"));
+  indicators.forEach((indicator) => (indicator.style.display = "none"));
 }

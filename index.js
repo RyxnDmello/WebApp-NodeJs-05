@@ -4,7 +4,9 @@ const bodyParser = require("body-parser");
 
 const HomeTemplate = require("./json/home.json");
 const RegisterTemplate = require("./json/register.json");
+
 const PlaystationTemplate = require("./json/playstation.json");
+const XboxTemplate = require("./json/xbox.json");
 
 const app = express();
 
@@ -42,7 +44,7 @@ app.get("/shop/:brand/:type", (req, res) => {
   }
 
   if (req.params.brand === "xbox") {
-    console.log("Xbox Shop");
+    res.render("shop", { products: XboxTemplate[req.params.type] });
     return;
   }
 

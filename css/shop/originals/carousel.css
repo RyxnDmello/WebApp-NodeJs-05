@@ -25,7 +25,7 @@
 
 .originals-slide-image {
   filter: drop-shadow(0 0 20px #00000050);
-  height: 350px;
+  width: 325px;
 }
 
 /*-------------------------------------*/
