@@ -2,10 +2,22 @@
 /*------------------ SLIDE STYLES ------------------*/
 /*--------------------------------------------------*/
 
+.combos-carousel {
+  justify-content: start;
+  grid-auto-flow: column;
+  align-items: center;
+  padding: 4rem 1rem;
+  overflow: hidden;
+  width: 1278.5px;
+  display: grid;
+  gap: 1rem;
+}
+
 .combos-slide {
   justify-content: center;
   grid-auto-flow: column;
   align-items: center;
+  width: 1246.5px;
   display: grid;
   gap: 2rem;
 }
@@ -102,19 +114,37 @@
 
 .combos-slide-button {
   background-color: transparent;
+  transition: translate 125ms;
   border: 2px solid #fff;
   justify-content: center;
   grid-auto-flow: column;
   padding: 0.25rem 4rem;
   border-radius: 40px;
   align-items: center;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   cursor: pointer;
   display: grid;
   gap: 0.65rem;
 }
 
+.combos-slide-button::before {
+  background-color: #fff;
+  border: 0px solid #fff;
+  transition: width 450ms;
+  transform: skew(40deg);
+  position: absolute;
+  height: 100%;
+  content: "";
+  left: -1rem;
+  z-index: -1;
+  width: 0%;
+}
+
 .combos-slide-button-text {
   font-family: "Poppins", sans-serif;
+  transition: color 450ms;
   letter-spacing: 1px;
   font-size: 1.2rem;
   font-weight: 400;
@@ -122,7 +152,29 @@
 }
 
 .combos-slide-button-image {
+  transition: filter 450ms;
   width: 20px;
+}
+
+/*------------------------------------------*/
+/*--------------- TRANSITION ---------------*/
+/*------------------------------------------*/
+
+.combos-slide-button:hover::before {
+  width: calc(100% + 2rem);
+  border-width: 2px;
+}
+
+.combos-slide-button:hover .combos-slide-button-image {
+  filter: invert(1);
+}
+
+.combos-slide-button:hover .combos-slide-button-text {
+  color: #000;
+}
+
+.combos-slide-button:focus {
+  translate: 0 5px;
 }
 
 /*--------------------------------------------*/

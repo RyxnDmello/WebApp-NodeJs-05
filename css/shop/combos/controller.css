@@ -1,0 +1,68 @@
+/*---------------------------------------------------*/
+/*---------------- CONTROLLER STYLES ----------------*/
+/*---------------------------------------------------*/
+
+.combos-carousel-controller {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 2.5rem;
+}
+
+/*---------------------------------------------*/
+/*--------------- BUTTON STYLES ---------------*/
+/*---------------------------------------------*/
+
+.combos-carousel-button {
+  transition: opacity 450ms, translate 125ms;
+  cursor: pointer;
+  opacity: 0.5;
+  width: 40px;
+}
+
+/*---------------------------------------------*/
+/*------------- INDICATORS STYLES -------------*/
+/*---------------------------------------------*/
+
+.combos-carousel-indicators {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.combos-carousel-indicator {
+  border: 2px solid #fff;
+  cursor: pointer;
+  opacity: 0.25;
+  rotate: 45deg;
+  height: 14px;
+  width: 14px;
+}
+
+.combos-carousel-indicator:nth-of-type(1) {
+  background-color: #fff;
+  opacity: 1;
+}
+
+/*-----------------------------------------*/
+/*-------------- TRANSITIONS --------------*/
+/*-----------------------------------------*/
+
+.combos-carousel-button:hover {
+  opacity: 1;
+}
+
+.combos-carousel-button:nth-of-type(1):hover {
+  translate: 0 -5px;
+}
+
+.combos-carousel-button:nth-of-type(2):hover {
+  translate: 0 5px;
+}
+
+/*----------------------------------------------*/
+/*----------------- END OF CSS -----------------*/
+/*----------------------------------------------*/
