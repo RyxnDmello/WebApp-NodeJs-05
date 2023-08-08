@@ -178,5 +178,73 @@
 }
 
 /*--------------------------------------------*/
+/*---------------- ANIMATIONS ----------------*/
+/*--------------------------------------------*/
+
+.combos-carousel-fade-out-up {
+  animation: CombosCarouselFadeOutUp 600ms forwards;
+}
+
+@keyframes CombosCarouselFadeOutUp {
+  0% {
+    translate: 0 0;
+    opacity: 1;
+  }
+
+  100% {
+    translate: 0 -40px;
+    opacity: 0;
+  }
+}
+
+.combos-carousel-fade-out-down {
+  animation: CombosCarouselFadeOutDown 600ms forwards;
+}
+
+@keyframes CombosCarouselFadeOutDown {
+  0% {
+    translate: 0 0;
+    opacity: 1;
+  }
+
+  100% {
+    translate: 0 40px;
+    opacity: 0;
+  }
+}
+
+.combos-carousel-fade-in-down {
+  animation: CombosCarouselFadeInDown 600ms forwards;
+}
+
+@keyframes CombosCarouselFadeInDown {
+  0% {
+    translate: 0 -40px;
+    opacity: 0;
+  }
+
+  100% {
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+
+.combos-carousel-fade-in-up {
+  animation: CombosCarouselFadeInUp 600ms forwards;
+}
+
+@keyframes CombosCarouselFadeInUp {
+  0% {
+    translate: 0 40px;
+    opacity: 0;
+  }
+
+  100% {
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+
+/*--------------------------------------------*/
 /*---------------- END OF CSS ----------------*/
 /*--------------------------------------------*/

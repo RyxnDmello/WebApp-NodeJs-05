@@ -34,6 +34,7 @@
 }
 
 .combos-carousel-indicator {
+  transition: background-color 450ms, opacity 450ms;
   border: 2px solid #fff;
   cursor: pointer;
   opacity: 0.25;
