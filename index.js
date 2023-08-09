@@ -70,6 +70,29 @@ app.post("/account/:type", (req, res) => {
   res.redirect("/account/register");
 });
 
+app.post("/shop/item/add", function (req, res) {
+  const playstationTypes = PlaystationTemplate.consoles;
+  const xboxTypes = XboxTemplate.consoles;
+
+  playstationTypes.originals.forEach((product) => {
+    if (product.ID === req.body.ID) console.log(product);
+  });
+
+  playstationTypes.skins.forEach((product) => {
+    if (product.ID === req.body.ID) console.log(product);
+  });
+  
+  xboxTypes.originals.forEach((product) => {
+    if (product.ID === req.body.ID) console.log(product);
+  });
+
+  xboxTypes.skins.forEach((product) => {
+    if (product.ID === req.body.ID) console.log(product);
+  });
+
+  res.redirect("back");
+});
+
 app.listen(process.env.DEVELOPMENT_PORT, () => {
   console.log(`ACTIVE | PORT: ${process.env.DEVELOPMENT_PORT}`);
 });

@@ -1,0 +1,132 @@
+/*-----------------------------------------------------*/
+/*------------------- EXTRAS STYLES -------------------*/
+/*-----------------------------------------------------*/
+
+#extras {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+  display: grid;
+  gap: 2rem;
+}
+
+.extras-title {
+  background: linear-gradient(45deg, #ff0033 0%, #002aff 100%);
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 5px 10px #00000050;
+  font-family: "Abel", sans-serif;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  font-weight: 600;
+  font-size: 6rem;
+  cursor: default;
+}
+
+/*--------------------------------------*/
+/*------------ IMAGE STYLES ------------*/
+/*--------------------------------------*/
+
+.extras-images {
+  filter: drop-shadow(0 5px 10px #00000050);
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.extras-image {
+  width: 350px;
+}
+
+.extras-image:nth-of-type(2) {
+  translate: 0 -20px;
+  width: 400px;
+}
+
+/*-------------------------------------*/
+/*------------ LINK STYLES ------------*/
+/*-------------------------------------*/
+
+.extras-links {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  margin-top: -1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.extras-link {
+  box-shadow: 0 5px 10px #00000025;
+  transition: translate 125ms;
+  border: 2.25px solid #000;
+  padding: 0.25rem 2.5rem;
+  justify-content: center;
+  grid-auto-flow: column;
+  border-radius: 2.5px;
+  align-items: center;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.extras-link::before {
+  background-color: #000;
+  border: 0px solid #000;
+  transition: width 450ms;
+  transform: skew(40deg);
+  position: absolute;
+  left: -1.5rem;
+  height: 100%;
+  z-index: -1;
+  content: "";
+  width: 0%;
+}
+
+.extras-link-image {
+  transition: filter 450ms;
+  filter: invert(1);
+  width: 25px;
+}
+
+.extras-link-text {
+  font-family: "Poppins", sans-serif;
+  transition: color 450ms;
+  letter-spacing: 0.5px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #000;
+}
+
+/*-----------------------------------------*/
+/*-------------- TRANSITIONS --------------*/
+/*-----------------------------------------*/
+
+.extras-link:hover::before {
+  width: calc(100% + 2.65rem);
+}
+
+.extras-link:hover .extras-link-image {
+  filter: invert(1);
+}
+
+.extras-link:hover .extras-link-image {
+  filter: invert(0);
+}
+
+.extras-link:hover .extras-link-text {
+  color: #fff;
+}
+
+.extras-link:focus {
+  translate: 0 5px;
+}
+
+/*--------------------------------------------*/
+/*---------------- END OF CSS ----------------*/
+/*--------------------------------------------*/

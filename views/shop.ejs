@@ -32,7 +32,13 @@
         <%- include("./shop/skins.ejs", { products: products.skins }) %>
       </section>
 
-      <section id="combos"><%- include("./shop/combos.ejs") %></section>
+      <section id="combos">
+        <%- include("./shop/combos.ejs", { products: products.combos }) %>
+      </section>
+
+      <section id="extras">
+        <%- include("./shop/extras.ejs", { products: products.extras }) %>
+      </section>
     </main>
 
     <script type="module" src="/Shop.js"></script>

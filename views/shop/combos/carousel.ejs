@@ -1,25 +1,21 @@
-<% for(let i = 0; i < 5; i++) { %>
+<% products.forEach((product) => { %>
 <form class="combos-slide" target="/shop/item/add" method="post">
   <div class="combos-slide-images">
-    <img
-      class="combos-slide-image"
-      src="/shop/playstation/consoles/skin-1.png"
-    />
-    <img
-      class="combos-slide-image"
-      src="/shop/playstation/consoles/skin-2.png"
-    />
+    <% product.images.forEach((image) => { %>
+    <img class="combos-slide-image" src="<%= image %>" />
+    <% }) %>
   </div>
 
   <div class="combos-slide-information">
     <div class="combos-slide-names">
-      <h4 class="combos-slide-name">BROKEN LAVA</h4>
-      <h4 class="combos-slide-name">BLUE FUSION</h4>
+      <% product.names.forEach((name) => { %>
+      <h4 class="combos-slide-name"><%= name %></h4>
+      <% }) %>
     </div>
 
     <div class="combos-slide-details">
       <div class="combos-slide-sponsor">Sony X CyberVerse</div>
-      <div class="combos-slide-price">$800</div>
+      <div class="combos-slide-price"><%= product.price %></div>
     </div>
 
     <div class="combos-slide-buttons">
@@ -39,4 +35,4 @@
     </div>
   </div>
 </form>
-<% } %>
+<% }) %>

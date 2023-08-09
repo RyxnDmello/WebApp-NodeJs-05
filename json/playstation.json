@@ -2,6 +2,7 @@
   "consoles": {
     "originals": [
       {
+        "ID": "PS_ORIGINAL_01",
         "image": "/shop/playstation/consoles/white.png",
         "name": "PlayStation 5",
         "type": "Original",
@@ -9,6 +10,7 @@
         "price": "$600"
       },
       {
+        "ID": "PS_ORIGINAL_02",
         "image": "/shop/playstation/consoles/black.png",
         "name": "PlayStation 5",
         "type": "Original",
@@ -16,6 +18,7 @@
         "price": "$600"
       },
       {
+        "ID": "PS_ORIGINAL_03",
         "image": "/shop/playstation/consoles/red.png",
         "name": "PlayStation 5",
         "type": "Original",
@@ -23,6 +26,7 @@
         "price": "$600"
       },
       {
+        "ID": "PS_ORIGINAL_04",
         "image": "/shop/playstation/consoles/purple.png",
         "name": "PlayStation 5",
         "type": "Original",
@@ -30,6 +34,7 @@
         "price": "$600"
       },
       {
+        "ID": "PS_ORIGINAL_05",
         "image": "/shop/playstation/consoles/purple.png",
         "name": "PlayStation 5",
         "type": "Original",
@@ -37,6 +42,7 @@
         "price": "$600"
       },
       {
+        "ID": "PS_ORIGINAL_06",
         "image": "/shop/playstation/consoles/purple.png",
         "name": "PlayStation 5",
         "type": "Original",
@@ -46,89 +52,148 @@
     ],
     "skins": [
       {
+        "ID": "PS_SKIN_01",
         "image": "/shop/playstation/consoles/skin-1.png",
         "name": "PlayStation 5",
         "type": "Original",
-        "color": "Skin 1",
+        "color": "BROKEN LAVA",
         "price": "$600"
       },
       {
+        "ID": "PS_SKIN_02",
         "image": "/shop/playstation/consoles/skin-2.png",
         "name": "PlayStation 5",
         "type": "Original",
-        "color": "Skin 2",
+        "color": "BLUE FUSION",
         "price": "$600"
       },
       {
+        "ID": "PS_SKIN_03",
         "image": "/shop/playstation/consoles/skin-3.png",
         "name": "PlayStation 5",
         "type": "Original",
-        "color": "Skin 3",
+        "color": "STREET BOY",
         "price": "$600"
       },
       {
+        "ID": "PS_SKIN_04",
         "image": "/shop/playstation/consoles/skin-4.png",
         "name": "PlayStation 5",
         "type": "Original",
-        "color": "Skin 4",
+        "color": "SPACE NOIR",
         "price": "$600"
       },
       {
+        "ID": "PS_SKIN_05",
         "image": "/shop/playstation/consoles/skin-5.png",
         "name": "PlayStation 5",
         "type": "Original",
-        "color": "Skin 5",
+        "color": "STREET GIRL",
         "price": "$600"
       },
       {
+        "ID": "PS_SKIN_06",
         "image": "/shop/playstation/consoles/skin-6.png",
         "name": "PlayStation 5",
         "type": "Original",
-        "color": "Skin 6",
+        "color": "IONIC DEMON",
         "price": "$600"
       },
       {
+        "ID": "PS_SKIN_07",
         "image": "/shop/playstation/consoles/skin-7.png",
         "name": "PlayStation 5",
         "type": "Original",
-        "color": "Skin 7",
+        "color": "KURE GHOUL",
         "price": "$600"
       },
       {
+        "ID": "PS_SKIN_08",
         "image": "/shop/playstation/consoles/skin-8.png",
         "name": "PlayStation 5",
         "type": "Original",
-        "color": "Skin 8",
+        "color": "MESSY BLUE",
         "price": "$600"
       },
       {
+        "ID": "PS_SKIN_09",
         "image": "/shop/playstation/consoles/skin-9.png",
         "name": "PlayStation 5",
         "type": "Original",
-        "color": "Skin 9",
+        "color": "SOLDIER BOY",
         "price": "$600"
       },
       {
+        "ID": "PS_SKIN_10",
         "image": "/shop/playstation/consoles/skin-10.png",
         "name": "PlayStation 5",
         "type": "Original",
-        "color": "Skin 10",
+        "color": "EXO SHIELD",
         "price": "$600"
       },
       {
+        "ID": "PS_SKIN_11",
         "image": "/shop/playstation/consoles/skin-11.png",
         "name": "PlayStation 5",
         "type": "Original",
-        "color": "Skin 11",
+        "color": "BLACK CAGE",
         "price": "$600"
       },
       {
+        "ID": "PS_SKIN_12",
         "image": "/shop/playstation/consoles/skin-12.png",
         "name": "PlayStation 5",
         "type": "Original",
-        "color": "Skin 12",
+        "color": "GRADIENT FLOW",
         "price": "$600"
       }
+    ],
+    "combos": [
+      {
+        "images": [
+          "/shop/playstation/consoles/skin-1.png",
+          "/shop/playstation/consoles/skin-2.png"
+        ],
+        "names": ["BROKEN LAVA", "BLUE FUSION"],
+        "price": "$800"
+      },
+      {
+        "images": [
+          "/shop/playstation/consoles/skin-3.png",
+          "/shop/playstation/consoles/skin-8.png"
+        ],
+        "names": ["STREET BOY", "MESSY BLUE"],
+        "price": "$800"
+      },
+      {
+        "images": [
+          "/shop/playstation/consoles/skin-5.png",
+          "/shop/playstation/consoles/skin-6.png"
+        ],
+        "names": ["STREET GIRL", "IONIC DEMON"],
+        "price": "$800"
+      },
+      {
+        "images": [
+          "/shop/playstation/consoles/skin-7.png",
+          "/shop/playstation/consoles/skin-9.png"
+        ],
+        "names": ["KURE GHOUL", "SOLDIER BOY"],
+        "price": "$800"
+      },
+      {
+        "images": [
+          "/shop/playstation/consoles/skin-4.png",
+          "/shop/playstation/consoles/skin-10.png"
+        ],
+        "names": ["SPACE NOIR", "EXO SHIELD"],
+        "price": "$800"
+      }
+    ],
+    "extras": [
+      "/shop/playstation/controllers/red.png",
+      "/shop/playstation/controllers/black.png",
+      "/shop/playstation/controllers/purple.png"
     ]
   }
 }
