@@ -23,6 +23,10 @@
   </head>
 
   <body>
+    <header id="header">
+      <nav><%- include("./shop/navbar.ejs") %></nav>
+    </header>
+
     <main>
       <section id="originals">
         <%- include("./shop/originals.ejs", { products: products.originals }) %>
@@ -40,6 +44,8 @@
         <%- include("./shop/extras.ejs", { products: products.extras }) %>
       </section>
     </main>
+
+    <footer id="footer"></footer>
 
     <script type="module" src="/Shop.js"></script>
   </body>
