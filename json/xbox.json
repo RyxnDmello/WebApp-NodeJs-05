@@ -155,5 +155,90 @@
       "/shop/xbox/controllers/black.png",
       "/shop/xbox/controllers/blue.png"
     ]
+  },
+  "footer": {
+    "products": [
+      {
+        "title": "PlayStation",
+        "links": [
+          {
+            "URL": "/",
+            "text": "Consoles"
+          },
+          {
+            "URL": "/",
+            "text": "Controllers"
+          },
+          {
+            "URL": "/",
+            "text": "Headsets"
+          },
+          {
+            "URL": "/",
+            "text": "Skins"
+          }
+        ]
+      },
+      {
+        "title": "Xbox",
+        "links": [
+          {
+            "URL": "/",
+            "text": "Consoles"
+          },
+          {
+            "URL": "/",
+            "text": "Controllers"
+          },
+          {
+            "URL": "/",
+            "text": "Headsets"
+          },
+          {
+            "URL": "/",
+            "text": "Skins"
+          }
+        ]
+      },
+      {
+        "title": "Switch",
+        "links": [
+          {
+            "URL": "/",
+            "text": "Consoles"
+          },
+          {
+            "URL": "/",
+            "text": "Controllers"
+          },
+          {
+            "URL": "/",
+            "text": "Headsets"
+          },
+          {
+            "URL": "/",
+            "text": "Skins"
+          }
+        ]
+      }
+    ],
+    "socials": [
+      {
+        "URL": "/",
+        "image": "/buttons/socials/instagram.png"
+      },
+      {
+        "URL": "/",
+        "image": "/buttons/socials/twitter.png"
+      },
+      {
+        "image": "/buttons/socials/facebook.png",
+        "URL": "/"
+      },
+      {
+        "URL": "/",
+        "image": "/buttons/socials/discord.png"
+      }
+    ]
   }
 }

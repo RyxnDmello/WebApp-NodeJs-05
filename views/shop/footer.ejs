@@ -1,0 +1,31 @@
+<div class="footer-creator">
+  <a class="footer-logo" href="/">
+    <p class="footer-logo-text">CyberVerse</p>
+  </a>
+
+  <p class="footer-description">A Home For Gamers</p>
+</div>
+
+<% footer.products.forEach((block) => { %>
+<div class="footer-product-links-block">
+  <h4 class="footer-product-link-title"><%= block.title %></h4>
+
+  <div class="footer-product-links">
+    <% block.links.forEach((link) => { %>
+    <a class="footer-product-link" href="<%= link.URL %>">
+      <p class="footer-product-link-text"><%= link.text %></p>
+    </a>
+    <% }) %>
+  </div>
+</div>
+<% }) %>
+
+<div class="footer-socials-links">
+  <% footer.socials.forEach((social) => { %>
+  <a class="footer-social-link" href="<%= social.URL %>">
+    <img class="footer-social-link-image" src="<%= social.image %>" />
+  </a>
+  <% }) %>
+</div>
+
+<img class="footer-background" src="/shop/footer.jpg" />

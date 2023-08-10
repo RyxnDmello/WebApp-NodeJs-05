@@ -1,0 +1,130 @@
+/*-------------------------------------------------*/
+/*----------------- FOOTER STYLES -----------------*/
+/*-------------------------------------------------*/
+
+footer {
+  box-shadow: 0 0 20px #000000a0;
+  justify-content: space-between;
+  grid-auto-flow: column;
+  padding: 2.5rem 6rem;
+  align-items: start;
+  position: relative;
+  display: grid;
+}
+
+.footer-background {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+/*---------------------------------*/
+/*----------- GREETINGS -----------*/
+/*---------------------------------*/
+
+.footer-creator {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.footer-logo-text {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  font-size: 2.25rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.footer-description {
+  background: linear-gradient(45deg, #ff0033 0%, #002aff 100%);
+  -webkit-text-fill-color: transparent;
+  font-family: "Poppins", sans-serif;
+  -webkit-background-clip: text;
+  background-clip: text;
+  letter-spacing: 1px;
+  margin-top: -1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: default;
+  color: #fff;
+}
+
+/*--------------------------------------*/
+/*------------ PRODUCT LINK ------------*/
+/*--------------------------------------*/
+
+.footer-product-links-block {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+.footer-product-link-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.65rem;
+  font-weight: 300;
+  cursor: default;
+  color: #fff;
+}
+
+.footer-product-links {
+  grid-template-columns: auto;
+  justify-content: left;
+  align-items: center;
+  width: fit-content;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.footer-product-link-text {
+  font-family: "Poppins", sans-serif;
+  transition: color 450ms;
+  width: fit-content;
+  color: #ffffff25;
+  font-size: 1.15rem;
+  font-weight: 300;
+}
+
+/*--------------------------------------*/
+/*------------ SOCIALS LINK ------------*/
+/*--------------------------------------*/
+
+.footer-socials-links {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.footer-social-link-image {
+  transition: opacity 450ms, translate 125ms;
+  opacity: 0.25;
+  width: 25px;
+}
+
+/*--------------------------------------*/
+/*------------- TRANSITION -------------*/
+/*--------------------------------------*/
+
+.footer-product-link:hover .footer-product-link-text {
+  color: #fff;
+}
+
+.footer-social-link:hover .footer-social-link-image {
+  opacity: 1;
+}
+
+.footer-social-link:focus .footer-social-link-image {
+  translate: 0 -5px;
+}
+
+/*------------------------------------------*/
+/*--------------- END OF CSS ---------------*/
+/*------------------------------------------*/

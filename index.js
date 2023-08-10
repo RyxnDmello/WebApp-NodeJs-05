@@ -39,12 +39,20 @@ app.get("/account/:type", (req, res) => {
 
 app.get("/shop/:brand/:type", (req, res) => {
   if (req.params.brand === "playstation") {
-    res.render("shop", { products: PlaystationTemplate[req.params.type] });
+    res.render("shop", {
+      products: PlaystationTemplate[req.params.type],
+      footer: PlaystationTemplate.footer,
+    });
+
     return;
   }
 
   if (req.params.brand === "xbox") {
-    res.render("shop", { products: XboxTemplate[req.params.type] });
+    res.render("shop", {
+      products: XboxTemplate[req.params.type],
+      footer: XboxTemplate.footer,
+    });
+
     return;
   }
 
@@ -81,7 +89,7 @@ app.post("/shop/item/add", function (req, res) {
   playstationTypes.skins.forEach((product) => {
     if (product.ID === req.body.ID) console.log(product);
   });
-  
+
   xboxTypes.originals.forEach((product) => {
     if (product.ID === req.body.ID) console.log(product);
   });

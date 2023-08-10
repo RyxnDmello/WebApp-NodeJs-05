@@ -3,7 +3,7 @@
 /*---------------------------------------------------*/
 
 nav {
-  background: linear-gradient(45deg, #7a0040 20%, #00006a 70%);
+  background: linear-gradient(45deg, #600020 20%, #000040 70%);
   box-shadow: 0 10px 20px #00000050;
   justify-content: space-between;
   grid-auto-flow: column;
