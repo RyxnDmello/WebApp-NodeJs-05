@@ -3,9 +3,9 @@
 /*---------------------------------------------------*/
 
 nav {
-  background: linear-gradient(45deg, #600020 20%, #000040 70%);
-  box-shadow: 0 10px 20px #00000050;
+  box-shadow: 0 10px 20px #00000060;
   justify-content: space-between;
+  background-color: #000010;
   grid-auto-flow: column;
   align-items: center;
   padding: 1rem 4rem;

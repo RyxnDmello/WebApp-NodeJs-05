@@ -82,13 +82,17 @@ footer {
   gap: 0.25rem;
 }
 
+.footer-product-link {
+  transition: translate 125ms;
+}
+
 .footer-product-link-text {
   font-family: "Poppins", sans-serif;
   transition: color 450ms;
   width: fit-content;
-  color: #ffffff25;
-  font-size: 1.15rem;
+  color: #ffffff50;
   font-weight: 300;
+  font-size: 1rem;
 }
 
 /*--------------------------------------*/
@@ -115,6 +119,10 @@ footer {
 
 .footer-product-link:hover .footer-product-link-text {
   color: #fff;
+}
+
+.footer-product-link:focus {
+  translate: 10px 0;
 }
 
 .footer-social-link:hover .footer-social-link-image {

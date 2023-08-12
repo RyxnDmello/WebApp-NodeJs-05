@@ -6,6 +6,7 @@ const HomeTemplate = require("./json/home.json");
 const RegisterTemplate = require("./json/register.json");
 
 const PlaystationTemplate = require("./json/playstation.json");
+const SwitchTemplate = require("./json/switch.json");
 const XboxTemplate = require("./json/xbox.json");
 
 const app = express();
@@ -57,7 +58,11 @@ app.get("/shop/:brand/:type", (req, res) => {
   }
 
   if (req.params.brand === "switch") {
-    console.log("Switch Shop");
+    res.render("shop", {
+      products: SwitchTemplate[req.params.type],
+      footer: SwitchTemplate.footer,
+    });
+
     return;
   }
 });

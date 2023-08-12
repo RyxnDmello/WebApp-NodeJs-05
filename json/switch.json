@@ -1,0 +1,244 @@
+{
+  "consoles": {
+    "originals": [
+      {
+        "ID": "NS_ORIGINAL_01",
+        "image": "/shop/switch/switch.png",
+        "name": "Switch Pro",
+        "type": "Original",
+        "color": "Retro",
+        "price": "$600"
+      }
+    ],
+    "skins": [
+      {
+        "ID": "NS_SKIN_01",
+        "image": "/shop/switch/consoles/skin-1.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "BROKEN LAVA",
+        "price": "$600"
+      },
+      {
+        "ID": "NS_SKIN_02",
+        "image": "/shop/switch/consoles/skin-2.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "BLUE FUSION",
+        "price": "$600"
+      },
+      {
+        "ID": "NS_SKIN_03",
+        "image": "/shop/switch/consoles/skin-3.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "STREET BOY",
+        "price": "$600"
+      },
+      {
+        "ID": "NS_SKIN_04",
+        "image": "/shop/switch/consoles/skin-4.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "SPACE NOIR",
+        "price": "$600"
+      },
+      {
+        "ID": "NS_SKIN_05",
+        "image": "/shop/switch/consoles/skin-5.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "STREET GIRL",
+        "price": "$600"
+      },
+      {
+        "ID": "NS_SKIN_06",
+        "image": "/shop/switch/consoles/skin-6.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "IONIC DEMON",
+        "price": "$600"
+      },
+      {
+        "ID": "NS_SKIN_07",
+        "image": "/shop/switch/consoles/skin-7.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "KURE GHOUL",
+        "price": "$600"
+      },
+      {
+        "ID": "NS_SKIN_08",
+        "image": "/shop/switch/consoles/skin-8.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "MESSY BLUE",
+        "price": "$600"
+      },
+      {
+        "ID": "NS_SKIN_09",
+        "image": "/shop/switch/consoles/skin-9.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "SOLDIER BOY",
+        "price": "$600"
+      },
+      {
+        "ID": "NS_SKIN_10",
+        "image": "/shop/switch/consoles/skin-10.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "EXO SHIELD",
+        "price": "$600"
+      },
+      {
+        "ID": "NS_SKIN_11",
+        "image": "/shop/switch/consoles/skin-11.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "BLACK CAGE",
+        "price": "$600"
+      },
+      {
+        "ID": "NS_SKIN_12",
+        "image": "/shop/switch/consoles/skin-12.png",
+        "name": "PlayStation 5",
+        "type": "Original",
+        "color": "GRADIENT FLOW",
+        "price": "$600"
+      }
+    ],
+    "combos": [
+      {
+        "images": [
+          "/shop/switch/consoles/skin-1.png",
+          "/shop/switch/consoles/skin-2.png"
+        ],
+        "names": ["BROKEN LAVA", "BLUE FUSION"],
+        "price": "$800"
+      },
+      {
+        "images": [
+          "/shop/switch/consoles/skin-3.png",
+          "/shop/switch/consoles/skin-8.png"
+        ],
+        "names": ["STREET BOY", "MESSY BLUE"],
+        "price": "$800"
+      },
+      {
+        "images": [
+          "/shop/switch/consoles/skin-5.png",
+          "/shop/switch/consoles/skin-6.png"
+        ],
+        "names": ["STREET GIRL", "IONIC DEMON"],
+        "price": "$800"
+      },
+      {
+        "images": [
+          "/shop/switch/consoles/skin-7.png",
+          "/shop/switch/consoles/skin-9.png"
+        ],
+        "names": ["KURE GHOUL", "SOLDIER BOY"],
+        "price": "$800"
+      },
+      {
+        "images": [
+          "/shop/switch/consoles/skin-4.png",
+          "/shop/switch/consoles/skin-10.png"
+        ],
+        "names": ["SPACE NOIR", "EXO SHIELD"],
+        "price": "$800"
+      }
+    ],
+    "extras": [
+      "/shop/switch/controllers/red.png",
+      "/shop/switch/controllers/black.png",
+      "/shop/switch/controllers/blue.png"
+    ]
+  },
+  "footer": {
+    "products": [
+      {
+        "title": "PlayStation",
+        "links": [
+          {
+            "URL": "/",
+            "text": "Consoles"
+          },
+          {
+            "URL": "/",
+            "text": "Controllers"
+          },
+          {
+            "URL": "/",
+            "text": "Headsets"
+          },
+          {
+            "URL": "/",
+            "text": "Skins"
+          }
+        ]
+      },
+      {
+        "title": "Xbox",
+        "links": [
+          {
+            "URL": "/",
+            "text": "Consoles"
+          },
+          {
+            "URL": "/",
+            "text": "Controllers"
+          },
+          {
+            "URL": "/",
+            "text": "Headsets"
+          },
+          {
+            "URL": "/",
+            "text": "Skins"
+          }
+        ]
+      },
+      {
+        "title": "Switch",
+        "links": [
+          {
+            "URL": "/",
+            "text": "Consoles"
+          },
+          {
+            "URL": "/",
+            "text": "Controllers"
+          },
+          {
+            "URL": "/",
+            "text": "Headsets"
+          },
+          {
+            "URL": "/",
+            "text": "Skins"
+          }
+        ]
+      }
+    ],
+    "socials": [
+      {
+        "URL": "/",
+        "image": "/buttons/socials/instagram.png"
+      },
+      {
+        "URL": "/",
+        "image": "/buttons/socials/twitter.png"
+      },
+      {
+        "image": "/buttons/socials/facebook.png",
+        "URL": "/"
+      },
+      {
+        "URL": "/",
+        "image": "/buttons/socials/discord.png"
+      }
+    ]
+  }
+}
