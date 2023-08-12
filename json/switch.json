@@ -14,139 +14,154 @@
       {
         "ID": "NS_SKIN_01",
         "image": "/shop/switch/consoles/skin-1.png",
-        "name": "PlayStation 5",
-        "type": "Original",
-        "color": "BROKEN LAVA",
+        "name": "Xbox Series X",
+        "type": "CyberSkin",
+        "color": "PIXELEIGHT",
         "price": "$600"
       },
       {
         "ID": "NS_SKIN_02",
         "image": "/shop/switch/consoles/skin-2.png",
-        "name": "PlayStation 5",
-        "type": "Original",
-        "color": "BLUE FUSION",
+        "name": "Xbox Series X",
+        "type": "CyberSkin",
+        "color": "COMIC STRIP",
         "price": "$600"
       },
       {
         "ID": "NS_SKIN_03",
         "image": "/shop/switch/consoles/skin-3.png",
-        "name": "PlayStation 5",
-        "type": "Original",
-        "color": "STREET BOY",
+        "name": "Xbox Series X",
+        "type": "CyberSkin",
+        "color": "CANDY BAR",
         "price": "$600"
       },
       {
         "ID": "NS_SKIN_04",
         "image": "/shop/switch/consoles/skin-4.png",
-        "name": "PlayStation 5",
-        "type": "Original",
-        "color": "SPACE NOIR",
+        "name": "Xbox Series X",
+        "type": "CyberSkin",
+        "color": "CREAM PINK",
         "price": "$600"
       },
       {
         "ID": "NS_SKIN_05",
         "image": "/shop/switch/consoles/skin-5.png",
-        "name": "PlayStation 5",
-        "type": "Original",
-        "color": "STREET GIRL",
+        "name": "Xbox Series X",
+        "type": "CyberSkin",
+        "color": "COMMANDO",
         "price": "$600"
       },
       {
         "ID": "NS_SKIN_06",
         "image": "/shop/switch/consoles/skin-6.png",
-        "name": "PlayStation 5",
-        "type": "Original",
-        "color": "IONIC DEMON",
+        "name": "Xbox Series X",
+        "type": "CyberSkin",
+        "color": "CREAM BLUE",
         "price": "$600"
       },
       {
         "ID": "NS_SKIN_07",
         "image": "/shop/switch/consoles/skin-7.png",
-        "name": "PlayStation 5",
-        "type": "Original",
-        "color": "KURE GHOUL",
+        "name": "Xbox Series X",
+        "type": "CyberSkin",
+        "color": "ALIEN RED",
         "price": "$600"
       },
       {
         "ID": "NS_SKIN_08",
         "image": "/shop/switch/consoles/skin-8.png",
-        "name": "PlayStation 5",
-        "type": "Original",
-        "color": "MESSY BLUE",
+        "name": "Xbox Series X",
+        "type": "CyberSkin",
+        "color": "DULL SANDS",
         "price": "$600"
       },
       {
         "ID": "NS_SKIN_09",
         "image": "/shop/switch/consoles/skin-9.png",
-        "name": "PlayStation 5",
-        "type": "Original",
-        "color": "SOLDIER BOY",
+        "name": "Xbox Series X",
+        "type": "CyberSkin",
+        "color": "SPACE NOIR",
         "price": "$600"
       },
       {
         "ID": "NS_SKIN_10",
         "image": "/shop/switch/consoles/skin-10.png",
-        "name": "PlayStation 5",
-        "type": "Original",
-        "color": "EXO SHIELD",
+        "name": "Xbox Series X",
+        "type": "CyberSkin",
+        "color": "ALIEN GREEN",
         "price": "$600"
       },
       {
         "ID": "NS_SKIN_11",
         "image": "/shop/switch/consoles/skin-11.png",
-        "name": "PlayStation 5",
-        "type": "Original",
-        "color": "BLACK CAGE",
+        "name": "Xbox Series X",
+        "type": "CyberSkin",
+        "color": "PIXELFADE",
         "price": "$600"
       },
       {
         "ID": "NS_SKIN_12",
         "image": "/shop/switch/consoles/skin-12.png",
-        "name": "PlayStation 5",
-        "type": "Original",
-        "color": "GRADIENT FLOW",
+        "name": "Xbox Series X",
+        "type": "CyberSkin",
+        "color": "HARDWARE",
         "price": "$600"
       }
     ],
     "combos": [
       {
+        "ID": "NS_COMBO_01",
         "images": [
           "/shop/switch/consoles/skin-1.png",
-          "/shop/switch/consoles/skin-2.png"
+          "/shop/switch/consoles/skin-7.png"
         ],
-        "names": ["BROKEN LAVA", "BLUE FUSION"],
+        "name": "Switch Pro",
+        "type": "Combo",
+        "colors": ["PIXELEIGHT", "ALIEN RED"],
         "price": "$800"
       },
       {
+        "ID": "NS_COMBO_02",
+        "images": [
+          "/shop/switch/consoles/skin-2.png",
+          "/shop/switch/consoles/skin-5.png"
+        ],
+        "name": "Switch Pro",
+        "type": "Combo",
+        "colors": ["COMIC STRIP", "COMMANDO"],
+        "price": "$800"
+      },
+      {
+        "ID": "NS_COMBO_03",
         "images": [
           "/shop/switch/consoles/skin-3.png",
-          "/shop/switch/consoles/skin-8.png"
-        ],
-        "names": ["STREET BOY", "MESSY BLUE"],
-        "price": "$800"
-      },
-      {
-        "images": [
-          "/shop/switch/consoles/skin-5.png",
           "/shop/switch/consoles/skin-6.png"
         ],
-        "names": ["STREET GIRL", "IONIC DEMON"],
+        "name": "Switch Pro",
+        "type": "Combo",
+        "colors": ["CANDY BAR", "CREAM BLUE"],
         "price": "$800"
       },
       {
-        "images": [
-          "/shop/switch/consoles/skin-7.png",
-          "/shop/switch/consoles/skin-9.png"
-        ],
-        "names": ["KURE GHOUL", "SOLDIER BOY"],
-        "price": "$800"
-      },
-      {
+        "ID": "NS_COMBO_04",
         "images": [
           "/shop/switch/consoles/skin-4.png",
-          "/shop/switch/consoles/skin-10.png"
+          "/shop/switch/consoles/skin-8.png"
         ],
-        "names": ["SPACE NOIR", "EXO SHIELD"],
+        "name": "Switch Pro",
+        "type": "Combo",
+        "colors": ["CREAM PINK", "DULL SANDS"],
+        "price": "$800"
+      },
+      {
+        "ID": "NS_COMBO_05",
+        "images": [
+          "/shop/switch/consoles/skin-9.png",
+          "/shop/switch/consoles/skin-12.png"
+        ],
+        "name": "Switch Pro",
+        "type": "Combo",
+        "colors": ["SPACE NOIR", "HARDWARE"],
         "price": "$800"
       }
     ],

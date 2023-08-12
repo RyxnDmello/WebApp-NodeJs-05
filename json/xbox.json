@@ -15,7 +15,7 @@
         "ID": "XB_SKIN_01",
         "image": "/shop/xbox/consoles/skin-1.png",
         "name": "Xbox Series X",
-        "type": "Original",
+        "type": "CyberSkin",
         "color": "BROKEN LAVA",
         "price": "$600"
       },
@@ -23,7 +23,7 @@
         "ID": "XB_SKIN_02",
         "image": "/shop/xbox/consoles/skin-2.png",
         "name": "Xbox Series X",
-        "type": "Original",
+        "type": "CyberSkin",
         "color": "DARK GALAXY",
         "price": "$600"
       },
@@ -31,7 +31,7 @@
         "ID": "XB_SKIN_03",
         "image": "/shop/xbox/consoles/skin-3.png",
         "name": "Xbox Series X",
-        "type": "Original",
+        "type": "CyberSkin",
         "color": "BLUE FUSION",
         "price": "$600"
       },
@@ -39,7 +39,7 @@
         "ID": "XB_SKIN_04",
         "image": "/shop/xbox/consoles/skin-4.png",
         "name": "Xbox Series X",
-        "type": "Original",
+        "type": "CyberSkin",
         "color": "ROSY BLUE",
         "price": "$600"
       },
@@ -47,7 +47,7 @@
         "ID": "XB_SKIN_05",
         "image": "/shop/xbox/consoles/skin-5.png",
         "name": "Xbox Series X",
-        "type": "Original",
+        "type": "CyberSkin",
         "color": "BLACK CAGE",
         "price": "$600"
       },
@@ -55,7 +55,7 @@
         "ID": "XB_SKIN_06",
         "image": "/shop/xbox/consoles/skin-6.png",
         "name": "Xbox Series X",
-        "type": "Original",
+        "type": "CyberSkin",
         "color": "LOST SKULLS",
         "price": "$600"
       },
@@ -63,7 +63,7 @@
         "ID": "XB_SKIN_07",
         "image": "/shop/xbox/consoles/skin-7.png",
         "name": "Xbox Series X",
-        "type": "Original",
+        "type": "CyberSkin",
         "color": "GRADIENT FLOW",
         "price": "$600"
       },
@@ -71,7 +71,7 @@
         "ID": "XB_SKIN_08",
         "image": "/shop/xbox/consoles/skin-8.png",
         "name": "Xbox Series X",
-        "type": "Original",
+        "type": "CyberSkin",
         "color": "SOLDIER BOY",
         "price": "$600"
       },
@@ -79,7 +79,7 @@
         "ID": "XB_SKIN_09",
         "image": "/shop/xbox/consoles/skin-9.png",
         "name": "Xbox Series X",
-        "type": "Original",
+        "type": "CyberSkin",
         "color": "ALIEN LANDS",
         "price": "$600"
       },
@@ -87,7 +87,7 @@
         "ID": "XB_SKIN_10",
         "image": "/shop/xbox/consoles/skin-10.png",
         "name": "Xbox Series X",
-        "type": "Original",
+        "type": "CyberSkin",
         "color": "LEAF CAMEO",
         "price": "$600"
       },
@@ -95,7 +95,7 @@
         "ID": "XB_SKIN_11",
         "image": "/shop/xbox/consoles/skin-11.png",
         "name": "Xbox Series X",
-        "type": "Original",
+        "type": "CyberSkin",
         "color": "CAMEO NOIR",
         "price": "$600"
       },
@@ -103,50 +103,65 @@
         "ID": "XB_SKIN_12",
         "image": "/shop/xbox/consoles/skin-12.png",
         "name": "Xbox Series X",
-        "type": "Original",
+        "type": "CyberSkin",
         "color": "SPACE NOIR",
         "price": "$600"
       }
     ],
     "combos": [
       {
+        "ID": "XB_COMBO_01",
         "images": [
           "/shop/xbox/consoles/skin-1.png",
           "/shop/xbox/consoles/skin-2.png"
         ],
-        "names": ["BROKEN LAVA", "DARK GALAXY"],
+        "name": "Xbox Series X",
+        "type": "Combo",
+        "colors": ["BROKEN LAVA", "DARK GALAXY"],
         "price": "$800"
       },
       {
+        "ID": "XB_COMBO_02",
         "images": [
           "/shop/xbox/consoles/skin-3.png",
           "/shop/xbox/consoles/skin-8.png"
         ],
-        "names": ["BLUE FUSION", "SOLDIER BOY"],
+        "name": "Xbox Series X",
+        "type": "Combo",
+        "colors": ["BLUE FUSION", "SOLDIER BOY"],
         "price": "$800"
       },
       {
+        "ID": "XB_COMBO_03",
         "images": [
           "/shop/xbox/consoles/skin-6.png",
           "/shop/xbox/consoles/skin-9.png"
         ],
-        "names": ["LOST SKULLS", "ALIEN LANDS"],
+        "name": "Xbox Series X",
+        "type": "Combo",
+        "colors": ["LOST SKULLS", "ALIEN LANDS"],
         "price": "$800"
       },
       {
+        "ID": "XB_COMBO_04",
         "images": [
           "/shop/xbox/consoles/skin-4.png",
           "/shop/xbox/consoles/skin-11.png"
         ],
-        "names": ["ROSY BLUE", "CAMEO NOIR"],
+        "name": "Xbox Series X",
+        "type": "Combo",
+        "colors": ["ROSY BLUE", "CAMEO NOIR"],
         "price": "$800"
       },
       {
+        "ID": "XB_COMBO_05",
         "images": [
           "/shop/xbox/consoles/skin-10.png",
           "/shop/xbox/consoles/skin-12.png"
         ],
-        "names": ["LEAF CAMEO", "SPACE NOIR"],
+        "name": "Xbox Series X",
+        "type": "Combo",
+        "colors": ["LEAF CAMEO", "SPACE NOIR"],
         "price": "$800"
       }
     ],

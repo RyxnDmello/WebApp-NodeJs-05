@@ -1,5 +1,7 @@
 <% products.forEach((product) => { %>
-<form class="combos-slide" target="/shop/item/add" method="post">
+<form class="combos-slide" action="/shop/item/add" method="post">
+  <input type="hidden" name="ID" value="<%= product.ID %>" />
+
   <div class="combos-slide-images">
     <% product.images.forEach((image) => { %>
     <img class="combos-slide-image" src="<%= image %>" />
@@ -7,9 +9,9 @@
   </div>
 
   <div class="combos-slide-information">
-    <div class="combos-slide-names">
-      <% product.names.forEach((name) => { %>
-      <h4 class="combos-slide-name"><%= name %></h4>
+    <div class="combos-slide-colors">
+      <% product.colors.forEach((color) => { %>
+      <h4 class="combos-slide-color"><%= color %></h4>
       <% }) %>
     </div>
 
