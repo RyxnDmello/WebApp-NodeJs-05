@@ -4,7 +4,7 @@
     "types": {
       "originals": [
         {
-          "ID": "XB_ORIGINAL_01",
+          "ID": "XB_CONSOLE_ORIGINAL_01",
           "image": "/shop/xbox/consoles/black.png",
           "name": "Xbox Series X",
           "type": "Original",
@@ -14,7 +14,7 @@
       ],
       "skins": [
         {
-          "ID": "XB_SKIN_01",
+          "ID": "XB_CONSOLE_SKIN_01",
           "image": "/shop/xbox/consoles/skin-1.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -22,7 +22,7 @@
           "price": "$600"
         },
         {
-          "ID": "XB_SKIN_02",
+          "ID": "XB_CONSOLE_SKIN_02",
           "image": "/shop/xbox/consoles/skin-2.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -30,7 +30,7 @@
           "price": "$600"
         },
         {
-          "ID": "XB_SKIN_03",
+          "ID": "XB_CONSOLE_SKIN_03",
           "image": "/shop/xbox/consoles/skin-3.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -38,7 +38,7 @@
           "price": "$600"
         },
         {
-          "ID": "XB_SKIN_04",
+          "ID": "XB_CONSOLE_SKIN_04",
           "image": "/shop/xbox/consoles/skin-4.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -46,7 +46,7 @@
           "price": "$600"
         },
         {
-          "ID": "XB_SKIN_05",
+          "ID": "XB_CONSOLE_SKIN_05",
           "image": "/shop/xbox/consoles/skin-5.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -54,7 +54,7 @@
           "price": "$600"
         },
         {
-          "ID": "XB_SKIN_06",
+          "ID": "XB_CONSOLE_SKIN_06",
           "image": "/shop/xbox/consoles/skin-6.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -62,7 +62,7 @@
           "price": "$600"
         },
         {
-          "ID": "XB_SKIN_07",
+          "ID": "XB_CONSOLE_SKIN_07",
           "image": "/shop/xbox/consoles/skin-7.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -70,7 +70,7 @@
           "price": "$600"
         },
         {
-          "ID": "XB_SKIN_08",
+          "ID": "XB_CONSOLE_SKIN_08",
           "image": "/shop/xbox/consoles/skin-8.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -78,7 +78,7 @@
           "price": "$600"
         },
         {
-          "ID": "XB_SKIN_09",
+          "ID": "XB_CONSOLE_SKIN_09",
           "image": "/shop/xbox/consoles/skin-9.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -86,7 +86,7 @@
           "price": "$600"
         },
         {
-          "ID": "XB_SKIN_10",
+          "ID": "XB_CONSOLE_SKIN_10",
           "image": "/shop/xbox/consoles/skin-10.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -94,7 +94,7 @@
           "price": "$600"
         },
         {
-          "ID": "XB_SKIN_11",
+          "ID": "XB_CONSOLE_SKIN_11",
           "image": "/shop/xbox/consoles/skin-11.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -102,7 +102,7 @@
           "price": "$600"
         },
         {
-          "ID": "XB_SKIN_12",
+          "ID": "XB_CONSOLE_SKIN_12",
           "image": "/shop/xbox/consoles/skin-12.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -112,7 +112,7 @@
       ],
       "combos": [
         {
-          "ID": "XB_COMBO_01",
+          "ID": "XB_CONSOLE_COMBO_01",
           "images": [
             "/shop/xbox/consoles/skin-1.png",
             "/shop/xbox/consoles/skin-2.png"
@@ -123,7 +123,7 @@
           "price": "$800"
         },
         {
-          "ID": "XB_COMBO_02",
+          "ID": "XB_CONSOLE_COMBO_02",
           "images": [
             "/shop/xbox/consoles/skin-3.png",
             "/shop/xbox/consoles/skin-8.png"
@@ -134,7 +134,7 @@
           "price": "$800"
         },
         {
-          "ID": "XB_COMBO_03",
+          "ID": "XB_CONSOLE_COMBO_03",
           "images": [
             "/shop/xbox/consoles/skin-6.png",
             "/shop/xbox/consoles/skin-9.png"
@@ -145,7 +145,7 @@
           "price": "$800"
         },
         {
-          "ID": "XB_COMBO_04",
+          "ID": "XB_CONSOLE_COMBO_04",
           "images": [
             "/shop/xbox/consoles/skin-4.png",
             "/shop/xbox/consoles/skin-11.png"
@@ -156,7 +156,7 @@
           "price": "$800"
         },
         {
-          "ID": "XB_COMBO_05",
+          "ID": "XB_CONSOLE_COMBO_05",
           "images": [
             "/shop/xbox/consoles/skin-10.png",
             "/shop/xbox/consoles/skin-12.png"
@@ -171,6 +171,205 @@
         "/shop/xbox/controllers/red.png",
         "/shop/xbox/controllers/black.png",
         "/shop/xbox/controllers/blue.png"
+      ]
+    }
+  },
+  "controllers": {
+    "post": "/shop/xbox/controllers/add",
+    "types": {
+      "originals": [
+        {
+          "ID": "XB_CONTROLLER_ORIGINAL_01",
+          "image": "/shop/xbox/controllers/black.png",
+          "name": "Xbox Series X Controller",
+          "type": "Original",
+          "color": "Black",
+          "price": "$600"
+        },
+        {
+          "ID": "XB_CONTROLLER_ORIGINAL_02",
+          "image": "/shop/xbox/controllers/white.png",
+          "name": "Xbox Series X Controller",
+          "type": "Original",
+          "color": "White",
+          "price": "$600"
+        },
+        {
+          "ID": "XB_CONTROLLER_ORIGINAL_03",
+          "image": "/shop/xbox/controllers/red.png",
+          "name": "Xbox Series X Controller",
+          "type": "Original",
+          "color": "Red",
+          "price": "$600"
+        },
+        {
+          "ID": "XB_CONTROLLER_ORIGINAL_04",
+          "image": "/shop/xbox/controllers/blue.png",
+          "name": "Xbox Series X Controller",
+          "type": "Original",
+          "color": "Blue",
+          "price": "$600"
+        }
+      ],
+      "skins": [
+        {
+          "ID": "XB_CONTROLLER_SKIN_01",
+          "image": "/shop/xbox/controllers/skin-1.png",
+          "name": "Xbox Series X Controller",
+          "type": "CyberSkin",
+          "color": "BROKEN LAVA",
+          "price": "$600"
+        },
+        {
+          "ID": "XB_CONTROLLER_SKIN_02",
+          "image": "/shop/xbox/controllers/skin-2.png",
+          "name": "Xbox Series X Controller",
+          "type": "CyberSkin",
+          "color": "DARK GALAXY",
+          "price": "$600"
+        },
+        {
+          "ID": "XB_CONTROLLER_SKIN_03",
+          "image": "/shop/xbox/controllers/skin-3.png",
+          "name": "Xbox Series X Controller",
+          "type": "CyberSkin",
+          "color": "BLUE FUSION",
+          "price": "$600"
+        },
+        {
+          "ID": "XB_CONTROLLER_SKIN_04",
+          "image": "/shop/xbox/controllers/skin-4.png",
+          "name": "Xbox Series X Controller",
+          "type": "CyberSkin",
+          "color": "ROSY BLUE",
+          "price": "$600"
+        },
+        {
+          "ID": "XB_CONTROLLER_SKIN_05",
+          "image": "/shop/xbox/controllers/skin-5.png",
+          "name": "Xbox Series X Controller",
+          "type": "CyberSkin",
+          "color": "BLACK CAGE",
+          "price": "$600"
+        },
+        {
+          "ID": "XB_CONTROLLER_SKIN_06",
+          "image": "/shop/xbox/controllers/skin-6.png",
+          "name": "Xbox Series X Controller",
+          "type": "CyberSkin",
+          "color": "LOST SKULLS",
+          "price": "$600"
+        },
+        {
+          "ID": "XB_CONTROLLER_SKIN_07",
+          "image": "/shop/xbox/controllers/skin-7.png",
+          "name": "Xbox Series X Controller",
+          "type": "CyberSkin",
+          "color": "GRADIENT FLOW",
+          "price": "$600"
+        },
+        {
+          "ID": "XB_CONTROLLER_SKIN_08",
+          "image": "/shop/xbox/controllers/skin-8.png",
+          "name": "Xbox Series X Controller",
+          "type": "CyberSkin",
+          "color": "SOLDIER BOY",
+          "price": "$600"
+        },
+        {
+          "ID": "XB_CONTROLLER_SKIN_09",
+          "image": "/shop/xbox/controllers/skin-9.png",
+          "name": "Xbox Series X Controller",
+          "type": "CyberSkin",
+          "color": "ALIEN LANDS",
+          "price": "$600"
+        },
+        {
+          "ID": "XB_CONTROLLER_SKIN_10",
+          "image": "/shop/xbox/controllers/skin-10.png",
+          "name": "Xbox Series X Controller",
+          "type": "CyberSkin",
+          "color": "LEAF CAMEO",
+          "price": "$600"
+        },
+        {
+          "ID": "XB_CONTROLLER_SKIN_11",
+          "image": "/shop/xbox/controllers/skin-11.png",
+          "name": "Xbox Series X Controller",
+          "type": "CyberSkin",
+          "color": "CAMEO NOIR",
+          "price": "$600"
+        },
+        {
+          "ID": "XB_CONTROLLER_SKIN_12",
+          "image": "/shop/xbox/controllers/skin-12.png",
+          "name": "Xbox Series X Controller",
+          "type": "CyberSkin",
+          "color": "SPACE NOIR",
+          "price": "$600"
+        }
+      ],
+      "combos": [
+        {
+          "ID": "XB_CONTROLLER_COMBO_01",
+          "images": [
+            "/shop/xbox/controllers/skin-1.png",
+            "/shop/xbox/controllers/skin-2.png"
+          ],
+          "name": "Xbox Series X Controller",
+          "type": "Combo",
+          "colors": ["BROKEN LAVA", "DARK GALAXY"],
+          "price": "$800"
+        },
+        {
+          "ID": "XB_CONTROLLER_COMBO_02",
+          "images": [
+            "/shop/xbox/controllers/skin-3.png",
+            "/shop/xbox/controllers/skin-8.png"
+          ],
+          "name": "Xbox Series X Controller",
+          "type": "Combo",
+          "colors": ["BLUE FUSION", "SOLDIER BOY"],
+          "price": "$800"
+        },
+        {
+          "ID": "XB_CONTROLLER_COMBO_03",
+          "images": [
+            "/shop/xbox/controllers/skin-6.png",
+            "/shop/xbox/controllers/skin-9.png"
+          ],
+          "name": "Xbox Series X Controller",
+          "type": "Combo",
+          "colors": ["LOST SKULLS", "ALIEN LANDS"],
+          "price": "$800"
+        },
+        {
+          "ID": "XB_CONTROLLER_COMBO_04",
+          "images": [
+            "/shop/xbox/controllers/skin-4.png",
+            "/shop/xbox/controllers/skin-11.png"
+          ],
+          "name": "Xbox Series X Controller",
+          "type": "Combo",
+          "colors": ["ROSY BLUE", "CAMEO NOIR"],
+          "price": "$800"
+        },
+        {
+          "ID": "XB_CONTROLLER_COMBO_05",
+          "images": [
+            "/shop/xbox/controllers/skin-10.png",
+            "/shop/xbox/controllers/skin-12.png"
+          ],
+          "name": "Xbox Series X Controller",
+          "type": "Combo",
+          "colors": ["LEAF CAMEO", "SPACE NOIR"],
+          "price": "$800"
+        }
+      ],
+      "extras": [
+        "/shop/xbox/consoles/skin-1.png",
+        "/shop/xbox/consoles/black.png",
+        "/shop/xbox/consoles/skin-3.png"
       ]
     }
   },

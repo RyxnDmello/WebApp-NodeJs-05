@@ -4,7 +4,7 @@
     "types": {
       "originals": [
         {
-          "ID": "NS_ORIGINAL_01",
+          "ID": "NS_CONSOLE_ORIGINAL_01",
           "image": "/shop/switch/switch.png",
           "name": "Switch Pro",
           "type": "Original",
@@ -14,7 +14,7 @@
       ],
       "skins": [
         {
-          "ID": "NS_SKIN_01",
+          "ID": "NS_CONSOLE_SKIN_01",
           "image": "/shop/switch/consoles/skin-1.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -22,7 +22,7 @@
           "price": "$600"
         },
         {
-          "ID": "NS_SKIN_02",
+          "ID": "NS_CONSOLE_SKIN_02",
           "image": "/shop/switch/consoles/skin-2.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -30,7 +30,7 @@
           "price": "$600"
         },
         {
-          "ID": "NS_SKIN_03",
+          "ID": "NS_CONSOLE_SKIN_03",
           "image": "/shop/switch/consoles/skin-3.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -38,7 +38,7 @@
           "price": "$600"
         },
         {
-          "ID": "NS_SKIN_04",
+          "ID": "NS_CONSOLE_SKIN_04",
           "image": "/shop/switch/consoles/skin-4.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -46,7 +46,7 @@
           "price": "$600"
         },
         {
-          "ID": "NS_SKIN_05",
+          "ID": "NS_CONSOLE_SKIN_05",
           "image": "/shop/switch/consoles/skin-5.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -54,7 +54,7 @@
           "price": "$600"
         },
         {
-          "ID": "NS_SKIN_06",
+          "ID": "NS_CONSOLE_SKIN_06",
           "image": "/shop/switch/consoles/skin-6.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -62,7 +62,7 @@
           "price": "$600"
         },
         {
-          "ID": "NS_SKIN_07",
+          "ID": "NS_CONSOLE_SKIN_07",
           "image": "/shop/switch/consoles/skin-7.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -70,7 +70,7 @@
           "price": "$600"
         },
         {
-          "ID": "NS_SKIN_08",
+          "ID": "NS_CONSOLE_SKIN_08",
           "image": "/shop/switch/consoles/skin-8.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -78,7 +78,7 @@
           "price": "$600"
         },
         {
-          "ID": "NS_SKIN_09",
+          "ID": "NS_CONSOLE_SKIN_09",
           "image": "/shop/switch/consoles/skin-9.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -86,7 +86,7 @@
           "price": "$600"
         },
         {
-          "ID": "NS_SKIN_10",
+          "ID": "NS_CONSOLE_SKIN_10",
           "image": "/shop/switch/consoles/skin-10.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -94,7 +94,7 @@
           "price": "$600"
         },
         {
-          "ID": "NS_SKIN_11",
+          "ID": "NS_CONSOLE_SKIN_11",
           "image": "/shop/switch/consoles/skin-11.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -102,7 +102,7 @@
           "price": "$600"
         },
         {
-          "ID": "NS_SKIN_12",
+          "ID": "NS_CONSOLE_SKIN_12",
           "image": "/shop/switch/consoles/skin-12.png",
           "name": "Xbox Series X",
           "type": "CyberSkin",
@@ -112,7 +112,7 @@
       ],
       "combos": [
         {
-          "ID": "NS_COMBO_01",
+          "ID": "NS_CONSOLE_COMBO_01",
           "images": [
             "/shop/switch/consoles/skin-1.png",
             "/shop/switch/consoles/skin-7.png"
@@ -123,7 +123,7 @@
           "price": "$800"
         },
         {
-          "ID": "NS_COMBO_02",
+          "ID": "NS_CONSOLE_COMBO_02",
           "images": [
             "/shop/switch/consoles/skin-2.png",
             "/shop/switch/consoles/skin-5.png"
@@ -134,7 +134,7 @@
           "price": "$800"
         },
         {
-          "ID": "NS_COMBO_03",
+          "ID": "NS_CONSOLE_COMBO_03",
           "images": [
             "/shop/switch/consoles/skin-3.png",
             "/shop/switch/consoles/skin-6.png"
@@ -145,7 +145,7 @@
           "price": "$800"
         },
         {
-          "ID": "NS_COMBO_04",
+          "ID": "NS_CONSOLE_COMBO_04",
           "images": [
             "/shop/switch/consoles/skin-4.png",
             "/shop/switch/consoles/skin-8.png"
@@ -156,7 +156,7 @@
           "price": "$800"
         },
         {
-          "ID": "NS_COMBO_05",
+          "ID": "NS_CONSOLE_COMBO_05",
           "images": [
             "/shop/switch/consoles/skin-9.png",
             "/shop/switch/consoles/skin-12.png"
@@ -171,6 +171,197 @@
         "/shop/switch/controllers/red.png",
         "/shop/switch/controllers/black.png",
         "/shop/switch/controllers/blue.png"
+      ]
+    }
+  },
+  "controllers": {
+    "post": "/shop/switch/controllers/add",
+    "types": {
+      "originals": [
+        {
+          "ID": "NS_CONTROLLER_ORIGINAL_01",
+          "image": "/shop/switch/controllers/black.png",
+          "name": "Switch Pro Controller",
+          "type": "Original",
+          "color": "Black",
+          "price": "$600"
+        },
+        {
+          "ID": "NS_CONTROLLER_ORIGINAL_02",
+          "image": "/shop/switch/controllers/red.png",
+          "name": "Switch Pro Controller",
+          "type": "Original",
+          "color": "Red",
+          "price": "$600"
+        },
+        {
+          "ID": "NS_CONTROLLER_ORIGINAL_03",
+          "image": "/shop/switch/controllers/blue.png",
+          "name": "Switch Pro Controller",
+          "type": "Original",
+          "color": "Blue",
+          "price": "$600"
+        }
+      ],
+      "skins": [
+        {
+          "ID": "NS_CONTROLLER_SKIN_01",
+          "image": "/shop/switch/controllers/skin-1.png",
+          "name": "Switch Pro Controller",
+          "type": "CyberSkin",
+          "color": "PIXELEIGHT",
+          "price": "$600"
+        },
+        {
+          "ID": "NS_CONTROLLER_SKIN_02",
+          "image": "/shop/switch/controllers/skin-2.png",
+          "name": "Switch Pro Controller",
+          "type": "CyberSkin",
+          "color": "COMIC STRIP",
+          "price": "$600"
+        },
+        {
+          "ID": "NS_CONTROLLER_SKIN_03",
+          "image": "/shop/switch/controllers/skin-3.png",
+          "name": "Switch Pro Controller",
+          "type": "CyberSkin",
+          "color": "CANDY BAR",
+          "price": "$600"
+        },
+        {
+          "ID": "NS_CONTROLLER_SKIN_04",
+          "image": "/shop/switch/controllers/skin-4.png",
+          "name": "Switch Pro Controller",
+          "type": "CyberSkin",
+          "color": "CREAM PINK",
+          "price": "$600"
+        },
+        {
+          "ID": "NS_CONTROLLER_SKIN_05",
+          "image": "/shop/switch/controllers/skin-5.png",
+          "name": "Switch Pro Controller",
+          "type": "CyberSkin",
+          "color": "COMMANDO",
+          "price": "$600"
+        },
+        {
+          "ID": "NS_CONTROLLER_SKIN_06",
+          "image": "/shop/switch/controllers/skin-6.png",
+          "name": "Switch Pro Controller",
+          "type": "CyberSkin",
+          "color": "CREAM BLUE",
+          "price": "$600"
+        },
+        {
+          "ID": "NS_CONTROLLER_SKIN_07",
+          "image": "/shop/switch/controllers/skin-7.png",
+          "name": "Switch Pro Controller",
+          "type": "CyberSkin",
+          "color": "ALIEN RED",
+          "price": "$600"
+        },
+        {
+          "ID": "NS_CONTROLLER_SKIN_08",
+          "image": "/shop/switch/controllers/skin-8.png",
+          "name": "Switch Pro Controller",
+          "type": "CyberSkin",
+          "color": "DULL SANDS",
+          "price": "$600"
+        },
+        {
+          "ID": "NS_CONTROLLER_SKIN_09",
+          "image": "/shop/switch/controllers/skin-9.png",
+          "name": "Switch Pro Controller",
+          "type": "CyberSkin",
+          "color": "SPACE NOIR",
+          "price": "$600"
+        },
+        {
+          "ID": "NS_CONTROLLER_SKIN_10",
+          "image": "/shop/switch/controllers/skin-10.png",
+          "name": "Switch Pro Controller",
+          "type": "CyberSkin",
+          "color": "ALIEN GREEN",
+          "price": "$600"
+        },
+        {
+          "ID": "NS_CONTROLLER_SKIN_11",
+          "image": "/shop/switch/controllers/skin-11.png",
+          "name": "Switch Pro Controller",
+          "type": "CyberSkin",
+          "color": "PIXELFADE",
+          "price": "$600"
+        },
+        {
+          "ID": "NS_CONTROLLER_SKIN_12",
+          "image": "/shop/switch/controllers/skin-12.png",
+          "name": "Switch Pro Controller",
+          "type": "CyberSkin",
+          "color": "HARDWARE",
+          "price": "$600"
+        }
+      ],
+      "combos": [
+        {
+          "ID": "NS_CONTROLLER_COMBO_01",
+          "images": [
+            "/shop/switch/controllers/skin-1.png",
+            "/shop/switch/controllers/skin-7.png"
+          ],
+          "name": "Switch Pro Controller",
+          "type": "Combo",
+          "colors": ["PIXELEIGHT", "ALIEN RED"],
+          "price": "$800"
+        },
+        {
+          "ID": "NS_CONTROLLER_COMBO_02",
+          "images": [
+            "/shop/switch/controllers/skin-2.png",
+            "/shop/switch/controllers/skin-5.png"
+          ],
+          "name": "Switch Pro Controller",
+          "type": "Combo",
+          "colors": ["COMIC STRIP", "COMMANDO"],
+          "price": "$800"
+        },
+        {
+          "ID": "NS_CONTROLLER_COMBO_03",
+          "images": [
+            "/shop/switch/controllers/skin-3.png",
+            "/shop/switch/controllers/skin-6.png"
+          ],
+          "name": "Switch Pro Controller",
+          "type": "Combo",
+          "colors": ["CANDY BAR", "CREAM BLUE"],
+          "price": "$800"
+        },
+        {
+          "ID": "NS_CONTROLLER_COMBO_04",
+          "images": [
+            "/shop/switch/controllers/skin-4.png",
+            "/shop/switch/controllers/skin-8.png"
+          ],
+          "name": "Switch Pro Controller",
+          "type": "Combo",
+          "colors": ["CREAM PINK", "DULL SANDS"],
+          "price": "$800"
+        },
+        {
+          "ID": "NS_CONTROLLER_COMBO_05",
+          "images": [
+            "/shop/switch/controllers/skin-9.png",
+            "/shop/switch/controllers/skin-12.png"
+          ],
+          "name": "Switch Pro Controller",
+          "type": "Combo",
+          "colors": ["SPACE NOIR", "HARDWARE"],
+          "price": "$800"
+        }
+      ],
+      "extras": [
+        "/shop/switch/consoles/skin-7.png",
+        "/shop/switch/switch.png",
+        "/shop/switch/consoles/skin-10.png"
       ]
     }
   },
