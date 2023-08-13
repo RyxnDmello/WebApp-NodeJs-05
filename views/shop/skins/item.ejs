@@ -1,5 +1,5 @@
 <% products.forEach((product) => { %>
-<form class="skins-item" action="/shop/item/add" method="post">
+<form class="skins-item" action="<%= post %>" method="post">
   <input type="hidden" name="ID" value="<%= product.ID %>" />
 
   <div class="skins-item-header">

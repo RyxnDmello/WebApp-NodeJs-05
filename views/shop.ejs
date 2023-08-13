@@ -29,19 +29,23 @@
 
     <main>
       <section id="originals">
-        <%- include("./shop/originals.ejs", { products: products.originals }) %>
+        <%- include("./shop/originals.ejs", { products: types.originals, post:
+        post }) %>
       </section>
 
       <section id="skins">
-        <%- include("./shop/skins.ejs", { products: products.skins }) %>
+        <%- include("./shop/skins.ejs", { products: types.skins, post: post })
+        %>
       </section>
 
       <section id="combos">
-        <%- include("./shop/combos.ejs", { products: products.combos }) %>
+        <%- include("./shop/combos.ejs", { products: types.combos, post: post })
+        %>
       </section>
 
       <section id="extras">
-        <%- include("./shop/extras.ejs", { products: products.extras }) %>
+        <%- include("./shop/extras.ejs", { products: types.extras, post: post })
+        %>
       </section>
     </main>
 

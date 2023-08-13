@@ -21,6 +21,10 @@ app.use(express.static("./css"));
 
 app.set("view engine", "ejs");
 
+/*------------------------------------------*/
+/*-------------- GET REQUESTS --------------*/
+/*------------------------------------------*/
+
 app.get("/", (req, res) => {
   res.render("home", {
     navbar: HomeTemplate.navbar,
@@ -41,7 +45,8 @@ app.get("/account/:type", (req, res) => {
 app.get("/shop/:brand/:type", (req, res) => {
   if (req.params.brand === "playstation") {
     res.render("shop", {
-      products: PlaystationTemplate[req.params.type],
+      types: PlaystationTemplate[req.params.type].types,
+      post: PlaystationTemplate[req.params.type].post,
       footer: PlaystationTemplate.footer,
     });
 
@@ -50,7 +55,8 @@ app.get("/shop/:brand/:type", (req, res) => {
 
   if (req.params.brand === "xbox") {
     res.render("shop", {
-      products: XboxTemplate[req.params.type],
+      types: XboxTemplate[req.params.type].types,
+      post: XboxTemplate[req.params.type].post,
       footer: XboxTemplate.footer,
     });
 
@@ -59,13 +65,18 @@ app.get("/shop/:brand/:type", (req, res) => {
 
   if (req.params.brand === "switch") {
     res.render("shop", {
-      products: SwitchTemplate[req.params.type],
+      types: SwitchTemplate[req.params.type].types,
+      post: SwitchTemplate[req.params.type].post,
       footer: SwitchTemplate.footer,
     });
 
     return;
   }
 });
+
+/*-------------------------------------------*/
+/*-------------- POST REQUESTS --------------*/
+/*-------------------------------------------*/
 
 app.post("/account/:type", (req, res) => {
   if (req.params.type === "login") {
@@ -83,46 +94,10 @@ app.post("/account/:type", (req, res) => {
   res.redirect("/account/register");
 });
 
-app.post("/shop/item/add", function (req, res) {
-  const playstationTypes = PlaystationTemplate.consoles;
-  const switchTypes = SwitchTemplate.consoles;
-  const xboxTypes = XboxTemplate.consoles;
+app.post("/shop/:brand/:type/add", function (req, res) {
+  const { brand, type } = req.params;
 
-  playstationTypes.originals.forEach((product) => {
-    if (product.ID === req.body.ID) console.log(product);
-  });
-
-  playstationTypes.skins.forEach((product) => {
-    if (product.ID === req.body.ID) console.log(product);
-  });
-
-  playstationTypes.combos.forEach((product) => {
-    if (product.ID === req.body.ID) console.log(product);
-  });
-
-  xboxTypes.originals.forEach((product) => {
-    if (product.ID === req.body.ID) console.log(product);
-  });
-
-  xboxTypes.skins.forEach((product) => {
-    if (product.ID === req.body.ID) console.log(product);
-  });
-
-  xboxTypes.combos.forEach((product) => {
-    if (product.ID === req.body.ID) console.log(product);
-  });
-
-  switchTypes.originals.forEach((product) => {
-    if (product.ID === req.body.ID) console.log(product);
-  });
-
-  switchTypes.skins.forEach((product) => {
-    if (product.ID === req.body.ID) console.log(product);
-  });
-
-  switchTypes.combos.forEach((product) => {
-    if (product.ID === req.body.ID) console.log(product);
-  });
+  console.log(`Brand: ${brand} | Type: ${type}`);
 
   res.redirect("back");
 });
