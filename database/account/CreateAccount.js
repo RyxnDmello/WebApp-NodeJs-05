@@ -1,11 +1,10 @@
 const { AccountModel } = require("../models/AccountModel.js");
 
-module.exports.DatabaseCreateAccount = async (account, response) => {
+module.exports.DatabaseCreateAccount = async (account, request, response) => {
   const databaseAccount = await AccountModel.findOne({ email: account.email });
 
   if (databaseAccount) {
-    console.log("CREATE FAILED | ACCOUNT ALREADY EXISTS");
-    response.redirect("/account/register");
+    response.redirect("/error/account-exists");
     return;
   }
 
@@ -19,7 +18,8 @@ module.exports.DatabaseCreateAccount = async (account, response) => {
 
   await createdAccount.save();
 
-  console.log("CREATE SUCCESSFUL");
+  request.session.username = createdAccount.username;
+  request.session.email = createdAccount.email;
 
   response.redirect("/");
 };

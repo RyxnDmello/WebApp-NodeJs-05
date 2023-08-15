@@ -1,0 +1,56 @@
+{
+  "account-absent": {
+    "header": {
+      "title": "ACCOUNT DOES NOT EXIST",
+      "description": "Please Create An Account"
+    },
+    "links": [
+      {
+        "text": "Home",
+        "image": "",
+        "URL": "/"
+      },
+      {
+        "text": "Register",
+        "image": "/buttons/account/register.png",
+        "URL": "/account/register"
+      }
+    ]
+  },
+  "account-exists": {
+    "header": {
+      "title": "ACCOUNT ALREADY EXISTS",
+      "description": "Please Login To Your Account"
+    },
+    "links": [
+      {
+        "text": "Home",
+        "image": "",
+        "URL": "/"
+      },
+      {
+        "text": "Login",
+        "image": "/buttons/account/login.png",
+        "URL": "/account/register"
+      }
+    ]
+  },
+  "invalid-password": {
+    "header": {
+      "title": "INVALID PASSWORD ENTERED",
+      "description": "Please Try Again"
+    },
+    "links": [
+      {
+        "text": "Home",
+        "image": "",
+        "URL": "/"
+      },
+      {
+        "text": "Login",
+        "image": "/buttons/account/login.png",
+        "URL": "/account/register"
+      }
+    ]
+  }
+}

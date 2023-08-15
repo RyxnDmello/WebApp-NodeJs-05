@@ -1,21 +1,20 @@
 const { AccountModel } = require("../models/AccountModel.js");
 
-module.exports.DatabaseLoginAccount = async (account, response) => {
+module.exports.DatabaseLoginAccount = async (account, request, response) => {
   const databaseAccount = await AccountModel.findOne({ email: account.email });
 
   if (!databaseAccount) {
-    console.log("LOGIN FAILED | ACCOUNT DOES NOT EXIST");
-    response.redirect("/account/register");
+    response.redirect("/error/account-absent");
     return;
   }
 
   if (account.password !== databaseAccount.password) {
-    console.log("LOGIN FAILED | INVALID PASSWORD");
-    response.redirect("/account/register");
+    response.redirect("/error/invalid-password");
     return;
   }
 
-  console.log("LOGIN SUCCESSFUL");
+  request.session.username = databaseAccount.username;
+  request.session.email = databaseAccount.email;
 
   response.redirect("/");
 };

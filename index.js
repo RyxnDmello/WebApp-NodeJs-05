@@ -1,9 +1,11 @@
 require("dotenv").config();
 const express = require("express");
 const bodyParser = require("body-parser");
+const session = require("express-session");
 
 const HomeTemplate = require("./json/home.json");
 const RegisterTemplate = require("./json/register.json");
+const ErrorTemplate = require("./json/error.json");
 
 const PlaystationTemplate = require("./json/playstation.json");
 const SwitchTemplate = require("./json/switch.json");
@@ -22,6 +24,15 @@ app.use(express.static("./fonts"));
 app.use(express.static("./json"));
 app.use(express.static("./css"));
 
+app.use(
+  session({
+    secret: "WebApp-NodeJs-05",
+    cookie: { secure: false },
+    saveUninitialized: false,
+    resave: false,
+  })
+);
+
 app.set("view engine", "ejs");
 
 DatabaseManager.ConnectDatabase();
@@ -32,6 +43,7 @@ DatabaseManager.ConnectDatabase();
 
 app.get("/", (req, res) => {
   res.render("home", {
+    username: req.session.username ?? null,
     navbar: HomeTemplate.navbar,
     header: HomeTemplate.header,
     features: HomeTemplate.features,
@@ -48,6 +60,11 @@ app.get("/account/:type", (req, res) => {
 });
 
 app.get("/shop/:brand/:type", (req, res) => {
+  if (req.session.email === undefined) {
+    res.redirect("/error/account-absent");
+    return;
+  }
+
   if (req.params.brand === "playstation") {
     res.render("shop", {
       types: PlaystationTemplate[req.params.type].types,
@@ -79,28 +96,25 @@ app.get("/shop/:brand/:type", (req, res) => {
   }
 });
 
+app.get("/error/:type", (req, res) => {
+  console.log(ErrorTemplate[req.params.type]);
+  res.redirect("/");
+});
+
 /*-------------------------------------------*/
 /*-------------- POST REQUESTS --------------*/
 /*-------------------------------------------*/
 
 app.post("/account/:type", (req, res) => {
-  if (req.params.type === "login") {
-    const account = {
-      email: req.body.email,
-      password: req.body.password,
-    };
-
-    AccountManager.LoginAccount(account, res);
+  if (req.params.type === "create") {
+    AccountManager.CreateAccount(req.body, req, res);
     return;
   }
 
-  const account = {
-    email: req.body.email,
-    username: req.body.username,
-    password: req.body.password,
-  };
-
-  AccountManager.CreateAccount(account, res);
+  if (req.params.type === "login") {
+    AccountManager.LoginAccount(req.body, req, res);
+    return;
+  }
 });
 
 app.post("/shop/:brand/:type/add", function (req, res) {

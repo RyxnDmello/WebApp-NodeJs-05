@@ -1,4 +1,6 @@
-<nav><%- include("./navbar.ejs", { navbar: navbar }) %></nav>
+<nav>
+  <%- include("./navbar.ejs", { username: username, navbar: navbar }) %>
+</nav>
 
 <div class="header-information">
   <img class="header-carousel-button left" src="<%= header.controller[0] %>" />

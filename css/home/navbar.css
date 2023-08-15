@@ -57,7 +57,6 @@ nav {
 /*----------------------------------*/
 /*------------ LOCATION ------------*/
 /*----------------------------------*/
-/*----------------------------------*/
 
 .nav-location-links-container {
   justify-content: center;
@@ -143,6 +142,53 @@ nav {
   color: #fff;
 }
 
+/*-----------------------------------*/
+/*------------- ACCOUNT -------------*/
+/*-----------------------------------*/
+
+.nav-account-link {
+  border: 2px solid #fff;
+  justify-content: center;
+  grid-auto-flow: column;
+  padding: 0.25rem 2rem;
+  align-items: center;
+  border-radius: 40px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.nav-account-link::before {
+  transition: background-color 400ms;
+  border: 2px solid #fff;
+  background-color: #fff;
+  transition: width 400ms;
+  transform: skew(40deg);
+  position: absolute;
+  height: 100%;
+  content: "";
+  z-index: -1;
+  left: -1rem;
+  width: 0%;
+  top: 0;
+}
+
+.nav-account-link-image {
+  transition: filter 400ms;
+  width: 24px;
+}
+
+.nav-account-link-name {
+  font-family: "Poppins", sans-serif;
+  transition: color 400ms;
+  letter-spacing: 0.65px;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #fff;
+}
+
 /*----------------------------------*/
 /*----------- TRANSITION -----------*/
 /*----------------------------------*/
@@ -174,6 +220,18 @@ nav {
 
 .nav-register-link:focus {
   translate: 0 6px;
+}
+
+.nav-account-link:hover::before {
+  width: 120%;
+}
+
+.nav-account-link:hover .nav-account-link-image {
+  filter: invert(1);
+}
+
+.nav-account-link:hover .nav-account-link-name {
+  color: #000;
 }
 
 /*--------------------------------------*/
