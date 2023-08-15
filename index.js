@@ -9,6 +9,9 @@ const PlaystationTemplate = require("./json/playstation.json");
 const SwitchTemplate = require("./json/switch.json");
 const XboxTemplate = require("./json/xbox.json");
 
+const DatabaseManager = require("./database/DatabaseManager.js");
+const AccountManager = require("./database/AccountManager.js");
+
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -20,6 +23,8 @@ app.use(express.static("./json"));
 app.use(express.static("./css"));
 
 app.set("view engine", "ejs");
+
+DatabaseManager.ConnectDatabase();
 
 /*------------------------------------------*/
 /*-------------- GET REQUESTS --------------*/
@@ -80,18 +85,22 @@ app.get("/shop/:brand/:type", (req, res) => {
 
 app.post("/account/:type", (req, res) => {
   if (req.params.type === "login") {
-    console.log(req.body.email);
-    console.log(req.body.password);
+    const account = {
+      email: req.body.email,
+      password: req.body.password,
+    };
 
-    res.redirect("/account/register");
+    AccountManager.LoginAccount(account, res);
     return;
   }
 
-  console.log(req.body.email);
-  console.log(req.body.username);
-  console.log(req.body.password);
+  const account = {
+    email: req.body.email,
+    username: req.body.username,
+    password: req.body.password,
+  };
 
-  res.redirect("/account/register");
+  AccountManager.CreateAccount(account, res);
 });
 
 app.post("/shop/:brand/:type/add", function (req, res) {
