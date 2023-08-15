@@ -60,7 +60,7 @@
               "/home/header/items/headset.png",
               "/home/header/items/wires.png"
             ],
-            "URL": "/"
+            "URL": "/shop/playstation/consoles"
           },
           {
             "image": "/home/header/consoles/xbox.png",
@@ -72,7 +72,7 @@
               "/home/header/items/headset.png",
               "/home/header/items/wires.png"
             ],
-            "URL": "/"
+            "URL": "/shop/xbox/consoles"
           },
           {
             "image": "/home/header/consoles/switch.png",
@@ -84,7 +84,7 @@
               "/home/header/items/headset.png",
               "/home/header/items/wires.png"
             ],
-            "URL": "/"
+            "URL": "/shop/switch/consoles"
           }
         ]
       },
@@ -100,7 +100,7 @@
               "/home/header/items/battery.png",
               "/home/header/items/wires.png"
             ],
-            "URL": "/"
+            "URL": "/shop/playstation/controllers"
           },
           {
             "image": "/home/header/controllers/xbox.png",
@@ -111,7 +111,7 @@
               "/home/header/items/battery.png",
               "/home/header/items/wires.png"
             ],
-            "URL": "/"
+            "URL": "/shop/xbox/controllers"
           },
           {
             "image": "/home/header/controllers/switch.png",
@@ -122,7 +122,7 @@
               "/home/header/items/battery.png",
               "/home/header/items/wires.png"
             ],
-            "URL": "/"
+            "URL": "/shop/switch/controllers"
           }
         ]
       },
@@ -138,7 +138,7 @@
               "/home/header/items/battery.png",
               "/home/header/items/wires.png"
             ],
-            "URL": "/"
+            "URL": "/shop/playstation/headsets"
           },
           {
             "image": "/home/header/headphones/xbox.png",
@@ -149,7 +149,7 @@
               "/home/header/items/battery.png",
               "/home/header/items/wires.png"
             ],
-            "URL": "/"
+            "URL": "/shop/xbox/headsets"
           },
           {
             "image": "/home/header/headphones/switch.png",
@@ -160,7 +160,7 @@
               "/home/header/items/battery.png",
               "/home/header/items/wires.png"
             ],
-            "URL": "/"
+            "URL": "/shop/switch/headsets"
           }
         ]
       }
@@ -171,7 +171,7 @@
       "title": "SONY PLAYSTATION 5",
       "console": {
         "image": "/home/features/consoles/playstation.png",
-        "URL": "/"
+        "URL": "/shop/playstation/consoles"
       },
       "points": [
         {
@@ -225,7 +225,7 @@
       "title": "XBOX SERIES X",
       "console": {
         "image": "/home/features/consoles/xbox.png",
-        "URL": "/"
+        "URL": "/shop/xbox/consoles"
       },
       "points": [
         {
@@ -279,7 +279,7 @@
       "title": "NINTENDO SWITCH PRO",
       "console": {
         "image": "/home/features/consoles/switch.png",
-        "URL": "/"
+        "URL": "/shop/switch/consoles"
       },
       "points": [
         {
@@ -762,19 +762,19 @@
         "links": [
           {
             "text": "Console",
-            "URL": "/"
+            "URL": "/shop/playstation/consoles"
           },
           {
             "text": "Controllers",
-            "URL": "/"
+            "URL": "/shop/playstation/controllers"
           },
           {
             "text": "Headsets",
-            "URL": "/"
+            "URL": "/shop/playstation/headsets"
           },
           {
             "text": "Skins",
-            "URL": "/"
+            "URL": "/shop/playstation/consoles"
           }
         ]
       },
@@ -783,19 +783,19 @@
         "links": [
           {
             "text": "Console",
-            "URL": "/"
+            "URL": "/shop/xbox/consoles"
           },
           {
             "text": "Controllers",
-            "URL": "/"
+            "URL": "/shop/xbox/controllers"
           },
           {
             "text": "Headsets",
-            "URL": "/"
+            "URL": "/shop/xbox/headsets"
           },
           {
             "text": "Skins",
-            "URL": "/"
+            "URL": "/shop/xbox/consoles"
           }
         ]
       },
@@ -804,39 +804,39 @@
         "links": [
           {
             "text": "Console",
-            "URL": "/"
+            "URL": "/shop/switch/consoles"
           },
           {
             "text": "Controllers",
-            "URL": "/"
+            "URL": "/shop/switch/controllers"
           },
           {
             "text": "Headsets",
-            "URL": "/"
+            "URL": "/shop/switch/headsets"
           },
           {
             "text": "Skins",
-            "URL": "/"
+            "URL": "/shop/switch/consoles"
           }
         ]
       }
     ],
     "socials": [
       {
-        "URL": "/",
-        "image": "/buttons/socials/instagram.png"
+        "image": "/buttons/socials/instagram.png",
+        "URL": "/"
       },
       {
-        "URL": "/",
-        "image": "/buttons/socials/twitter.png"
+        "image": "/buttons/socials/twitter.png",
+        "URL": "/"
       },
       {
         "image": "/buttons/socials/facebook.png",
         "URL": "/"
       },
       {
-        "URL": "/",
-        "image": "/buttons/socials/discord.png"
+        "image": "/buttons/socials/discord.png",
+        "URL": "/"
       }
     ],
     "profiles": [

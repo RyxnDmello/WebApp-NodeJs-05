@@ -225,7 +225,7 @@
           "image": "/shop/xbox/controllers/skin-2.png",
           "name": "Xbox Series X Controller",
           "type": "CyberSkin",
-          "color": "DARK GALAXY",
+          "color": "SKULL DEEP",
           "price": "$600"
         },
         {
@@ -233,7 +233,7 @@
           "image": "/shop/xbox/controllers/skin-3.png",
           "name": "Xbox Series X Controller",
           "type": "CyberSkin",
-          "color": "BLUE FUSION",
+          "color": "STREET GIRL",
           "price": "$600"
         },
         {
@@ -241,7 +241,7 @@
           "image": "/shop/xbox/controllers/skin-4.png",
           "name": "Xbox Series X Controller",
           "type": "CyberSkin",
-          "color": "ROSY BLUE",
+          "color": "ROYAL SAND",
           "price": "$600"
         },
         {
@@ -249,7 +249,7 @@
           "image": "/shop/xbox/controllers/skin-5.png",
           "name": "Xbox Series X Controller",
           "type": "CyberSkin",
-          "color": "BLACK CAGE",
+          "color": "DARK GALAXY",
           "price": "$600"
         },
         {
@@ -257,7 +257,7 @@
           "image": "/shop/xbox/controllers/skin-6.png",
           "name": "Xbox Series X Controller",
           "type": "CyberSkin",
-          "color": "LOST SKULLS",
+          "color": "SPACE NOIR",
           "price": "$600"
         },
         {
@@ -265,7 +265,7 @@
           "image": "/shop/xbox/controllers/skin-7.png",
           "name": "Xbox Series X Controller",
           "type": "CyberSkin",
-          "color": "GRADIENT FLOW",
+          "color": "KNIGHTMARE",
           "price": "$600"
         },
         {
@@ -273,7 +273,7 @@
           "image": "/shop/xbox/controllers/skin-8.png",
           "name": "Xbox Series X Controller",
           "type": "CyberSkin",
-          "color": "SOLDIER BOY",
+          "color": "CAMEO NOIR",
           "price": "$600"
         },
         {
@@ -281,7 +281,7 @@
           "image": "/shop/xbox/controllers/skin-9.png",
           "name": "Xbox Series X Controller",
           "type": "CyberSkin",
-          "color": "ALIEN LANDS",
+          "color": "BLUE FUSION",
           "price": "$600"
         },
         {
@@ -289,7 +289,7 @@
           "image": "/shop/xbox/controllers/skin-10.png",
           "name": "Xbox Series X Controller",
           "type": "CyberSkin",
-          "color": "LEAF CAMEO",
+          "color": "SOLDIER BOY",
           "price": "$600"
         },
         {
@@ -297,7 +297,7 @@
           "image": "/shop/xbox/controllers/skin-11.png",
           "name": "Xbox Series X Controller",
           "type": "CyberSkin",
-          "color": "CAMEO NOIR",
+          "color": "ALIEN SAND",
           "price": "$600"
         },
         {
@@ -305,7 +305,7 @@
           "image": "/shop/xbox/controllers/skin-12.png",
           "name": "Xbox Series X Controller",
           "type": "CyberSkin",
-          "color": "SPACE NOIR",
+          "color": "DEEP RETRO",
           "price": "$600"
         }
       ],
@@ -318,7 +318,7 @@
           ],
           "name": "Xbox Series X Controller",
           "type": "Combo",
-          "colors": ["BROKEN LAVA", "DARK GALAXY"],
+          "colors": ["BROKEN LAVA", "SKULL DEEP"],
           "price": "$800"
         },
         {
@@ -329,7 +329,7 @@
           ],
           "name": "Xbox Series X Controller",
           "type": "Combo",
-          "colors": ["BLUE FUSION", "SOLDIER BOY"],
+          "colors": ["STREET GIRL", "CAMEO NOIR"],
           "price": "$800"
         },
         {
@@ -340,35 +340,35 @@
           ],
           "name": "Xbox Series X Controller",
           "type": "Combo",
-          "colors": ["LOST SKULLS", "ALIEN LANDS"],
+          "colors": ["SPACE NOIR", "BLUE FUSION"],
           "price": "$800"
         },
         {
           "ID": "XB_CONTROLLER_COMBO_04",
           "images": [
             "/shop/xbox/controllers/skin-4.png",
-            "/shop/xbox/controllers/skin-11.png"
+            "/shop/xbox/controllers/skin-12.png"
           ],
           "name": "Xbox Series X Controller",
           "type": "Combo",
-          "colors": ["ROSY BLUE", "CAMEO NOIR"],
+          "colors": ["ROYAL SAND", "DEEP RETRO"],
           "price": "$800"
         },
         {
           "ID": "XB_CONTROLLER_COMBO_05",
           "images": [
-            "/shop/xbox/controllers/skin-10.png",
-            "/shop/xbox/controllers/skin-12.png"
+            "/shop/xbox/controllers/skin-5.png",
+            "/shop/xbox/controllers/skin-11.png"
           ],
           "name": "Xbox Series X Controller",
           "type": "Combo",
-          "colors": ["LEAF CAMEO", "SPACE NOIR"],
+          "colors": ["DARK GALAXY", "ALIEN SAND"],
           "price": "$800"
         }
       ],
       "extras": [
         "/shop/xbox/consoles/skin-1.png",
-        "/shop/xbox/consoles/black.png",
+        "/shop/xbox/consoles/skin-2.png",
         "/shop/xbox/consoles/skin-3.png"
       ]
     }

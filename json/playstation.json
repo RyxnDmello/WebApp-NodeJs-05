@@ -273,7 +273,7 @@
           "image": "/shop/playstation/controllers/skin-1.png",
           "name": "DualSense",
           "type": "CyberSkin",
-          "color": "BROKEN LAVA",
+          "color": "BLACK CAGE",
           "price": "$600"
         },
         {
@@ -281,7 +281,7 @@
           "image": "/shop/playstation/controllers/skin-2.png",
           "name": "DualSense",
           "type": "CyberSkin",
-          "color": "BLUE FUSION",
+          "color": "BROKEN LAVA",
           "price": "$600"
         },
         {
@@ -289,7 +289,7 @@
           "image": "/shop/playstation/controllers/skin-3.png",
           "name": "DualSense",
           "type": "CyberSkin",
-          "color": "STREET BOY",
+          "color": "SOLDIER BOY",
           "price": "$600"
         },
         {
@@ -305,7 +305,7 @@
           "image": "/shop/playstation/controllers/skin-5.png",
           "name": "DualSense",
           "type": "CyberSkin",
-          "color": "STREET GIRL",
+          "color": "MESSY BLUE",
           "price": "$600"
         },
         {
@@ -313,7 +313,7 @@
           "image": "/shop/playstation/controllers/skin-6.png",
           "name": "DualSense",
           "type": "CyberSkin",
-          "color": "IONIC DEMON",
+          "color": "BLUE FUSION",
           "price": "$600"
         },
         {
@@ -329,7 +329,7 @@
           "image": "/shop/playstation/controllers/skin-8.png",
           "name": "DualSense",
           "type": "CyberSkin",
-          "color": "MESSY BLUE",
+          "color": "STREET GIRL",
           "price": "$600"
         },
         {
@@ -345,7 +345,7 @@
           "image": "/shop/playstation/controllers/skin-10.png",
           "name": "DualSense",
           "type": "CyberSkin",
-          "color": "EXO SHIELD",
+          "color": "IONIC DEMON",
           "price": "$600"
         },
         {
@@ -353,7 +353,7 @@
           "image": "/shop/playstation/controllers/skin-11.png",
           "name": "DualSense",
           "type": "CyberSkin",
-          "color": "BLACK CAGE",
+          "color": "LOST SKULLS",
           "price": "$600"
         },
         {
@@ -361,7 +361,7 @@
           "image": "/shop/playstation/controllers/skin-12.png",
           "name": "DualSense",
           "type": "CyberSkin",
-          "color": "GRADIENT FLOW",
+          "color": "ACID SNAKE",
           "price": "$600"
         }
       ],
@@ -370,11 +370,11 @@
           "ID": "PS_CONTROLLER_COMBO_01",
           "images": [
             "/shop/playstation/controllers/skin-1.png",
-            "/shop/playstation/controllers/skin-2.png"
+            "/shop/playstation/controllers/skin-7.png"
           ],
           "name": "DualSense",
           "type": "Combo",
-          "colors": ["BROKEN LAVA", "BLUE FUSION"],
+          "colors": ["BLACK CAGE", "KURE GHOUL"],
           "price": "$800"
         },
         {
@@ -385,40 +385,40 @@
           ],
           "name": "DualSense",
           "type": "Combo",
-          "colors": ["STREET BOY", "MESSY BLUE"],
+          "colors": ["SOLDIER BOY", "STREET GIRL"],
           "price": "$800"
         },
         {
           "ID": "PS_CONTROLLER_COMBO_03",
           "images": [
-            "/shop/playstation/controllers/skin-5.png",
-            "/shop/playstation/controllers/skin-6.png"
+            "/shop/playstation/controllers/skin-2.png",
+            "/shop/playstation/controllers/skin-10.png"
           ],
           "name": "DualSense",
           "type": "Combo",
-          "colors": ["STREET GIRL", "IONIC DEMON"],
+          "colors": ["BROKEN LAVA", "IONIC DEMON"],
           "price": "$800"
         },
         {
           "ID": "PS_CONTROLLER_COMBO_04",
           "images": [
-            "/shop/playstation/controllers/skin-7.png",
-            "/shop/playstation/controllers/skin-9.png"
+            "/shop/playstation/controllers/skin-9.png",
+            "/shop/playstation/controllers/skin-11.png"
           ],
           "name": "DualSense",
           "type": "Combo",
-          "colors": ["KURE GHOUL", "SOLDIER BOY"],
+          "colors": ["STREET BOY", "LOST SKULLS"],
           "price": "$800"
         },
         {
           "ID": "PS_CONTROLLER_COMBO_05",
           "images": [
-            "/shop/playstation/controllers/skin-4.png",
-            "/shop/playstation/controllers/skin-10.png"
+            "/shop/playstation/controllers/skin-6.png",
+            "/shop/playstation/controllers/skin-12.png"
           ],
           "name": "DualSense",
           "type": "Combo",
-          "colors": ["SPACE NOIR", "EXO SHIELD"],
+          "colors": ["BLUE FUSION", "ACID SNAKE"],
           "price": "$800"
         }
       ],
