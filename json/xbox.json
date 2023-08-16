@@ -1,8 +1,8 @@
 {
   "consoles": {
-    "post": "/shop/xbox/consoles/add",
-    "types": {
-      "originals": [
+    "originals": {
+      "post": "/shop/xbox/consoles/originals/add",
+      "products": [
         {
           "ID": "XB_CONSOLE_ORIGINAL_01",
           "image": "/shop/xbox/consoles/black.png",
@@ -11,8 +11,11 @@
           "color": "Black",
           "price": "$600"
         }
-      ],
-      "skins": [
+      ]
+    },
+    "skins": {
+      "post": "/shop/xbox/consoles/skins/add",
+      "products": [
         {
           "ID": "XB_CONSOLE_SKIN_01",
           "image": "/shop/xbox/consoles/skin-1.png",
@@ -109,8 +112,11 @@
           "color": "SPACE NOIR",
           "price": "$600"
         }
-      ],
-      "combos": [
+      ]
+    },
+    "combos": {
+      "post": "/shop/xbox/consoles/combos/add",
+      "products": [
         {
           "ID": "XB_CONSOLE_COMBO_01",
           "images": [
@@ -166,18 +172,18 @@
           "colors": ["LEAF CAMEO", "SPACE NOIR"],
           "price": "$800"
         }
-      ],
-      "extras": [
-        "/shop/xbox/controllers/red.png",
-        "/shop/xbox/controllers/black.png",
-        "/shop/xbox/controllers/blue.png"
       ]
-    }
+    },
+    "extras": [
+      "/shop/xbox/controllers/red.png",
+      "/shop/xbox/controllers/black.png",
+      "/shop/xbox/controllers/blue.png"
+    ]
   },
   "controllers": {
-    "post": "/shop/xbox/controllers/add",
-    "types": {
-      "originals": [
+    "originals": {
+      "post": "/shop/xbox/controllers/originals/add",
+      "products": [
         {
           "ID": "XB_CONTROLLER_ORIGINAL_01",
           "image": "/shop/xbox/controllers/black.png",
@@ -210,8 +216,11 @@
           "color": "Blue",
           "price": "$600"
         }
-      ],
-      "skins": [
+      ]
+    },
+    "skins": {
+      "post": "/shop/xbox/controllers/skins/add",
+      "products": [
         {
           "ID": "XB_CONTROLLER_SKIN_01",
           "image": "/shop/xbox/controllers/skin-1.png",
@@ -308,8 +317,11 @@
           "color": "DEEP RETRO",
           "price": "$600"
         }
-      ],
-      "combos": [
+      ]
+    },
+    "combos": {
+      "post": "/shop/xbox/controllers/combos/add",
+      "products": [
         {
           "ID": "XB_CONTROLLER_COMBO_01",
           "images": [
@@ -365,13 +377,13 @@
           "colors": ["DARK GALAXY", "ALIEN SAND"],
           "price": "$800"
         }
-      ],
-      "extras": [
-        "/shop/xbox/consoles/skin-1.png",
-        "/shop/xbox/consoles/skin-2.png",
-        "/shop/xbox/consoles/skin-3.png"
       ]
-    }
+    },
+    "extras": [
+      "/shop/xbox/consoles/skin-1.png",
+      "/shop/xbox/consoles/skin-2.png",
+      "/shop/xbox/consoles/skin-3.png"
+    ]
   },
   "footer": {
     "products": [

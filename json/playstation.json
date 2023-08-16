@@ -1,8 +1,8 @@
 {
   "consoles": {
-    "post": "/shop/playstation/consoles/add",
-    "types": {
-      "originals": [
+    "originals": {
+      "post": "/shop/playstation/consoles/originals/add",
+      "products": [
         {
           "ID": "PS_CONSOLE_ORIGINAL_01",
           "image": "/shop/playstation/consoles/white.png",
@@ -51,8 +51,11 @@
           "color": "Pink",
           "price": "$600"
         }
-      ],
-      "skins": [
+      ]
+    },
+    "skins": {
+      "post": "/shop/playstation/consoles/skins/add",
+      "products": [
         {
           "ID": "PS_CONSOLE_SKIN_01",
           "image": "/shop/playstation/consoles/skin-1.png",
@@ -149,8 +152,11 @@
           "color": "GRADIENT FLOW",
           "price": "$600"
         }
-      ],
-      "combos": [
+      ]
+    },
+    "combos": {
+      "post": "/shop/playstation/consoles/combos/add",
+      "products": [
         {
           "ID": "PS_CONSOLE_COMBO_01",
           "images": [
@@ -206,18 +212,18 @@
           "colors": ["SPACE NOIR", "EXO SHIELD"],
           "price": "$800"
         }
-      ],
-      "extras": [
-        "/shop/playstation/controllers/red.png",
-        "/shop/playstation/controllers/black.png",
-        "/shop/playstation/controllers/purple.png"
       ]
-    }
+    },
+    "extras": [
+      "/shop/playstation/controllers/red.png",
+      "/shop/playstation/controllers/black.png",
+      "/shop/playstation/controllers/purple.png"
+    ]
   },
   "controllers": {
-    "post": "/shop/playstation/controllers/add",
-    "types": {
-      "originals": [
+    "originals": {
+      "post": "/shop/playstation/controllers/originals/add",
+      "products": [
         {
           "ID": "PS_CONTROLLER_ORIGINAL_01",
           "image": "/shop/playstation/controllers/white.png",
@@ -266,8 +272,11 @@
           "color": "Pink",
           "price": "$600"
         }
-      ],
-      "skins": [
+      ]
+    },
+    "skins": {
+      "post": "/shop/playstation/controllers/skins/add",
+      "products": [
         {
           "ID": "PS_CONTROLLER_SKIN_01",
           "image": "/shop/playstation/controllers/skin-1.png",
@@ -364,8 +373,11 @@
           "color": "ACID SNAKE",
           "price": "$600"
         }
-      ],
-      "combos": [
+      ]
+    },
+    "combos": {
+      "post": "/shop/playstation/controllers/combos/add",
+      "products": [
         {
           "ID": "PS_CONTROLLER_COMBO_01",
           "images": [
@@ -421,13 +433,13 @@
           "colors": ["BLUE FUSION", "ACID SNAKE"],
           "price": "$800"
         }
-      ],
-      "extras": [
-        "/shop/playstation/consoles/red.png",
-        "/shop/playstation/consoles/black.png",
-        "/shop/playstation/consoles/purple.png"
       ]
-    }
+    },
+    "extras": [
+      "/shop/playstation/consoles/red.png",
+      "/shop/playstation/consoles/black.png",
+      "/shop/playstation/consoles/purple.png"
+    ]
   },
   "footer": {
     "products": [

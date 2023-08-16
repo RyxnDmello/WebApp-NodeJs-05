@@ -13,6 +13,7 @@ const XboxTemplate = require("./json/xbox.json");
 
 const DatabaseManager = require("./database/DatabaseManager.js");
 const AccountManager = require("./database/AccountManager.js");
+const CartManager = require("./database/CartManager.js");
 
 const app = express();
 
@@ -55,7 +56,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/account/:type", (req, res) => {
+app.get("/account/register", (req, res) => {
   res.render("register", { register: RegisterTemplate });
 });
 
@@ -67,8 +68,7 @@ app.get("/shop/:brand/:type", (req, res) => {
 
   if (req.params.brand === "playstation") {
     res.render("shop", {
-      types: PlaystationTemplate[req.params.type].types,
-      post: PlaystationTemplate[req.params.type].post,
+      types: PlaystationTemplate[req.params.type],
       footer: PlaystationTemplate.footer,
     });
 
@@ -77,8 +77,7 @@ app.get("/shop/:brand/:type", (req, res) => {
 
   if (req.params.brand === "xbox") {
     res.render("shop", {
-      types: XboxTemplate[req.params.type].types,
-      post: XboxTemplate[req.params.type].post,
+      types: XboxTemplate[req.params.type],
       footer: XboxTemplate.footer,
     });
 
@@ -87,13 +86,49 @@ app.get("/shop/:brand/:type", (req, res) => {
 
   if (req.params.brand === "switch") {
     res.render("shop", {
-      types: SwitchTemplate[req.params.type].types,
-      post: SwitchTemplate[req.params.type].post,
+      types: SwitchTemplate[req.params.type],
       footer: SwitchTemplate.footer,
     });
 
     return;
   }
+});
+
+app.get("/shop/:type", async (req, res) => {
+  if (req.session.email === undefined) {
+    res.redirect("/error/account-absent");
+    return;
+  }
+
+  const databaseProducts = await CartManager.GetProducts(req.session.email);
+
+  databaseProducts.forEach((databaseProduct) => {
+    if (databaseProduct.details.brand === "playstation") {
+      PlaystationTemplate[databaseProduct.details.type][
+        databaseProduct.details.subType
+      ].products.forEach((product) => {
+        if (product.ID === databaseProduct.ID) console.log(product);
+      });
+    }
+
+    if (databaseProduct.details.brand === "xbox") {
+      XboxTemplate[databaseProduct.details.type][
+        databaseProduct.details.subType
+      ].products.forEach((product) => {
+        if (product.ID === databaseProduct.ID) console.log(product);
+      });
+    }
+
+    if (databaseProduct.details.brand === "switch") {
+      SwitchTemplate[databaseProduct.details.type][
+        databaseProduct.details.subType
+      ].products.forEach((product) => {
+        if (product.ID === databaseProduct.ID) console.log(product);
+      });
+    }
+  });
+
+  res.redirect("back");
 });
 
 app.get("/error/:type", (req, res) => {
@@ -117,10 +152,17 @@ app.post("/account/:type", (req, res) => {
   }
 });
 
-app.post("/shop/:brand/:type/add", function (req, res) {
-  const { brand, type } = req.params;
+app.post("/shop/:brand/:type/:subType/add", function (req, res) {
+  const product = {
+    ID: req.body.ID,
+    details: {
+      brand: req.params.brand,
+      type: req.params.type,
+      subType: req.params.subType,
+    },
+  };
 
-  console.log(`Brand: ${brand} | Type: ${type}`);
+  CartManager.AddProduct(req.session.email, product);
 
   res.redirect("back");
 });

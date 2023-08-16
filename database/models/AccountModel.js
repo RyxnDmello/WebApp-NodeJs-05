@@ -1,24 +1,37 @@
 const mongoose = require("mongoose");
 
-const cartSchema = new mongoose.Schema({
-  product: {
+const detailsSchema = new mongoose.Schema({
+  brand: {
     type: String,
     required: true,
   },
-  date: {
+  type: {
+    type: String,
+    required: true,
+  },
+  subType: {
     type: String,
     required: true,
   },
 });
 
-const wishSchema = new mongoose.Schema({
-  product: {
+const productSchema = new mongoose.Schema({
+  ID: {
     type: String,
     required: true,
   },
   date: {
     type: String,
     required: true,
+  },
+  quantity: {
+    type: Number,
+    required: true,
+  },
+  details: {
+    type: detailsSchema,
+    required: true,
+    _id: false,
   },
 });
 
@@ -37,12 +50,12 @@ const accountSchema = new mongoose.Schema({
     required: true,
   },
   cart: {
-    type: [cartSchema],
+    type: [productSchema],
     required: true,
     _id: false,
   },
   wish: {
-    type: [wishSchema],
+    type: [productSchema],
     required: true,
     _id: false,
   },

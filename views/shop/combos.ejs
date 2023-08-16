@@ -1,9 +1,9 @@
 <div class="combos-carousel">
-  <%- include("./combos/carousel.ejs", { products: products, post: post }) %>
+  <%- include("./combos/carousel.ejs", { combos: combos }) %>
 </div>
 
 <div class="combos-controller">
-  <%- include("./combos/controller.ejs", { total: products.length }) %>
+  <%- include("./combos/controller.ejs", { length: combos.products.length }) %>
 </div>
 
 <img class="combos-image" src="/shop/combos.jpg" />

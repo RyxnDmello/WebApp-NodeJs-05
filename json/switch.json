@@ -1,8 +1,8 @@
 {
   "consoles": {
-    "post": "/shop/switch/consoles/add",
-    "types": {
-      "originals": [
+    "originals": {
+      "post": "/shop/switch/consoles/originals/add",
+      "products": [
         {
           "ID": "NS_CONSOLE_ORIGINAL_01",
           "image": "/shop/switch/switch.png",
@@ -11,8 +11,11 @@
           "color": "Retro",
           "price": "$600"
         }
-      ],
-      "skins": [
+      ]
+    },
+    "skins": {
+      "post": "/shop/switch/consoles/skins/add",
+      "products": [
         {
           "ID": "NS_CONSOLE_SKIN_01",
           "image": "/shop/switch/consoles/skin-1.png",
@@ -109,8 +112,11 @@
           "color": "HARDWARE",
           "price": "$600"
         }
-      ],
-      "combos": [
+      ]
+    },
+    "combos": {
+      "post": "/shop/switch/consoles/combos/add",
+      "products": [
         {
           "ID": "NS_CONSOLE_COMBO_01",
           "images": [
@@ -166,18 +172,18 @@
           "colors": ["SPACE NOIR", "HARDWARE"],
           "price": "$800"
         }
-      ],
-      "extras": [
-        "/shop/switch/controllers/red.png",
-        "/shop/switch/controllers/black.png",
-        "/shop/switch/controllers/blue.png"
       ]
-    }
+    },
+    "extras": [
+      "/shop/switch/controllers/red.png",
+      "/shop/switch/controllers/black.png",
+      "/shop/switch/controllers/blue.png"
+    ]
   },
   "controllers": {
-    "post": "/shop/switch/controllers/add",
-    "types": {
-      "originals": [
+    "originals": {
+      "post": "/shop/switch/controllers/originals/add",
+      "products": [
         {
           "ID": "NS_CONTROLLER_ORIGINAL_01",
           "image": "/shop/switch/controllers/black.png",
@@ -202,8 +208,11 @@
           "color": "Blue",
           "price": "$600"
         }
-      ],
-      "skins": [
+      ]
+    },
+    "skins": {
+      "post": "/shop/switch/controllers/skins/add",
+      "products": [
         {
           "ID": "NS_CONTROLLER_SKIN_01",
           "image": "/shop/switch/controllers/skin-1.png",
@@ -300,8 +309,11 @@
           "color": "RED WRAPS",
           "price": "$600"
         }
-      ],
-      "combos": [
+      ]
+    },
+    "combos": {
+      "post": "/shop/switch/controllers/combos/add",
+      "products": [
         {
           "ID": "NS_CONTROLLER_COMBO_01",
           "images": [
@@ -357,13 +369,13 @@
           "colors": ["BINARY HACK", "RED WRAPS"],
           "price": "$800"
         }
-      ],
-      "extras": [
-        "/shop/switch/consoles/skin-7.png",
-        "/shop/switch/consoles/skin-1.png",
-        "/shop/switch/consoles/skin-10.png"
       ]
-    }
+    },
+    "extras": [
+      "/shop/switch/consoles/skin-7.png",
+      "/shop/switch/consoles/skin-1.png",
+      "/shop/switch/consoles/skin-10.png"
+    ]
   },
   "footer": {
     "products": [

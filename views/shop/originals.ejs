@@ -4,7 +4,7 @@
 />
 
 <div class="originals-carousel">
-  <%- include("./originals/carousel.ejs", { products: products, post: post }) %>
+  <%- include("./originals/carousel.ejs", { originals: originals }) %>
 </div>
 
 <img
@@ -13,7 +13,8 @@
 />
 
 <div class="originals-carousel-indicators">
-  <%- include("./originals/controller.ejs", { length: products.length }) %>
+  <%- include("./originals/controller.ejs", { length: originals.products.length
+  }) %>
 </div>
 
 <img class="originals-background" src="/shop/originals.jpg" />
