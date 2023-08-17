@@ -100,35 +100,14 @@ app.get("/shop/:type", async (req, res) => {
     return;
   }
 
-  const databaseProducts = await CartManager.GetProducts(req.session.email);
+  const products = await CartManager.GetProducts(req.session.email);
 
-  databaseProducts.forEach((databaseProduct) => {
-    if (databaseProduct.details.brand === "playstation") {
-      PlaystationTemplate[databaseProduct.details.type][
-        databaseProduct.details.subType
-      ].products.forEach((product) => {
-        if (product.ID === databaseProduct.ID) console.log(product);
-      });
-    }
+  if (products.length === 0) {
+    res.send("<h1>NO PRODUCTS</h1>");
+    return;
+  }
 
-    if (databaseProduct.details.brand === "xbox") {
-      XboxTemplate[databaseProduct.details.type][
-        databaseProduct.details.subType
-      ].products.forEach((product) => {
-        if (product.ID === databaseProduct.ID) console.log(product);
-      });
-    }
-
-    if (databaseProduct.details.brand === "switch") {
-      SwitchTemplate[databaseProduct.details.type][
-        databaseProduct.details.subType
-      ].products.forEach((product) => {
-        if (product.ID === databaseProduct.ID) console.log(product);
-      });
-    }
-  });
-
-  res.redirect("back");
+  res.send(JSON.stringify(products));
 });
 
 app.get("/error/:type", (req, res) => {
