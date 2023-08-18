@@ -18,37 +18,17 @@
       rel="stylesheet"
     />
     <!-- #endregion -->
-    <link rel="stylesheet" href="/shop.css" />
-    <title>CyberVerse | Shop</title>
+    <link rel="stylesheet" href="/cart.css" />
+    <title>CyberVerse | Cart</title>
   </head>
 
   <body>
-    <header id="header">
+    <header>
       <nav><%- include("./common/navbar.ejs") %></nav>
     </header>
 
     <main>
-      <section id="originals">
-        <%- include("./shop/originals.ejs", { originals: types.originals }) %>
-      </section>
-
-      <section id="skins">
-        <%- include("./shop/skins.ejs", { skins: types.skins }) %>
-      </section>
-
-      <section id="combos">
-        <%- include("./shop/combos.ejs", { combos: types.combos }) %>
-      </section>
-
-      <section id="extras">
-        <%- include("./shop/extras.ejs", { extras: types.extras }) %>
-      </section>
+      <section id="list"><%- include("./cart/list.ejs") %></section>
     </main>
-
-    <footer id="footer">
-      <%- include("./shop/footer.ejs", { footer: footer }) %>
-    </footer>
-
-    <script type="module" src="/Shop.js"></script>
   </body>
 </html>

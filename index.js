@@ -95,6 +95,9 @@ app.get("/shop/:brand/:type", (req, res) => {
 });
 
 app.get("/shop/:type", async (req, res) => {
+  res.render("cart");
+  return;
+
   if (req.session.email === undefined) {
     res.redirect("/error/account-absent");
     return;
