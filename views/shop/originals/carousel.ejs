@@ -1,12 +1,15 @@
 <% originals.products.forEach((product) => { %>
-<form class="originals-slide" action="<%= originals.post %>" method="post">
+<form class="originals-slide" action="/account/cart/add" method="post">
   <input type="hidden" name="ID" value="<%= product.ID %>" />
+  <input type="hidden" name="brand" value="<%= originals.post.brand %>" />
+  <input type="hidden" name="type" value="<%= originals.post.type %>" />
+  <input type="hidden" name="subType" value="<%= originals.post.subType %>" />
 
   <img class="originals-slide-image" src="<%= product.image %>" />
 
   <div class="originals-slide-information">
     <h4 class="originals-slide-title">
-      THE ORIGINAL <%= product.color.toUpperCase() %>
+      THE <%= product.color.toUpperCase() %>
     </h4>
 
     <div class="originals-slide-details">

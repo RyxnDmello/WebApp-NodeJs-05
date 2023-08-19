@@ -28,7 +28,9 @@
     </header>
 
     <main>
-      <section id="list"><%- include("./cart/list.ejs") %></section>
+      <section id="list">
+        <%- include("./cart/list.ejs", { cart: cart }) %>
+      </section>
     </main>
   </body>
 </html>

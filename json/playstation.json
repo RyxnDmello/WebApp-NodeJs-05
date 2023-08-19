@@ -1,14 +1,18 @@
 {
   "consoles": {
     "originals": {
-      "post": "/shop/playstation/consoles/originals/add",
+      "post": {
+        "brand": "playstation",
+        "type": "consoles",
+        "subType": "originals"
+      },
       "products": [
         {
           "ID": "PS_CONSOLE_ORIGINAL_01",
           "image": "/shop/playstation/consoles/white.png",
           "name": "PlayStation 5",
           "type": "Original",
-          "color": "White",
+          "color": "Original White",
           "price": "500"
         },
         {
@@ -16,7 +20,7 @@
           "image": "/shop/playstation/consoles/black.png",
           "name": "PlayStation 5",
           "type": "Original",
-          "color": "Black",
+          "color": "Original Black",
           "price": "500"
         },
         {
@@ -24,7 +28,7 @@
           "image": "/shop/playstation/consoles/red.png",
           "name": "PlayStation 5",
           "type": "Original",
-          "color": "Red",
+          "color": "Original Red",
           "price": "500"
         },
         {
@@ -32,7 +36,7 @@
           "image": "/shop/playstation/consoles/purple.png",
           "name": "PlayStation 5",
           "type": "Original",
-          "color": "Purple",
+          "color": "Original Purple",
           "price": "500"
         },
         {
@@ -40,7 +44,7 @@
           "image": "/shop/playstation/consoles/purple.png",
           "name": "PlayStation 5",
           "type": "Original",
-          "color": "Blue",
+          "color": "Original Blue",
           "price": "500"
         },
         {
@@ -48,19 +52,23 @@
           "image": "/shop/playstation/consoles/purple.png",
           "name": "PlayStation 5",
           "type": "Original",
-          "color": "Pink",
+          "color": "Original Pink",
           "price": "500"
         }
       ]
     },
     "skins": {
-      "post": "/shop/playstation/consoles/skins/add",
+      "post": {
+        "brand": "playstation",
+        "type": "consoles",
+        "subType": "skins"
+      },
       "products": [
         {
           "ID": "PS_CONSOLE_SKIN_01",
           "image": "/shop/playstation/consoles/skin-1.png",
           "name": "PlayStation 5",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "BROKEN LAVA",
           "price": "600"
         },
@@ -68,7 +76,7 @@
           "ID": "PS_CONSOLE_SKIN_02",
           "image": "/shop/playstation/consoles/skin-2.png",
           "name": "PlayStation 5",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "BLUE FUSION",
           "price": "600"
         },
@@ -76,7 +84,7 @@
           "ID": "PS_CONSOLE_SKIN_03",
           "image": "/shop/playstation/consoles/skin-3.png",
           "name": "PlayStation 5",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "STREET BOY",
           "price": "600"
         },
@@ -84,7 +92,7 @@
           "ID": "PS_CONSOLE_SKIN_04",
           "image": "/shop/playstation/consoles/skin-4.png",
           "name": "PlayStation 5",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "SPACE NOIR",
           "price": "600"
         },
@@ -92,7 +100,7 @@
           "ID": "PS_CONSOLE_SKIN_05",
           "image": "/shop/playstation/consoles/skin-5.png",
           "name": "PlayStation 5",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "STREET GIRL",
           "price": "600"
         },
@@ -100,7 +108,7 @@
           "ID": "PS_CONSOLE_SKIN_06",
           "image": "/shop/playstation/consoles/skin-6.png",
           "name": "PlayStation 5",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "IONIC DEMON",
           "price": "600"
         },
@@ -108,7 +116,7 @@
           "ID": "PS_CONSOLE_SKIN_07",
           "image": "/shop/playstation/consoles/skin-7.png",
           "name": "PlayStation 5",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "KURE GHOUL",
           "price": "600"
         },
@@ -116,7 +124,7 @@
           "ID": "PS_CONSOLE_SKIN_08",
           "image": "/shop/playstation/consoles/skin-8.png",
           "name": "PlayStation 5",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "MESSY BLUE",
           "price": "600"
         },
@@ -124,7 +132,7 @@
           "ID": "PS_CONSOLE_SKIN_09",
           "image": "/shop/playstation/consoles/skin-9.png",
           "name": "PlayStation 5",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "SOLDIER BOY",
           "price": "600"
         },
@@ -132,7 +140,7 @@
           "ID": "PS_CONSOLE_SKIN_10",
           "image": "/shop/playstation/consoles/skin-10.png",
           "name": "PlayStation 5",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "EXO SHIELD",
           "price": "600"
         },
@@ -140,7 +148,7 @@
           "ID": "PS_CONSOLE_SKIN_11",
           "image": "/shop/playstation/consoles/skin-11.png",
           "name": "PlayStation 5",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "BLACK CAGE",
           "price": "600"
         },
@@ -148,14 +156,18 @@
           "ID": "PS_CONSOLE_SKIN_12",
           "image": "/shop/playstation/consoles/skin-12.png",
           "name": "PlayStation 5",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "GRADIENT FLOW",
           "price": "600"
         }
       ]
     },
     "combos": {
-      "post": "/shop/playstation/consoles/combos/add",
+      "post": {
+        "brand": "playstation",
+        "type": "consoles",
+        "subType": "combos"
+      },
       "products": [
         {
           "ID": "PS_CONSOLE_COMBO_01",
@@ -222,14 +234,18 @@
   },
   "controllers": {
     "originals": {
-      "post": "/shop/playstation/controllers/originals/add",
+      "post": {
+        "brand": "playstation",
+        "type": "controllers",
+        "subType": "originals"
+      },
       "products": [
         {
           "ID": "PS_CONTROLLER_ORIGINAL_01",
           "image": "/shop/playstation/controllers/white.png",
           "name": "DualSense",
           "type": "Original",
-          "color": "White",
+          "color": "Original White",
           "price": "600"
         },
         {
@@ -237,7 +253,7 @@
           "image": "/shop/playstation/controllers/black.png",
           "name": "DualSense",
           "type": "Original",
-          "color": "Black",
+          "color": "Original Black",
           "price": "600"
         },
         {
@@ -245,7 +261,7 @@
           "image": "/shop/playstation/controllers/red.png",
           "name": "DualSense",
           "type": "Original",
-          "color": "Red",
+          "color": "Original Red",
           "price": "600"
         },
         {
@@ -253,7 +269,7 @@
           "image": "/shop/playstation/controllers/purple.png",
           "name": "DualSense",
           "type": "Original",
-          "color": "Purple",
+          "color": "Original Purple",
           "price": "600"
         },
         {
@@ -261,7 +277,7 @@
           "image": "/shop/playstation/controllers/purple.png",
           "name": "DualSense",
           "type": "Original",
-          "color": "Blue",
+          "color": "Original Blue",
           "price": "600"
         },
         {
@@ -269,19 +285,23 @@
           "image": "/shop/playstation/controllers/purple.png",
           "name": "DualSense",
           "type": "Original",
-          "color": "Pink",
+          "color": "Original Pink",
           "price": "600"
         }
       ]
     },
     "skins": {
-      "post": "/shop/playstation/controllers/skins/add",
+      "post": {
+        "brand": "playstation",
+        "type": "controllers",
+        "subType": "skins"
+      },
       "products": [
         {
           "ID": "PS_CONTROLLER_SKIN_01",
           "image": "/shop/playstation/controllers/skin-1.png",
           "name": "DualSense",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "BLACK CAGE",
           "price": "600"
         },
@@ -289,7 +309,7 @@
           "ID": "PS_CONTROLLER_SKIN_02",
           "image": "/shop/playstation/controllers/skin-2.png",
           "name": "DualSense",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "BROKEN LAVA",
           "price": "600"
         },
@@ -297,7 +317,7 @@
           "ID": "PS_CONTROLLER_SKIN_03",
           "image": "/shop/playstation/controllers/skin-3.png",
           "name": "DualSense",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "SOLDIER BOY",
           "price": "600"
         },
@@ -305,7 +325,7 @@
           "ID": "PS_CONTROLLER_SKIN_04",
           "image": "/shop/playstation/controllers/skin-4.png",
           "name": "DualSense",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "SPACE NOIR",
           "price": "600"
         },
@@ -313,7 +333,7 @@
           "ID": "PS_CONTROLLER_SKIN_05",
           "image": "/shop/playstation/controllers/skin-5.png",
           "name": "DualSense",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "MESSY BLUE",
           "price": "600"
         },
@@ -321,7 +341,7 @@
           "ID": "PS_CONTROLLER_SKIN_06",
           "image": "/shop/playstation/controllers/skin-6.png",
           "name": "DualSense",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "BLUE FUSION",
           "price": "600"
         },
@@ -329,7 +349,7 @@
           "ID": "PS_CONTROLLER_SKIN_07",
           "image": "/shop/playstation/controllers/skin-7.png",
           "name": "DualSense",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "KURE GHOUL",
           "price": "600"
         },
@@ -337,7 +357,7 @@
           "ID": "PS_CONTROLLER_SKIN_08",
           "image": "/shop/playstation/controllers/skin-8.png",
           "name": "DualSense",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "STREET GIRL",
           "price": "600"
         },
@@ -345,7 +365,7 @@
           "ID": "PS_CONTROLLER_SKIN_09",
           "image": "/shop/playstation/controllers/skin-9.png",
           "name": "DualSense",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "SOLDIER BOY",
           "price": "600"
         },
@@ -353,7 +373,7 @@
           "ID": "PS_CONTROLLER_SKIN_10",
           "image": "/shop/playstation/controllers/skin-10.png",
           "name": "DualSense",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "IONIC DEMON",
           "price": "600"
         },
@@ -361,7 +381,7 @@
           "ID": "PS_CONTROLLER_SKIN_11",
           "image": "/shop/playstation/controllers/skin-11.png",
           "name": "DualSense",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "LOST SKULLS",
           "price": "600"
         },
@@ -369,14 +389,18 @@
           "ID": "PS_CONTROLLER_SKIN_12",
           "image": "/shop/playstation/controllers/skin-12.png",
           "name": "DualSense",
-          "type": "CyberSkin",
+          "type": "Skin",
           "color": "ACID SNAKE",
           "price": "600"
         }
       ]
     },
     "combos": {
-      "post": "/shop/playstation/controllers/combos/add",
+      "post": {
+        "brand": "playstation",
+        "type": "controllers",
+        "subType": "combos"
+      },
       "products": [
         {
           "ID": "PS_CONTROLLER_COMBO_01",

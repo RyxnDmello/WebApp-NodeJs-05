@@ -1,28 +1,43 @@
-<% for(let i = 0; i < 4; i++) { %>
-<form class="list-item">
-  <img
-    class="list-item-image"
-    src="/shop/playstation/consoles/skin-<%= i + 1 %>.png"
-  />
+<% cart.forEach((product) => { %>
+<form class="list-item" action="/account/cart/update" method="post">
+  <input type="hidden" name="ID" value="<%= product.product.ID %>" />
+  <input type="hidden" name="brand" value="<%= product.details.brand %>" />
+  <input type="hidden" name="type" value="<%= product.details.type %>" />
+  <input type="hidden" name="subType" value="<%= product.details.subType %>" />
+
+  <img class="list-item-image" src="<%= product.product.image %>" />
 
   <div class="list-item-details">
-    <h4 class="list-item-name">BROKEN LAVA</h4>
+    <h4 class="list-item-name"><%= product.product.color %></h4>
 
     <div class="list-item-information">
-      <p class="list-item-brand">PlayStation 5 Skin</p>
-      <p class="list-item-price">$2400</p>
+      <p class="list-item-brand">
+        <%= product.product.name %> <%= product.product.type %>
+      </p>
+
+      <p class="list-item-price">$<%= product.price.netPrice %></p>
     </div>
 
     <div class="list-item-controllers">
       <div class="list-item-buttons">
-        <button class="list-item-button" type="submit">
+        <button
+          class="list-item-button"
+          value="DELETE"
+          name="button"
+          type="submit"
+        >
           <img
             class="list-item-button-image"
             src="/buttons/shop/cart-delete.png"
           />
         </button>
 
-        <button class="list-item-button" type="submit">
+        <button
+          class="list-item-button"
+          type="submit"
+          name="button"
+          value="WISH"
+        >
           <img class="list-item-button-image" src="/buttons/shop/wish.png" />
         </button>
       </div>
@@ -31,7 +46,7 @@
         <button
           class="list-item-quantity-button"
           value="DECREASE"
-          name="quantity"
+          name="button"
           type="submit"
         >
           <img
@@ -40,12 +55,12 @@
           />
         </button>
 
-        <p class="list-item-quantity-value">4</p>
+        <p class="list-item-quantity-value"><%= product.price.quantity %></p>
 
         <button
           class="list-item-quantity-button"
           value="INCREASE"
-          name="quantity"
+          name="button"
           type="submit"
         >
           <img
@@ -61,4 +76,4 @@
     </a>
   </div>
 </form>
-<% } %>
+<% }) %>

@@ -43,6 +43,8 @@ DatabaseManager.ConnectDatabase();
 /*------------------------------------------*/
 
 app.get("/", (req, res) => {
+  req.session.email = "ryan@gmail.com";
+
   res.render("home", {
     username: req.session.username ?? null,
     navbar: HomeTemplate.navbar,
@@ -58,6 +60,17 @@ app.get("/", (req, res) => {
 
 app.get("/account/register", (req, res) => {
   res.render("register", { register: RegisterTemplate });
+});
+
+app.get("/account/cart", async (req, res) => {
+  if (req.session.email === undefined) {
+    res.redirect("/error/account-absent");
+    return;
+  }
+
+  const cart = await CartManager.GetProducts(req.session.email);
+
+  res.render("cart", { cart: cart });
 });
 
 app.get("/shop/:brand/:type", (req, res) => {
@@ -94,25 +107,6 @@ app.get("/shop/:brand/:type", (req, res) => {
   }
 });
 
-app.get("/shop/:type", async (req, res) => {
-  res.render("cart");
-  return;
-
-  if (req.session.email === undefined) {
-    res.redirect("/error/account-absent");
-    return;
-  }
-
-  const products = await CartManager.GetProducts(req.session.email);
-
-  if (products.length === 0) {
-    res.send("<h1>NO PRODUCTS</h1>");
-    return;
-  }
-
-  res.send(JSON.stringify(products));
-});
-
 app.get("/error/:type", (req, res) => {
   console.log(ErrorTemplate[req.params.type]);
   res.redirect("/");
@@ -134,13 +128,18 @@ app.post("/account/:type", (req, res) => {
   }
 });
 
-app.post("/shop/:brand/:type/:subType/add", function (req, res) {
+app.post("/account/cart/update", (req, res) => {
+  console.log(req.body);
+  res.redirect("back");
+});
+
+app.post("/account/cart/add", (req, res) => {
   const product = {
     ID: req.body.ID,
     details: {
-      brand: req.params.brand,
-      type: req.params.type,
-      subType: req.params.subType,
+      brand: req.body.brand,
+      type: req.body.type,
+      subType: req.body.subType,
     },
   };
 

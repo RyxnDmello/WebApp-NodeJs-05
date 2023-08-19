@@ -1,6 +1,9 @@
 <% skins.products.forEach((product) => { %>
-<form class="skins-item" action="<%= skins.post %>" method="post">
+<form class="skins-item" action="/account/cart/add" method="post">
   <input type="hidden" name="ID" value="<%= product.ID %>" />
+  <input type="hidden" name="brand" value="<%= skins.post.brand %>" />
+  <input type="hidden" name="type" value="<%= skins.post.type %>" />
+  <input type="hidden" name="subType" value="<%= skins.post.subType %>" />
 
   <div class="skins-item-header">
     <img class="skins-item-image" src="<%= product.image %>" />

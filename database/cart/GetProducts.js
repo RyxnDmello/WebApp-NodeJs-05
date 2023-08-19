@@ -7,37 +7,40 @@ const XboxTemplate = require("../../json/xbox.json");
 module.exports.DatabaseGetProducts = async (email) => {
   const databaseAccount = await AccountModel.findOne({ email: email });
 
-  const products = [];
+  const cart = [];
 
   for (let i = 0; i < databaseAccount.cart.length; i++) {
     const cartProduct = databaseAccount.cart[i];
 
     if (cartProduct.details.brand === "playstation") {
-      products.push({
-        details: GetPlaystationProduct(cartProduct.ID, cartProduct.details),
+      cart.push({
+        product: GetPlaystationProduct(cartProduct.ID, cartProduct.details),
+        details: cartProduct.details,
         price: cartProduct.price,
       });
       continue;
     }
 
     if (cartProduct.details.brand === "xbox") {
-      products.push({
-        details: GetXboxProduct(cartProduct.ID, cartProduct.details),
+      cart.push({
+        product: GetXboxProduct(cartProduct.ID, cartProduct.details),
+        details: cartProduct.details,
         price: cartProduct.price,
       });
       continue;
     }
 
     if (cartProduct.details.brand === "switch") {
-      products.push({
-        details: GetSwitchProduct(cartProduct.ID, cartProduct.details),
+      cart.push({
+        product: GetSwitchProduct(cartProduct.ID, cartProduct.details),
+        details: cartProduct.details,
         price: cartProduct.price,
       });
       continue;
     }
   }
 
-  return products;
+  return cart;
 };
 
 function GetPlaystationProduct(ID, details) {
