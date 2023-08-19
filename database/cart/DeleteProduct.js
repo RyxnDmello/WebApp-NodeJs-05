@@ -8,8 +8,13 @@ module.exports.DatabaseDeleteProduct = async (email, productID) => {
 
     if (databaseProduct.ID !== productID) continue;
 
-    if (databaseProduct.quantity > 1) {
-      databaseAccount.cart[i].quantity -= 1;
+    if (databaseProduct.price.quantity > 1) {
+      databaseAccount.cart[i].price.quantity -= 1;
+
+      databaseAccount.cart[i].price.netPrice =
+        databaseAccount.cart[i].price.basePrice *
+        databaseAccount.cart[i].price.quantity;
+
       await databaseAccount.save();
       return;
     }

@@ -10,23 +10,29 @@ module.exports.DatabaseGetProducts = async (email) => {
   const products = [];
 
   for (let i = 0; i < databaseAccount.cart.length; i++) {
-    const databaseProduct = databaseAccount.cart[i];
+    const cartProduct = databaseAccount.cart[i];
 
-    const ID = databaseProduct.ID;
-    const details = databaseProduct.details;
-
-    if (details.brand === "playstation") {
-      products.push(GetPlaystationProduct(ID, details));
+    if (cartProduct.details.brand === "playstation") {
+      products.push({
+        details: GetPlaystationProduct(cartProduct.ID, cartProduct.details),
+        price: cartProduct.price,
+      });
       continue;
     }
 
-    if (details.brand === "xbox") {
-      products.push(GetXboxProduct(ID, details));
+    if (cartProduct.details.brand === "xbox") {
+      products.push({
+        details: GetXboxProduct(cartProduct.ID, cartProduct.details),
+        price: cartProduct.price,
+      });
       continue;
     }
 
-    if (details.brand === "switch") {
-      products.push(GetSwitchProduct(ID, details));
+    if (cartProduct.details.brand === "switch") {
+      products.push({
+        details: GetSwitchProduct(cartProduct.ID, cartProduct.details),
+        price: cartProduct.price,
+      });
       continue;
     }
   }

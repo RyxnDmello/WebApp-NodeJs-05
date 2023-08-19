@@ -1,19 +1,25 @@
-<% for(let i = 0; i < 2; i++) { %>
+<% for(let i = 0; i < 4; i++) { %>
 <form class="list-item">
-  <img class="list-item-image" src="/shop/playstation/consoles/skin-1.png" />
+  <img
+    class="list-item-image"
+    src="/shop/playstation/consoles/skin-<%= i + 1 %>.png"
+  />
 
   <div class="list-item-details">
     <h4 class="list-item-name">BROKEN LAVA</h4>
 
-    <div class="list-item-price-details">
-      <p class="list-item-fixed-price">$600</p>
-      <p class="list-item-total-price">$2400</p>
+    <div class="list-item-information">
+      <p class="list-item-brand">PlayStation 5 Skin</p>
+      <p class="list-item-price">$2400</p>
     </div>
 
     <div class="list-item-controllers">
       <div class="list-item-buttons">
         <button class="list-item-button" type="submit">
-          <img class="list-item-button-image" src="/buttons/shop/wish.png" />
+          <img
+            class="list-item-button-image"
+            src="/buttons/shop/cart-delete.png"
+          />
         </button>
 
         <button class="list-item-button" type="submit">
@@ -22,19 +28,37 @@
       </div>
 
       <div class="list-item-quantity">
-        <img
-          class="list-item-quantity-image"
-          src="/buttons/basic/arrow-head-left.png"
-        />
+        <button
+          class="list-item-quantity-button"
+          value="DECREASE"
+          name="quantity"
+          type="submit"
+        >
+          <img
+            class="list-item-quantity-button-image"
+            src="/buttons/basic/arrow-head-left.png"
+          />
+        </button>
 
         <p class="list-item-quantity-value">4</p>
 
-        <img
-          class="list-item-quantity-image"
-          src="/buttons/basic/arrow-head-right.png"
-        />
+        <button
+          class="list-item-quantity-button"
+          value="INCREASE"
+          name="quantity"
+          type="submit"
+        >
+          <img
+            class="list-item-quantity-button-image"
+            src="/buttons/basic/arrow-head-right.png"
+          />
+        </button>
       </div>
     </div>
+
+    <a class="list-item-explore-link" href="/">
+      <p class="list-item-explore-link-text">Explore Details</p>
+    </a>
   </div>
 </form>
 <% } %>

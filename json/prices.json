@@ -1,0 +1,38 @@
+{
+  "playstation": {
+    "consoles": {
+      "originals": 500,
+      "skins": 600,
+      "combos": 800
+    },
+    "controllers": {
+      "originals": 50,
+      "skins": 60,
+      "combos": 80
+    }
+  },
+  "xbox": {
+    "consoles": {
+      "originals": 500,
+      "skins": 600,
+      "combos": 800
+    },
+    "controllers": {
+      "originals": 50,
+      "skins": 60,
+      "combos": 80
+    }
+  },
+  "switch": {
+    "consoles": {
+      "originals": 500,
+      "skins": 600,
+      "combos": 800
+    },
+    "controllers": {
+      "originals": 50,
+      "skins": 60,
+      "combos": 80
+    }
+  }
+}

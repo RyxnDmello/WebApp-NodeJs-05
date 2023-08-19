@@ -15,18 +15,30 @@ const detailsSchema = new mongoose.Schema({
   },
 });
 
-const productSchema = new mongoose.Schema({
-  ID: {
-    type: String,
+const priceSchema = new mongoose.Schema({
+  basePrice: {
+    type: Number,
     required: true,
   },
-  date: {
-    type: String,
+  netPrice: {
+    type: Number,
     required: true,
   },
   quantity: {
     type: Number,
     required: true,
+  },
+});
+
+const productSchema = new mongoose.Schema({
+  ID: {
+    type: String,
+    required: true,
+  },
+  price: {
+    type: priceSchema,
+    required: true,
+    _id: false,
   },
   details: {
     type: detailsSchema,

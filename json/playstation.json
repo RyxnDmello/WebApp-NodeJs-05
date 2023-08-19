@@ -9,7 +9,7 @@
           "name": "PlayStation 5",
           "type": "Original",
           "color": "White",
-          "price": "$600"
+          "price": "500"
         },
         {
           "ID": "PS_CONSOLE_ORIGINAL_02",
@@ -17,7 +17,7 @@
           "name": "PlayStation 5",
           "type": "Original",
           "color": "Black",
-          "price": "$600"
+          "price": "500"
         },
         {
           "ID": "PS_CONSOLE_ORIGINAL_03",
@@ -25,7 +25,7 @@
           "name": "PlayStation 5",
           "type": "Original",
           "color": "Red",
-          "price": "$600"
+          "price": "500"
         },
         {
           "ID": "PS_CONSOLE_ORIGINAL_04",
@@ -33,7 +33,7 @@
           "name": "PlayStation 5",
           "type": "Original",
           "color": "Purple",
-          "price": "$600"
+          "price": "500"
         },
         {
           "ID": "PS_CONSOLE_ORIGINAL_05",
@@ -41,7 +41,7 @@
           "name": "PlayStation 5",
           "type": "Original",
           "color": "Blue",
-          "price": "$600"
+          "price": "500"
         },
         {
           "ID": "PS_CONSOLE_ORIGINAL_06",
@@ -49,7 +49,7 @@
           "name": "PlayStation 5",
           "type": "Original",
           "color": "Pink",
-          "price": "$600"
+          "price": "500"
         }
       ]
     },
@@ -62,7 +62,7 @@
           "name": "PlayStation 5",
           "type": "CyberSkin",
           "color": "BROKEN LAVA",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONSOLE_SKIN_02",
@@ -70,7 +70,7 @@
           "name": "PlayStation 5",
           "type": "CyberSkin",
           "color": "BLUE FUSION",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONSOLE_SKIN_03",
@@ -78,7 +78,7 @@
           "name": "PlayStation 5",
           "type": "CyberSkin",
           "color": "STREET BOY",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONSOLE_SKIN_04",
@@ -86,7 +86,7 @@
           "name": "PlayStation 5",
           "type": "CyberSkin",
           "color": "SPACE NOIR",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONSOLE_SKIN_05",
@@ -94,7 +94,7 @@
           "name": "PlayStation 5",
           "type": "CyberSkin",
           "color": "STREET GIRL",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONSOLE_SKIN_06",
@@ -102,7 +102,7 @@
           "name": "PlayStation 5",
           "type": "CyberSkin",
           "color": "IONIC DEMON",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONSOLE_SKIN_07",
@@ -110,7 +110,7 @@
           "name": "PlayStation 5",
           "type": "CyberSkin",
           "color": "KURE GHOUL",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONSOLE_SKIN_08",
@@ -118,7 +118,7 @@
           "name": "PlayStation 5",
           "type": "CyberSkin",
           "color": "MESSY BLUE",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONSOLE_SKIN_09",
@@ -126,7 +126,7 @@
           "name": "PlayStation 5",
           "type": "CyberSkin",
           "color": "SOLDIER BOY",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONSOLE_SKIN_10",
@@ -134,7 +134,7 @@
           "name": "PlayStation 5",
           "type": "CyberSkin",
           "color": "EXO SHIELD",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONSOLE_SKIN_11",
@@ -142,7 +142,7 @@
           "name": "PlayStation 5",
           "type": "CyberSkin",
           "color": "BLACK CAGE",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONSOLE_SKIN_12",
@@ -150,7 +150,7 @@
           "name": "PlayStation 5",
           "type": "CyberSkin",
           "color": "GRADIENT FLOW",
-          "price": "$600"
+          "price": "600"
         }
       ]
     },
@@ -166,7 +166,7 @@
           "name": "PlayStation 5",
           "type": "Combo",
           "colors": ["BROKEN LAVA", "BLUE FUSION"],
-          "price": "$800"
+          "price": "800"
         },
         {
           "ID": "PS_CONSOLE_COMBO_02",
@@ -177,7 +177,7 @@
           "name": "PlayStation 5",
           "type": "Combo",
           "colors": ["STREET BOY", "MESSY BLUE"],
-          "price": "$800"
+          "price": "800"
         },
         {
           "ID": "PS_CONSOLE_COMBO_03",
@@ -188,7 +188,7 @@
           "name": "PlayStation 5",
           "type": "Combo",
           "colors": ["STREET GIRL", "IONIC DEMON"],
-          "price": "$800"
+          "price": "800"
         },
         {
           "ID": "PS_CONSOLE_COMBO_04",
@@ -199,7 +199,7 @@
           "name": "PlayStation 5",
           "type": "Combo",
           "colors": ["KURE GHOUL", "SOLDIER BOY"],
-          "price": "$800"
+          "price": "800"
         },
         {
           "ID": "PS_CONSOLE_COMBO_05",
@@ -210,7 +210,7 @@
           "name": "PlayStation 5",
           "type": "Combo",
           "colors": ["SPACE NOIR", "EXO SHIELD"],
-          "price": "$800"
+          "price": "800"
         }
       ]
     },
@@ -230,7 +230,7 @@
           "name": "DualSense",
           "type": "Original",
           "color": "White",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONTROLLER_ORIGINAL_02",
@@ -238,7 +238,7 @@
           "name": "DualSense",
           "type": "Original",
           "color": "Black",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONTROLLER_ORIGINAL_03",
@@ -246,7 +246,7 @@
           "name": "DualSense",
           "type": "Original",
           "color": "Red",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONTROLLER_ORIGINAL_04",
@@ -254,7 +254,7 @@
           "name": "DualSense",
           "type": "Original",
           "color": "Purple",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONTROLLER_ORIGINAL_05",
@@ -262,7 +262,7 @@
           "name": "DualSense",
           "type": "Original",
           "color": "Blue",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONTROLLER_ORIGINAL_06",
@@ -270,7 +270,7 @@
           "name": "DualSense",
           "type": "Original",
           "color": "Pink",
-          "price": "$600"
+          "price": "600"
         }
       ]
     },
@@ -283,7 +283,7 @@
           "name": "DualSense",
           "type": "CyberSkin",
           "color": "BLACK CAGE",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONTROLLER_SKIN_02",
@@ -291,7 +291,7 @@
           "name": "DualSense",
           "type": "CyberSkin",
           "color": "BROKEN LAVA",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONTROLLER_SKIN_03",
@@ -299,7 +299,7 @@
           "name": "DualSense",
           "type": "CyberSkin",
           "color": "SOLDIER BOY",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONTROLLER_SKIN_04",
@@ -307,7 +307,7 @@
           "name": "DualSense",
           "type": "CyberSkin",
           "color": "SPACE NOIR",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONTROLLER_SKIN_05",
@@ -315,7 +315,7 @@
           "name": "DualSense",
           "type": "CyberSkin",
           "color": "MESSY BLUE",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONTROLLER_SKIN_06",
@@ -323,7 +323,7 @@
           "name": "DualSense",
           "type": "CyberSkin",
           "color": "BLUE FUSION",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONTROLLER_SKIN_07",
@@ -331,7 +331,7 @@
           "name": "DualSense",
           "type": "CyberSkin",
           "color": "KURE GHOUL",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONTROLLER_SKIN_08",
@@ -339,7 +339,7 @@
           "name": "DualSense",
           "type": "CyberSkin",
           "color": "STREET GIRL",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONTROLLER_SKIN_09",
@@ -347,7 +347,7 @@
           "name": "DualSense",
           "type": "CyberSkin",
           "color": "SOLDIER BOY",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONTROLLER_SKIN_10",
@@ -355,7 +355,7 @@
           "name": "DualSense",
           "type": "CyberSkin",
           "color": "IONIC DEMON",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONTROLLER_SKIN_11",
@@ -363,7 +363,7 @@
           "name": "DualSense",
           "type": "CyberSkin",
           "color": "LOST SKULLS",
-          "price": "$600"
+          "price": "600"
         },
         {
           "ID": "PS_CONTROLLER_SKIN_12",
@@ -371,7 +371,7 @@
           "name": "DualSense",
           "type": "CyberSkin",
           "color": "ACID SNAKE",
-          "price": "$600"
+          "price": "600"
         }
       ]
     },
@@ -387,7 +387,7 @@
           "name": "DualSense",
           "type": "Combo",
           "colors": ["BLACK CAGE", "KURE GHOUL"],
-          "price": "$800"
+          "price": "800"
         },
         {
           "ID": "PS_CONTROLLER_COMBO_02",
@@ -398,7 +398,7 @@
           "name": "DualSense",
           "type": "Combo",
           "colors": ["SOLDIER BOY", "STREET GIRL"],
-          "price": "$800"
+          "price": "800"
         },
         {
           "ID": "PS_CONTROLLER_COMBO_03",
@@ -409,7 +409,7 @@
           "name": "DualSense",
           "type": "Combo",
           "colors": ["BROKEN LAVA", "IONIC DEMON"],
-          "price": "$800"
+          "price": "800"
         },
         {
           "ID": "PS_CONTROLLER_COMBO_04",
@@ -420,7 +420,7 @@
           "name": "DualSense",
           "type": "Combo",
           "colors": ["STREET BOY", "LOST SKULLS"],
-          "price": "$800"
+          "price": "800"
         },
         {
           "ID": "PS_CONTROLLER_COMBO_05",
@@ -431,7 +431,7 @@
           "name": "DualSense",
           "type": "Combo",
           "colors": ["BLUE FUSION", "ACID SNAKE"],
-          "price": "$800"
+          "price": "800"
         }
       ]
     },
