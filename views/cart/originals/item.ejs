@@ -1,0 +1,73 @@
+<% originals.forEach((original) => { %>
+<form class="originals-item" action="/account/cart/update" method="post">
+  <input type="hidden" name="ID" value="<%= original.product.ID %>" />
+  <input type="hidden" name="brand" value="<%= original.details.brand %>" />
+  <input type="hidden" name="type" value="<%= original.details.type %>" />
+  <input type="hidden" name="subType" value="<%= original.details.subType %>" />
+
+  <img class="originals-item-image" src="<%= original.product.image %>" />
+
+  <div class="originals-item-details">
+    <div class="originals-item-color">
+      <%= original.product.color.toUpperCase() %>
+    </div>
+
+    <div class="originals-item-information">
+      <p class="originals-item-brand"><%= original.product.name %></p>
+      <p class="originals-item-price">$<%= original.price.netPrice %></p>
+    </div>
+
+    <div class="originals-item-controllers">
+      <div class="originals-item-buttons">
+        <button class="originals-item-button" type="submit">
+          <img
+            class="originals-item-button-image"
+            src="/buttons/shop/cart-delete.png"
+          />
+        </button>
+
+        <button class="originals-item-button" type="submit">
+          <img
+            class="originals-item-button-image"
+            src="/buttons/shop/wish.png"
+          />
+        </button>
+      </div>
+
+      <div class="originals-item-quantity">
+        <button
+          class="originals-item-quantity-button"
+          name="button"
+          value="DECREASE"
+          type="submit"
+        >
+          <img
+            class="originals-item-quantity-button-image"
+            src="/buttons/basic/arrow-head-left.png"
+          />
+        </button>
+
+        <p class="originals-item-quantity-value">
+          <%= original.price.quantity %>
+        </p>
+
+        <button
+          class="originals-item-quantity-button"
+          name="button"
+          value="INCREASE"
+          type="submit"
+        >
+          <img
+            class="originals-item-quantity-button-image"
+            src="/buttons/basic/arrow-head-right.png"
+          />
+        </button>
+      </div>
+    </div>
+
+    <a class="originals-item-explore-link" href="/">
+      <p class="originals-item-explore-link-text">Explore Details</p>
+    </a>
+  </div>
+</form>
+<% }) %>

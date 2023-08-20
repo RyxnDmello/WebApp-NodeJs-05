@@ -1,0 +1,210 @@
+/*-------------------------------------------------*/
+/*---------------- CAROUSEL STYLES ----------------*/
+/*-------------------------------------------------*/
+
+.originals-carousel {
+  box-shadow: 0 0 20px #000000;
+  justify-content: start;
+  grid-auto-flow: column;
+  padding: 2.5rem 6rem;
+  align-items: center;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  width: 1392px;
+  gap: 5rem;
+}
+
+.originals-carousel-background {
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+}
+
+/*-----------------------------------------------*/
+/*----------------- ITEM STYLES -----------------*/
+/*-----------------------------------------------*/
+
+.originals-item {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  width: 1200px;
+  gap: 1rem;
+}
+
+.originals-item-image {
+  width: 300px;
+}
+
+/*----------------------------------------------*/
+/*--------------- DETAILS STYLES ---------------*/
+/*----------------------------------------------*/
+
+.originals-item-details {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.originals-item-color {
+  text-shadow: 0 5px 10px #00000050;
+  font-family: "Abel", sans-serif;
+  margin-bottom: -1.5rem;
+  letter-spacing: 2px;
+  color: #ffffffa0;
+  font-size: 6.5rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+/*--------------------------------------------*/
+/*------------ INFORMATION STYLES ------------*/
+/*--------------------------------------------*/
+
+.originals-item-information {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
+.originals-item-brand,
+.originals-item-price {
+  text-shadow: 0 5px 10px #00000080;
+  font-family: "Abel", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  cursor: default;
+  color: #fff;
+}
+
+/*-------------------------------------------*/
+/*------------ CONTROLLER STYLES ------------*/
+/*-------------------------------------------*/
+
+.originals-item-controllers {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
+/*---------------------------------------*/
+/*------------ BUTTON STYLES ------------*/
+/*---------------------------------------*/
+
+.originals-item-buttons {
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.originals-item-button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.originals-item-button-image {
+  filter: drop-shadow(0 0 10px #00000060);
+  width: 30px;
+}
+
+/*---------------------------------------*/
+/*----------- QUANTITY STYLES -----------*/
+/*---------------------------------------*/
+
+.originals-item-quantity {
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.originals-item-quantity-button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.originals-item-quantity-button-image {
+  filter: drop-shadow(0 0 10px #00000060);
+  width: 35px;
+}
+
+.originals-item-quantity-value {
+  text-shadow: 0 5px 10px #000000a0;
+  font-family: "Abel", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  cursor: default;
+  color: #fff;
+}
+
+/*------------------------------------*/
+/*----------- EXPLORE LINK -----------*/
+/*------------------------------------*/
+
+.originals-item-explore-link {
+  box-shadow: 0 5px 10px #00000050;
+  grid-template-columns: auto;
+  border: 2px solid #fff;
+  justify-content: center;
+  border-radius: 40px;
+  align-items: center;
+  padding: 0.25rem 0;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: grid;
+}
+
+.originals-item-explore-link::before {
+  background-color: #fff;
+  transition: width 500ms;
+  transform: skew(40deg);
+  position: absolute;
+  height: 100%;
+  content: "";
+  left: -1rem;
+  z-index: -1;
+  width: 0%;
+  top: 0;
+}
+
+.originals-item-explore-link-text {
+  font-family: "Poppins", sans-serif;
+  transition: color 500ms;
+  letter-spacing: 0.5px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+/*---------------------------------------------*/
+/*---------------- TRANSITIONS ----------------*/
+/*---------------------------------------------*/
+
+.originals-item-explore-link:hover::before {
+  border: 2px solid #fff;
+  width: calc(100% + 2rem);
+}
+
+.originals-item-explore-link:hover .originals-item-explore-link-text {
+  color: #000;
+}
+
+/*----------------------------------------------*/
+/*----------------- END OF CSS -----------------*/
+/*----------------------------------------------*/

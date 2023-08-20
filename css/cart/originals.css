@@ -1,0 +1,9 @@
+@import url("./originals/carousel.css");
+
+#originals {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0 0 0;
+  display: grid;
+}
