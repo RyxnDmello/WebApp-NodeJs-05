@@ -1,0 +1,120 @@
+/*-------------------------------------------------*/
+/*--------------- CONTROLLER STYLES ---------------*/
+/*-------------------------------------------------*/
+
+.skin-item-controllers {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
+/*---------------------------------------*/
+/*------------ BUTTON STYLES ------------*/
+/*---------------------------------------*/
+
+.skin-item-buttons {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.skin-item-button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.skin-item-button-image {
+  filter: drop-shadow(0 0 20px #000);
+  width: 25px;
+}
+
+/*-----------------------------------------*/
+/*------------ QUANTITY STYLES ------------*/
+/*-----------------------------------------*/
+
+.skin-item-quantity {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.skin-item-quantity-button {
+  background-color: transparent;
+  border: none;
+}
+
+.skin-item-quantity-button-image {
+  filter: drop-shadow(0 0 20px #000);
+  cursor: pointer;
+  width: 30px;
+}
+
+.skin-item-quantity-value {
+  font-family: "Abel", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  cursor: default;
+  color: #fff;
+}
+
+/*----------------------------------------*/
+/*------------- EXPLORE LINK -------------*/
+/*----------------------------------------*/
+
+.skin-item-explore-link {
+  box-shadow: 0 0 20px #000000a0;
+  border: 2px solid #fff;
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  border-radius: 40px;
+  padding: 0.25rem 0;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.skin-item-explore-link::before {
+  background-color: #fff;
+  transition: width 475ms;
+  transform: skew(40deg);
+  position: absolute;
+  height: 100%;
+  content: "";
+  z-index: -1;
+  left: -1rem;
+  width: 0%;
+}
+
+.skin-item-explore-link-text {
+  font-family: "Poppins", sans-serif;
+  transition: color 475ms;
+  letter-spacing: 0.5px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+/*---------------------------------------*/
+/*------------- TRANSITIONS -------------*/
+/*---------------------------------------*/
+
+.skin-item-explore-link:hover::before {
+  width: calc(100% + 2rem);
+}
+
+.skin-item-explore-link:hover .skin-item-explore-link-text {
+  color: #000;
+}
+
+/*------------------------------------------*/
+/*--------------- END OF CSS ---------------*/
+/*------------------------------------------*/

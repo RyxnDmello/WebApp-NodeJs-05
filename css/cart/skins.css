@@ -1,0 +1,19 @@
+@import url("./skins/item.css");
+@import url("./skins/controller.css");
+
+#skins {
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem 1.5rem;
+  padding: 4rem 0;
+  display: grid;
+}
+
+.skins-title {
+  font-family: "Acquire Light", sans-serif;
+  grid-column: span 2;
+  cursor: default;
+  font-size: 8rem;
+  font-size: 100;
+}
