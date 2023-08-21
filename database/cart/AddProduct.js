@@ -30,9 +30,7 @@ const DatabaseUpdateProduct = async (email, product) => {
 
 const DatabaseCreateProduct = async (email, product) => {
   const basePrice =
-    prices[product.details.brand][product.details.type][
-      product.details.subType
-    ];
+    prices[product.details.brand][product.details.type][product.details.class];
 
   await AccountModel.findOneAndUpdate(
     { email: email },

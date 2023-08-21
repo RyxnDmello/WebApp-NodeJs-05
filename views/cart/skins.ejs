@@ -5,7 +5,7 @@
   <input type="hidden" name="ID" value="<%= skin.product.ID %>" />
   <input type="hidden" name="brand" value="<%= skin.details.brand %>" />
   <input type="hidden" name="type" value="<%= skin.details.type %>" />
-  <input type="hidden" name="subType" value="<%= skin.details.subType %>" />
+  <input type="hidden" name="class" value="<%= skin.details.class %>" />
 
   <img class="skin-item-image" src="<%= skin.product.image %>" />
 
@@ -22,7 +22,7 @@
         <button
           class="skin-item-button"
           value="DELETE"
-          name="button"
+          name="action"
           type="submit"
         >
           <img
@@ -34,7 +34,7 @@
         <button
           class="skin-item-button"
           type="submit"
-          name="button"
+          name="action"
           value="WISH"
         >
           <img class="skin-item-button-image" src="/buttons/shop/wish.png" />
@@ -45,7 +45,7 @@
         <button
           class="skin-item-quantity-button"
           value="DECREASE"
-          name="button"
+          name="action"
           type="submit"
         >
           <img
@@ -59,7 +59,7 @@
         <button
           class="skin-item-quantity-button"
           value="INCREASE"
-          name="button"
+          name="action"
           type="submit"
         >
           <img

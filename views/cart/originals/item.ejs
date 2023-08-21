@@ -3,7 +3,7 @@
   <input type="hidden" name="ID" value="<%= original.product.ID %>" />
   <input type="hidden" name="brand" value="<%= original.details.brand %>" />
   <input type="hidden" name="type" value="<%= original.details.type %>" />
-  <input type="hidden" name="subType" value="<%= original.details.subType %>" />
+  <input type="hidden" name="class" value="<%= original.details.class %>" />
 
   <img class="originals-item-image" src="<%= original.product.image %>" />
 
@@ -19,14 +19,24 @@
 
     <div class="originals-item-controllers">
       <div class="originals-item-buttons">
-        <button class="originals-item-button" type="submit">
+        <button
+          class="originals-item-button"
+          value="DELETE"
+          name="action"
+          type="submit"
+        >
           <img
             class="originals-item-button-image"
             src="/buttons/shop/cart-delete.png"
           />
         </button>
 
-        <button class="originals-item-button" type="submit">
+        <button
+          class="originals-item-button"
+          name="action"
+          type="submit"
+          value="WISH"
+        >
           <img
             class="originals-item-button-image"
             src="/buttons/shop/wish.png"
@@ -37,8 +47,8 @@
       <div class="originals-item-quantity">
         <button
           class="originals-item-quantity-button"
-          name="button"
           value="DECREASE"
+          name="action"
           type="submit"
         >
           <img
@@ -53,8 +63,8 @@
 
         <button
           class="originals-item-quantity-button"
-          name="button"
           value="INCREASE"
+          name="action"
           type="submit"
         >
           <img

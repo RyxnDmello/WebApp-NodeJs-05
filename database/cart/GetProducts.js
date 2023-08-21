@@ -27,9 +27,9 @@ const CreateCart = (account) => {
         price: cartProduct.price,
       };
 
-      if (product.details.subType === "originals") originals.push(product);
-      if (product.details.subType === "skins") skins.push(product);
-      if (product.details.subType === "combos") combos.push(product);
+      if (product.details.class === "originals") originals.push(product);
+      if (product.details.class === "skins") skins.push(product);
+      if (product.details.class === "combos") combos.push(product);
       continue;
     }
 
@@ -40,9 +40,9 @@ const CreateCart = (account) => {
         price: cartProduct.price,
       };
 
-      if (product.details.subType === "originals") originals.push(product);
-      if (product.details.subType === "skins") skins.push(product);
-      if (product.details.subType === "combos") combos.push(product);
+      if (product.details.class === "originals") originals.push(product);
+      if (product.details.class === "skins") skins.push(product);
+      if (product.details.class === "combos") combos.push(product);
       continue;
     }
 
@@ -53,9 +53,9 @@ const CreateCart = (account) => {
         price: cartProduct.price,
       };
 
-      if (product.details.subType === "originals") originals.push(product);
-      if (product.details.subType === "skins") skins.push(product);
-      if (product.details.subType === "combos") combos.push(product);
+      if (product.details.class === "originals") originals.push(product);
+      if (product.details.class === "skins") skins.push(product);
+      if (product.details.class === "combos") combos.push(product);
       continue;
     }
   }
@@ -68,17 +68,17 @@ const CreateCart = (account) => {
 };
 
 const GetPlaystationProduct = (ID, details) => {
-  const products = PlaystationTemplate[details.type][details.subType].products;
+  const products = PlaystationTemplate[details.type][details.class].products;
   return FindAndGetProductByID(ID, products);
 };
 
 const GetXboxProduct = (ID, details) => {
-  const products = XboxTemplate[details.type][details.subType].products;
+  const products = XboxTemplate[details.type][details.class].products;
   return FindAndGetProductByID(ID, products);
 };
 
 const GetSwitchProduct = (ID, details) => {
-  const products = SwitchTemplate[details.type][details.subType].products;
+  const products = SwitchTemplate[details.type][details.class].products;
   return FindAndGetProductByID(ID, products);
 };
 

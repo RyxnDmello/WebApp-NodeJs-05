@@ -1,4 +1,21 @@
-<div class="originals-carousel">
-  <%- include("./originals/item.ejs", { originals: originals }) %>
-  <img class="originals-carousel-background" src="/cart/background.png" />
+<div class="originals-container">
+  <img
+    class="originals-carousel-button"
+    src="/buttons/basic/arrow-head-left.png"
+  />
+
+  <div class="originals-carousel">
+    <%- include("./originals/item.ejs", { originals: originals }) %>
+  </div>
+
+  <img
+    class="originals-carousel-button"
+    src="/buttons/basic/arrow-head-right.png"
+  />
+
+  <div class="originals-carousel-indicators">
+    <%- include("./originals/indicator.ejs", { length: originals.length }) %>
+  </div>
+
+  <img class="originals-container-background" src="/cart/background.png" />
 </div>

@@ -4,15 +4,15 @@
       "post": {
         "brand": "switch",
         "type": "consoles",
-        "subType": "originals"
+        "class": "originals"
       },
       "products": [
         {
           "ID": "NS_CONSOLE_ORIGINAL_01",
           "image": "/shop/switch/switch.png",
           "name": "Switch Pro",
-          "type": "Original",
           "color": "Original Retro",
+          "class": "Original",
           "price": "500"
         }
       ]
@@ -21,103 +21,103 @@
       "post": {
         "brand": "switch",
         "type": "consoles",
-        "subType": "skins"
+        "class": "skins"
       },
       "products": [
         {
           "ID": "NS_CONSOLE_SKIN_01",
           "image": "/shop/switch/consoles/skin-1.png",
           "name": "Switch Pro",
-          "type": "Skin",
           "color": "PIXELEIGHT",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONSOLE_SKIN_02",
           "image": "/shop/switch/consoles/skin-2.png",
           "name": "Switch Pro",
-          "type": "Skin",
           "color": "COMIC STRIP",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONSOLE_SKIN_03",
           "image": "/shop/switch/consoles/skin-3.png",
           "name": "Switch Pro",
-          "type": "Skin",
           "color": "CANDY BAR",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONSOLE_SKIN_04",
           "image": "/shop/switch/consoles/skin-4.png",
           "name": "Switch Pro",
-          "type": "Skin",
           "color": "CREAM PINK",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONSOLE_SKIN_05",
           "image": "/shop/switch/consoles/skin-5.png",
           "name": "Switch Pro",
-          "type": "Skin",
           "color": "COMMANDO",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONSOLE_SKIN_06",
           "image": "/shop/switch/consoles/skin-6.png",
           "name": "Switch Pro",
-          "type": "Skin",
           "color": "CREAM BLUE",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONSOLE_SKIN_07",
           "image": "/shop/switch/consoles/skin-7.png",
           "name": "Switch Pro",
-          "type": "Skin",
           "color": "ALIEN RED",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONSOLE_SKIN_08",
           "image": "/shop/switch/consoles/skin-8.png",
           "name": "Switch Pro",
-          "type": "Skin",
           "color": "DULL SANDS",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONSOLE_SKIN_09",
           "image": "/shop/switch/consoles/skin-9.png",
           "name": "Switch Pro",
-          "type": "Skin",
           "color": "SPACE NOIR",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONSOLE_SKIN_10",
           "image": "/shop/switch/consoles/skin-10.png",
           "name": "Switch Pro",
-          "type": "Skin",
           "color": "ALIEN GREEN",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONSOLE_SKIN_11",
           "image": "/shop/switch/consoles/skin-11.png",
           "name": "Switch Pro",
-          "type": "Skin",
           "color": "PIXELFADE",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONSOLE_SKIN_12",
           "image": "/shop/switch/consoles/skin-12.png",
           "name": "Switch Pro",
-          "type": "Skin",
           "color": "HARDWARE",
+          "class": "Skin",
           "price": "600"
         }
       ]
@@ -126,7 +126,7 @@
       "post": {
         "brand": "switch",
         "type": "consoles",
-        "subType": "combos"
+        "class": "combos"
       },
       "products": [
         {
@@ -136,8 +136,8 @@
             "/shop/switch/consoles/skin-7.png"
           ],
           "name": "Switch Pro",
-          "type": "Combo",
           "colors": ["PIXELEIGHT", "ALIEN RED"],
+          "class": "Combo",
           "price": "800"
         },
         {
@@ -147,8 +147,8 @@
             "/shop/switch/consoles/skin-5.png"
           ],
           "name": "Switch Pro",
-          "type": "Combo",
           "colors": ["COMIC STRIP", "COMMANDO"],
+          "class": "Combo",
           "price": "800"
         },
         {
@@ -158,8 +158,8 @@
             "/shop/switch/consoles/skin-6.png"
           ],
           "name": "Switch Pro",
-          "type": "Combo",
           "colors": ["CANDY BAR", "CREAM BLUE"],
+          "class": "Combo",
           "price": "800"
         },
         {
@@ -169,8 +169,8 @@
             "/shop/switch/consoles/skin-8.png"
           ],
           "name": "Switch Pro",
-          "type": "Combo",
           "colors": ["CREAM PINK", "DULL SANDS"],
+          "class": "Combo",
           "price": "800"
         },
         {
@@ -180,8 +180,8 @@
             "/shop/switch/consoles/skin-12.png"
           ],
           "name": "Switch Pro",
-          "type": "Combo",
           "colors": ["SPACE NOIR", "HARDWARE"],
+          "class": "Combo",
           "price": "800"
         }
       ]
@@ -197,31 +197,31 @@
       "post": {
         "brand": "switch",
         "type": "controllers",
-        "subType": "originals"
+        "class": "originals"
       },
       "products": [
         {
           "ID": "NS_CONTROLLER_ORIGINAL_01",
           "image": "/shop/switch/controllers/black.png",
           "name": "Switch Pro Controller",
-          "type": "Original",
           "color": "Original Black",
+          "class": "Original",
           "price": "600"
         },
         {
           "ID": "NS_CONTROLLER_ORIGINAL_02",
           "image": "/shop/switch/controllers/red.png",
           "name": "Switch Pro Controller",
-          "type": "Original",
           "color": "Original Red",
+          "class": "Original",
           "price": "600"
         },
         {
           "ID": "NS_CONTROLLER_ORIGINAL_03",
           "image": "/shop/switch/controllers/blue.png",
           "name": "Switch Pro Controller",
-          "type": "Original",
           "color": "Original Blue",
+          "class": "Original",
           "price": "600"
         }
       ]
@@ -230,103 +230,103 @@
       "post": {
         "brand": "switch",
         "type": "controllers",
-        "subType": "skins"
+        "class": "skins"
       },
       "products": [
         {
           "ID": "NS_CONTROLLER_SKIN_01",
           "image": "/shop/switch/controllers/skin-1.png",
           "name": "Switch Pro Controller",
-          "type": "Skin",
           "color": "BLUE FUSION",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONTROLLER_SKIN_02",
           "image": "/shop/switch/controllers/skin-2.png",
           "name": "Switch Pro Controller",
-          "type": "Skin",
           "color": "SPRAY FUSION",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONTROLLER_SKIN_03",
           "image": "/shop/switch/controllers/skin-3.png",
           "name": "Switch Pro Controller",
-          "type": "Skin",
           "color": "RETRO SHADE",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONTROLLER_SKIN_04",
           "image": "/shop/switch/controllers/skin-4.png",
           "name": "Switch Pro Controller",
-          "type": "Skin",
           "color": "COMIC ART",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONTROLLER_SKIN_05",
           "image": "/shop/switch/controllers/skin-5.png",
           "name": "Switch Pro Controller",
-          "type": "Skin",
           "color": "CAMEO BLUE",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONTROLLER_SKIN_06",
           "image": "/shop/switch/controllers/skin-6.png",
           "name": "Switch Pro Controller",
-          "type": "Skin",
           "color": "DAWN SHADE",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONTROLLER_SKIN_07",
           "image": "/shop/switch/controllers/skin-7.png",
           "name": "Switch Pro Controller",
-          "type": "Skin",
           "color": "SILENT NOIR",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONTROLLER_SKIN_08",
           "image": "/shop/switch/controllers/skin-8.png",
           "name": "Switch Pro Controller",
-          "type": "Skin",
           "color": "SPRAY WHITE",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONTROLLER_SKIN_09",
           "image": "/shop/switch/controllers/skin-9.png",
           "name": "Switch Pro Controller",
-          "type": "Skin",
           "color": "BINARY HACK",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONTROLLER_SKIN_10",
           "image": "/shop/switch/controllers/skin-10.png",
           "name": "Switch Pro Controller",
-          "type": "Skin",
           "color": "ROYAL IVY",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONTROLLER_SKIN_11",
           "image": "/shop/switch/controllers/skin-11.png",
           "name": "Switch Pro Controller",
-          "type": "Skin",
           "color": "STRIP CHIP",
+          "class": "Skin",
           "price": "600"
         },
         {
           "ID": "NS_CONTROLLER_SKIN_12",
           "image": "/shop/switch/controllers/skin-12.png",
           "name": "Switch Pro Controller",
-          "type": "Skin",
           "color": "RED WRAPS",
+          "class": "Skin",
           "price": "600"
         }
       ]
@@ -335,7 +335,7 @@
       "post": {
         "brand": "switch",
         "type": "controllers",
-        "subType": "combos"
+        "class": "combos"
       },
       "products": [
         {
@@ -345,8 +345,8 @@
             "/shop/switch/controllers/skin-7.png"
           ],
           "name": "Switch Pro Controller",
-          "type": "Combo",
           "colors": ["BLUE FUSION", "SILENT NOIR"],
+          "class": "Combo",
           "price": "800"
         },
         {
@@ -356,8 +356,8 @@
             "/shop/switch/controllers/skin-5.png"
           ],
           "name": "Switch Pro Controller",
-          "type": "Combo",
           "colors": ["STREET GIRL", "CALM BLUE"],
+          "class": "Combo",
           "price": "800"
         },
         {
@@ -367,8 +367,8 @@
             "/shop/switch/controllers/skin-10.png"
           ],
           "name": "Switch Pro Controller",
-          "type": "Combo",
           "colors": ["DAWN SHADE", "ROYAL IVY"],
+          "class": "Combo",
           "price": "800"
         },
         {
@@ -378,8 +378,8 @@
             "/shop/switch/controllers/skin-4.png"
           ],
           "name": "Switch Pro Controller",
-          "type": "Combo",
           "colors": ["SPRAY WHITE", "COMIC ART"],
+          "class": "Combo",
           "price": "800"
         },
         {
@@ -389,8 +389,8 @@
             "/shop/switch/controllers/skin-12.png"
           ],
           "name": "Switch Pro Controller",
-          "type": "Combo",
           "colors": ["BINARY HACK", "RED WRAPS"],
+          "class": "Combo",
           "price": "800"
         }
       ]

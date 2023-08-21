@@ -9,7 +9,7 @@ const detailsSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  subType: {
+  class: {
     type: String,
     required: true,
   },

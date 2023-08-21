@@ -81,7 +81,7 @@ app.get("/shop/:brand/:type", (req, res) => {
 
   if (req.params.brand === "playstation") {
     res.render("shop", {
-      types: PlaystationTemplate[req.params.type],
+      classes: PlaystationTemplate[req.params.type],
       footer: PlaystationTemplate.footer,
     });
 
@@ -90,7 +90,7 @@ app.get("/shop/:brand/:type", (req, res) => {
 
   if (req.params.brand === "xbox") {
     res.render("shop", {
-      types: XboxTemplate[req.params.type],
+      classes: XboxTemplate[req.params.type],
       footer: XboxTemplate.footer,
     });
 
@@ -99,7 +99,7 @@ app.get("/shop/:brand/:type", (req, res) => {
 
   if (req.params.brand === "switch") {
     res.render("shop", {
-      types: SwitchTemplate[req.params.type],
+      classes: SwitchTemplate[req.params.type],
       footer: SwitchTemplate.footer,
     });
 
@@ -139,7 +139,7 @@ app.post("/account/cart/add", (req, res) => {
     details: {
       brand: req.body.brand,
       type: req.body.type,
-      subType: req.body.subType,
+      class: req.body.class,
     },
   };
 

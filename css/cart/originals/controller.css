@@ -1,0 +1,59 @@
+/*---------------------------------------------------*/
+/*---------------- CONTROLLER STYLES ----------------*/
+/*---------------------------------------------------*/
+
+.originals-carousel-button {
+  transition: opacity 200ms, translate 200ms;
+  filter: drop-shadow(0 0 20px #000);
+  cursor: pointer;
+  opacity: 0.5;
+  width: 45px;
+}
+
+/*-------------------------------------------*/
+/*------------ INDICATORS STYLES ------------*/
+/*-------------------------------------------*/
+
+.originals-carousel-indicators {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-column: span 3;
+  display: grid;
+  gap: 1rem;
+}
+
+.originals-carousel-indicator {
+  box-shadow: 0 0 10px #000000a0;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  cursor: pointer;
+  width: 3.5rem;
+  opacity: 0.5;
+  height: 8px;
+}
+
+.originals-carousel-indicator:nth-of-type(1) {
+  background-color: #fff;
+  opacity: 1;
+}
+
+/*---------------------------------------------*/
+/*---------------- TRANSITIONS ----------------*/
+/*---------------------------------------------*/
+
+.originals-carousel-button:hover {
+  opacity: 1;
+}
+
+.originals-carousel-button:nth-of-type(1):hover {
+  translate: -5px 0;
+}
+
+.originals-carousel-button:nth-of-type(2):hover {
+  translate: 5px 0;
+}
+
+/*----------------------------------------------*/
+/*----------------- END OF CSS -----------------*/
+/*----------------------------------------------*/

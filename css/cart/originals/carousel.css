@@ -3,26 +3,13 @@
 /*-------------------------------------------------*/
 
 .originals-carousel {
-  box-shadow: 0 0 20px #000000;
   justify-content: start;
   grid-auto-flow: column;
-  padding: 2.5rem 6rem;
   align-items: center;
-  border-radius: 5px;
-  position: relative;
+  padding: 2rem 0 0 0;
   overflow: hidden;
   display: grid;
-  width: 1392px;
-  gap: 5rem;
-}
-
-.originals-carousel-background {
-  position: absolute;
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  top: 0;
+  width: 1200px;
 }
 
 /*-----------------------------------------------*/
@@ -39,6 +26,7 @@
 }
 
 .originals-item-image {
+  filter: drop-shadow(0 0 20px #00000080);
   width: 300px;
 }
 
