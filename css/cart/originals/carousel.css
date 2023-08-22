@@ -6,8 +6,8 @@
   justify-content: start;
   grid-auto-flow: column;
   align-items: center;
-  padding: 2rem 0 0 0;
   overflow: hidden;
+  padding: 2rem 0;
   display: grid;
   width: 1200px;
 }
@@ -191,6 +191,42 @@
 
 .originals-item-explore-link:hover .originals-item-explore-link-text {
   color: #000;
+}
+
+/*--------------------------------------------*/
+/*---------------- ANIMATIONS ----------------*/
+/*--------------------------------------------*/
+
+.originals-carousel-fade-out {
+  animation: OriginalsCarouselFadeOut 250ms forwards;
+}
+
+@keyframes OriginalsCarouselFadeOut {
+  0% {
+    translate: 0 0;
+    opacity: 1;
+  }
+
+  100% {
+    translate: 0 -20px;
+    opacity: 0;
+  }
+}
+
+.originals-carousel-fade-in {
+  animation: OriginalsCarouselFadeIn 250ms forwards;
+}
+
+@keyframes OriginalsCarouselFadeIn {
+  0% {
+    translate: 0 -20px;
+    opacity: 0;
+  }
+
+  100% {
+    translate: 0 0;
+    opacity: 1;
+  }
 }
 
 /*----------------------------------------------*/

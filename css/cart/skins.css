@@ -9,11 +9,3 @@
   padding: 4rem 0;
   display: grid;
 }
-
-.skins-title {
-  font-family: "Acquire Light", sans-serif;
-  grid-column: span 2;
-  cursor: default;
-  font-size: 6rem;
-  font-size: 100;
-}

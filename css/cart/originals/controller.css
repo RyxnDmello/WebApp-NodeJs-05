@@ -24,6 +24,7 @@
 }
 
 .originals-carousel-indicator {
+  transition: opacity 500ms, background-color 500ms;
   box-shadow: 0 0 10px #000000a0;
   border: 2px solid #fff;
   border-radius: 40px;
