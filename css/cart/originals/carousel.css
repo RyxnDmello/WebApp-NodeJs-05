@@ -47,7 +47,7 @@
   font-family: "Abel", sans-serif;
   margin-bottom: -1.5rem;
   letter-spacing: 2px;
-  color: #ffffffa0;
+  color: #ffffff50;
   font-size: 6.5rem;
   font-weight: 600;
   cursor: default;
@@ -198,7 +198,7 @@
 /*--------------------------------------------*/
 
 .originals-carousel-fade-out {
-  animation: OriginalsCarouselFadeOut 250ms forwards;
+  animation: OriginalsCarouselFadeOut 225ms forwards;
 }
 
 @keyframes OriginalsCarouselFadeOut {
@@ -214,7 +214,7 @@
 }
 
 .originals-carousel-fade-in {
-  animation: OriginalsCarouselFadeIn 250ms forwards;
+  animation: OriginalsCarouselFadeIn 225ms forwards;
 }
 
 @keyframes OriginalsCarouselFadeIn {

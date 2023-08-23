@@ -1,0 +1,79 @@
+<% combos.forEach((combo) => { %>
+<form class="combos-item" action="/account/cart/update" method="post">
+  <div class="combos-item-images">
+    <% combo.product.images.forEach((image) => { %>
+    <img class="combos-item-image" src="<%= image %>" />
+    <% }) %>
+  </div>
+
+  <div class="combos-item-details">
+    <div class="combos-item-colors">
+      <% combo.product.colors.forEach((color) => { %>
+      <h4 class="combos-item-color"><%= color %></h4>
+      <% }) %>
+    </div>
+
+    <div class="combos-item-information">
+      <p class="combos-item-brand"><%= combo.product.name %></p>
+      <p class="combos-item-price">$<%= combo.product.price %></p>
+    </div>
+
+    <div class="combos-item-controllers">
+      <div class="combos-item-buttons">
+        <button
+          class="combos-item-button"
+          value="DELETE"
+          name="action"
+          type="submit"
+        >
+          <img
+            class="combos-item-button-image"
+            src="/buttons/shop/cart-delete.png"
+          />
+        </button>
+
+        <button
+          class="combos-item-button"
+          name="action"
+          type="submit"
+          value="WISH"
+        >
+          <img class="combos-item-button-image" src="/buttons/shop/wish.png" />
+        </button>
+      </div>
+
+      <div class="combos-item-quantity">
+        <button
+          class="combos-item-quantity-button"
+          value="DECREASE"
+          name="action"
+          type="submit"
+        >
+          <img
+            class="combos-item-quantity-button-image"
+            src="/buttons/basic/arrow-circle-left.png"
+          />
+        </button>
+
+        <p class="combos-item-quantity-value">2</p>
+
+        <button
+          class="combos-item-quantity-button"
+          value="INCREASE"
+          name="action"
+          type="submit"
+        >
+          <img
+            class="combos-item-quantity-button-image"
+            src="/buttons/basic/arrow-circle-right.png"
+          />
+        </button>
+      </div>
+    </div>
+
+    <a class="combos-item-explore-link" href="/">
+      <p class="combos-item-explore-link-text">Explore Details</p>
+    </a>
+  </div>
+</form>
+<% }) %>

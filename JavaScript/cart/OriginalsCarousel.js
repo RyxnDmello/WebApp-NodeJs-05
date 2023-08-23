@@ -73,7 +73,7 @@ function IndicatorsController() {
 }
 
 function CarouselMoveSlides() {
-  CarouselAnimation(0, 125);
+  CarouselAnimation(0, 112.5);
 
   setTimeout(() => {
     items.forEach((item) => {
@@ -81,9 +81,9 @@ function CarouselMoveSlides() {
         -currentSlide * carousel.clientWidth
       }px)`;
     });
-  }, 875);
+  }, 787.5);
 
-  CarouselAnimation(880, 125);
+  CarouselAnimation(792.5, 112.5);
 }
 
 function CarouselAnimation(duration, delay) {

@@ -1,0 +1,207 @@
+/*-------------------------------------------------------*/
+/*------------------- CAROUSEL STYLES -------------------*/
+/*-------------------------------------------------------*/
+
+.combos-carousel {
+  justify-content: start;
+  grid-auto-flow: column;
+  align-items: center;
+  overflow: hidden;
+  padding: 2rem 0;
+  width: 1200px;
+  display: grid;
+}
+
+/*---------------------------------------------*/
+/*---------------- ITEM STYLES ----------------*/
+/*---------------------------------------------*/
+
+.combos-item {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  width: 1200px;
+  gap: 2rem;
+}
+
+/*------------------------------------------*/
+/*-------------- IMAGE STYLES --------------*/
+/*------------------------------------------*/
+
+.combos-item-images {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.combos-item-image {
+  width: 300px;
+}
+
+/*----------------------------------------------*/
+/*--------------- DETAILS STYLES ---------------*/
+/*----------------------------------------------*/
+
+.combos-item-details {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.combos-item-colors {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+.combos-item-color {
+  font-family: "Abel", sans-serif;
+  color: #ffffff80;
+  font-weight: 600;
+  cursor: default;
+  font-size: 6rem;
+}
+
+.combos-item-color:nth-of-type(2) {
+  margin: -1.65rem 0 -1rem 0;
+}
+
+/*----------------------------------------------*/
+/*------------- INFORMATION STYLES -------------*/
+/*----------------------------------------------*/
+
+.combos-item-information {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
+.combos-item-brand,
+.combos-item-price {
+  font-family: "Abel", sans-serif;
+  font-size: 2rem;
+  cursor: default;
+  color: #fff;
+}
+
+/*-------------------------------------------*/
+/*-------------- BUTTON STYLES --------------*/
+/*-------------------------------------------*/
+
+.combos-item-controllers {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
+.combos-item-buttons {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.combos-item-button {
+  background-color: transparent;
+  border: none;
+}
+
+.combos-item-button-image {
+  cursor: pointer;
+  width: 30px;
+}
+
+/*-------------------------------------------*/
+/*------------- QUANTITY STYLES -------------*/
+/*-------------------------------------------*/
+
+.combos-item-quantity {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.combos-item-quantity-button {
+  background-color: transparent;
+  border: none;
+}
+
+.combos-item-quantity-button-image {
+  cursor: pointer;
+  width: 35px;
+}
+
+.combos-item-quantity-value {
+  font-family: "Abel", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  cursor: default;
+  color: #fff;
+}
+
+/*------------------------------------------*/
+/*-------------- EXPLORE LINK --------------*/
+/*------------------------------------------*/
+
+.combos-item-explore-link {
+  grid-template-columns: auto;
+  border: 2px solid #fff;
+  justify-content: center;
+  border-radius: 40px;
+  align-items: center;
+  position: relative;
+  isolation: isolate;
+  padding: 0.25rem 0;
+  overflow: hidden;
+  display: grid;
+}
+
+.combos-item-explore-link::before {
+  background-color: #fff;
+  border: 2px solid #fff;
+  transition: width 500ms;
+  transform: skew(40deg);
+  position: absolute;
+  height: 100%;
+  content: "";
+  left: -1rem;
+  z-index: -1;
+  width: 0%;
+  top: 0;
+}
+
+.combos-item-explore-link-text {
+  font-family: "Poppins", sans-serif;
+  transition: color 500ms;
+  letter-spacing: 0.5px;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+/*---------------------------------------*/
+/*------------- TRANSITIONS -------------*/
+/*---------------------------------------*/
+
+.combos-item-explore-link:hover::before {
+  width: calc(100% + 2rem);
+}
+
+.combos-item-explore-link:hover .combos-item-explore-link-text {
+  color: #000;
+}
+
+/*------------------------------------------*/
+/*--------------- END OF CSS ---------------*/
+/*------------------------------------------*/
