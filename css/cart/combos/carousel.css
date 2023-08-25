@@ -7,9 +7,10 @@
   grid-auto-flow: column;
   align-items: center;
   overflow: hidden;
-  padding: 2rem 0;
-  width: 1200px;
+  padding: 0 4rem;
+  width: 1328px;
   display: grid;
+  gap: 4rem;
 }
 
 /*---------------------------------------------*/
@@ -17,6 +18,7 @@
 /*---------------------------------------------*/
 
 .combos-item {
+  transition: translate 800ms;
   justify-content: center;
   grid-auto-flow: column;
   align-items: center;
@@ -38,6 +40,7 @@
 }
 
 .combos-item-image {
+  filter: drop-shadow(0 0 20px #000000a0);
   width: 300px;
 }
 
@@ -61,6 +64,7 @@
 }
 
 .combos-item-color {
+  text-shadow: 0 5px 10px #000000a0;
   font-family: "Abel", sans-serif;
   color: #ffffff80;
   font-weight: 600;
@@ -85,6 +89,7 @@
 
 .combos-item-brand,
 .combos-item-price {
+  text-shadow: 0 0 10px #00000080;
   font-family: "Abel", sans-serif;
   font-size: 2rem;
   cursor: default;
@@ -116,6 +121,7 @@
 }
 
 .combos-item-button-image {
+  filter: drop-shadow(0 0 10px #000000a0);
   cursor: pointer;
   width: 30px;
 }
@@ -138,11 +144,13 @@
 }
 
 .combos-item-quantity-button-image {
+  filter: drop-shadow(0 0 10px #000000a0);
   cursor: pointer;
   width: 35px;
 }
 
 .combos-item-quantity-value {
+  text-shadow: 0 0 10px #000000a0;
   font-family: "Abel", sans-serif;
   font-weight: 300;
   font-size: 2rem;
@@ -155,6 +163,7 @@
 /*------------------------------------------*/
 
 .combos-item-explore-link {
+  box-shadow: 0 5px 10px #000000a0;
   grid-template-columns: auto;
   border: 2px solid #fff;
   justify-content: center;

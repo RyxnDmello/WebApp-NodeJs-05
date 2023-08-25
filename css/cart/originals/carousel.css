@@ -104,7 +104,7 @@
 }
 
 .originals-item-button-image {
-  filter: drop-shadow(0 0 10px #00000060);
+  filter: drop-shadow(0 0 20px #00000080);
   width: 30px;
 }
 
@@ -127,7 +127,7 @@
 }
 
 .originals-item-quantity-button-image {
-  filter: drop-shadow(0 0 10px #00000060);
+  filter: drop-shadow(0 0 10px #000000a0);
   width: 35px;
 }
 

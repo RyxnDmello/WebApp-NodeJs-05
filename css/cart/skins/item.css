@@ -15,6 +15,7 @@
 }
 
 .skin-item-image {
+  filter: drop-shadow(0 0 10px #000000a0);
   width: 225px;
 }
 
@@ -38,7 +39,7 @@
 }
 
 .skin-item-color {
-  text-shadow: 0 0 10px #00000060;
+  text-shadow: 0 5px 10px #000000a0;
   font-family: "Abel", sans-serif;
   letter-spacing: 1.5px;
   margin-bottom: -1rem;
@@ -61,9 +62,8 @@
 
 .skin-item-brand,
 .skin-item-price {
-  text-shadow: 0 0 10px #00000060;
+  text-shadow: 0 0 10px #00000080;
   font-family: "Abel", sans-serif;
-  letter-spacing: 0px;
   font-weight: 300;
   font-size: 2rem;
   cursor: default;

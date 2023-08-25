@@ -1,5 +1,10 @@
 <% combos.forEach((combo) => { %>
 <form class="combos-item" action="/account/cart/update" method="post">
+  <input type="hidden" name="ID" value="<%= combo.product.ID %>" />
+  <input type="hidden" name="brand" value="<%= combo.details.brand %>" />
+  <input type="hidden" name="type" value="<%= combo.details.type %>" />
+  <input type="hidden" name="class" value="<%= combo.details.class %>" />
+
   <div class="combos-item-images">
     <% combo.product.images.forEach((image) => { %>
     <img class="combos-item-image" src="<%= image %>" />

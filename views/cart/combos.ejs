@@ -3,6 +3,10 @@
     <%- include("./combos/carousel.ejs", { combos: combos }) %>
   </div>
 
+  <div class="combos-carousel-controllers">
+    <%- include("./combos/controller.ejs", { length: combos.length }) %>
+  </div>
+
   <img
     class="combos-carousel-container-background"
     src="/cart/combos-back.png"

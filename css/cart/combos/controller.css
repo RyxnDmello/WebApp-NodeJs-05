@@ -1,0 +1,59 @@
+/*---------------------------------------------------*/
+/*---------------- CONTROLLER STYLES ----------------*/
+/*---------------------------------------------------*/
+
+.combos-carousel-controllers {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.combos-carousel-controller {
+  filter: drop-shadow(0 0 20px #000);
+  transition: opacity 450ms;
+  cursor: pointer;
+  opacity: 0.5;
+  width: 35px;
+}
+
+/*--------------------------------------------*/
+/*------------- INDICATOR STYLES -------------*/
+/*--------------------------------------------*/
+
+.combos-carousel-indicators {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 1rem;
+}
+
+.combos-carousel-indicator {
+  transition: background-color 500ms, opacity 500ms;
+  box-shadow: 0 5px 10px #000000a0;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  cursor: pointer;
+  height: 6.5px;
+  width: 3.5rem;
+  opacity: 0.5;
+}
+
+.combos-carousel-indicator:nth-of-type(1) {
+  background-color: #fff;
+  opacity: 1;
+}
+
+/*------------------------------------------*/
+/*--------------- TRANSITION ---------------*/
+/*------------------------------------------*/
+
+.combos-carousel-controller:hover {
+  opacity: 1;
+}
+
+/*------------------------------------------*/
+/*--------------- END OF CSS ---------------*/
+/*------------------------------------------*/

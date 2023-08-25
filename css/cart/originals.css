@@ -4,14 +4,14 @@
 #originals {
   grid-template-columns: auto;
   justify-content: center;
+  padding: 4rem 0 2rem 0;
   align-items: center;
-  padding: 4rem 0 0 0;
   display: grid;
 }
 
 .originals-container {
   grid-template-columns: repeat(3, auto);
-  box-shadow: 0 0 20px #000000;
+  box-shadow: 0 0 20px #000;
   padding: 0 2rem 2rem 2rem;
   justify-content: center;
   align-items: center;
