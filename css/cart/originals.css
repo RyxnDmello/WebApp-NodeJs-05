@@ -4,8 +4,8 @@
 #originals {
   grid-template-columns: auto;
   justify-content: center;
-  padding: 4rem 0 2rem 0;
   align-items: center;
+  padding: 2rem 0;
   display: grid;
 }
 
