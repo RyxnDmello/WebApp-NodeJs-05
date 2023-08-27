@@ -1,0 +1,24 @@
+@import url("./billing/summary.css");
+
+#billing {
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: center;
+  padding: 2rem 6rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.billing-title {
+  font-family: "Acquire Light", sans-serif;
+  letter-spacing: 2.5px;
+  font-size: 6rem;
+  cursor: default;
+}
+
+.billing-information {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}

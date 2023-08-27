@@ -7,15 +7,70 @@ const XboxTemplate = require("../../json/xbox.json");
 module.exports.DatabaseGetProducts = async (email) => {
   const databaseAccount = await AccountModel.findOne({ email: email });
   const cart = CreateCart(databaseAccount);
-  return cart;
+  const bill = CreateBill(databaseAccount);
+
+  return { cart, bill };
+};
+
+const CreateBill = (account) => {
+  if (account.cart.length === 0) return;
+
+  let originalsLength = 0;
+  let skinsLength = 0;
+  let combosLength = 0;
+
+  let originalsNetPrice = 0;
+  let skinsNetPrice = 0;
+  let combosNetPrice = 0;
+
+  for (let i = 0; i < account.cart.length; i++) {
+    const cartProduct = account.cart[i];
+
+    if (cartProduct.details.class === "originals") {
+      originalsNetPrice += cartProduct.price.netPrice;
+      originalsLength += cartProduct.price.quantity;
+      continue;
+    }
+
+    if (cartProduct.details.class === "skins") {
+      skinsNetPrice += cartProduct.price.netPrice;
+      skinsLength += cartProduct.price.quantity;
+      continue;
+    }
+
+    if (cartProduct.details.class === "combos") {
+      combosNetPrice += cartProduct.price.netPrice;
+      combosLength += cartProduct.price.quantity;
+      continue;
+    }
+  }
+
+  return {
+    originals: {
+      quantity: originalsLength,
+      price: originalsNetPrice,
+    },
+    skins: {
+      quantity: skinsLength,
+      price: skinsNetPrice,
+    },
+    combos: {
+      quantity: combosLength,
+      price: combosNetPrice,
+    },
+    total: {
+      quantity: originalsLength + skinsLength + combosLength,
+      price: originalsNetPrice + skinsNetPrice + combosNetPrice,
+    },
+  };
 };
 
 const CreateCart = (account) => {
+  if (account.cart.length === 0) return;
+
   const originals = [];
   const skins = [];
   const combos = [];
-
-  if (account.cart.length === 0) return;
 
   for (let i = 0; i < account.cart.length; i++) {
     const cartProduct = account.cart[i];

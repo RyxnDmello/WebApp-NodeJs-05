@@ -1,0 +1,111 @@
+/*--------------------------------------------*/
+/*-------------- SUMMARY STYLES --------------*/
+/*--------------------------------------------*/
+
+.billing-summary {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.billing-summary-title {
+  font-family: "Abel", sans-serif;
+  border: 2.5px solid #000;
+  transform: skew(-10deg);
+  padding: 0.25rem 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 2rem;
+  cursor: default;
+}
+
+/*----------------------------------------*/
+/*------------ DETAILS STYLES ------------*/
+/*----------------------------------------*/
+
+.billing-summary-details {
+  grid-auto-flow: column;
+  justify-content: left;
+  align-items: center;
+  display: grid;
+  gap: 2.5rem;
+}
+
+/*------------------------------------*/
+/*----------- CLASS STYLES -----------*/
+/*------------------------------------*/
+
+.billing-summary-classes {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.billing-summary-class {
+  grid-auto-flow: column;
+  justify-content: left;
+  align-items: center;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.billing-summary-class-image {
+  filter: invert(1);
+  width: 20px;
+}
+
+.billing-summary-class-text {
+  font-family: "Abel", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+/*-------------------------------------------*/
+/*------------- QUANTITY STYLES -------------*/
+/*-------------------------------------------*/
+
+.billing-summary-quantities {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.billing-summary-quantity {
+  font-family: "Abel", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+/*-------------------------------------------*/
+/*-------------- PRICES STYLES --------------*/
+/*-------------------------------------------*/
+
+.billing-summary-prices {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.billing-summary-price {
+  font-family: "Abel", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+/*------------------------------------------*/
+/*--------------- END OF CSS ---------------*/
+/*------------------------------------------*/

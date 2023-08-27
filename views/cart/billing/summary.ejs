@@ -1,0 +1,32 @@
+<h4 class="billing-summary-title">YOUR ORDER SUMMARY</h4>
+
+<div class="billing-summary-details">
+  <div class="billing-summary-classes">
+    <div class="billing-summary-class">
+      <img class="billing-summary-class-image" src="/cart/arrow.png" />
+      <p class="billing-summary-class-text">Originals</p>
+    </div>
+
+    <div class="billing-summary-class">
+      <img class="billing-summary-class-image" src="/cart/arrow.png" />
+      <p class="billing-summary-class-text">Skins</p>
+    </div>
+
+    <div class="billing-summary-class">
+      <img class="billing-summary-class-image" src="/cart/arrow.png" />
+      <p class="billing-summary-class-text">Combos</p>
+    </div>
+  </div>
+
+  <div class="billing-summary-quantities">
+    <p class="billing-summary-quantity"><%= bill.originals.quantity ?? 0 %>X</p>
+    <p class="billing-summary-quantity"><%= bill.skins.quantity ?? 0 %>X</p>
+    <p class="billing-summary-quantity"><%= bill.combos.quantity ?? 0 %>X</p>
+  </div>
+
+  <div class="billing-summary-prices">
+    <p class="billing-summary-price">$<%= bill.originals.price ?? 0 %></p>
+    <p class="billing-summary-price">$<%= bill.skins.price ?? 0 %></p>
+    <p class="billing-summary-price">$<%= bill.combos.price ?? 0 %></p>
+  </div>
+</div>

@@ -68,9 +68,9 @@ app.get("/account/cart", async (req, res) => {
     return;
   }
 
-  const cart = await CartManager.GetProducts(req.session.email);
+  const { cart, bill } = await CartManager.GetProducts(req.session.email);
 
-  res.render("cart", { cart: cart });
+  res.render("cart", { cart: cart, bill: bill });
 });
 
 app.get("/shop/:brand/:type", (req, res) => {

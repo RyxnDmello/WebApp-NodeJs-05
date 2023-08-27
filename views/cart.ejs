@@ -43,6 +43,10 @@
       <section id="combos">
         <%- include("./cart/combos.ejs", { combos: cart.combos }) %>
       </section>
+
+      <section id="billing">
+        <%- include("./cart/billing.ejs", { bill: bill }) %>
+      </section>
     </main>
 
     <script type="module" src="/Cart.js"></script>

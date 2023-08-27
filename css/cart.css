@@ -5,6 +5,7 @@
 @import url("./cart/originals.css");
 @import url("./cart/skins.css");
 @import url("./cart/combos.css");
+@import url("./cart/billing.css");
 
 * {
   scroll-behavior: smooth;
