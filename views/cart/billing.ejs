@@ -1,7 +1,15 @@
 <h2 class="billing-title">THE BILLING DETAILS</h2>
 
 <div class="billing-information">
-  <div class="billing-summary">
-    <%- include("./billing/summary.ejs", { bill: bill }) %>
+  <div class="billing-sponsor"><%- include("./billing/sponsor.ejs") %></div>
+
+  <div class="billing-details">
+    <div class="billing-summary">
+      <%- include("./billing/summary.ejs", { bill: bill }) %>
+    </div>
+
+    <div class="billing-total">
+      <%- include("./billing/total.ejs", { total: bill.total }) %>
+    </div>
   </div>
 </div>

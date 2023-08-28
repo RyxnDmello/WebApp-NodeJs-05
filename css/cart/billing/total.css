@@ -1,0 +1,126 @@
+/*----------------------------------------------*/
+/*---------------- TOTAL STYLES ----------------*/
+/*----------------------------------------------*/
+
+.billing-total {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.billing-total-title {
+  box-shadow: 0 0 10px #00000065;
+  font-family: "Abel", sans-serif;
+  border: 2.5px solid #000;
+  transform: skew(-10deg);
+  padding: 0.25rem 2rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 2rem;
+  cursor: default;
+}
+
+/*----------------------------------------*/
+/*------------ DETAILS STYLES ------------*/
+/*----------------------------------------*/
+
+.billing-total-details {
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+/*----------------------------------------*/
+/*------------- TOTAL STYLES -------------*/
+/*----------------------------------------*/
+
+.billing-total-total {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
+.billing-total-quantity,
+.billing-total-price {
+  text-shadow: 0 0 10px #00000060;
+  font-family: "Abel", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 2.5rem;
+  text-align: right;
+  font-weight: 600;
+  cursor: default;
+}
+
+/*----------------------------------------*/
+/*------------ BUTTONS STYLES ------------*/
+/*----------------------------------------*/
+
+.billing-total-buttons {
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.billing-total-button {
+  transition: background-color 350ms;
+  box-shadow: 0 0 10px #00000080;
+  justify-content: center;
+  grid-auto-flow: column;
+  border-radius: 2.5px;
+  align-items: center;
+  padding: 0.25rem 0;
+  cursor: pointer;
+  display: grid;
+  border: none;
+  gap: 0.65rem;
+}
+
+.billing-total-button:nth-of-type(1) {
+  background-color: #0e00cc;
+}
+
+.billing-total-button:nth-of-type(2) {
+  background-color: #ba0050;
+}
+
+.billing-total-button-image {
+  width: 22.5px;
+}
+
+.billing-total-button-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+/*---------------------------------------*/
+/*------------- TRANSITIONS -------------*/
+/*---------------------------------------*/
+
+.billing-total-button:nth-of-type(1):hover {
+  background-color: #0e00a0;
+}
+
+.billing-total-button:nth-of-type(1):focus {
+  background-color: #0e0080;
+}
+
+.billing-total-button:nth-of-type(2):hover {
+  background-color: #950050;
+}
+
+.billing-total-button:nth-of-type(2):focus {
+  background-color: #800050;
+}
+
+/*------------------------------------------*/
+/*--------------- END OF CSS ---------------*/
+/*------------------------------------------*/

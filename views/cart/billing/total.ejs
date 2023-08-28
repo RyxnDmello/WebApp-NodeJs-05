@@ -1,0 +1,36 @@
+<h2 class="billing-total-title">YOUR BILLING TOTAL</h2>
+
+<form class="billing-total-details">
+  <div class="billing-total-total">
+    <p class="billing-total-quantity"><%= total.quantity %>x</p>
+    <p class="billing-total-price">$<%= total.price %></p>
+  </div>
+
+  <div class="billing-total-buttons">
+    <button
+      class="billing-total-button"
+      value="PURCHASE"
+      name="action"
+      type="submit"
+    >
+      <img
+        class="billing-total-button-image"
+        src="/buttons/shop/cart-purshase.png"
+      />
+      <p class="billing-total-button-text">Confirm & Purchase</p>
+    </button>
+
+    <button
+      class="billing-total-button"
+      value="DELETE"
+      name="action"
+      type="submit"
+    >
+      <img
+        class="billing-total-button-image"
+        src="/buttons/shop/cart-delete.png"
+      />
+      <p class="billing-total-button-text">Delete All Products</p>
+    </button>
+  </div>
+</form>

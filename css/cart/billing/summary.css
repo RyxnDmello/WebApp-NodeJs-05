@@ -11,6 +11,7 @@
 }
 
 .billing-summary-title {
+  box-shadow: 0 0 10px #00000065;
   font-family: "Abel", sans-serif;
   border: 2.5px solid #000;
   transform: skew(-10deg);
@@ -59,6 +60,7 @@
 }
 
 .billing-summary-class-text {
+  text-shadow: 0 0 10px #00000060;
   font-family: "Abel", sans-serif;
   letter-spacing: 1px;
   font-size: 1.5rem;
@@ -79,6 +81,7 @@
 }
 
 .billing-summary-quantity {
+  text-shadow: 0 0 10px #00000060;
   font-family: "Abel", sans-serif;
   letter-spacing: 1px;
   font-size: 1.5rem;
@@ -99,6 +102,7 @@
 }
 
 .billing-summary-price {
+  text-shadow: 0 0 10px #00000060;
   font-family: "Abel", sans-serif;
   letter-spacing: 1px;
   font-size: 1.5rem;

@@ -1,0 +1,58 @@
+/*--------------------------------------------*/
+/*-------------- SPONSOR STYLES --------------*/
+/*--------------------------------------------*/
+
+.billing-sponsor {
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: center;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.billing-sponsor-title {
+  text-shadow: 0 0 20px #000000a0;
+  font-family: "Abel", sans-serif;
+  font-weight: 100;
+  font-size: 4rem;
+  cursor: default;
+}
+
+/*------------------------------------*/
+/*----------- LINKS STYLES -----------*/
+/*------------------------------------*/
+
+.billing-sponsor-links {
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.billing-sponsor-link {
+  box-shadow: 0 0 10px #00000080;
+  background-color: #000025;
+  justify-content: center;
+  grid-auto-flow: column;
+  border-radius: 2.5px;
+  align-items: center;
+  padding: 0.25rem 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.billing-sponsor-link-image {
+  width: 20px;
+}
+
+.billing-sponsor-link-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+/*------------------------------------------*/
+/*--------------- END OF CSS ---------------*/
+/*------------------------------------------*/

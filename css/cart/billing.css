@@ -1,4 +1,6 @@
+@import url("./billing/sponsor.css");
 @import url("./billing/summary.css");
+@import url("./billing/total.css");
 
 #billing {
   grid-template-columns: auto;
@@ -6,11 +8,12 @@
   align-items: center;
   padding: 2rem 6rem;
   display: grid;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .billing-title {
   font-family: "Acquire Light", sans-serif;
+  text-shadow: 0 5px 10px #00000065;
   letter-spacing: 2.5px;
   font-size: 6rem;
   cursor: default;
@@ -19,6 +22,14 @@
 .billing-information {
   justify-content: space-between;
   grid-auto-flow: column;
-  align-items: center;
+  align-items: start;
   display: grid;
+}
+
+.billing-details {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: start;
+  display: grid;
+  gap: 4rem;
 }
