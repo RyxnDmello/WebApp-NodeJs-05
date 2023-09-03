@@ -129,11 +129,6 @@ app.post("/account/:type", (req, res) => {
 });
 
 app.post("/account/cart/update", (req, res) => {
-  console.log(req.body);
-  res.redirect("back");
-});
-
-app.post("/account/cart/add", (req, res) => {
   const product = {
     ID: req.body.ID,
     details: {
@@ -143,7 +138,36 @@ app.post("/account/cart/add", (req, res) => {
     },
   };
 
-  CartManager.AddProduct(req.session.email, product);
+  if (req.body.action === "INCREASE") {
+    CartManager.AddProduct(req.session.email, product);
+    res.redirect("back");
+    return;
+  }
+
+  if (req.body.action === "DECREASE") {
+    CartManager.MinusProduct(req.session.email, product);
+    res.redirect("back");
+    return;
+  }
+
+  if (req.body.action === "DELETE") {
+    CartManager.DeleteProduct(req.session.email, product.ID);
+    res.redirect("back");
+    return;
+  }
+});
+
+app.post("/account/cart/create", (req, res) => {
+  const product = {
+    ID: req.body.ID,
+    details: {
+      brand: req.body.brand,
+      type: req.body.type,
+      class: req.body.class,
+    },
+  };
+
+  CartManager.CreateProduct(req.session.email, product);
 
   res.redirect("back");
 });

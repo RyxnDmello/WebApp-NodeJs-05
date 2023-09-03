@@ -13,7 +13,7 @@ module.exports.DatabaseGetProducts = async (email) => {
 };
 
 const CreateBill = (account) => {
-  if (account.cart.length === 0) return;
+  if (account.cart.length === 0) return "EMPTY";
 
   let originalsLength = 0;
   let skinsLength = 0;
@@ -66,7 +66,7 @@ const CreateBill = (account) => {
 };
 
 const CreateCart = (account) => {
-  if (account.cart.length === 0) return;
+  if (account.cart.length === 0) return "EMPTY";
 
   const originals = [];
   const skins = [];

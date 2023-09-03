@@ -4,35 +4,10 @@ module.exports.DatabaseDeleteProduct = async (email, productID) => {
   const databaseAccount = await AccountModel.findOne({ email, email });
 
   for (let i = 0; i < databaseAccount.cart.length; i++) {
-    const databaseProduct = databaseAccount.cart[i];
+    if (databaseAccount.cart[i].ID !== productID) continue;
 
-    if (databaseProduct.ID !== productID) continue;
-
-    if (databaseProduct.price.quantity > 1) {
-      databaseAccount.cart[i].price.quantity -= 1;
-
-      databaseAccount.cart[i].price.netPrice =
-        databaseAccount.cart[i].price.basePrice *
-        databaseAccount.cart[i].price.quantity;
-
-      await databaseAccount.save();
-      return;
-    }
-
-    DeleteCompleteProduct(email, productID);
+    databaseAccount.cart.splice(i, 1);
+    await databaseAccount.save();
     return;
   }
-};
-
-const DeleteCompleteProduct = async (email, productID) => {
-  await AccountModel.findOneAndUpdate(
-    { email: email },
-    {
-      $pull: {
-        cart: {
-          ID: productID,
-        },
-      },
-    }
-  );
 };
