@@ -1,6 +1,6 @@
 <h2 class="billing-total-title">YOUR BILLING TOTAL</h2>
 
-<form class="billing-total-details">
+<form class="billing-total-details" action="/account/cart/update" method="post">
   <div class="billing-total-total">
     <p class="billing-total-quantity"><%= total.quantity %>x</p>
     <p class="billing-total-price">$<%= total.price %></p>
@@ -22,7 +22,7 @@
 
     <button
       class="billing-total-button"
-      value="DELETE"
+      value="RESET"
       name="action"
       type="submit"
     >

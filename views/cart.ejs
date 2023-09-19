@@ -32,17 +32,19 @@
         <%- include("./cart/introduction.ejs") %>
       </section>
 
+      <% if(cart.originals.length !== 0) { %>
       <section id="originals">
         <%- include("./cart/originals.ejs", { originals: cart.originals }) %>
       </section>
-
+      <% } if(cart.skins.length !== 0) { %>
       <section id="skins">
         <%- include("./cart/skins.ejs", { skins: cart.skins }) %>
       </section>
-
+      <% } if(cart.combos.length !== 0) { %>
       <section id="combos">
         <%- include("./cart/combos.ejs", { combos: cart.combos }) %>
       </section>
+      <% } %>
 
       <section id="billing">
         <%- include("./cart/billing.ejs", { bill: bill }) %>

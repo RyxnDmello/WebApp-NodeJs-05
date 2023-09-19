@@ -5,6 +5,7 @@ const { DatabaseAddProduct } = require("./cart/AddProduct.js");
 const { DatabaseMinusProduct } = require("./cart/MinusProduct.js");
 
 const { DatabaseGetProducts } = require("./cart/GetProducts.js");
+const { DatabaseResetCart } = require("./cart/ResetCart.js");
 
 module.exports.CreateProduct = (email, product) => {
   DatabaseCreateProduct(email, product);
@@ -20,6 +21,10 @@ module.exports.AddProduct = (email, product) => {
 
 module.exports.MinusProduct = (email, product) => {
   DatabaseMinusProduct(email, product);
+};
+
+module.exports.ResetCart = (email) => {
+  DatabaseResetCart(email);
 };
 
 module.exports.GetProducts = async (email) => {

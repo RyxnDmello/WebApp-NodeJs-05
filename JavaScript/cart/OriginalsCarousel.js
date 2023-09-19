@@ -9,6 +9,8 @@ let currentSlide = 0;
 let isSlideshow = true;
 
 export default function OriginalsCarousel() {
+  if (container === null || container === undefined) return;
+
   Slideshow();
   ButtonsController();
   IndicatorsController();

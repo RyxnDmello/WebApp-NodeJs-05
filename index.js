@@ -155,6 +155,12 @@ app.post("/account/cart/update", (req, res) => {
     res.redirect("back");
     return;
   }
+
+  if (req.body.action === "RESET") {
+    CartManager.ResetCart(req.session.email);
+    res.redirect("/");
+    return;
+  }
 });
 
 app.post("/account/cart/create", (req, res) => {

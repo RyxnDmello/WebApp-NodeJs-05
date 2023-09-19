@@ -5,11 +5,14 @@ const items = document.querySelectorAll(".combos-item");
 const buttons = document.querySelectorAll(".combos-carousel-controller");
 const indicators = document.querySelectorAll(".combos-carousel-indicator");
 
-const width = carousel.clientWidth - 64;
 let isSlideshow = true;
 let currentItem = 0;
+let width = 0;
 
 export default function CombosCarousel() {
+  if (container === null || container === undefined) return;
+  width = carousel.clientWidth - 64;
+
   Slideshow();
   ButtonsController();
   IndicatorsController();
