@@ -27,6 +27,7 @@
       <nav><%- include("./common/navbar.ejs") %></nav>
     </header>
 
+    <% if(cart !== "EMPTY" && bill !== "EMPTY") { %>
     <main>
       <section id="introduction">
         <%- include("./cart/introduction.ejs") %>
@@ -50,6 +51,11 @@
         <%- include("./cart/billing.ejs", { bill: bill }) %>
       </section>
     </main>
+    <% } else { %>
+    <main>
+      <section id="empty"><%- include("./cart/empty.ejs") %></section>
+    </main>
+    <% } %>
 
     <script type="module" src="/Cart.js"></script>
   </body>

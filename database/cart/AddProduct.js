@@ -1,10 +1,10 @@
 const { AccountModel } = require("../models/AccountModel");
 
-module.exports.DatabaseAddProduct = async (email, product) => {
+module.exports.DatabaseAddProduct = async (email, productID) => {
   const databaseAccount = await AccountModel.findOne({ email: email });
 
   for (let i = 0; i < databaseAccount.cart.length; i++) {
-    if (databaseAccount.cart[i].ID !== product.ID) continue;
+    if (databaseAccount.cart[i].ID !== productID) continue;
 
     ++databaseAccount.cart[i].price.quantity;
 

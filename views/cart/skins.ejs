@@ -1,5 +1,5 @@
 <% skins.forEach((skin) => { %>
-<form class="skin-item" action="/account/cart/update" method="post">
+<form class="skin-item" action="/cart" method="post">
   <input type="hidden" name="ID" value="<%= skin.product.ID %>" />
   <input type="hidden" name="brand" value="<%= skin.details.brand %>" />
   <input type="hidden" name="type" value="<%= skin.details.type %>" />

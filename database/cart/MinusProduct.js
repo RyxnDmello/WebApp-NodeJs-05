@@ -2,20 +2,20 @@ const { AccountModel } = require("../models/AccountModel.js");
 
 const { DatabaseDeleteProduct } = require("./DeleteProduct.js");
 
-module.exports.DatabaseMinusProduct = async (email, product) => {
+module.exports.DatabaseMinusProduct = async (email, productID) => {
   const databaseAccount = await AccountModel.findOne({ email: email });
 
-  if (isDeletable(databaseAccount, product)) {
-    await DatabaseDeleteProduct(email, product.ID);
+  if (isDeletable(databaseAccount, productID)) {
+    await DatabaseDeleteProduct(email, productID);
     return;
   }
 
-  await MinusProduct(databaseAccount, product);
+  await MinusProduct(databaseAccount, productID);
 };
 
-const MinusProduct = async (databaseAccount, product) => {
+const MinusProduct = async (databaseAccount, productID) => {
   for (let i = 0; i < databaseAccount.cart.length; i++) {
-    if (databaseAccount.cart[i].ID !== product.ID) continue;
+    if (databaseAccount.cart[i].ID !== productID) continue;
 
     --databaseAccount.cart[i].price.quantity;
 
@@ -27,9 +27,9 @@ const MinusProduct = async (databaseAccount, product) => {
   }
 };
 
-const isDeletable = (databaseAccount, product) => {
+const isDeletable = (databaseAccount, productID) => {
   for (let i = 0; i < databaseAccount.cart.length; i++) {
-    if (databaseAccount.cart[i].ID !== product.ID) continue;
+    if (databaseAccount.cart[i].ID !== productID) continue;
     if (databaseAccount.cart[i].price.quantity === 1) return true;
   }
 

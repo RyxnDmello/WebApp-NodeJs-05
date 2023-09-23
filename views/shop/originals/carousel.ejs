@@ -1,5 +1,5 @@
 <% originals.products.forEach((product) => { %>
-<form class="originals-slide" action="/account/cart/create" method="post">
+<form class="originals-slide" action="/product" method="post">
   <input type="hidden" name="ID" value="<%= product.ID %>" />
   <input type="hidden" name="brand" value="<%= originals.post.brand %>" />
   <input type="hidden" name="type" value="<%= originals.post.type %>" />
@@ -22,7 +22,7 @@
         <button
           class="originals-slide-button"
           type="submit"
-          name="add"
+          name="action"
           value="CART"
         >
           <img
@@ -35,9 +35,9 @@
 
         <button
           class="originals-slide-button"
+          value="WISHLIST"
           type="submit"
-          name="add"
-          value="WISH"
+          name="action"
         >
           <img
             class="originals-slide-button-image"

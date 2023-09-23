@@ -1,5 +1,5 @@
 <% combos.products.forEach((product) => { %>
-<form class="combos-slide" action="/account/cart/create" method="post">
+<form class="combos-slide" action="/product" method="post">
   <input type="hidden" name="ID" value="<%= product.ID %>" />
   <input type="hidden" name="brand" value="<%= combos.post.brand %>" />
   <input type="hidden" name="type" value="<%= combos.post.type %>" />
@@ -24,7 +24,12 @@
     </div>
 
     <div class="combos-slide-buttons">
-      <button class="combos-slide-button" type="submit" name="add" value="CART">
+      <button
+        class="combos-slide-button"
+        type="submit"
+        name="action"
+        value="CART"
+      >
         <img
           class="combos-slide-button-image"
           src="/buttons/shop/cart-add.png"
@@ -33,7 +38,12 @@
         <p class="combos-slide-button-text">Add To Cart</p>
       </button>
 
-      <button class="combos-slide-button" type="submit" name="add" value="WISH">
+      <button
+        class="combos-slide-button"
+        value="WISHLIST"
+        type="submit"
+        name="action"
+      >
         <img class="combos-slide-button-image" src="/buttons/shop/wish.png" />
         <p class="combos-slide-button-text">Wishlist</p>
       </button>

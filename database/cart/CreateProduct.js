@@ -7,7 +7,7 @@ module.exports.DatabaseCreateProduct = async (email, product) => {
   const databaseAccount = await AccountModel.findOne({ email: email });
 
   if (isCart(databaseAccount, product)) {
-    await DatabaseAddProduct(email, product);
+    await DatabaseAddProduct(email, product.ID);
     return;
   }
 
@@ -15,8 +15,7 @@ module.exports.DatabaseCreateProduct = async (email, product) => {
 };
 
 const CreateProduct = async (databaseAccount, product) => {
-  const basePrice =
-    prices[product.details.brand][product.details.type][product.details.class];
+  const basePrice = prices[product.brand][product.type][product.class];
 
   databaseAccount.cart.push({
     ID: product.ID,
@@ -25,7 +24,11 @@ const CreateProduct = async (databaseAccount, product) => {
       netPrice: basePrice,
       quantity: 1,
     },
-    details: product.details,
+    details: {
+      brand: product.brand,
+      type: product.type,
+      class: product.class,
+    },
   });
 
   await databaseAccount.save();

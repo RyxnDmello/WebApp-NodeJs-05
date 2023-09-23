@@ -128,24 +128,32 @@ app.post("/account/:type", (req, res) => {
   }
 });
 
-app.post("/account/cart/update", (req, res) => {
-  const product = {
-    ID: req.body.ID,
-    details: {
-      brand: req.body.brand,
-      type: req.body.type,
-      class: req.body.class,
-    },
-  };
+app.post("/product", (req, res) => {
+  const product = req.body;
+
+  if (req.body.action === "CART") {
+    CartManager.CreateProduct(req.session.email, product);
+    res.redirect("back");
+    return;
+  }
+
+  if (req.body.action === "WISHLIST") {
+    res.redirect("back");
+    return;
+  }
+});
+
+app.post("/cart", (req, res) => {
+  const product = req.body;
 
   if (req.body.action === "INCREASE") {
-    CartManager.AddProduct(req.session.email, product);
+    CartManager.AddProduct(req.session.email, product.ID);
     res.redirect("back");
     return;
   }
 
   if (req.body.action === "DECREASE") {
-    CartManager.MinusProduct(req.session.email, product);
+    CartManager.MinusProduct(req.session.email, product.ID);
     res.redirect("back");
     return;
   }
@@ -158,24 +166,9 @@ app.post("/account/cart/update", (req, res) => {
 
   if (req.body.action === "RESET") {
     CartManager.ResetCart(req.session.email);
-    res.redirect("/");
+    res.redirect("back");
     return;
   }
-});
-
-app.post("/account/cart/create", (req, res) => {
-  const product = {
-    ID: req.body.ID,
-    details: {
-      brand: req.body.brand,
-      type: req.body.type,
-      class: req.body.class,
-    },
-  };
-
-  CartManager.CreateProduct(req.session.email, product);
-
-  res.redirect("back");
 });
 
 app.listen(process.env.DEVELOPMENT_PORT, () => {

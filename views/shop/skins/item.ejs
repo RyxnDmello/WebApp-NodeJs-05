@@ -1,5 +1,5 @@
 <% skins.products.forEach((product) => { %>
-<form class="skins-item" action="/account/cart/create" method="post">
+<form class="skins-item" action="/product" method="post">
   <input type="hidden" name="ID" value="<%= product.ID %>" />
   <input type="hidden" name="brand" value="<%= skins.post.brand %>" />
   <input type="hidden" name="type" value="<%= skins.post.type %>" />
@@ -16,13 +16,18 @@
   </div>
 
   <div class="skins-item-buttons">
-    <button class="skins-item-button" type="submit" name="add" value="CART">
+    <button class="skins-item-button" type="submit" name="action" value="CART">
       <img class="skins-item-button-image" src="/buttons/shop/cart-add.png" />
       <p class="skins-item-button-text">Add To Cart</p>
     </button>
 
     <div class="skins-item-other-buttons">
-      <button class="skins-item-button" type="submit" name="add" value="WISH">
+      <button
+        class="skins-item-button"
+        value="WISHLIST"
+        type="submit"
+        name="action"
+      >
         <img class="skins-item-button-image" src="/buttons/shop/wish.png" />
         <p class="skins-item-button-text">Wishlist</p>
       </button>

@@ -15,12 +15,12 @@ module.exports.DeleteProduct = (email, productID) => {
   DatabaseDeleteProduct(email, productID);
 };
 
-module.exports.AddProduct = (email, product) => {
-  DatabaseAddProduct(email, product);
+module.exports.AddProduct = (email, productID) => {
+  DatabaseAddProduct(email, productID);
 };
 
-module.exports.MinusProduct = (email, product) => {
-  DatabaseMinusProduct(email, product);
+module.exports.MinusProduct = (email, productID) => {
+  DatabaseMinusProduct(email, productID);
 };
 
 module.exports.ResetCart = (email) => {
