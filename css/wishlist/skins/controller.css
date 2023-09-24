@@ -1,0 +1,94 @@
+/*-------------------------------------------------*/
+/*--------------- CONTROLLER STYLES ---------------*/
+/*-------------------------------------------------*/
+
+.skins-item-controller {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  margin-top: 0.25rem;
+  display: grid;
+}
+
+.skins-item-buttons {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.skins-item-button {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.skins-item-button-image {
+  width: 22.5px;
+}
+
+.skins-item-quantity {
+  font-family: "Abel", sans-serif;
+  font-size: 1.4rem;
+  cursor: default;
+  color: #fff;
+}
+
+/*--------------------------------------*/
+/*----------- EXPLORE BUTTON -----------*/
+/*--------------------------------------*/
+
+.skins-item-explore-button {
+  background-color: transparent;
+  transition: translate 125ms;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  margin-top: 0.25rem;
+  position: relative;
+  padding: 0.2rem 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.skins-item-explore-button::before {
+  background-color: #fff;
+  transition: width 400ms;
+  transform: skew(40deg);
+  position: absolute;
+  height: 100%;
+  content: "";
+  left: -1rem;
+  z-index: -1;
+  width: 0%;
+  top: 0;
+}
+
+.skins-item-explore-button-text {
+  font-family: "Poppins", sans-serif;
+  transition: color 400ms;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/*-------------------------------------------*/
+/*--------------- TRANSITIONS ---------------*/
+/*-------------------------------------------*/
+
+.skins-item-explore-button:hover::before {
+  width: calc(100% + 2rem);
+}
+
+.skins-item-explore-button:focus {
+  translate: 0 5px;
+}
+
+.skins-item-explore-button:hover .skins-item-explore-button-text {
+  color: #000;
+}
+
+/*--------------------------------------------*/
+/*---------------- END OF CSS ----------------*/
+/*--------------------------------------------*/

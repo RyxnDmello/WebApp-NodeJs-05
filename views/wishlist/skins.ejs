@@ -1,0 +1,58 @@
+<h2 class="skins-title">THE <span>SKINS</span></h2>
+
+<div class="skins-list">
+  <% skins.forEach((skin) => { %>
+  <form class="skins-item" action="/account/wishlist" method="post">
+    <input type="hidden" name="ID" value="<%= skin.product.ID %>" />
+    <input type="hidden" name="brand" value="<%= skin.details.brand %>" />
+    <input type="hidden" name="type" value="<%= skin.details.type %>" />
+    <input type="hidden" name="class" value="<%= skin.details.class %>" />
+
+    <div class="skins-item-header">
+      <img class="skins-item-image" src="<%= skin.product.image %>" />
+      <h4 class="skins-item-color"><%= skin.product.color.toUpperCase() %></h4>
+    </div>
+
+    <div class="skins-item-details">
+      <p class="skins-item-detail"><%= skin.product.name %></p>
+      <p class="skins-item-detail">$<%= skin.price.netPrice %></p>
+    </div>
+
+    <div class="skins-item-controller">
+      <div class="skins-item-buttons">
+        <button
+          class="skins-item-button"
+          value="DELETE"
+          type="submit"
+          name="action"
+        >
+          <img class="skins-item-button-image" src="/buttons/shop/wish.png" />
+        </button>
+
+        <button
+          class="skins-item-button"
+          type="submit"
+          name="action"
+          value="CART"
+        >
+          <img
+            class="skins-item-button-image"
+            src="/buttons/shop/cart-add.png"
+          />
+        </button>
+      </div>
+
+      <p class="skins-item-quantity"><%= skin.price.quantity %>x</p>
+    </div>
+
+    <button
+      class="skins-item-explore-button"
+      value="EXPLORE"
+      type="submit"
+      name="action"
+    >
+      <p class="skins-item-explore-button-text">Explore Details</p>
+    </button>
+  </form>
+  <% }) %>
+</div>

@@ -75,21 +75,14 @@ app.get("/account/cart", async (req, res) => {
 });
 
 app.get("/account/wishlist", async (req, res) => {
+  if (req.session.email === undefined) {
+    res.redirect("/error/account-absent");
+    return;
+  }
+
   const wishlist = await WishManager.GetProducts(req.session.email);
 
-  wishlist.originals.forEach((product) => {
-    console.log(product.product);
-  });
-
-  wishlist.skins.forEach((product) => {
-    console.log(product.product);
-  });
-
-  wishlist.combos.forEach((product) => {
-    console.log(product.product);
-  });
-
-  res.redirect("back");
+  res.render("wishlist", { wishlist: wishlist });
 });
 
 app.get("/shop/:brand/:type", (req, res) => {
@@ -189,6 +182,12 @@ app.post("/account/cart", (req, res) => {
     res.redirect("back");
     return;
   }
+});
+
+app.post("/account/wishlist", (req, res) => {
+  const product = req.body;
+  console.log(product);
+  res.redirect("back");
 });
 
 app.listen(process.env.DEVELOPMENT_PORT, () => {
