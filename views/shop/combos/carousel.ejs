@@ -1,5 +1,5 @@
 <% combos.products.forEach((product) => { %>
-<form class="combos-slide" action="/product" method="post">
+<form class="combos-slide" action="/shop/product" method="post">
   <input type="hidden" name="ID" value="<%= product.ID %>" />
   <input type="hidden" name="brand" value="<%= combos.post.brand %>" />
   <input type="hidden" name="type" value="<%= combos.post.type %>" />

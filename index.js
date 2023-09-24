@@ -14,6 +14,7 @@ const XboxTemplate = require("./json/xbox.json");
 const DatabaseManager = require("./database/DatabaseManager.js");
 const AccountManager = require("./database/AccountManager.js");
 const CartManager = require("./database/CartManager.js");
+const WishManager = require("./database/WishManager.js");
 
 const app = express();
 
@@ -58,7 +59,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/account/register", (req, res) => {
+app.get("/register", (req, res) => {
   res.render("register", { register: RegisterTemplate });
 });
 
@@ -73,12 +74,25 @@ app.get("/account/cart", async (req, res) => {
   res.render("cart", { cart: cart, bill: bill });
 });
 
-app.get("/shop/:brand/:type", (req, res) => {
-  if (req.session.email === undefined) {
-    res.redirect("/error/account-absent");
-    return;
-  }
+app.get("/account/wishlist", async (req, res) => {
+  const wishlist = await WishManager.GetProducts(req.session.email);
 
+  wishlist.originals.forEach((product) => {
+    console.log(product.product);
+  });
+
+  wishlist.skins.forEach((product) => {
+    console.log(product.product);
+  });
+
+  wishlist.combos.forEach((product) => {
+    console.log(product.product);
+  });
+
+  res.redirect("back");
+});
+
+app.get("/shop/:brand/:type", (req, res) => {
   if (req.params.brand === "playstation") {
     res.render("shop", {
       classes: PlaystationTemplate[req.params.type],
@@ -116,19 +130,24 @@ app.get("/error/:type", (req, res) => {
 /*-------------- POST REQUESTS --------------*/
 /*-------------------------------------------*/
 
-app.post("/account/:type", (req, res) => {
-  if (req.params.type === "create") {
+app.post("/register", (req, res) => {
+  if (req.body.type === "CREATE") {
     AccountManager.CreateAccount(req.body, req, res);
     return;
   }
 
-  if (req.params.type === "login") {
+  if (req.body.type === "LOGIN") {
     AccountManager.LoginAccount(req.body, req, res);
     return;
   }
 });
 
-app.post("/product", (req, res) => {
+app.post("/shop/product", (req, res) => {
+  if (req.session.email === undefined) {
+    res.redirect("/error/account-absent");
+    return;
+  }
+
   const product = req.body;
 
   if (req.body.action === "CART") {
@@ -138,12 +157,13 @@ app.post("/product", (req, res) => {
   }
 
   if (req.body.action === "WISHLIST") {
+    WishManager.CreateProduct(req.session.email, product);
     res.redirect("back");
     return;
   }
 });
 
-app.post("/cart", (req, res) => {
+app.post("/account/cart", (req, res) => {
   const product = req.body;
 
   if (req.body.action === "INCREASE") {

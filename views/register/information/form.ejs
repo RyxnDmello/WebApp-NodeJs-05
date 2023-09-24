@@ -1,12 +1,18 @@
-<% for(let i = 0; i < 2; i++) { type = i === 0 ? "login" : "create"; %>
-<form class="register-form" action="/account/<%= type %>" method="post">
+<% for(let i = 0; i < 2; i++) { %>
+<form class="register-form" action="/register" method="post">
+  <% if(i === 0) { %>
+  <input type="hidden" name="type" value="LOGIN" />
+  <% } else { %>
+  <input type="hidden" name="type" value="CREATE" />
+  <% } %>
+
   <div class="register-form-header">
     <h2 class="register-form-title">CyberVerse</h2>
 
-    <% if(type === "create") { %>
-    <p class="register-form-description">Create Your Account</p>
-    <% } else { %>
+    <% if(i === 0) { %>
     <p class="register-form-description">Login To Your Account</p>
+    <% } else { %>
+    <p class="register-form-description">Create Your Account</p>
     <% } %>
   </div>
 
@@ -26,7 +32,7 @@
       <img class="register-form-input-image" src="/register/email.png" />
     </div>
 
-    <% if(type === "create") { %>
+    <% if(i === 1) { %>
     <div class="register-form-input-container">
       <input
         class="register-form-input"
@@ -60,13 +66,13 @@
   <div class="register-form-buttons">
     <button class="register-form-button" type="submit">
       <p class="register-form-button-text">
-        <%= type === "create" ? "Create Account" : "Login Account" %>
+        <%= i === 0 ? "Login Account" : "Create Account" %>
       </p>
     </button>
 
     <button class="register-switch-button" type="button">
       <p class="register-switch-button-text">
-        <%= type === "create" ? "Login Instead?" : "Create Instead?" %>
+        <%= i === 0 ? "Create Instead?" : "Login Instead?" %>
       </p>
     </button>
   </div>

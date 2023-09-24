@@ -1,5 +1,5 @@
 <% originals.products.forEach((product) => { %>
-<form class="originals-slide" action="/product" method="post">
+<form class="originals-slide" action="/shop/product" method="post">
   <input type="hidden" name="ID" value="<%= product.ID %>" />
   <input type="hidden" name="brand" value="<%= originals.post.brand %>" />
   <input type="hidden" name="type" value="<%= originals.post.type %>" />
