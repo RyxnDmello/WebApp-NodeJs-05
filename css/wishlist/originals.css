@@ -1,0 +1,35 @@
+@import url("./originals/item.css");
+@import url("./originals/controller.css");
+
+#originals {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.originals-title {
+  text-shadow: 0 2.5px 6.5px #00000065;
+  font-family: "Abel", sans-serif;
+  font-size: 6.5rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+.originals-title span {
+  background: linear-gradient(45deg, #ff0033 0%, #002aff 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: none;
+}
+
+.originals-list {
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  align-items: stretch;
+  gap: 1rem 2rem;
+  display: grid;
+}

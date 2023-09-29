@@ -28,6 +28,11 @@
     </header>
 
     <main>
+      <section id="originals">
+        <%- include("./wishlist/originals.ejs", { originals: wishlist.originals
+        }) %>
+      </section>
+
       <section id="skins">
         <%- include("./wishlist/skins.ejs", { skins: wishlist.skins }) %>
       </section>

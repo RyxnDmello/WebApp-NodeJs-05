@@ -6,6 +6,7 @@ const buttons = document.querySelectorAll(".combos-carousel-controller");
 const indicators = document.querySelectorAll(".combos-carousel-indicator");
 
 let isSlideshow = true;
+let disableSlideshow = false;
 let currentItem = 0;
 let width = 0;
 
@@ -13,12 +14,15 @@ export default function CombosCarousel() {
   if (container === null || container === undefined) return;
   width = carousel.clientWidth - 64;
 
+  Disable();
   Slideshow();
   ButtonsController();
   IndicatorsController();
 }
 
 function Slideshow() {
+  if (disableSlideshow) return;
+
   container.addEventListener("mouseover", () => (isSlideshow = false));
   container.addEventListener("mouseout", () => (isSlideshow = true));
 
@@ -92,4 +96,12 @@ function IndicatorsAnimation() {
       indicator.style.opacity = "0.5";
     }
   });
+}
+
+function Disable() {
+  if (items.length > 1) return;
+
+  buttons.forEach((button) => (button.style.display = "none"));
+  indicators.forEach((indicator) => (indicator.style.display = "none"));
+  disableSlideshow = true;
 }

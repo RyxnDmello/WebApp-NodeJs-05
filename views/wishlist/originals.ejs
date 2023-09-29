@@ -1,0 +1,64 @@
+<h2 class="originals-title">THE <span>ORIGINALS</span></h2>
+
+<div class="originals-list">
+  <% originals.forEach((original) => { %>
+  <form class="originals-item" action="/account/wishlist" method="post">
+    <input type="hidden" name="ID" value="<%= original.product.ID %>" />
+    <input type="hidden" name="brand" value="<%= original.details.brand %>" />
+    <input type="hidden" name="type" value="<%= original.details.type %>" />
+    <input type="hidden" name="class" value="<%= original.details.class %>" />
+
+    <img class="originals-item-image" src="<%= original.product.image %>" />
+
+    <div class="originals-item-information">
+      <h4 class="originals-item-color">
+        <%= original.product.color.toUpperCase() %>
+      </h4>
+
+      <div class="originals-item-details">
+        <p class="originals-item-detail"><%= original.product.name %></p>
+        <p class="originals-item-detail">$<%= original.price.netPrice %></p>
+      </div>
+
+      <div class="originals-item-controller">
+        <div class="originals-item-buttons">
+          <button
+            class="originals-item-button"
+            value="DELETE"
+            type="submit"
+            name="action"
+          >
+            <img
+              class="originals-item-button-image"
+              src="/buttons/shop/wish.png"
+            />
+          </button>
+
+          <button
+            class="originals-item-button"
+            type="submit"
+            name="action"
+            value="CART"
+          >
+            <img
+              class="originals-item-button-image"
+              src="/buttons/shop/cart-add.png"
+            />
+          </button>
+        </div>
+
+        <p class="originals-item-quantity"><%= original.price.quantity %>x</p>
+      </div>
+
+      <button
+        class="originals-item-explore-button"
+        value="EXPLORE"
+        type="submit"
+        name="action"
+      >
+        <p class="originals-item-explore-button-text">Explore Details</p>
+      </button>
+    </div>
+  </form>
+  <% }) %>
+</div>

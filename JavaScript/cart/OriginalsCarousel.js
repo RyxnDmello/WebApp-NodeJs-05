@@ -5,18 +5,22 @@ const items = document.querySelectorAll(".originals-item");
 const buttons = document.querySelectorAll(".originals-carousel-button");
 const indicators = document.querySelectorAll(".originals-carousel-indicator");
 
-let currentSlide = 0;
 let isSlideshow = true;
+let disableSlideshow = false;
+let currentSlide = 0;
 
 export default function OriginalsCarousel() {
   if (container === null || container === undefined) return;
 
+  Disable();
   Slideshow();
   ButtonsController();
   IndicatorsController();
 }
 
 function Slideshow() {
+  if (disableSlideshow) return;
+
   container.addEventListener("mouseover", () => (isSlideshow = false));
   container.addEventListener("mouseout", () => (isSlideshow = true));
 
@@ -124,4 +128,12 @@ function IndicatorsAnimation() {
       indicator.style.opacity = "0.25";
     }
   });
+}
+
+function Disable() {
+  if (items.length > 1) return;
+
+  buttons.forEach((buttons) => (buttons.style.display = "none"));
+  indicators.forEach((indicator) => (indicator.style.display = "none"));
+  disableSlideshow = true;
 }

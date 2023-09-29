@@ -1,0 +1,98 @@
+/*-------------------------------------------------*/
+/*--------------- CONTROLLER STYLES ---------------*/
+/*-------------------------------------------------*/
+
+.originals-item-controller {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  margin-top: 0.5rem;
+  display: grid;
+}
+
+/*---------------------------------------------*/
+/*--------------- BUTTON STYLES ---------------*/
+/*---------------------------------------------*/
+
+.originals-item-buttons {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.originals-item-button {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.originals-item-button-image {
+  width: 25px;
+}
+
+.originals-item-quantity {
+  font-family: "Abel", sans-serif;
+  font-size: 1.5rem;
+  cursor: default;
+  color: #fff;
+}
+
+/*----------------------------------------------*/
+/*--------------- EXPLORE STYLES ---------------*/
+/*----------------------------------------------*/
+
+.originals-item-explore-button {
+  background-color: transparent;
+  grid-template-columns: auto;
+  border: 2px solid #fff;
+  justify-content: center;
+  border-radius: 40px;
+  align-items: center;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  cursor: pointer;
+  display: grid;
+}
+
+.originals-item-explore-button::before {
+  background-color: #fff;
+  transition: width 400ms;
+  transform: skew(40deg);
+  position: absolute;
+  height: 100%;
+  content: "";
+  z-index: -1;
+  left: -1rem;
+  width: 0%;
+  top: 0;
+}
+
+.originals-item-explore-button-text {
+  font-family: "Poppins", sans-serif;
+  transition: color 400ms;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/*-----------------------------------------*/
+/*-------------- TRANSITIONS --------------*/
+/*-----------------------------------------*/
+
+.originals-item-explore-button:hover::before {
+  width: calc(100% + 2rem);
+}
+
+.originals-item-explore-button:hover .originals-item-explore-button-text {
+  color: #000;
+}
+
+/*----------------------------------------------*/
+/*----------------- END OF CSS -----------------*/
+/*----------------------------------------------*/

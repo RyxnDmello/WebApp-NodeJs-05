@@ -1,0 +1,62 @@
+/*-----------------------------------------------*/
+/*----------------- ITEM STYLES -----------------*/
+/*-----------------------------------------------*/
+
+.originals-item {
+  background-image: linear-gradient(45deg, #000000 20%, #000050 80%);
+  box-shadow: 0 0 10px #000000af;
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.originals-item-image {
+  width: 200px;
+}
+
+/*----------------------------------------------*/
+/*------------- INFORMATION STYLES -------------*/
+/*----------------------------------------------*/
+
+.originals-item-information {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.originals-item-color {
+  font-family: "Abel", sans-serif;
+  letter-spacing: 1.65px;
+  color: #ffffff65;
+  font-size: 2.65rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+/*-----------------------------------------*/
+/*------------- DETAIL STYLES -------------*/
+/*-----------------------------------------*/
+
+.originals-item-details {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
+.originals-item-detail {
+  font-family: "Abel", sans-serif;
+  font-size: 1.65rem;
+  cursor: default;
+  color: #fff;
+}
+
+/*--------------------------------------------*/
+/*---------------- END OF CSS ----------------*/
+/*--------------------------------------------*/
