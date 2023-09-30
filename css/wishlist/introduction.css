@@ -1,0 +1,134 @@
+/*-----------------------------------------------------*/
+/*---------------- INTRODUCTION STYLES ----------------*/
+/*-----------------------------------------------------*/
+
+#introduction {
+  padding: 6rem 10rem 2rem 10rem;
+  grid-template-columns: auto;
+  justify-content: stretch;
+  align-items: center;
+  display: grid;
+  gap: 2rem;
+}
+
+.intro-title {
+  font-family: "Acquire Light", sans-serif;
+  text-shadow: 0 5px 10px #00000065;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  cursor: default;
+  font-size: 6rem;
+}
+
+/*-------------------------------------------*/
+/*--------------- INTRO LINKS ---------------*/
+/*-------------------------------------------*/
+
+.intro-links {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
+/*-------------------------------------------*/
+/*--------------- CLASS LINKS ---------------*/
+/*-------------------------------------------*/
+
+.intro-class-links {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.intro-class-link {
+  box-shadow: 0 0 10px #00000065;
+  transition: translate 125ms;
+  border: 2.25px solid #000;
+  transform: skew(-12.5deg);
+  padding: 0.5rem 2rem;
+  border-radius: 2.5px;
+}
+
+.intro-class-link::before {
+  background-color: #000;
+  transition: width 350ms;
+  position: absolute;
+  height: 100%;
+  content: "";
+  z-index: -1;
+  width: 0%;
+  left: 0;
+  top: 0;
+}
+
+.intro-class-link-text {
+  font-family: "Poppins", sans-serif;
+  transition: color 350ms;
+  letter-spacing: 1px;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: #000;
+}
+
+/*------------------------------------------*/
+/*--------------- RESET LINK ---------------*/
+/*------------------------------------------*/
+
+.intro-reset-link {
+  transition: background-color 400ms, border-color 400ms, translate 125ms;
+  box-shadow: 0 0 10px #00000065;
+  border: 2.25px solid #ba0050;
+  background-color: #ba0050;
+  justify-content: center;
+  grid-auto-flow: column;
+  padding: 0.5rem 2.5rem;
+  border-radius: 2.5px;
+  align-items: center;
+  cursor: pointer;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.intro-reset-link-image {
+  width: 22.5px;
+}
+
+.intro-reset-link-text {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+/*-------------------------------------------*/
+/*--------------- TRANSITIONS ---------------*/
+/*-------------------------------------------*/
+
+.intro-class-link:focus {
+  translate: 0 5px;
+}
+
+.intro-class-link:hover::before {
+  width: 100%;
+}
+
+.intro-class-link:hover .intro-class-link-text {
+  color: #fff;
+}
+
+.intro-reset-link:hover {
+  background-color: #9b0043;
+  border-color: #9b0043;
+}
+
+.intro-reset-link:focus {
+  translate: 0 5px;
+}
+
+/*------------------------------------------------*/
+/*------------------ END OF CSS ------------------*/
+/*------------------------------------------------*/

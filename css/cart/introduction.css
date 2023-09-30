@@ -120,19 +120,15 @@
 }
 
 .intro-link.billing:focus {
-  background-color: #0e0080;
-  border-color: #0e0080;
   translate: 0 5px;
 }
 
 .intro-link.shop:hover {
-  background-color: #a00050;
-  border-color: #a00050;
+  background-color: #930040;
+  border-color: #930040;
 }
 
 .intro-link.shop:focus {
-  background-color: #800050;
-  border-color: #800050;
   translate: 0 5px;
 }
 
