@@ -66,7 +66,7 @@ const accountSchema = new mongoose.Schema({
     required: true,
     _id: false,
   },
-  wish: {
+  wishlist: {
     type: [productSchema],
     required: true,
     _id: false,

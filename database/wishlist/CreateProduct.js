@@ -16,7 +16,7 @@ module.exports.DatabaseCreateProduct = async (email, product) => {
 const CreateProduct = async (databaseAccount, product) => {
   const basePrice = prices[product.brand][product.type][product.class];
 
-  databaseAccount.wish.push({
+  databaseAccount.wishlist.push({
     ID: product.ID,
     price: {
       basePrice: basePrice,
@@ -34,8 +34,8 @@ const CreateProduct = async (databaseAccount, product) => {
 };
 
 const isWishlist = (databaseAccount, productID) => {
-  for (let i = 0; i < databaseAccount.wish.length; i++) {
-    if (databaseAccount.wish[i].ID === productID) return true;
+  for (let i = 0; i < databaseAccount.wishlist.length; i++) {
+    if (databaseAccount.wishlist[i].ID === productID) return true;
   }
 
   return false;

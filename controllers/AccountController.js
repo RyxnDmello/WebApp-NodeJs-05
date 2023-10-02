@@ -53,8 +53,16 @@ const updateCart = (req, res) => {
 
 const updateWishlist = (req, res) => {
   const product = req.body;
-  console.log(product);
-  res.redirect("back");
+
+  if (req.body.action === "DELETE") {
+    WishManager.DeleteProduct(req.session.email, product.ID);
+    res.redirect("back");
+  }
+
+  if (req.body.action === "RESET") {
+    WishManager.ResetWishlist(req.session.email);
+    res.redirect("back");
+  }
 };
 
 module.exports = {

@@ -11,14 +11,14 @@ module.exports.DatabaseGetProducts = async (email) => {
 };
 
 const CreateWishlist = (account) => {
-  if (account.wish.length === 0) return "EMPTY";
+  if (account.wishlist.length === 0) return "EMPTY";
 
   const originals = [];
   const skins = [];
   const combos = [];
 
-  for (let i = 0; i < account.wish.length; i++) {
-    const wishProduct = account.wish[i];
+  for (let i = 0; i < account.wishlist.length; i++) {
+    const wishProduct = account.wishlist[i];
 
     if (wishProduct.details.brand === "playstation") {
       const product = {

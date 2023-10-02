@@ -1,7 +1,7 @@
 const { AccountModel } = require("../models/AccountModel.js");
 
-module.exports.DatabaseResetCart = async (email) => {
+module.exports.DatabaseResetWishlist = async (email) => {
   const databaseAccount = await AccountModel.findOne({ email: email });
-  databaseAccount.cart = [];
+  databaseAccount.wishlist = [];
   await databaseAccount.save();
 };

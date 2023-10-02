@@ -1,12 +1,12 @@
 module.exports.DatabaseAddProduct = async (databaseAccount, productID) => {
-  for (let i = 0; i < databaseAccount.wish.length; i++) {
-    if (databaseAccount.wish[i].ID !== productID) continue;
+  for (let i = 0; i < databaseAccount.wishlist.length; i++) {
+    if (databaseAccount.wishlist[i].ID !== productID) continue;
 
-    ++databaseAccount.wish[i].price.quantity;
+    ++databaseAccount.wishlist[i].price.quantity;
 
-    databaseAccount.wish[i].price.netPrice =
-      databaseAccount.wish[i].price.basePrice *
-      databaseAccount.wish[i].price.quantity;
+    databaseAccount.wishlist[i].price.netPrice =
+      databaseAccount.wishlist[i].price.basePrice *
+      databaseAccount.wishlist[i].price.quantity;
 
     await databaseAccount.save();
     return;
