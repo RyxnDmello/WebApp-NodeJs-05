@@ -4,6 +4,7 @@
 @import url("./wishlist/introduction.css");
 @import url("./wishlist/originals.css");
 @import url("./wishlist/skins.css");
+@import url("./wishlist/combos.css");
 
 * {
   scroll-behavior: smooth;

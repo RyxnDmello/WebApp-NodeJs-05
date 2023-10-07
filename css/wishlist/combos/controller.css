@@ -1,0 +1,88 @@
+/*---------------------------------------------------*/
+/*---------------- CONTROLLER STYLES ----------------*/
+/*---------------------------------------------------*/
+
+.combos-item-controller {
+  justify-content: space-between;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+}
+
+.combos-item-buttons {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.combos-item-button {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.combos-item-button-image {
+  width: 25px;
+}
+
+.combos-item-quantity {
+  font-family: "Abel", sans-serif;
+  font-size: 1.5rem;
+  cursor: default;
+  color: #fff;
+}
+
+/*------------------------------------------*/
+/*------------- EXPLORE BUTTON -------------*/
+/*------------------------------------------*/
+
+.combos-item-explore-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  padding: 0.25rem 0;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.combos-item-explore-button::before {
+  background-color: #fff;
+  transition: width 500ms;
+  transform: skew(40deg);
+  position: absolute;
+  height: 100%;
+  content: "";
+  left: -1rem;
+  z-index: -1;
+  width: 0%;
+  top: 0;
+}
+
+.combos-item-explore-button-text {
+  font-family: "Poppins", sans-serif;
+  transition: color 500ms;
+  letter-spacing: 1px;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+/*---------------------------------------*/
+/*------------- TRANSITIONS -------------*/
+/*---------------------------------------*/
+
+.combos-item-explore-button:hover::before {
+  width: calc(100% + 2rem);
+}
+
+.combos-item-explore-button:hover .combos-item-explore-button-text {
+  color: #000;
+}
+
+/*--------------------------------------------*/
+/*---------------- END OF CSS ----------------*/
+/*--------------------------------------------*/
