@@ -51,16 +51,21 @@ const updateCart = (req, res) => {
   }
 };
 
-const updateWishlist = (req, res) => {
+const updateWishlist = async (req, res) => {
   const product = req.body;
 
+  if (req.body.action === "CART") {
+    await WishManager.WishlistToCart(req.session.email, product.ID);
+    res.redirect("back");
+  }
+
   if (req.body.action === "DELETE") {
-    WishManager.DeleteProduct(req.session.email, product.ID);
+    await WishManager.DeleteProduct(req.session.email, product.ID);
     res.redirect("back");
   }
 
   if (req.body.action === "RESET") {
-    WishManager.ResetWishlist(req.session.email);
+    await WishManager.ResetWishlist(req.session.email);
     res.redirect("back");
   }
 };

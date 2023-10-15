@@ -27,23 +27,33 @@
       <nav><%- include("./common/navbar.ejs") %></nav>
     </header>
 
+    <% if(wishlist !== "EMPTY") { %>
     <main>
       <section id="introduction">
         <%- include("./wishlist/introduction.ejs") %>
       </section>
 
+      <% if(wishlist.originals.length !== 0) { %>
       <section id="originals">
         <%- include("./wishlist/originals.ejs", { originals: wishlist.originals
         }) %>
       </section>
-
+      <% } if(wishlist.skins.length !== 0) { %>
       <section id="skins">
         <%- include("./wishlist/skins.ejs", { skins: wishlist.skins }) %>
       </section>
-
+      <% } if(wishlist.combos.length !== 0) { %>
       <section id="combos">
         <%- include("./wishlist/combos.ejs", { combos: wishlist.combos }) %>
       </section>
+      <% } %>
     </main>
+    <% } else { %>
+    <main>
+      <section id="empty">
+        <%- include("./common/empty-cart.ejs", { message: "YOUR WISHLIST" }) %>
+      </section>
+    </main>
+    <% } %>
   </body>
 </html>

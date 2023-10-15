@@ -53,7 +53,9 @@
     </main>
     <% } else { %>
     <main>
-      <section id="empty"><%- include("./cart/empty.ejs") %></section>
+      <section id="empty">
+        <%- include("./common/empty-cart.ejs", { message: "YOUR CART" }) %>
+      </section>
     </main>
     <% } %>
 
