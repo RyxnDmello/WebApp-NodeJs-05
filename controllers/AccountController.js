@@ -23,29 +23,35 @@ const wishlist = async (req, res) => {
   res.render("wishlist", { wishlist: wishlist });
 };
 
-const updateCart = (req, res) => {
+const updateCart = async (req, res) => {
   const product = req.body;
 
   if (req.body.action === "INCREASE") {
-    CartManager.AddProduct(req.session.email, product.ID);
+    await CartManager.AddProduct(req.session.email, product.ID);
     res.redirect("back");
     return;
   }
 
   if (req.body.action === "DECREASE") {
-    CartManager.MinusProduct(req.session.email, product.ID);
+    await CartManager.MinusProduct(req.session.email, product.ID);
     res.redirect("back");
     return;
   }
 
   if (req.body.action === "DELETE") {
-    CartManager.DeleteProduct(req.session.email, product.ID);
+    await CartManager.DeleteProduct(req.session.email, product.ID);
     res.redirect("back");
     return;
   }
 
   if (req.body.action === "RESET") {
-    CartManager.ResetCart(req.session.email);
+    await CartManager.ResetCart(req.session.email);
+    res.redirect("back");
+    return;
+  }
+
+  if (req.body.action === "WISHLIST") {
+    await CartManager.CartToWishlist(req.session.email, product.ID);
     res.redirect("back");
     return;
   }

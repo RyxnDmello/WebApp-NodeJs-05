@@ -2,8 +2,8 @@
   <p class="nav-logo-text">CyberVerse</p>
 </a>
 
-<div class="nav-links-container">
-  <div class="nav-location-links-container">
+<div class="nav-links">
+  <div class="nav-location-links">
     <% navbar.locations.forEach((location) => { %>
     <a class="nav-location-link" href="<%= location.URL %>">
       <p class="nav-location-link-text"><%= location.text %></p>
@@ -11,7 +11,7 @@
     <% }) %>
   </div>
 
-  <div class="nav-social-links-container">
+  <div class="nav-social-links">
     <% navbar.socials.forEach((social) => { %>
     <a class="nav-social-link" href="<%= social.URL %>">
       <img class="nav-social-link-image" src="<%= social.image %>" />
@@ -25,9 +25,23 @@
     <p class="nav-register-link-text">Register</p>
   </a>
   <% } else { %>
-  <a class="nav-account-link" href="/account">
-    <img class="nav-account-link-image" src="/buttons/account/profile.png" />
-    <p class="nav-account-link-name"><%= username %></p>
-  </a>
+  <hr class="nav-links-divider" />
+
+  <div class="nav-account-links">
+    <div class="nav-cart-links">
+      <a class="nav-cart-link" href="/account/wishlist">
+        <img class="nav-cart-link-image" src="/buttons/shop/wish.png" />
+      </a>
+
+      <a class="nav-cart-link" href="/account/cart">
+        <img class="nav-cart-link-image" src="/buttons/shop/cart.png" />
+      </a>
+    </div>
+
+    <a class="nav-account-link" href="/account">
+      <img class="nav-account-link-image" src="/buttons/account/profile.png" />
+      <p class="nav-account-link-name"><%= username %></p>
+    </a>
+  </div>
   <% } %>
 </div>

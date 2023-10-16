@@ -28,11 +28,12 @@ nav {
   color: #fff;
 }
 
+
 /*---------------------------------*/
-/*------------ SOCIALS ------------*/
+/*------------- LINKS -------------*/
 /*---------------------------------*/
 
-.nav-links-container {
+.nav-links {
   justify-content: center;
   grid-auto-flow: column;
   align-items: center;
@@ -40,7 +41,17 @@ nav {
   gap: 2rem;
 }
 
-.nav-social-links-container {
+.nav-links-divider {
+  border: 2px solid #ffffff15;
+  border-radius: 40px;
+  height: 90%;
+}
+
+/*---------------------------------*/
+/*------------ SOCIALS ------------*/
+/*---------------------------------*/
+
+.nav-social-links {
   justify-content: center;
   grid-auto-flow: column;
   align-items: center;
@@ -58,7 +69,7 @@ nav {
 /*------------ LOCATION ------------*/
 /*----------------------------------*/
 
-.nav-location-links-container {
+.nav-location-links {
   justify-content: center;
   grid-auto-flow: column;
   align-items: center;
@@ -142,9 +153,34 @@ nav {
   color: #fff;
 }
 
-/*-----------------------------------*/
-/*------------- ACCOUNT -------------*/
-/*-----------------------------------*/
+/*------------------------------------------*/
+/*------------- CART & ACCOUNT -------------*/
+/*------------------------------------------*/
+
+.nav-account-links {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.nav-cart-links {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.nav-cart-link-image {
+  transition: translate 300ms, scale 125ms;
+  width: 25px;
+}
+
+/*------------------------------------*/
+/*----------- ACCOUNT LINK -----------*/
+/*------------------------------------*/
 
 .nav-account-link {
   border: 2px solid #fff;
@@ -220,6 +256,14 @@ nav {
 
 .nav-register-link:focus {
   translate: 0 6px;
+}
+
+.nav-cart-link:hover .nav-cart-link-image {
+  translate: 0 -5px;
+}
+
+.nav-cart-link:focus .nav-cart-link-image {
+  scale: 0.85;
 }
 
 .nav-account-link:hover::before {

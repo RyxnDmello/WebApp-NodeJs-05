@@ -5,6 +5,7 @@ const AccountManager = require("../database/AccountManager.js");
 
 const home = (req, res) => {
   req.session.email = "ryan@gmail.com";
+  req.session.username = "RyxnDmello";
 
   res.render("home", {
     username: req.session.username ?? null,
