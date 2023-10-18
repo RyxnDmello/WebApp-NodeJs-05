@@ -1,0 +1,190 @@
+{
+  "menus": [
+    [
+      {
+        "header": {
+          "image": "/navbar/playstation.png",
+          "title": "Consoles"
+        },
+        "links": [
+          {
+            "URL": "/shop/playstation/consoles#originals",
+            "text": "Originals"
+          },
+          {
+            "URL": "/shop/playstation/consoles#skins",
+            "text": "Skins"
+          },
+          {
+            "URL": "/shop/playstation/consoles#combos",
+            "text": "Combos"
+          }
+        ]
+      },
+      {
+        "header": {
+          "image": "/navbar/controller.png",
+          "title": "Controllers"
+        },
+        "links": [
+          {
+            "URL": "/shop/playstation/controllers#originals",
+            "text": "Originals"
+          },
+          {
+            "URL": "/shop/playstation/controllers#skins",
+            "text": "Skins"
+          },
+          {
+            "URL": "/shop/playstation/controllers#combos",
+            "text": "Combos"
+          }
+        ]
+      },
+      {
+        "header": {
+          "image": "/navbar/headset.png",
+          "title": "Headsets"
+        },
+        "links": [
+          {
+            "URL": "/shop/playstation/headsets#originals",
+            "text": "Originals"
+          },
+          {
+            "URL": "/shop/playstation/headsets#skins",
+            "text": "Skins"
+          },
+          {
+            "URL": "/shop/playstation/headsets#combos",
+            "text": "Combos"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "header": {
+          "image": "/navbar/xbox.png",
+          "title": "Consoles"
+        },
+        "links": [
+          {
+            "URL": "/shop/xbox/consoles#originals",
+            "text": "Originals"
+          },
+          {
+            "URL": "/shop/xbox/consoles#skins",
+            "text": "Skins"
+          },
+          {
+            "URL": "/shop/xbox/consoles#combos",
+            "text": "Combos"
+          }
+        ]
+      },
+      {
+        "header": {
+          "image": "/navbar/controller.png",
+          "title": "Controllers"
+        },
+        "links": [
+          {
+            "URL": "/shop/xbox/controllers#originals",
+            "text": "Originals"
+          },
+          {
+            "URL": "/shop/xbox/controllers#skins",
+            "text": "Skins"
+          },
+          {
+            "URL": "/shop/xbox/controllers#combos",
+            "text": "Combos"
+          }
+        ]
+      },
+      {
+        "header": {
+          "image": "/navbar/headset.png",
+          "title": "Headsets"
+        },
+        "links": [
+          {
+            "URL": "/shop/xbox/headsets#originals",
+            "text": "Originals"
+          },
+          {
+            "URL": "/shop/xbox/headsets#skins",
+            "text": "Skins"
+          },
+          {
+            "URL": "/shop/xbox/headsets#combos",
+            "text": "Combos"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "header": {
+          "image": "/navbar/switch.png",
+          "title": "Consoles"
+        },
+        "links": [
+          {
+            "URL": "/shop/switch/consoles#originals",
+            "text": "Originals"
+          },
+          {
+            "URL": "/shop/switch/consoles#skins",
+            "text": "Skins"
+          },
+          {
+            "URL": "/shop/switch/consoles#combos",
+            "text": "Combos"
+          }
+        ]
+      },
+      {
+        "header": {
+          "image": "/navbar/controller.png",
+          "title": "Controllers"
+        },
+        "links": [
+          {
+            "URL": "/shop/switch/controllers#originals",
+            "text": "Originals"
+          },
+          {
+            "URL": "/shop/switch/controllers#skins",
+            "text": "Skins"
+          },
+          {
+            "URL": "/shop/switch/controllers#combos",
+            "text": "Combos"
+          }
+        ]
+      },
+      {
+        "header": {
+          "image": "/navbar/headset.png",
+          "title": "Headsets"
+        },
+        "links": [
+          {
+            "URL": "/shop/switch/headsets#originals",
+            "text": "Originals"
+          },
+          {
+            "URL": "/shop/switch/headsets#skins",
+            "text": "Skins"
+          },
+          {
+            "URL": "/shop/switch/headsets#combos",
+            "text": "Combos"
+          }
+        ]
+      }
+    ]
+  ]
+}

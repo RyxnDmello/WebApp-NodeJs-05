@@ -1,3 +1,5 @@
+const Navbar = require("../json/common/navbar.json");
+
 const CartManager = require("../database/CartManager.js");
 const WishManager = require("../database/WishManager.js");
 
@@ -9,7 +11,11 @@ const cart = async (req, res) => {
 
   const { cart, bill } = await CartManager.GetProducts(req.session.email);
 
-  res.render("cart", { cart: cart, bill: bill });
+  res.render("cart", {
+    navbar: Navbar,
+    cart: cart,
+    bill: bill,
+  });
 };
 
 const wishlist = async (req, res) => {
@@ -20,7 +26,10 @@ const wishlist = async (req, res) => {
 
   const wishlist = await WishManager.GetProducts(req.session.email);
 
-  res.render("wishlist", { wishlist: wishlist });
+  res.render("wishlist", {
+    navbar: Navbar,
+    wishlist: wishlist,
+  });
 };
 
 const updateCart = async (req, res) => {

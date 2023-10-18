@@ -1,0 +1,144 @@
+/*-------------------------------------------------*/
+/*------------------ MENU STYLES ------------------*/
+/*-------------------------------------------------*/
+
+.nav-menu {
+  box-shadow: 0 0 10px #000;
+  background-color: #000010;
+  justify-content: center;
+  grid-auto-flow: column;
+  border-radius: 2.5px;
+  pointer-events: none;
+  align-items: center;
+  position: absolute;
+  isolation: isolate;
+  bottom: -13.5rem;
+  right: 1.5rem;
+  padding: 2rem;
+  display: grid;
+  opacity: 0;
+  z-index: 1;
+  gap: 4rem;
+}
+
+/*-----------------------------------*/
+/*------------ TYPE MENU ------------*/
+/*-----------------------------------*/
+
+.nav-type-menu {
+  grid-template-columns: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  gap: 0.65rem;
+}
+
+/*-----------------------------------*/
+/*---------- HEADER STYLES ----------*/
+/*-----------------------------------*/
+
+.nav-type-menu-header {
+  justify-content: center;
+  grid-auto-flow: column;
+  align-items: center;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.nav-type-menu-header-image {
+  width: 22.5px;
+}
+
+.nav-type-menu:nth-of-type(1) .nav-type-menu-header-image {
+  width: 28px;
+}
+
+.nav-type-menu-header-title {
+  font-family: "Abel", sans-serif;
+  letter-spacing: 0.65px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor: default;
+  color: #fff;
+}
+
+/*------------------------------------*/
+/*----------- CLASS STYLES -----------*/
+/*------------------------------------*/
+
+.nav-type-menu-classes {
+  grid-template-columns: auto;
+  justify-content: left;
+  align-items: center;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.nav-type-menu-class {
+  transition: translate 350ms;
+}
+
+.nav-type-menu-class-text {
+  font-family: "Poppins", sans-serif;
+  transition: color 350ms;
+  letter-spacing: 0.65px;
+  color: #ffffff80;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+/*--------------------------------------*/
+/*------------- ANIMATIONS -------------*/
+/*--------------------------------------*/
+
+.nav-menu-fade-in {
+  animation: NavMenuFadeIn 300ms forwards;
+}
+
+@keyframes NavMenuFadeIn {
+  0% {
+    pointer-events: none;
+    translate: 0 -20px;
+    opacity: 0;
+  }
+
+  100% {
+    pointer-events: all;
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+
+.nav-menu-fade-out {
+  animation: NavMenuFadeOut 300ms forwards;
+}
+
+@keyframes NavMenuFadeOut {
+  0% {
+    translate: 0 0;
+    opacity: 1;
+  }
+
+  100% {
+    pointer-events: none;
+    translate: 0 -20px;
+    opacity: 0;
+  }
+}
+
+/*-----------------------------------*/
+/*----------- TRANSITIONS -----------*/
+/*-----------------------------------*/
+
+.nav-type-menu-class:hover {
+  translate: 10px 0;
+  color: #fff;
+}
+
+.nav-type-menu-class:hover .nav-type-menu-class-text {
+  color: #fff;
+}
+
+/*----------------------------------------*/
+/*-------------- END OF CSS --------------*/
+/*----------------------------------------*/

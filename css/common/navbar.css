@@ -1,6 +1,9 @@
-/*---------------------------------------------------*/
-/*------------------ NAVBAR STYLES ------------------*/
-/*---------------------------------------------------*/
+@import url("./navbar/links.css");
+@import url("./navbar/menu.css");
+
+header {
+  position: relative;
+}
 
 nav {
   box-shadow: 0 10px 20px #00000060;
@@ -15,10 +18,6 @@ nav {
   z-index: 1;
 }
 
-/*-------------------------------------*/
-/*------------ LOGO STYLES ------------*/
-/*-------------------------------------*/
-
 .nav-logo-text {
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.5px;
@@ -26,133 +25,3 @@ nav {
   font-weight: 300;
   color: #fff;
 }
-
-/*----------------------------------------*/
-/*------------- LINKS STYLES -------------*/
-/*----------------------------------------*/
-
-.nav-links {
-  justify-content: center;
-  grid-auto-flow: column;
-  align-items: center;
-  display: grid;
-  gap: 1.25rem;
-}
-
-.nav-links-divider {
-  background-color: #ffffff20;
-  border: transparent;
-  border-radius: 40px;
-  height: 100%;
-  width: 2px;
-}
-
-/*---------------------------------------*/
-/*------------- BRAND LINKS -------------*/
-/*---------------------------------------*/
-
-.nav-brand-links {
-  justify-content: center;
-  grid-auto-flow: column;
-  align-items: center;
-  display: grid;
-  gap: 1.25rem;
-}
-
-.nav-brand-link {
-  transition: opacity 450ms, translate 125ms;
-  position: relative;
-  opacity: 0.5;
-}
-
-.nav-brand-link::before {
-  background-color: #fff;
-  transition: width 450ms;
-  border-radius: 40px;
-  position: absolute;
-  margin: 0 auto;
-  height: 1.5px;
-  bottom: -4px;
-  content: "";
-  width: 0%;
-  right: 0;
-  left: 0;
-}
-
-.nav-brand-link-text {
-  font-family: "Poppins", sans-serif;
-  letter-spacing: 0.5px;
-  font-weight: 300;
-  font-size: 1rem;
-  color: #fff;
-}
-
-/*----------------------------------------*/
-/*-------------- SHOP LINKS --------------*/
-/*----------------------------------------*/
-
-.nav-shop-links {
-  justify-content: center;
-  grid-auto-flow: column;
-  align-items: center;
-  display: grid;
-  gap: 1rem;
-}
-
-.nav-shop-link {
-  transition: translate 125ms;
-  grid-template-columns: auto;
-  justify-content: center;
-  align-items: center;
-  display: grid;
-}
-
-.nav-shop-link-image {
-  filter: drop-shadow(0 5px 10px #000000a0);
-  width: 25px;
-}
-
-/*---------------------------------------*/
-/*------------ PROFILE LINKS ------------*/
-/*---------------------------------------*/
-
-.nav-profile-logo {
-  filter: drop-shadow(0 5px 10px #000000a0);
-  grid-template-columns: auto;
-  justify-content: center;
-  align-items: center;
-  display: grid;
-}
-
-.nav-profile-logo-image {
-  transition: translate 125ms;
-  width: 35px;
-}
-
-/*-------------------------------------------*/
-/*--------------- TRANSITIONS ---------------*/
-/*-------------------------------------------*/
-
-.nav-brand-link:hover {
-  opacity: 1;
-}
-
-.nav-brand-link:hover::before {
-  width: 100%;
-}
-
-.nav-brand-link:focus {
-  translate: 0 5px;
-}
-
-.nav-shop-link:focus {
-  translate: 0 -5px;
-}
-
-.nav-profile-logo:focus .nav-profile-logo-image {
-  translate: 0 -5px;
-}
-
-/*--------------------------------------------*/
-/*---------------- END OF CSS ----------------*/
-/*--------------------------------------------*/

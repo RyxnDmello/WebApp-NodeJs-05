@@ -1,37 +1,60 @@
-<a class="nav-logo" href="/">
-  <p class="nav-logo-text">CyberVerse</p>
-</a>
-
-<div class="nav-links">
-  <div class="nav-brand-links">
-    <a class="nav-brand-link" href="/">
-      <p class="nav-brand-link-text">Playstation</p>
-    </a>
-
-    <a class="nav-brand-link" href="/">
-      <p class="nav-brand-link-text">Xbox</p>
-    </a>
-
-    <a class="nav-brand-link" href="/">
-      <p class="nav-brand-link-text">Switch</p>
-    </a>
-  </div>
-
-  <hr class="nav-links-divider" />
-
-  <div class="nav-shop-links">
-    <a class="nav-shop-link" href="/account/wishlist">
-      <img class="nav-shop-link-image" src="/buttons/shop/wish.png" />
-    </a>
-
-    <a class="nav-shop-link" href="/account/cart">
-      <img class="nav-shop-link-image" src="/buttons/shop/cart.png" />
-    </a>
-  </div>
-
-  <hr class="nav-links-divider" />
-
-  <a class="nav-profile-logo" href="/account">
-    <img class="nav-profile-logo-image" src="/buttons/account/profile.png" />
+<nav>
+  <a class="nav-logo" href="/">
+    <p class="nav-logo-text">CyberVerse</p>
   </a>
+
+  <div class="nav-links">
+    <div class="nav-brand-links">
+      <div class="nav-brand-link">
+        <p class="nav-brand-link-text">Playstation</p>
+      </div>
+
+      <div class="nav-brand-link">
+        <p class="nav-brand-link-text">Xbox</p>
+      </div>
+
+      <div class="nav-brand-link">
+        <p class="nav-brand-link-text">Combos</p>
+      </div>
+    </div>
+
+    <hr class="nav-links-divider" />
+
+    <div class="nav-shop-links">
+      <a class="nav-shop-link" href="/account/wishlist">
+        <img class="nav-shop-link-image" src="/buttons/shop/wish.png" />
+      </a>
+
+      <a class="nav-shop-link" href="/account/cart">
+        <img class="nav-shop-link-image" src="/buttons/shop/cart.png" />
+      </a>
+    </div>
+
+    <hr class="nav-links-divider" />
+
+    <a class="nav-profile-logo" href="/account">
+      <img class="nav-profile-logo-image" src="/buttons/account/profile.png" />
+    </a>
+  </div>
+</nav>
+
+<% navbar.menus.forEach((menu) => {%>
+<div class="nav-menu">
+  <% menu.forEach((type) => { %>
+  <div class="nav-type-menu">
+    <div class="nav-type-menu-header">
+      <img class="nav-type-menu-header-image" src="<%= type.header.image %>" />
+      <h4 class="nav-type-menu-header-title"><%= type.header.title %></h4>
+    </div>
+
+    <div class="nav-type-menu-classes">
+      <% type.links.forEach((link) => {%>
+      <a class="nav-type-menu-class" href="<%= link.URL %>">
+        <p class="nav-type-menu-class-text"><%= link.text %></p>
+      </a>
+      <% }) %>
+    </div>
+  </div>
+  <% }) %>
 </div>
+<% }) %>

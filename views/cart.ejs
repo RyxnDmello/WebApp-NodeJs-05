@@ -23,8 +23,8 @@
   </head>
 
   <body>
-    <header>
-      <nav><%- include("./common/navbar.ejs") %></nav>
+    <header id="header">
+      <%- include("./common/navbar.ejs", { navbar: navbar }) %>
     </header>
 
     <% if(cart !== "EMPTY" && bill !== "EMPTY") { %>
