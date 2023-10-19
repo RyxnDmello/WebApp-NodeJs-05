@@ -1,7 +1,9 @@
+const Navbar = require("../json/common/navbar.json");
+const Footer = require("../json/common/footer.json");
+
 const PlaystationTemplate = require("../json/playstation.json");
 const SwitchTemplate = require("../json/switch.json");
 const XboxTemplate = require("../json/xbox.json");
-const navbar = require("../json/common/navbar.json");
 
 const CartManager = require("../database/CartManager.js");
 const WishManager = require("../database/WishManager.js");
@@ -9,9 +11,9 @@ const WishManager = require("../database/WishManager.js");
 const shop = (req, res) => {
   if (req.params.brand === "playstation") {
     res.render("shop", {
-      navbar: navbar,
+      navbar: Navbar,
       classes: PlaystationTemplate[req.params.type],
-      footer: PlaystationTemplate.footer,
+      footer: Footer.footer,
     });
 
     return;
@@ -19,9 +21,9 @@ const shop = (req, res) => {
 
   if (req.params.brand === "xbox") {
     res.render("shop", {
-      navbar: navbar,
+      navbar: Navbar,
       classes: XboxTemplate[req.params.type],
-      footer: XboxTemplate.footer,
+      footer: Footer.footer,
     });
 
     return;
@@ -29,9 +31,9 @@ const shop = (req, res) => {
 
   if (req.params.brand === "switch") {
     res.render("shop", {
-      navbar: navbar,
+      navbar: Navbar,
       classes: SwitchTemplate[req.params.type],
-      footer: SwitchTemplate.footer,
+      footer: Footer.footer,
     });
 
     return;

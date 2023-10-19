@@ -4,9 +4,9 @@
 
 #empty {
   grid-template-columns: auto;
-  padding: 10rem 2rem 2rem 2rem;
   justify-content: center;
   align-items: center;
+  padding: 10rem 2rem;
   display: grid;
 }
 

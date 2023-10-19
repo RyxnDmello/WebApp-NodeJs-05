@@ -3,10 +3,10 @@
 @import url("./billing/total.css");
 
 #billing {
+  padding: 2rem 6rem 6rem 6rem;
   grid-template-columns: auto;
   justify-content: stretch;
   align-items: center;
-  padding: 2rem 6rem;
   display: grid;
   gap: 2rem;
 }

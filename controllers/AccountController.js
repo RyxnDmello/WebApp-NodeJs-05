@@ -1,4 +1,5 @@
 const Navbar = require("../json/common/navbar.json");
+const Footer = require("../json/common/footer.json");
 
 const CartManager = require("../database/CartManager.js");
 const WishManager = require("../database/WishManager.js");
@@ -13,6 +14,7 @@ const cart = async (req, res) => {
 
   res.render("cart", {
     navbar: Navbar,
+    footer: Footer.footer,
     cart: cart,
     bill: bill,
   });
@@ -28,6 +30,7 @@ const wishlist = async (req, res) => {
 
   res.render("wishlist", {
     navbar: Navbar,
+    footer: Footer.footer,
     wishlist: wishlist,
   });
 };
